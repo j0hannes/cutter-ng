@@ -331,6 +331,18 @@ common3:
       - _?
       - \right
 
+  - name: one-letter abbreviations
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d]
+      - +abbr: >-
+          (?:\p{Lu}[.]\pZ*)+
+      - ?!: >-
+          [\pL\d]
+      - _?
+      - \right
+
   - name: sentence-final punctuation
     parts:
       - \left
