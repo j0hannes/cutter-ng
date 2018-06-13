@@ -1,0 +1,151 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+fr4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtA1: «
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - frXqtA2: »
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtA1: «
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtA2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtB1: “
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - frXqtB2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtB1: “
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtB2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtB1: ‘
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtB1: ‘
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - frXqtB2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: lexicalized word with apostrophe
+    parts:
+      - \left
+      - ?<!: \pL
+      - frQlx:
+        - "[Aa]ujourd[’']hui"
+        - "[Cc][’']est-à-dire"
+        - "[Rr]endez-vous"
+        - "(?:[Cc]hef|[Mm]ain)-d[’'](?:oe|œ)uvre"
+        - "[Pp]resqu[’']îles?"
+        - "[Pp]rud[’']hom(?:al(?:es?)?|m?aux|mal(?:es?)?|mes?)"
+        - "[Qq]uelqu[’']une?"
+        - "[Ee]ntr[’'](?:aide[rs]?|ouverte?s?|ouvrir)"
+        - "[Tt]rompe-l[’']oeil"
+        - "(?:[Ee]lle|[Ii]l||[Ll]ui|[MTSmts]oi)-même"
+        - "(?:[Ee]lles|[Ee]ux|[Nn]ous|[Vv]ous)-mêmes"
+        - "[Dd][’'](?:abord|accord|ailleurs|après|autant|(?:oe|œ)uvre)"
+        - "(?:[Pp]ar|[Cc]elui|[Cc]eux)-(?:ci|là)"
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: que l’on
+    parts:
+      - \left
+      - ?<!: \pL
+      - frQqon1: \pL*que
+      - _
+      - frQqon2: l[’']on
+      - ?!: \pL
+      - \right
+
+  - name: elision
+    parts:
+      - \left
+      - ?<!: '[\pL-]'
+      - frXel:
+        - "[DCJLMNSTdcjlmnst][’']"
+        - "(?:[Jj]us|[Ll]ors|[Qq]uoi|[Pp]uis)qu[’']"
+        - "[Qq]u[’']"
+      - ?!: '[^\pL\d]'
+      - \right
+
+  - name: attached pronouns
+    parts:
+      - \left
+      - ?<=: \pL
+      - frXpr1:
+        - -(?:t-)?(?:elles?|ils?|on)
+        - -(?:ce|ci|je|la|les?|leur|lui|[mtl][’']|[mt]oi|[nv]ous|tu|en|y)
+      - (:
+        - ?<=: "[’']"
+        - frXpr2: en
+      - ?!: \pL
+      - _?
+      - \right
+

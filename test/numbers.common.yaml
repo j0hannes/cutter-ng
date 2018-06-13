@@ -1,0 +1,62 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: numbers
+
+rule:
+  - rule/common.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: we have [50 000|+numspc] buffalos
+  - unit: circa [250.000|+number] Menschen
+
+  - unit: "[19.09.|+date]"
+  - unit: "[19.9.2016|+date]"
+  - unit: "[07/06/95|+date]"
+  - unit: "[19/09/16|+date]"
+  - unit: "[2016-09-27|+date]"
+  - unit: "[2016-09-19|+date]"
+  - unit: "[4-10-1916|+date]"
+  - unit: "[15-6-1985|+date]"
+  - unit: "[25.6.|+date]"
+  - unit: Juhannusta juhlitaan [20.6.|+date] ja [26.6.|+date] välisenä aikana[.]
+
+  - unit: 33[']46["]N
+  - unit: 27[']24["]N
+  - unit: 7[°]13[’]37[″]
+  - unit: Uran is located at [18.88]°[N] [72.94]°[E].
+
+  - unit: "[4.5-10.7|+numrg]"
+  - unit: "obejmujący lata [2007-2013|+numrg]."
+  - unit: "[2-3|+numrg] hours"
+  - unit: "[12'000-25'000|+numrg]"
+
+  - unit: "[18:34h|+time]"
+  - unit: "[17:00|+time]"
+  - unit: "at [12.30h|+time]"
+
+  - unit: "[1:1.85|+numrt]"
+  - unit: "the chance is [1:25,000|+numrt]"
+  - unit: "das Spiel stand [2:2|+numrt]"
+  - unit: "[1:1,618|+numrt]"
+  - unit: "mit [7:6|+numrt], [8:2|+numrt] und [3:1|+numrt] gewonnen"
+
+  - unit: "[1,759]"
+  - unit: "[1.759]"
+  - unit: "[3/5]"
+
+  - unit: "[5'120.-|+numdf]"
+  - unit: "[2,50.-|+numdf]"
+  - unit: "[37,700.-|+numdf]"
+
+  - unit: call [076 543 271|+numspc]
+  - unit: call [076/543 271|+numspc]
+

@@ -1,0 +1,43 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+common0:
+
+  - name: text-final newline characters
+    parts:
+      - -newlines: (?s)
+      - \left: .*
+      - -marker: >-
+          [\n\r]+
+
+  - name: text-initial newline characters
+    parts:
+      - -newlines: (?s)
+      - -marker: >-
+          [\n\r]+
+      - _?
+      - \right
+
+  - name: newline characters mark end of sentence
+    parts:
+      - -newlines: (?s)
+      - \left: .*?
+      - -marker: >-
+          [\n\r]+
+      - +EOS1
+      - _?
+      - \right
+
+
+common9:
+  - name: split at whitespace # default rule
+    parts:
+      - +other: \PZ+
+      - _
+      - \right
+

@@ -1,0 +1,26 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special Cases in Swedish
+
+abbr:
+  - abbr/sv.list
+
+init:
+  - init/sv.list
+
+rule:
+  - rule/common.yaml
+  - rule/sv.yaml
+
+flag:
+  - no-empty-tokens
+
+test:       
+  - unit: i [SVT:s] Agenda i kväll
+

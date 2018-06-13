@@ -1,0 +1,58 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special Cases in Dutch
+
+abbr:
+  - abbr/nl.list
+
+init:
+  - init/nl.list
+
+rule:
+  - rule/common.yaml
+  - rule/nl.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      Joris Wijsmuller moet weer in gesprek gaan met de Protestantse Gemeente ['s-Gravenhage]
+      om over behoud van de Valkenboskerk te praten|.
+
+  - unit: >- 
+      Volgens de officiële spelling is alleen [Benelux-land], met een streepje|, correct|.
+
+  - unit: >-
+      Het hof stelde daarmee de vereniging CAN (|Clean Air Nederland|)|, 
+      voorheen de Club van Actieve [Niet-rokers], in het gelijk|.
+      
+  - unit: >-
+      een [kruidje-roer-mij-niet]
+
+  - unit: >-
+      het vrouw-zijn
+
+  - unit: >-
+      een [kat-en-muisspelletje]
+
+  - unit: >-
+      een [baby'tje]
+
+  # genitive / possessive
+  - unit: >-
+      Dat is [opa's] fiets en dit is [Loes'] jas|.
+
+  # plural of foreign language material
+  - unit: >- 
+      [firma's]
+      [auto's] 
+      [paraplu's] 
+      [hobby's]
+

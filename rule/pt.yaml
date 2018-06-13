@@ -1,0 +1,104 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+pt4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - ptXqtA1: «
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - ptqtA2: »
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - ptXqtA1: «
+      - \center: .+?
+      - ptqtA2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - ptXqtB1: “
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - ptXqtB2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - ptXqtB1: “
+      - \center: .+?
+      - ptXqtB2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - ptXqtB1: ‘
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - ptXqtB2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - ptXqtB1: ‘
+      - \center: .+?
+      - ptXqtB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: attached pronouns (appended)
+    parts:
+      - \left
+      - ?<=: \pL
+      - ptXpr1:
+        - '-l?[ao]'
+        - '-[mst]e'
+        - '-lhes?'
+        - '-[nvl]?o(s|(?=-))'
+      - (:
+        - ptXpr2: -[lvn]os
+      - (:
+        - ?<=: '[os]'
+        - ptXpr3:
+          - '-ias?'
+          - '-ei'
+          - '-ás'
+          - '-emos'
+      - ?!: '[\pL-]'
+      - _?
+      - \right
+

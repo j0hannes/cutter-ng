@@ -1,0 +1,40 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in Romanian
+
+abbr:
+  - abbr/ro.list
+
+init:
+  - init/ro.list
+
+rule:
+  - rule/common.yaml
+  - rule/ro.yaml
+
+flag:
+  - no-empty-tokens
+
+# [„ ”], also in quotations within quotations
+# sometimes also [„] and ["] used
+
+test:       
+  - unit: >-
+      Dacă nu[,] [„]portocalele[”] se transformă în [„]pepeni de Dăbuleni[”]. 
+    
+  - unit: >-
+      A murit generalul Constantin Didulescu[,] unul dintre eroii români din al doilea 
+      război mondial[:] [„]N[-o] să[-l] vedeți la stiri[,] deși a fost capabil de [„]breaking news-uri[”]
+      din tranșee[.] A luptat în tăcere și modestie[,] așa cum a făcut generația lor încercată[”].
+    
+  - unit: >-
+      [„]Mă așteptam la o asemenea soluție|, din cauză că în Curtea Constituțională funcționează 
+      mai mulți foști magistrați [–] și într[-un] fel aceștia au simțit nevoia să[-și] apere propria piele["],
+      a încheiat ziaristul[.]
+

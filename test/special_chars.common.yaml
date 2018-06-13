@@ -1,0 +1,42 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: special characters
+
+rule:
+  - rule/common.yaml
+
+test:
+  - name: cover 1
+    unit: >-
+      [␂1,1′-Azobis-1,2,3-triazole␃] is a moderately explosive chemical compound
+
+  - name: cover 2
+    unit: >-
+      ␂Tris(2,4-di-tert-butylphenyl)phosphite␃ is an organophosphorus compound with the formula [(C4H9)2C6H3O]3P.
+    tokens:
+      - +cover: 'Tris(2,4-di-tert-butylphenyl)phosphite'
+      - is
+      - an
+      - organophosphorus
+      - compound
+      - with
+      - the
+      - formula
+      - '[(C4H9)2C6H3O]3P'
+      - .
+      - ''
+
+  - name: sentence-inital word
+    unit: last. ␟First
+    tokens:
+      - last
+      - .
+      - +EOS2:
+      - First
+

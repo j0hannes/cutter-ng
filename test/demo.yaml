@@ -1,0 +1,79 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: demo of tests (using Italian)
+
+abbr:
+  - abbr/it.list
+
+init:
+  - init/it.list
+
+rule:
+  - rule/common.yaml
+  - rule/it.yaml
+
+test:
+  # We can use single ...
+  - unit: '[all’]inferno'
+
+  # ... or double quotation marks;
+  - unit: "[l']upupa"
+
+  # or use multiline syntax (">-") with indention 
+  - unit: >-
+      [c']indicò la strada
+
+  - unit: >-
+      se [n']andò
+
+  # The pipe symbol can be used to mark a token border instead of a token
+  - unit: >-
+      un'|antica via
+
+  # The "name" will be used in case of error if specified, a number otherwise.
+  - name: quest'
+    unit: >-
+      [quest']articolo
+
+  # We can replace the standard markers ([ and ]).
+  - markers:
+      - '('
+      - ')'
+    unit: >-
+      ([)l'(altr')anno(])
+
+  - markers:
+      - '‹'
+      - '›'
+    unit: >-
+      ‹[›centocinquant'‹anni›]
+
+  # In case we want to assert the tag assigned to a token, we need to specify the tokens as a list.
+  - unit: un'antica via
+    tokens:
+      - itXel: un'
+      - antica
+      - via
+
+  - unit: Il primo novembre è il 305º giorno del calendario gregoriano
+    tokens:
+      - Il
+      - primo
+      - novembre
+      - è
+      - il
+      - itQon: 305º
+      - giorno
+      - del
+      - calendario
+      - gregoriano
+
+  - unit: >-
+      [L’]ho letto [50 000|+numspc] volte nel [“]Corriere della Sera[”]
+

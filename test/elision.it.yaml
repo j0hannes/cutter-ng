@@ -1,0 +1,96 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: elision in Italian
+
+abbr:
+  - abbr/it.list
+
+init:
+  - init/it.list
+
+rule:
+  - rule/common.yaml
+  - rule/it.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: "[anch']io"
+  - unit: "[all’]inferno"
+  - unit: "[un’]espressione"
+  - unit: "[quest’]ultima"
+  - unit: "[l']albero"
+  - unit: "[l']upupa"
+  - unit: "[l']ho vista"
+  - unit: "[un']antica via"
+  - unit: "[nessun']altra"
+  - unit: "[quest']orso"
+  - unit: "[quest']alunna"
+  - unit: "[d']andare"
+  - unit: "[d']Italia"
+  - unit: "[m']ha parlato"
+  - unit: "[m']ascolti[?]"
+  - unit: "[t']alzi presto[?]"
+  - unit: "[s']avviò"
+  - unit: "[s']udirono"
+  - unit: "[v']illudono"
+  - unit: "[c']indicò la strada"
+  - unit: "[c']è"
+  - unit: "[c’]erano"
+  - unit: "[c']eravamo"
+  - unit: "[gl']Italiani"
+  - unit: "[gl']impedirono"
+  - unit: "se [n']andò"
+  - unit: "[sant']Angelo"
+  - unit: "[sant']Anna"
+  - unit: "[senz']altro"
+  - unit: "[bell']affare"
+  - unit: "[bell']amica"
+  - unit: "[grand']uomo"
+  - unit: "[dell']amico"
+  - unit: "[nell']aula"
+  - unit: "[sull']albero"
+  - unit: "[buon']idea"
+  - unit: "[Sant']Antonio"
+  - unit: "[pover']uomo"
+  - unit: "[tutt']altro"
+  - unit: "[quest']articolo"
+  - unit: "[quell']auto"
+  - unit: "[ch']io"
+  - unit: "[senz']altro"
+  - unit: "[com']è successo"
+  - unit: "a [quattr']occhi"
+  - unit: "[l']altr'[anno]"
+  - unit: "[tutt']altro"
+  - unit: "[senz']altro"
+  - unit: "[nient']altro"
+  - unit: "[nessun']altra"
+  - unit: "[tutt']al più"
+  - unit: "[mezz']ora"
+  - unit: "[buon']anima"
+  - unit: "[quand']anche"
+  - unit: "[mill’]anni"
+  - unit: "[terz’]ultimo"
+  - unit: "[poc']anzi"
+  - unit: "[dev']essere"
+  - unit: "[prim']ordine"
+  - unit: "[settant']anni"
+  - unit: "[cinquant']anni"
+  - unit: "[null']altro"
+  - unit: "[tant']è"
+  - unit: "[foss']altro"
+  - unit: "[ottant']anni"
+  - unit: "[fors']anche"
+  - unit: "[gliel']hanno"
+  - unit: "[centocinquant']anni"
+  - unit: "[alcun']occupazione"
+  - unit: "appena un [po’]."
+  - unit: "passai con un gran battito di cuore sotto il fanale vicino e andai ad addossarmi al canto oscuro [d’]un’[altra] casa[.]"
+  

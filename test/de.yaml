@@ -1,0 +1,109 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special cases in German
+
+abbr:
+  - abbr/common.list
+  - abbr/de.list
+
+init:
+  - init/de.list
+
+rule:
+  - rule/common.yaml
+  - rule/de.yaml
+
+test:
+  - unit: >-
+      „Mr. Zick-Zack“ nannte ihn mal ein Basismitglied in einem offenen Brief, als er noch Vorsitzender war.
+    tokens:
+      - „
+      - +cover: Mr.
+      - Zick-Zack
+      - “
+      - nannte
+      - ihn
+      - mal
+      - ein
+      - Basismitglied
+      - in
+      - einem
+      - offenen
+      - Brief
+      - ','
+      - als
+      - er
+      - noch
+      - Vorsitzender
+      - war
+      - .
+      - ''
+
+  - unit: >-
+      In einem kurzweiligen politischen [Tour'd'horizon], inklusive Seitenhiebe gegen politische Gegner wie den [«]korrupten Clinton-Clan[»], erwähnte Bannon den [Brexit-Erfolg] und die [Trump-Wahl] im vorletzten Jahr[,] die Entwicklungen in Polen und Ungarn[,] den Vormarsch der AfD in Deutschland und zuletzt die Wahlerfolge der [Anti-System-Parteien] wie Lega und Fünfsternebewegung in Italien[.][|+EOS5]
+  
+  - unit: >-
+      sehr bemerkenswert. «Wir werden nicht jede Wahl gewinnen», sagte Bannon
+    tokens:
+      - sehr
+      - bemerkenswert
+      - .
+      - ''
+      - «
+      - Wir
+      - werden
+      - nicht
+      - jede
+      - Wahl
+      - gewinnen
+      - »
+      - ','
+      - sagte
+      - Bannon
+      
+  - unit: >-
+      auf der Welt statt. «Wenn sich Brüssel nicht dramatisch ändert
+    tokens:
+      - auf
+      - der
+      - Welt
+      - statt
+      - .
+      - ''
+      - «
+      - Wenn
+      - sich
+      - Brüssel
+      - nicht
+      - dramatisch
+      - ändert
+
+  - unit: >-
+      Aber ach!, das bleibt ein frommer Wunsch.
+    tokens:
+      - Aber
+      - ach
+      - '!'
+      - ','
+      - das
+      - bleibt
+      - ein
+      - frommer
+      - Wunsch
+      - .
+      - ''
+
+  - unit: unser neuer [CSU-„Heimatschutzminister“] diese einlegt
+
+  - unit: Das führt der Film in einer so [humor-] wie endlosen Eingangssequenz vor
+
+  - unit: '[Max.] Anziehdrehmoment'
+
+  - unit: '[IEEE754] [32bit]'
+

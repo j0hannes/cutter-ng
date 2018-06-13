@@ -1,0 +1,54 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in Spanish
+
+abbr:
+  - abbr/es.list
+
+init:
+  - init/es.list
+
+rule:
+  - rule/common.yaml
+  - rule/es.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      Desde el bando de los [']postconvergentes['] se acusa a ERC de haber roto ya el [']pacto de Bruselas[']. 
+    
+  - unit: >-
+      ["]Ninguna mente extraordinaria está exenta de un toque de demencia["], dijo Aristóteles[.] 
+
+  - unit: >- 
+      [«]Él me dijo[,] ["]Estoy muy feliz["][»].
+      
+  - unit: >-
+      «[¿]Por qué me sigues mintiendo[?][»].
+      
+  - unit: >-
+      [¿]De verdad ha dicho [«]hasta nunca[»]?
+
+  - unit: >-
+      «[¡]María[,] te amo[!][»], exclamó Juan[.]
+      
+  - unit: >-
+      Si me vuelves a molestar[,] [¡]te voy a acusar con mi mamá[!]
+    
+  - unit: >-
+      Eres el hermano de Laura[,] [¿]verdad[?]
+      
+  - unit: >-
+      ["]Leyó[:] «[“]¡|Hasta en latín sabía maldecir el pillastre|![”], pensó el padre[»].["]
+    
+  - unit: >-
+      Incluso se niega a designar como paraísos fiscales a territorios que [-]dice[-] son enclaves de baja tributación[.]
+      

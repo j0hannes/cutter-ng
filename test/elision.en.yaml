@@ -1,0 +1,43 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: elision / contraction in English
+
+abbr:
+  - abbr/en.list
+
+init:
+  - init/en.list
+
+rule:
+  - rule/common.yaml
+  - rule/en.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: "I['ve]"
+  - unit: "I['m]"
+  - unit: "I['ll]"
+  - unit: "I['d]"
+  - unit: "she['s]"
+  - unit: "he['s]"
+  - unit: "that['s]"
+  - unit: "they['ve]" 
+  - unit: "you['ve]"
+  - unit: "they['re]"
+  - unit: "ca[n't]" 
+  - unit: "wo[n't]"
+  - unit: "is[n't]"
+  - unit: "should[n't]"
+  - unit: "sha[n't]"
+  - unit: "were[n't]"
+  - unit: "is[n't]"
+  - unit: "[o'clock]"   #lexicalized item
+

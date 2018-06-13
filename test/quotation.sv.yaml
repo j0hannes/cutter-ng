@@ -1,0 +1,44 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in Swedish
+
+abbr:
+  - abbr/sv.list
+
+init:
+  - init/sv.list
+
+rule:
+  - rule/common.yaml
+  - rule/sv.yaml
+
+flag:
+  - no-empty-tokens
+
+#either [""] and [''] or [»»] and [››]
+
+test:       
+  - unit: >-
+      Jesus sade[:] ”|Saliga är de som sörjer|, de skall bli tröstade|.|”
+    
+  - unit: >-
+      Jesus sade[:] »|Saliga är de som sörjer|, de skall bli tröstade|.|»
+    
+  - unit: >-
+      Prästen predikade[:] ”|Minns att Jesus sade[:] ’|Saliga de som sörjer[,] de skall bli tröstade|.[’]”
+    
+#  - unit: >-
+#      Prästen predikade[:] »|Minns att Jesus sade[:] ›|Saliga de som sörjer[,] de skall bli tröstade|.[›]»
+    
+  - unit: >-
+      [”]Bra[”] jobbat[,] du släppte just in grannkatten i huset[.]
+    
+  - unit: >-
+      [»]Bra[»] jobbat[,] du släppte just in grannkatten i huset[.]
+

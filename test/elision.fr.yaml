@@ -1,0 +1,66 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: elision / contraction & lexicalized items in French
+
+abbr:
+  - abbr/fr.list
+
+init:
+  - init/fr.list
+
+rule:
+  - rule/common.yaml
+  - rule/fr.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: "[l']abricot"
+  - unit: "[l']électricité"
+  - unit: "[l']intérieur"
+  - unit: "[c']est"
+  - unit: "[C']est"
+  - unit: "[d']histoire"
+  - unit: "[j']habite"
+  - unit: "je [l']aime"
+  - unit: "[j']y vais" 
+  - unit: "je [m']appelle"
+  - unit: "il [s']appelle"
+  - unit: "il [n']est pas"
+  - unit: "[n']est[-ce] pas"    
+  - unit: "[qu']il" 
+  - unit: "[qu']elle"
+  - unit: "[s']il te plaît"
+  - unit: "je [t']enverrai"
+  - unit: "va[-t']en"           # va + toi + en (s'en aller)
+  - unit: "donnez[-m']en"       # donnez + moi + en
+  - unit: "est[-ce] que"
+  - unit: "puis[-je]"
+  - unit: "dois[-tu]"
+  - unit: "[puisqu']on"
+  - unit: "[lorsqu']il"
+  - unit: "[quoiqu']elle"
+  - unit: "[aujourd'hui]"
+  - unit: "qu'[aujourd'hui]"
+  - unit: "[c'est-à-dire]"
+  - unit: "[d'abord]"
+  - unit: "[d'accord]"
+  - unit: "[d'ailleurs]"
+  - unit: "[d'après]"
+  - unit: "d'[habitude]"        # revise
+  - unit: "[jusqu']à"           # 
+  - unit: "[jusqu']alors"       #
+  - unit: "[jusqu']en"          #
+  - unit: "[jusqu']ici"         #
+  - unit: "[presqu'île]"
+  - unit: "[quelqu'un]"
+  - unit: >-
+      On nous dit [qu’][aujourd’hui] [c’]est le cas|, encore faudra[-t-il] [l’]évaluer|.
+

@@ -1,0 +1,58 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in English
+
+abbr:
+  - abbr/en.list
+
+init:
+  - init/en.list
+
+rule:
+  - rule/common.yaml
+  - rule/en.yaml
+
+flag:
+  - no-empty-tokens
+
+#BE:
+#   inverted commas [' '] are more frequently used
+#   direct speech within direct speech: [']She didn't specify what ["]I can't come["] meant[.]'
+#
+#AE: 
+#   double quotation marks [" "]
+#   direct speech within direct speech: ["]What does [']integrated circuit['] mean[?]"
+#
+#Source: https://en.oxforddictionaries.com/punctuation/inverted-commas-quotation-marks
+
+test:
+  - unit: >-
+      [']That[,]['] he said[,]  [']is nonsense[.][']  
+
+  - unit: >-
+      ["]What time will he arrive[?]" she asked[.]
+
+  - unit: >-
+      Their new single is called [']Curtain Falls['].
+      
+  - unit: >-
+      What does [']integrated circuit['] mean[?]
+
+  - unit: >-
+      He called this phenomenon ["]the memory of water[.]"
+      
+  - unit: >-
+      Professor Flynn began with[,] ["]Even if you|'ve never read a word of Shakespeare[,] 
+      I|'m sure you|'ve heard [']To be or not to be['] a thousand times[.]"
+  
+  - unit: >-
+      She still sounds amazed when she says[:] ‘|We were turned down because 
+      [“]we represented too small a minority of the population[”].
+      They could still get away with saying things like that then[.]’
+

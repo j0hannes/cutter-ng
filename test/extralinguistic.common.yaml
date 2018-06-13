@@ -1,0 +1,49 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: extralinguistic entities
+
+rule:
+  - rule/common.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: and then [...]
+  - unit: and then […]
+
+  - unit: apples|, bananas|, grapefruits
+  
+  - unit: die Veranstaltung [']Kulturstadt Europas['] wurde offiziell lanciert 
+  - unit: entitled [’]Action Against Cancer[:] European Partnership[’] is very important and relevant to the times|.
+
+  - unit: "Université Paris-Sorbonne [(]Paris IV[)] und"
+  - unit: "[(]1[)] and [(]2[)]"
+  - unit: "number [(]12[)]"
+  - unit: "[3)] closing remarks"
+  - unit: "an [3)] laser light beam"
+  - unit: "[a)]"
+  - unit: "[ix)] [IX)]"
+
+  - unit: "[Parla.cat] és un espai virtual"
+  - unit: "a URL can be [https://max:muster@www.example.com:8080/index.html?p1=A&p2=B#ressource] or [mailto:zuhause@aol.com], for instance"
+  - unit: "just write to [zuhause@aol.com|+email] or [max.mustermann@gxm.de|+email]!"
+  - unit: "[mailto:me@example.com] opens the default email application when clicked on"
+  - unit: "[john.smith(comment)@example.com|+email] and [(comment)john.smith@example.com|+email] are both equivalent to [john.smith@example.com|+email]."
+  - unit: "[disposable.style.email.with+symbol@example.com], [other.email-with-dash@example.com], [x@example.com], [example@s.solutions]"
+
+  - unit: "you will find [/data], [/system], [/vendor] and [/factory] [(]or [/efs], depending on the device[)] mountpoints"
+  - unit: "After the config file has been parsed [/var/lib/lxc/android/pre-start.sh] is executed[.]"
+  - unit: "Append to [~/path/to/file]:"
+
+  - unit: "It happened in [MCCMVL]."
+  - unit: "1903 can be written as [MDCDIII] or [MCMIII]."
+
+  - unit: "Sinéad [O'Connor]"
+

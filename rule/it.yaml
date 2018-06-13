@@ -1,0 +1,131 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+it4:
+
+  - name: elision
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXel: >-
+          (?:[ldnmtscvLDNMTSCV]|[uU]n|[cC]h|[gG]l|[pP]o|\pL\p{Ll}*(?:ch|ll|un|e[lv]|r[sz]|im|s[st]|n[dtz]|o[cnmsv]|er|t[rt]|zz))[’\']
+      - _?
+      - \right
+
+  - name: ordinal numbers
+    parts:
+      - \left
+      - ?<!: '[\pL\d(.]'
+      - itQon: \d+[ºª]
+      - ?!: '\s+\p{Lu}'
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXeqA1: «
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - itXeqA2: »
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXeqA1: «
+      - \center: .+?
+      - itXeqA2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXeqB1: “
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - itXeqB2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXeqB1: “
+      - \center: .+?
+      - itXeqB2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXeqC1: ‘
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - itXeqC2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXeqC1: ‘
+      - \center: .+?
+      - itXeqC2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+
+it7:
+  - name: single letter abbreviations
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL.]
+      - itQoa: >-
+          [ZzYXWwVvUuTtSsRrPpOoNnMmLlKkJjIiHhGgFfEeDdCcBbAa][.]
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: remaining opening quotation mark
+    parts:
+      - \left
+      - ?<!: \pL
+      - itXqtA: '[«“‘]'
+      - _?:
+      - \right
+
+  - name: remaining closing quotation mark
+    parts:
+      - \left
+      - itXqtA: '[»”’]'
+      - ?!: \pL
+      - _?
+      - \right
+
+

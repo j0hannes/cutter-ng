@@ -1,0 +1,39 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special Cases in Romanian     #pronouns, vowel shift and definite article with foreign words
+
+abbr:
+  - abbr/ro.list
+
+init:
+  - init/ro.list
+
+rule:
+  - rule/common.yaml
+  - rule/ro.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: "[m-]a văzut"
+  - unit: "[te-]am văzut"
+  - unit: "[l-]ai"
+  - unit: "ți[-am]"
+  - unit: "am văzut[-o] pe Maria"
+  - unit: "într[-o] buna zi"
+  - unit: "dintr[-un]"
+  - unit: "Sărută[-mă]!"
+  - unit: "văzându[-se]"
+  - unit: "să[-și]"
+  - unit: "dulce[-i] vinul"           #vowel shift (dulce e vinul --> dulce-i vinul)
+  - unit: "nu[-i]"                    #vowel shift (nu e --> nu-i)
+  - unit: "[Jeep-ul]"                 #definite article with foreign words (Sg)
+  - unit: "[camping-uri]"             #definite article with foreign words (Pl)
+

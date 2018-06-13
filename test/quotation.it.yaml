@@ -1,0 +1,50 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in Italian
+
+abbr:
+  - abbr/it.list
+
+init:
+  - init/it.list
+
+rule:
+  - rule/common.yaml
+  - rule/it.yaml
+
+flag:
+  - no-empty-tokens
+
+# see http://www.treccani.it/enciclopedia/virgolette_(La-grammatica-italiana)//
+
+test:
+  - unit: >-
+      Diceva mia madre che quando mi portava in giro in braccio[,] da piccolo […] la gente mi vezzeggiava mormorando[:]
+      [«]Povaretto che bello[!]»[.] Mia madre che non era delle nostre parti[,] ci restava male[;] quando poi dicevano[:]
+      [«]Povaretto che begli occhioni[!]» la mamma si avviliva del tutto
+
+  - unit: >-
+      [«]Felice notte[,] venerabile Jorge[,]» disse[.] [«]Ci attendevi[?]»
+
+  - unit: >-
+      [L’]ho letto nel [“]Corriere della Sera[”] 
+
+  - unit: >-
+      Mario ha risposto|:| |«|È un ambiente molto |‘|cheap|’|»|.
+
+  - unit: >-
+      “|Ecchìssenefréga|” mi risponderanno in molti|. Io credo tuttavia che anche il corretto uso delle regole tipografiche
+      vada rispettato|, perché|, come la sintassi|, il lessico e l’|ortografia|, fa parte dell’|impiego ‘|consapevole|’ delle consuetudini scrittorie|.
+
+  - unit: >-
+      Giuseppe ha scritto|: «|Il termine inglese "|free|" ha un doppio significato e corrisponde sia all'|italiano "|libero|" che "|gratuito|"|. Questo può generare ambiguità[»].
+
+  - unit: >-
+      ma quello non resta convinto|:| |«|Giornalista|?| |Peggio|»|.
+

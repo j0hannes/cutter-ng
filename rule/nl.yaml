@@ -1,0 +1,130 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+nl4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlXeqA1: „
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - nlXeqA2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlXeqA1: „
+      - \center: .+?
+      - nlXeqA2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlXeqB1: ‚
+      - \center: .+?
+      - nlXeqB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlXeqA1: ‘
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - nlXeqA2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlXeqA1: ‘
+      - \center: .+?
+      - nlXeqA2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlXeqB1: “
+      - \center: .+?
+      - nlXeqB2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: plural s
+    parts:
+      - \left
+      - ?<!: '[\pL\d\/]'
+      - nlQps:
+        - \pL+[aeiouy][’\']s
+        - \p{Lu}+[AEIOUY][’\']s
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: genitive
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlQgn: \pL+(?:s|sch|x|sh|z)[’\']
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: diminutives and acronyms
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlQgn: >-
+          [\pL\d+]+[’'](?:tje|er|en|te?)
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: 
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlQel:
+        - zo[’\']n
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: 
+    parts:
+      - \left
+      - ?<!: \pL
+      - nlQs-: >-
+          [’\']s-\p{Lu}\pL+
+      - ?!: \pL
+      - _?
+      - \right
+

@@ -1,0 +1,133 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+rm2:
+  - name: enclosing quotation marks («+»)
+    parts:
+      - \left
+      - ?<!: \pL
+      - rmXqtC1: «
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - rmXqtC2: »
+      - ?!: \pL
+      - +EOS: 
+      - _?
+      - \right
+
+  - name: enclosing quotation marks («+»)
+    parts:
+      - \left
+      - ?<!: \pL
+      - rmXqtC1: «
+      - \center: .+?
+      - rmXqtC2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+
+
+rm4:
+  
+  - name: lexicalized word with apostrophe
+    parts:
+      - \left
+      - ?<!: \pL
+      - rmQlx:
+        - "Engiadin[’']ota"
+      - ?!: '[\pL/]'
+      - _?
+      - \right
+
+  - name: elision (final, left, closed) # [l’]implant, [ch’]igl
+    parts:
+      - \left
+      - ?<!: '[\pL\d-]'
+      - rmXelA:
+        - "[dDlLsScC][’']"
+        - "(?:[gG]l|[mMsS]i|in|mintg|egn)[’']"
+        - "(?:[cH]h|[sS][iü]ll|[mM]inch|[zZ]iev)[’']"
+        - "(?:[sS]ch|[nN]|[iI]n|[oO]ur|[bB]ler|[aA]dün|[iI]ngün|[nN]oss|[nN]ouv|[aA]ign|[nN]ügli|[eE]gn|[gG]rand)[’']"
+        - "(?:[üÜ]n|[sS]i|[tT]g|[aA]ll|[qQ]uest|[qQ]uarant|[iI]nguott|[tT]schinquant|[rR]uott|[uU]ltim|[iI]nter|[dD]rizzad)[’']"
+        - "(?:[qQ]uell|[qQ]uist|[iI]ll|[bB]ell|[gG]rond|[sS]ainz|[tT]rid|[sS]coul|[fF]orz|[mM]ezz|[dD]all|[pP]rüm|[tT]rent|[cC]uors)[’']"
+        - "(?:[cC]ull|[bB]un|[gG]uard|[cC]hatsch|[mM]intg|[sS]eguond|[pP]ac|[gG]üst|[pP]rosm|[tT]ill|[gG]iuvn|[sS]enz)[’']"
+      - ?=: '[\pL\d]'
+      - \right
+  
+  - name: elision (final, right) # [stract’]igl, [gnanc’]ün
+    parts:
+      - \left
+      - ?<!: \pL
+      - rmXelB1: >-
+          [\pL]+[’']
+      - rmXelB2:
+        - "(?:in|ins|ün|igl)"
+      - ?!: '[\pL\d]'
+      - \right
+
+  - name: elision (initial) # i[’l]
+    parts:
+      - \left
+      - ?<=: '[\pL]'
+      - rmXelC:
+        - "[’'](?:gl|l|la|d|s|ls|ns|m|n|na|t)"
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: elision (final, left, open)
+    parts:
+      - \left
+      - ?<!: '[\pL\d-]'
+      - rmXelD:
+        - "[a-züA-ZÜ][a-z]*[^aeiouü][’']"
+      - ?=: '\pL+'
+      - \right
+
+  - name: ordinal numbers
+    parts:
+      - \left
+      - ?<!: '[\pL\d(.]'
+      - rmQon: \d+[.]
+      - ?!: '\s+\p{Lu}'
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: single letter abbreviations
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL.]
+      - rmQoa: >-
+          [a-zA-Zàòùâéü][.]
+      - ?!: \pL
+      - _?
+      - \right
+
+
+rm8:
+  - name: one-letter abbreviation
+    parts:
+      - rmQabbr: '[A-Z][.]'
+      - _
+      - \right
+
+  - name: regular Romansh token
+    parts:
+      - rmRtkA:
+        - '(?:[a-zA-Zàòùâéü]+-)*[a-zA-Zàòùâéü]+'
+      - _
+      - \right
+
+  - name: regular Romansh token (final)
+    parts:
+      - rmRtokB:
+        - '(?:[a-zA-Zàòùâé]+-)*[a-zA-Zàòùâé]+'
+

@@ -1,0 +1,444 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+common0:
+
+  - name: text-final newline characters
+    parts:
+      - -newlines: (?s)
+      - \left: .*
+      - -marker: >-
+          [\n\r]+
+
+  - name: text-initial newline characters
+    parts:
+      - -newlines: (?s)
+      - -marker: >-
+          [\n\r]+
+      - _?
+      - \right
+
+  - name: newline characters mark end of sentence
+    parts:
+      - -newlines: (?s)
+      - \left: .*?
+      - -marker: >-
+          [\n\r]+
+      - +EOS1
+      - _?
+      - \right
+
+  - name: protected text (enclosed by Unicode code points U+2402 and U+2403)
+    parts:
+      - \left
+      - -start: "\u2402"
+      - +cover: .*?
+      - -end: "\u2403"
+      - _?
+      - \right
+
+  - name: text-initial end-of-sentence marker
+    parts:
+      - -marker: "\u241F"
+      - \right
+
+  - name: end-of-sentence marker
+    parts:
+      - \left
+      - +dot: '[.!?]?'
+      - _?
+      - ?<!: >-
+          [\pL\pP]
+      - +EOS2
+      - \quotation: >-
+          [«‘‛“‟‹"\']?
+      - -marker: "\u241F"
+      - \right
+
+
+common1:
+
+  - name: xml tag, comment, declaration or entity
+    parts:
+      - \left
+      - +xml:
+        - >-
+            <[/!]?[\w:]+(?:\s+[\w:-]+(?:=(?:"[^"]+"|[\w-]+))?)*\s*/?>
+        - >-
+            <!--[^>]+-->
+        - >-
+            <[?][^>]+[?]>
+        - >-
+            [&](?:[#](?:\d+|x[\da-fA-F]+)|\w+);
+      - _?
+      - \right
+
+
+common3:
+  - name: ellipsis
+    parts:
+      - \left
+      - +ellip: >-
+          [.]{3,}|…
+      - _?
+      - \right
+
+  - name: enclosing parentheses
+    parts:
+      - \left
+      - ?<!: \pL
+      - +enbrA1: "[(]"
+      - \center: .+?
+      - +enbrA2: "[)]"
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: enclosing braces
+    parts:
+      - \left
+      - ?<!: \pL
+      - +enbrB1: "[{]"
+      - \center: .+?
+      - +enbrB2: "[}]"
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: enclosing chevrons
+    parts:
+      - \left
+      - ?<!: \pL
+      - +enbrC1: >-
+          \[
+      - \center:
+      - +enbrC2: >-
+          \]
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: email
+    parts:
+      - \left
+      - ?<!: '[\pL.):+-]'
+      - +email: >-
+          (?:mailto:)?(?:[(][^)]+[)])?[a-z_.+-]+(?:[(][^)]+[)])?@(?:[a-z_-]+[.])+[a-z]{2,}
+      #- ?!: '[.]'
+      - _?
+      - \right
+
+  - name: unix file name
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d.:/@~-]
+      - +file:
+          - (?:~|[.]{0,2})(?:/\S+)*/[\pL\d._*-]*[\pL\d_*-]
+          - (?:[A-Z]:)?(?:[.]{0,2}|~)(?:\\.+)*\\[\pL\d._*-]*[\pL\d_*-]
+      - ?!: >-
+          [\pL/]
+      - _?
+      - \right
+
+  - name: url
+    parts:
+      - \left
+      - ?<!:
+          [\pL@]
+      - +url:
+        - >-
+          (?:[a-z]{2,}://)(?:\w+(?::\w+)?@)?(?:[a-z_-]+[.])+[a-z]{2,}(?::\d+)?(?:/(?:\S*))?
+        - >-
+          (?:\S+:\S*@)?(?:[a-zA-Z][a-z_-]+[.])+[a-z]{1,}(?:/(?:\S*))?
+      - ?<!: >-
+          [.]
+      - ?!: >-
+          [\pL@(+-]|[.]\S
+      - _?
+      - \right
+
+  - name: numeric item
+    parts:
+      - \left
+      - ?<!: '[\pL\d(]'
+      - +item:
+        - >-
+          [(]?\d+[)]
+        - >-
+          [(]?(?:\d\d?|\pL|(?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?))[)]
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: Roman numeral
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\pS\d/(]
+      - +ronum: >-
+          (?=[IVXLCDM]{2,})M{0,4}(?:CM|CD|D?C{0,3}D?)(?:XC|XL|L?X{0,3}L?)(?:IX|IV|V?I{0,3}V?)
+      - ?!: >-
+          [\pL\d/)-]
+      - _?
+      - \right
+
+  - name: names with apostrophe
+    parts:
+      - \left
+      - ?<!: \pL
+      - +name: O[’']\p{Lu}\pL+
+      - _?
+      - \right
+
+  - name: date
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - +date:
+        - (?:3[01]|[012]\d)[.](?!00)(?:1[0-2]|0?\d)[.](?:\d{4}|\d{2})?
+        - (?:3[01]|[012]\d)/(?:1[0-2]|0\d)/\d{2}(?:\d{2})?
+        - (?:3[01]|[012]\d|[1-9])-(?!00)(?:1[0-2]|0?\d|[1-9])-(?:\d{4}|\d{2})?
+        - \d{4}-\d{2}-\d{2}
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: number with space # e.g. telephone number
+    parts:
+      - \left
+      - ?<!: '[\pL\d/]'
+      - +numspc: >-
+          \d+(?:[\p{Zs}/]\d+)+
+      - ?!: '[/\d\pL]'
+      - _?
+      - \right
+
+  - name: coordinate
+    parts:
+      - \left
+      - ?<!: \pL
+      - (:
+        - +coord1: \d+
+        - _?
+        - +coord2: °
+        - _?
+      - +coord3: \d+
+      - _?
+      - +coord4: >-
+          [’\'′]
+      - _?
+      - +coord5: \d+
+      - _?
+      - +coord6: >-
+          [”"″]
+      - _?
+      - (:
+        - +coord7: \p{Lu}
+        - _?
+      - \right
+
+  - name: comma coordinate
+    parts:
+      - \left
+      - ?<!: \pL
+      - +ccoor1: \d[\d.,]+\d
+      - _?
+      - +ccoor2: °
+      - ?!: [CKF]
+      - _?
+      - (:
+        - +ccoor3: \p{Lu}
+        - _?
+      - \right
+
+
+  - name: time
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - +time: (?:[01]\d|2[0-4])\d?[.:][0-5]\dh?(?:[:][0-5]\d)?
+      - ?!: '[\pL\d,.]'
+      - _?
+      - \right
+
+  - name: ratio
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d’\'.,-]
+      - +numrt: \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*?[:]\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*?
+      - ?!: >-
+          [\pL\d’\'.-]
+      - ?!: >-
+          [,]\S
+      - _?
+      - \right
+
+  - name: number range
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d’\'.,-]
+      - +numrg: \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*[−–—-]\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*
+      - ?!: >-
+          [\pL\d’\'.-]
+      - ?!: >-
+          [,]\S
+      - _?
+      - \right
+
+  - name: number with dash
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d’\'.,-]
+      - +numdf: \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*[,.][−–—-]
+      - ?!: >-
+          [\pL\d’\'-]
+      - _?
+      - \right
+
+  - name: percentage
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d’\'.,-]
+      - +numpcA: >-
+          [+]?\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:-(?=[\s%]))?
+      - _?
+      - +numpcB: "%"
+      - ?!: >-
+          [\pL\d’\'.-]
+      - _?
+      - \right
+
+
+  - name: number
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d’\'.,-]
+      - +number: >-
+          [+]?\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:-(?=\s))?
+      - ?!: >-
+          [\pL\d’\'.-]
+      - _?
+      - \right
+
+  - name: sentence-final punctuation
+    parts:
+      - \left
+      - +dot: '[.!?]'
+      - +EOS3
+      - _?
+      - ?=: '[\p{Lu}\d„“«]'
+      - \right
+
+
+
+common6:
+  - name: enclosing typewriter quotation marks
+    parts:
+      - \left
+      - ?<!: \pL
+      - +edq1: '"'
+      - \center: '[^"]+'
+      - +edq2: '"'
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing typewrite apostrophs
+    parts:
+      - \left
+      - ?<!: \pL
+      - +esq1: "'"
+      - \center: "[^']+"
+      - +esq2: "'"
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: punctuation
+    parts:
+      - \left
+      - +punct: >-
+          [?]!|[,!?:;]
+      - _?
+      - \right
+
+  - name: sentence-final dot
+    parts:
+      - \left
+      - +dot: '[.]'
+      - +EOS4
+      - _
+      - ?=: '\p{Lu}'
+      - \right
+
+
+common9:
+  - name: sentence-final dot (at the end)
+    parts:
+      - \left
+      - +dot: '[.]'
+      - +EOS5
+      - _?
+
+  - name: amul -- remove?
+    parts:
+      - \left
+      - ?<!: \pL
+      - +amul: \pL[.](?:\pL[.])+?
+      - ?>!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: midn -- remove?
+    parts:
+      - \left
+      - ?<!: \pL
+      - +midn1: \p{Lu}\pL+?
+      - _?
+      - +midn2: \p{Lu}[.]
+      - ?!: \pL
+      - _
+      - \right
+
+  - name: quotation left; remaining quotation marks (including wrong ones)
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - +quotA: >-
+          [\p{Pi}\'’"„−–—]
+      - _?
+      - \right
+
+  - name: quotation right; remaining quotation marks (including wrong ones)
+    parts:
+      - \left
+      - +quotB: >-
+          [\p{Pf}\'"“„−–—]
+      - ?!: >-
+          [\pL\d]
+      - _?
+      - \right
+
+  - name: split at whitespace, only letters
+    parts:
+      - +token: \pL+
+      - _
+      - \right
+
+  - name: split at whitespace # default rule
+    parts:
+      - +other: \PZ+
+      - _
+      - \right
+

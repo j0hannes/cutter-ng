@@ -1,0 +1,40 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in Dutch
+
+abbr:
+  - abbr/nl.list
+
+init:
+  - init/nl.list
+
+rule:
+  - rule/common.yaml
+  - rule/nl.yaml
+
+flag:
+  - no-empty-tokens
+
+#Both [' '] and [" "] used
+#Direct speech within direct speech: either ["]['][']["] or [']["]["][']
+#Source: http://taaladvies.net/taal/advies/vraag/11/dubbele_of_enkele_aanhalingstekens_bij_een_citaat/
+
+test:
+  - unit: >-
+      [']Zeg Rob[,]' vroeg Jolanda[,] [']denk jij dat de brug zal instorten[?]' 
+
+  - unit: >- 
+      De voorzitter zei[:] ["]Ik zie hier geen been in[.]"
+
+  - unit: >-
+      De koning zei[:] ["]Ik herinner me nog dat iemand [']Vive la république['] riep tijdens mijn eedaflegging[.]"
+
+  - unit: >-
+      Zij fluisterde iets van [']eeuwig trouw['] en [']altijd blijven houden van['].
+    

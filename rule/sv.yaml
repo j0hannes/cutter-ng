@@ -1,0 +1,121 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+sv4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtA1: ”
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - svXqtA2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtA1: ”
+      - \center: .+?
+      - svXqtA2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtB1: ’
+      - \center:
+      - svXqtB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative first level, first variant)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtC1: »
+      - ?=: \pL
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - svXqtC2: «
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative first level, first variant)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtC1: »
+      - ?=: \pL
+      - \center: .+?
+      - ?<=: \pL
+      - svXqtC2: «
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative first level, second variant)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtD1: »
+      - ?=: \pL
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - svXqtD2: »
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative first level, second variant)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtD1: »
+      - ?=: \pL
+      - \center: .+?
+      - ?<=: \pL
+      - svXqtD2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (alternative second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svXqtE1: ’
+      - ?=: \pL
+      - \center: .+?
+      - ?<=: \pL
+      - svXqtE2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: # e.g. SVT:s
+    parts:
+      - \left
+      - ?<!: \pL
+      - svQac: (?:\p{Lu}+|\p{Nd}+%?|%)[:]\p{Ll}+
+      - ?!: \pL
+      - _?
+      - \right
+

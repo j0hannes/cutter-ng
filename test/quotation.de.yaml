@@ -1,0 +1,38 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in German
+
+abbr:
+  - abbr/de.list
+
+init:
+  - init/de.list
+
+rule:
+  - rule/common.yaml
+  - rule/de.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      „|Was|?!|“ Meine Freundin ließ ihr Handy sinken|.
+      „|Das hat jemand getwittert und ich find|’s befreiend|.|“
+      „|Inwiefern|?|“ fragte ich|, während sie sich hektisch eine Zigarette ansteckte|.
+
+  - unit: >-
+      Auf die Frage der Lehrerin|, wie die Schüler sich denn eine TV-Welt ohne SRF vorstellen|, gehen die Meinungen auseinander|.
+      Robin würde Sendungen wie «|Einstein|» und «|SRF bi de Lüt|» vermissen|, während Cheryl überzeugt ist|, dass dann überall nur noch Werbung|, so «[‹Bachelor›-Scheiss]» oder mies ­geschauspielerte Richtersendungen laufen würden|.
+      Nicht vermissen würde man Moderator Roman Kilchsperger|, da ist man sich einig|. «|Und was haltet ihr von Franz Fischlin[?]»|, fragt die Lehrerin|, als es um den Lohn der SRG-Mitarbeiter geht|.
+      Der Name des [«Tagesschau»-Moderators] sagt jedoch niemandem etwas|.
+
+  - unit: >-
+      Jonas hat schon früher einen Instagram-Kanal des Duos abonniert und ist den beiden in ihre neue [«Zwei am Morge»-Show] gefolgt|. Sein Fazit|: «|Schon noch witzig|.|»
+

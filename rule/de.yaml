@@ -1,0 +1,268 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+de2:
+
+  - name: enclosing quotation marks („+“)
+    parts:
+      - \left
+      - ?<!: '[\pL-]'
+      - deXqtA1: „
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - deXqtA2: “
+      - ?!: >-
+          [\pL−–—-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks („+“)
+    parts:
+      - \left
+      - ?<!: '[\pL-]'
+      - deXqtA1: „
+      - \center: .+?
+      - deXqtA2: “
+      - ?!: >-
+          [\pL−–—-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (‚+‘)
+    parts:
+      - \left
+      - ?<!: \pl
+      - dexqtb1: ‚
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - dexqtb2: ‘
+      - ?!: >-
+          [\pL−–—-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (‚+‘)
+    parts:
+      - \left
+      - ?<!: \pl
+      - dexqtb1: ‚
+      - \center: .+?
+      - dexqtb2: ‘
+      - ?!: >-
+          [\pL−–—-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks («+»)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deXqtC1: «
+      - \center: .+?
+      - deXqtC2: »
+      - ?!: >-
+          [\pL−–—-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks («+»)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deXqtC1: «
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - deXqtC2: »
+      - ?!: >-
+          [\pL−–—-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (‹+›)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deXqtD1: ‹
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - deXqtD2: ›
+      - ?!: >-
+          [\pL−–—-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (‹+›)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deXqtD1: ‹
+      - \center: .+?
+      - deXqtD2: ›
+      - ?!: >-
+          [\pL−–—-]
+      - _?
+      - \right
+
+
+de4:
+
+  - name: date expression
+    parts:
+      - \left
+      - ?<!: \pL
+      - (:
+        - deXdt1: \d+[.]
+        - _:
+        - deXdt2: und|bis
+        - _:
+      - deXdt4: \d+[.]
+      - _: 
+      - deXdt5:
+        - Jan(?:uar|[.])
+        - Feb(?:ruar|[.])
+        - März
+        - Apr(?:il|[.])
+        - Mai
+        - Ju[nl](?:i|[.])
+        - Aug(?:ust|[.])
+        - Sep(?:tember|[.])
+        - Okt(?:ober|[.])
+        - Nov(?:ember|[.])
+        - Dez(?:ember|[.])
+        - Jahr(?:(?:hundert|tausend)s?|estags?)
+      - (:
+        - _:
+        - deXdt6:
+          - \d{4}
+          - >-
+            [’\']?\d{2}
+      - _?
+      - \right
+
+  - name: elision of the e in 'es'
+    parts:
+      - \left
+      - ?<=: \pL
+      - deXes: >-
+          [’\']s
+      - ?!: \pL
+      - _?
+      - \right
+
+  # quotation characters
+
+  - name: compound nouns starting with a number
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - deQnm: >-
+          \pL+[−–—-]\d+[−–—-]\pL+
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+  
+  - name: compound nouns with quoted part („...“-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQqtnA: >-
+          „\pL[\pL\s−–—-]+(?<=\pL)“[−–—-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (‚...‘-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQqtnB: >-
+          ‚\pL[\pL\s−–—-]+(?<=\pL)‘[−–—-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part («...»-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQqtnC: >-
+          «\pL[\pL\s−–—-]+(?<=\pL)»[−–—-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part («...»-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQqtnD: >-
+          ‹\pL[\pL\s−–—-]+(?<=\pL)›[−–—-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (...-„...“)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQnqtA: >-
+          \pL+[−–—-]„\pL[\pL\s−–—-]+(?<=\pL)“
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (...-‚...‘)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQnqtB: >-
+          \pL+[−–—-]‚\pL[\pL\s−–—-]+(?<=\pL)‘
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (...-«...»)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQnqtC: >-
+          \pL+[−–—-]«\pL[\pL\s−–—-]+(?<=\pL)»
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (...-«...»)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQnqtD: >-
+          \pL+[−–—-]‹\pL[\pL\s−–—-]+(?<=\pL)›
+      - ?!: \pL
+      - _?
+      - \right
+
+
+de8:
+  - name: regular German token
+    parts:
+      - deRtkA:
+        - '[a-zA-ZäöüÄÖÜß]+[-]?'
+        - '(?:[a-zA-ZäöüÄÖÜß]+-)+[a-zA-ZäöüÄÖÜß]+'
+      - _
+      - \right
+
+  - name: regular German token (final)
+    parts:
+      - deRtkB:
+        - '[a-zA-ZäöüÄÖÜß]+'
+        - '(?:[a-zA-ZäöüÄÖÜß]+-)+[a-zA-ZäöüÄÖÜß]+'
+

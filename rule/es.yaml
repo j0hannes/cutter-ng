@@ -1,0 +1,125 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+es4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - esXqtA1: «
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - esXqtA2: »
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - esXqtA1: «
+      - \center: .+?
+      - esXqtA2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - esXqtB1: “
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - esXqtB2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - esXqtB1: “
+      - \center: .+?
+      - esXqtB2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - esXqtB1: ‘
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - esXqtB2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - esXqtB1: ‘
+      - \center: .+?
+      - esXqtB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing en dashes
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - +endaA1: –
+      - \center: \PZ.*?\PZ
+      - +endaA2: –
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: enclosing em dashes
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - +endaB1: —
+      - \center: \PZ.*?\PZ
+      - +endaB2: —
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: enclosing hyphen
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - +endaC1: '-'
+      - \center: \PZ.*?\PZ
+      - +endaC2: '-'
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+es8:
+  - name: initial punctuation
+    parts:
+      - \left
+      - _?
+      - ?<!: '[\pL\d]'
+      - +dot: '[¿¡]'
+      - ?=: '[\pL\d]'
+      - \right
+

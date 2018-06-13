@@ -1,0 +1,135 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special cases in Romansh (all variants)
+
+abbr:
+  - abbr/rm.list
+
+init:
+  - init/rm.list
+
+rule:
+  - rule/common.yaml
+  - rule/rm.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  # sutsilvan
+  - unit: "[l’]emissiùn"
+  - unit: "[c’]e"
+  - unit: "[s’]adateschan"
+  - unit: "d’|altars d’|unfrenda"
+  - unit: "â[’gl]"                  # â + igl
+  - unit: "â[’la]"
+  - unit: "lusch’|â|’l"
+  - unit: "[ardev’]igl"
+  - unit: "egn’|eada"               # egna + eada
+  - unit: "mintg’|eada"             # mintga + eada
+  - unit: "mintg’|on"               # mintga + on
+  - unit: "l’|amprem’|eada"         # la + amprema + eada
+  - unit: "gl’|amprem"              # igl + amprem
+  - unit: "egn’|amprema"            # egna + amprema
+  - unit: "tge uras e|'gl|?"        # e + igl
+  - unit: "in'|atgna"
+  - unit: "la mi'|sora"
+  - unit: "emprov'|ins"
+  - unit: "bell'|entschatta"
+  - unit: "sch'|ella"
+  - unit: "Engiadin'ota"
+  - unit: "lavuors d’|infrastructura i|’l quartier da Chaunt da Crusch"
+  - unit: "Ziev’|avair"
+  - unit: "d’|ün’|ordinaziun"
+  - unit: "d’|infuormaziund’|üna"
+
+  - unit: "â survagnieu igl [1.] da zarcladur"
+
+  - unit: Tar las sias ovras prinzipalas s’odan la pùnt da las Veiasmalas digls 1935 (2. pùnt) a 1938 (1. pùnt), las corecturas digl Ragn ad Andeer digls ons 40 a la restauraziùn da la baselgia San Martegn a Ziràn.
+    tokens:
+      - Tar
+      - las
+      - sias
+      - ovras
+      - prinzipalas
+      - s’
+      - odan
+      - la
+      - pùnt
+      - da
+      - las
+      - Veiasmalas
+      - digls
+      - '1935'
+      - (
+      - '2.'
+      - pùnt
+      - )
+      - a
+      - '1938'
+      - (
+      - '1.'
+      - pùnt
+      - )
+      - ','
+      - las
+      - corecturas
+      - digl
+      - Ragn
+      - ad
+      - Andeer
+      - digls
+      - ons
+      - '40'
+      - a
+      - la
+      - restauraziùn
+      - da
+      - la
+      - baselgia
+      - San
+      - Martegn
+      - a
+      - Ziràn
+      - .
+
+  - unit: "Actualmaing ha lö i’l post d’infuormaziun dal Parc naziunal svizzer a Samedan ün’exposiziun davart il tema: «Müdamaint dal clima e privels da la natüra»."
+    tokens:
+      - Actualmaing
+      - ha
+      - lö
+      - i
+      - ’l
+      - post
+      - d’
+      - infuormaziun
+      - dal
+      - Parc
+      - naziunal
+      - svizzer
+      - a
+      - Samedan
+      - ün’
+      - exposiziun
+      - davart
+      - il
+      - tema
+      - ':'
+      - «
+      - Müdamaint
+      - dal
+      - clima
+      - e
+      - privels
+      - da
+      - la
+      - natüra
+      - »
+      - .
+

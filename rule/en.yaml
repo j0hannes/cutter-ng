@@ -1,0 +1,62 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+en4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - enXqtA1: “
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - enXqtA2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - enXqtA1: “
+      - \center: .+?
+      - enXqtA2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - enXqtB1: ‘
+      - \center: .+?
+      - enXqtB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: contraction/elision
+    parts:
+      - \left
+      - ?<=: \pL
+      - enXct:
+        - "[’']s"
+        - "[’'][rv]e"
+        - "[’']d"
+        - "[’']e?m"
+        - "[’']ll"
+        - "n[’']t"
+        - >-
+          \pL+in[’']
+      - ?!: \pL
+      - _?
+      - \right
+

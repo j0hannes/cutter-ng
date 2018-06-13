@@ -1,0 +1,44 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special Cases in Portuguese
+
+abbr:
+  - abbr/pt.list
+
+init:
+  - init/pt.list
+
+rule:
+  - rule/common.yaml
+  - rule/pt.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: "[caixa-d'água]"                  #lexicalized item
+  - unit: "[galinha-d'angola]"              #lexicalized item
+  - unit: "[pau-d'alho]"                    #lexicalized item
+  - unit: "[papagaio-de-rabo-vermelho]"     #lexicalized item
+  - unit: "[terça-feira]"                   #lexicalized item
+  - unit: "quero[-o]"
+  - unit: "levar[-vos][-ia]"                #mesoclitic
+  - unit: "levar[-vo][-los][-ia]"           #mesoclitic
+  - unit: "comprá[-lo][-ei]"                #mesoclitic
+  - unit: "matá[-lo][-ás]"                  #mesoclitic
+  - unit: "comê[-lo][-ias]"                 #mesoclitic
+  - unit: "levantar[-nos][-emos]"           #mesoclitic
+  - unit: "aborreço[-me]"
+  - unit: "levantas[-te]"
+  - unit: "fá[-lo]"
+  - unit: "tem[-la]"
+  - unit: "levantou[-se]"
+  - unit: "viu[-nos]"
+  - unit: "levantais[-vos]"
+

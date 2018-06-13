@@ -1,0 +1,85 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+ro4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - roXqtA1: „
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - roXqtA2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - roXqtA1: „
+      - \center: .+?
+      - roXqtA2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - roXqtB1: «
+      - \center: .+?
+      - roXqtB2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: attached pronouns (prepended)
+    parts:
+      - \left
+      - ?<!: \pL
+      - roXprA:
+        - '[mlsvi]-'
+        - '[ntl]e-'
+        - '[tm]i-'
+      - ?=: \pL
+      - _?
+      - \right
+
+  - name: attached pronouns (appended)
+    parts:
+      - \left
+      - ?<=: \pL
+      - roXprB:
+        - '-[mt]i'
+        - '-i'
+        - '-l'
+        - '-am'
+        - '-[nls]e'
+        - '-[vm]ă'
+        - '-și'
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: attached determiners (appended)
+    parts:
+      - \left
+      - ?<=: \pL
+      - roXdt:
+        - '-o'
+        - '-un'
+      - ?!: \pL
+      - _?
+      - \right
+
+

@@ -1,0 +1,39 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in French
+
+abbr:
+  - abbr/fr.list
+
+init:
+  - init/fr.list
+
+rule:
+  - rule/common.yaml
+  - rule/fr.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      [«] L’|ouvreuse [m’]a dit [:] [‹] Donnez|-moi votre ticket[.] › Je le lui ai donné[.] »
+
+  - unit: >-
+      [«] L’|ouvreuse [m’]a dit [:] [“]Donnez|-moi votre ticket[.]” Je le lui ai donné[.] »
+
+  - unit: >-
+      [«] L’|ouvreuse [m’]a dit [:] [«] Donnez|-moi votre ticket[.] » Je le lui ai donné[.] »
+      
+  - unit: >-
+      Raymond Queneau écrivait de [l']histoire qu'elle est [«] la science du malheur des hommes [»]. 
+
+    unit: >-
+      Luc m’|écrit [:] « Elle [m’]a dit [:] “|Ce prétendu [‘]chef-d’œuvre[’] est un navet|.[”] »
+

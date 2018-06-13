@@ -1,0 +1,43 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Quotation in Portuguese
+
+abbr:
+  - abbr/pt.list
+
+init:
+  - init/pt.list
+
+rule:
+  - rule/common.yaml
+  - rule/pt.yaml
+
+flag:
+  - no-empty-tokens
+
+#both [« »] and [" "] are used ([''] with quotations within quotations)
+
+test:       
+  - unit: >-
+      [«]Isto é um exemplo de como fazer uma citação em português europeu[.]»
+    
+  - unit: >-
+      Maria disse[,] ["]Estou muito zangada contigo["].
+
+  - unit: >- 
+      A palavra [“]menu[”] é um estrangeirismo que quer dizer ementa[.]
+      
+  - unit: >-
+      O título é [«]Os incendiários do futebol português[»] e tem considerações que nos 
+      transmitem uma ideia do que passa lá para fora[:] [«]Provavelmente não há no mundo 
+      um país com futebolistas mais pacíficos e dirigentes mais violentos[.] Falamos de Portugal[»].
+      
+  - unit: >- 
+      O aluno explicou à professora o que aconteceu[:] “|Ela foi chamada de [‘]quatro-olhos[’] e ficou muito triste[”].
+    

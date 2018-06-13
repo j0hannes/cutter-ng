@@ -1,0 +1,41 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: xml elements
+
+rule:
+  - rule/common.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - name: xml declaration
+    unit: >-
+      an XML declaration like [<?xml version="1.0" encoding="UTF-8" standalone="yes"?>|+xml]
+
+  - name: xml comment
+    unit: >-
+      the following text is [<!-- not -->] visible
+
+  - name: xml empty-element tag 1
+    unit: >-
+      as you can see in [<report content="A5-0003/2000" />], it is easy
+
+  - name: xml empty-element tag 2
+    unit: >-
+      [<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>]
+
+  - name: xml tag
+    unit: >-
+      you can use [<b>]bold[</b>] or [<i>]italic[</i>] text
+
+  - name: xml entity
+    unit: >-
+      [&sup2;] [&quot;] [&1234;] [&xf3b4;]
+
