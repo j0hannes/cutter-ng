@@ -104,7 +104,7 @@ fr4:
         - "[Pp]resqu[’']îles?"
         - "[Pp]rud[’']hom(?:al(?:es?)?|m?aux|mal(?:es?)?|mes?)"
         - "[Qq]uelqu[’']une?"
-        - "[Ee]ntr[’'](?:aide[rs]?|ouverte?s?|ouvrir)"
+        - "[Ee]ntr[’'](?:aide[rs]?|ouv[eè]rte?s?|ouvrir)"
         - "[Tt]rompe-l[’']oeil"
         - "(?:[Ee]lle|[Ii]l||[Ll]ui|[MTSmts]oi)-même"
         - "(?:[Ee]lles|[Ee]ux|[Nn]ous|[Vv]ous)-mêmes"

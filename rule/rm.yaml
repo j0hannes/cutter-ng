@@ -112,7 +112,7 @@ rm4:
       - \right
 
 
-rm8:
+rm7:
   - name: one-letter abbreviation
     parts:
       - rmQabbr: '[A-Z][.]'
@@ -126,6 +126,8 @@ rm8:
       - _
       - \right
 
+
+rm9:
   - name: regular Romansh token (final)
     parts:
       - rmRtokB:

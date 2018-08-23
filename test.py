@@ -220,7 +220,7 @@ def main(argv):
             sys.exit(6)
         if not 'test' in testset or not testset['test']:
             print("There is no test in `{}'.".format(testfile.name))
-            sys.exit(7)
+            continue
         flags = (
             flag_wt * Cutter.WHITESPACE_TOKENS
             + flag_et * Cutter.EMPTY_TOKENS

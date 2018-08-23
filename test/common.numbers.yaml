@@ -32,6 +32,7 @@ test:
   - unit: 33[']46["]N
   - unit: 27[']24["]N
   - unit: 7[°]13[’]37[″]
+  - unit: N|47|°|24|'|48|"|,  |E|8|°|32|'|56|"
   - unit: Uran is located at [18.88]°[N] [72.94]°[E].
 
   - unit: "[4.5-10.7|+numrg]"
@@ -59,4 +60,11 @@ test:
 
   - unit: call [076 543 271|+numspc]
   - unit: call [076/543 271|+numspc]
+  - unit: >-
+      Phone|: [+41 44 635 67 21]
+
+  - markers:
+      - '‹'
+      - '›'
+    unit: see Volk‹[1]›
 

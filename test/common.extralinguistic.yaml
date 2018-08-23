@@ -46,4 +46,5 @@ test:
   - unit: "1903 can be written as [MDCDIII] or [MCMIII]."
 
   - unit: "Sinéad [O'Connor]"
+  - unit: "recurring events like [#conference2012|+hashtg] or [#SXSW12|+hashtg]"
 

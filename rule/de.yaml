@@ -17,7 +17,7 @@ de2:
       - +dot: "[.?!]+"
       - deXqtA2: “
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - +EOS:
       - _?
       - \right
@@ -30,7 +30,7 @@ de2:
       - \center: .+?
       - deXqtA2: “
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - _?
       - \right
 
@@ -43,7 +43,7 @@ de2:
       - +dot: "[.?!]+"
       - dexqtb2: ‘
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - +EOS:
       - _?
       - \right
@@ -56,7 +56,7 @@ de2:
       - \center: .+?
       - dexqtb2: ‘
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - _?
       - \right
 
@@ -68,7 +68,7 @@ de2:
       - \center: .+?
       - deXqtC2: »
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - _?
       - \right
 
@@ -81,7 +81,7 @@ de2:
       - +dot: "[.?!]+"
       - deXqtC2: »
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - +EOS:
       - _?
       - \right
@@ -95,7 +95,7 @@ de2:
       - +dot: "[.?!]+"
       - deXqtD2: ›
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - +EOS:
       - _?
       - \right
@@ -108,7 +108,7 @@ de2:
       - \center: .+?
       - deXqtD2: ›
       - ?!: >-
-          [\pL−–—-]
+          [\pL‐-]
       - _?
       - \right
 
@@ -144,7 +144,7 @@ de4:
         - deXdt6:
           - \d{4}
           - >-
-            [’\']?\d{2}
+            [’']?\d{2}
       - _?
       - \right
 
@@ -165,7 +165,7 @@ de4:
       - \left
       - ?<!: '[\pL\d]'
       - deQnm: >-
-          \pL+[−–—-]\d+[−–—-]\pL+
+          \pL+[‐-]\d+[‐-]\pL+
       - ?!: '[\pL\d]'
       - _?
       - \right
@@ -175,7 +175,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQqtnA: >-
-          „\pL[\pL\s−–—-]+(?<=\pL)“[−–—-]\pL+
+          „\pL[\pL\s‐-]+(?<=\pL)“[‐-]\pL+
       - ?!: \pL
       - _?
       - \right
@@ -185,7 +185,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQqtnB: >-
-          ‚\pL[\pL\s−–—-]+(?<=\pL)‘[−–—-]\pL+
+          ‚\pL[\pL\s‐-]+(?<=\pL)‘[‐-]\pL+
       - ?!: \pL
       - _?
       - \right
@@ -195,7 +195,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQqtnC: >-
-          «\pL[\pL\s−–—-]+(?<=\pL)»[−–—-]\pL+
+          «\pL[\pL\s‐-]+(?<=\pL)»[‐-]\pL+
       - ?!: \pL
       - _?
       - \right
@@ -205,7 +205,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQqtnD: >-
-          ‹\pL[\pL\s−–—-]+(?<=\pL)›[−–—-]\pL+
+          ‹\pL[\pL\s‐-]+(?<=\pL)›[‐-]\pL+
       - ?!: \pL
       - _?
       - \right
@@ -215,7 +215,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQnqtA: >-
-          \pL+[−–—-]„\pL[\pL\s−–—-]+(?<=\pL)“
+          \pL+[‐-]„\pL[\pL\s‐-]+(?<=\pL)“
       - ?!: \pL
       - _?
       - \right
@@ -225,7 +225,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQnqtB: >-
-          \pL+[−–—-]‚\pL[\pL\s−–—-]+(?<=\pL)‘
+          \pL+[‐-]‚\pL[\pL\s‐-]+(?<=\pL)‘
       - ?!: \pL
       - _?
       - \right
@@ -235,7 +235,7 @@ de4:
       - \left
       - ?<!: \pL
       - deQnqtC: >-
-          \pL+[−–—-]«\pL[\pL\s−–—-]+(?<=\pL)»
+          \pL+[‐-]«\pL[\pL\s‐-]+(?<=\pL)»
       - ?!: \pL
       - _?
       - \right
@@ -245,13 +245,13 @@ de4:
       - \left
       - ?<!: \pL
       - deQnqtD: >-
-          \pL+[−–—-]‹\pL[\pL\s−–—-]+(?<=\pL)›
+          \pL+[‐-]‹\pL[\pL\s‐-]+(?<=\pL)›
       - ?!: \pL
       - _?
       - \right
 
 
-de8:
+de7:
   - name: regular German token
     parts:
       - deRtkA:
@@ -260,6 +260,8 @@ de8:
       - _
       - \right
 
+
+de9:
   - name: regular German token (final)
     parts:
       - deRtkB:

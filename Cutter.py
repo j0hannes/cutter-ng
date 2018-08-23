@@ -275,7 +275,7 @@ class Cutter:
                 [regex.escape(i) for i in self.init])),
             flags=regex.VERSION1)
         self.abbrx = regex.compile(
-            '(?<!\pL)({})(?!\pL)'.format('|'.join(
+            '(?<![\pL\d])({})(?!\pL)'.format('|'.join(
                 [regex.escape(a) for a in self.abbr])),
             flags=regex.VERSION1 + regex.REVERSE)
         self.compiled = True

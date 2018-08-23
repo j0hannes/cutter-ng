@@ -33,15 +33,6 @@ common0:
       - _?
       - \right
 
-  - name: protected text (enclosed by Unicode code points U+2402 and U+2403)
-    parts:
-      - \left
-      - -start: "\u2402"
-      - +cover: .*?
-      - -end: "\u2403"
-      - _?
-      - \right
-
   - name: text-initial end-of-sentence marker
     parts:
       - -marker: "\u241F"
@@ -50,13 +41,13 @@ common0:
   - name: end-of-sentence marker
     parts:
       - \left
-      - +dot: '[.!?]?'
+      - +dot: '[.!?]'
       - _?
       - ?<!: >-
           [\pL\pP]
       - +EOS2
       - \quotation: >-
-          [«‘‛“‟‹"\']?
+          [«‘‛“‟‹"']?
       - -marker: "\u241F"
       - \right
 
@@ -80,14 +71,6 @@ common1:
 
 
 common3:
-  - name: ellipsis
-    parts:
-      - \left
-      - +ellip: >-
-          [.]{3,}|…
-      - _?
-      - \right
-
   - name: enclosing parentheses
     parts:
       - \left
@@ -120,6 +103,23 @@ common3:
       - +enbrC2: >-
           \]
       - ?!: '[\pL\d]'
+      - _?
+      - \right
+
+  - name: protected text (enclosed by Unicode code points U+2402 and U+2403)
+    parts:
+      - \left
+      - -start: "\u2402"
+      - +cover: .*?
+      - -end: "\u2403"
+      - _?
+      - \right
+
+  - name: ellipsis
+    parts:
+      - \left
+      - +ellip: >-
+          [.]{3,}|…
       - _?
       - \right
 
@@ -163,7 +163,7 @@ common3:
       - _?
       - \right
 
-  - name: numeric item
+  - name: numeric item (1)
     parts:
       - \left
       - ?<!: '[\pL\d(]'
@@ -172,6 +172,20 @@ common3:
           [(]?\d+[)]
         - >-
           [(]?(?:\d\d?|\pL|(?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?))[)]
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: numeric item (2)
+    parts:
+      - \left
+      - +item:
+        - >-
+          [\[]\d+[\]]
+        - >-
+          [(]\d+[)]
+        - >-
+          [(](?:\d\d?|\pL|(?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?))[)]
       - ?!: \pL
       - _?
       - \right
@@ -214,7 +228,7 @@ common3:
       - \left
       - ?<!: '[\pL\d/]'
       - +numspc: >-
-          \d+(?:[\p{Zs}/]\d+)+
+          [+]?\d+(?:[\p{Zs}/]\d+)+
       - ?!: '[/\d\pL]'
       - _?
       - \right
@@ -224,22 +238,25 @@ common3:
       - \left
       - ?<!: \pL
       - (:
-        - +coord1: \d+
+        - +coord1: \p{Lu}
         - _?
-        - +coord2: °
+      - (:
+        - +coord2: \d+
         - _?
-      - +coord3: \d+
+        - +coord3: °
+        - _?
+      - +coord4: \d+
       - _?
-      - +coord4: >-
-          [’\'′]
+      - +coord5: >-
+          [’'′]
       - _?
-      - +coord5: \d+
+      - +coord6: \d+
       - _?
-      - +coord6: >-
+      - +coord7: >-
           [”"″]
       - _?
       - (:
-        - +coord7: \p{Lu}
+        - +coord8: \p{Lu}
         - _?
       - \right
 
@@ -271,10 +288,10 @@ common3:
     parts:
       - \left
       - ?<!: >-
-          [\pL\d’\'.,-]
-      - +numrt: \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*?[:]\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*?
+          [\pL\d’'.,-]
+      - +numrt: \d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*?[:]\d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*?
       - ?!: >-
-          [\pL\d’\'.-]
+          [\pL\d’'.-]
       - ?!: >-
           [,]\S
       - _?
@@ -284,10 +301,10 @@ common3:
     parts:
       - \left
       - ?<!: >-
-          [\pL\d’\'.,-]
-      - +numrg: \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*[−–—-]\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*
+          [\pL\d’'.,-]
+      - +numrg: \d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*[−–—‐-]\d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*
       - ?!: >-
-          [\pL\d’\'.-]
+          [\pL\d’'.-]
       - ?!: >-
           [,]\S
       - _?
@@ -297,10 +314,10 @@ common3:
     parts:
       - \left
       - ?<!: >-
-          [\pL\d’\'.,-]
-      - +numdf: \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*[,.][−–—-]
+          [\pL\d’'.,-]
+      - +numdf: \d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*[,.][−–—‐‐-]
       - ?!: >-
-          [\pL\d’\'-]
+          [\pL\d’'-]
       - _?
       - \right
 
@@ -308,26 +325,27 @@ common3:
     parts:
       - \left
       - ?<!: >-
-          [\pL\d’\'.,-]
+          [\pL\d’'.,-]
       - +numpcA: >-
-          [+]?\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:-(?=[\s%]))?
+          [+]?\d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:[‐-](?=[\s%]))?
       - _?
       - +numpcB: "%"
       - ?!: >-
-          [\pL\d’\'.-]
+          [\pL\d’'.-]
       - _?
       - \right
 
 
+common5:
   - name: number
     parts:
       - \left
       - ?<!: >-
-          [\pL\d’\'.,-]
+          [\pL\d’'.,-]
       - +number: >-
-          [+]?\d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:-(?=\s))?
+          [+]?\d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:-(?=\s))?
       - ?!: >-
-          [\pL\d’\'.-]
+          [\pL\d’'.-]
       - _?
       - \right
 
@@ -350,6 +368,16 @@ common3:
       - +EOS3
       - _?
       - ?=: '[\p{Lu}\d„“«]'
+      - \right
+
+  - name: hashtag
+    parts:
+      - \left
+      - ?<!: \pL
+      - +hashtg: >-
+          \#(?!\d)[a-zA-Z\d_]+
+      - ?!: \pL
+      - _?
       - \right
 
 
@@ -395,7 +423,7 @@ common6:
       - \right
 
 
-common9:
+common8:
   - name: sentence-final dot (at the end)
     parts:
       - \left
@@ -428,7 +456,7 @@ common9:
       - \left
       - ?<!: '[\pL\d]'
       - +quotA: >-
-          [\p{Pi}\'’"„−–—]
+          [\p{Pi}'’"„−–—]
       - _?
       - \right
 
@@ -436,7 +464,7 @@ common9:
     parts:
       - \left
       - +quotB: >-
-          [\p{Pf}\'"“„−–—]
+          [\p{Pf}'"“„−–—]
       - ?!: >-
           [\pL\d]
       - _?

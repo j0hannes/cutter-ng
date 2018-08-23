@@ -1,0 +1,98 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special cases in Catalan
+
+abbr:
+  - abbr/common.list
+  - abbr/ca.list
+
+init:
+  - init/ca.list
+
+rule:
+  - rule/common.yaml
+  - rule/ca.yaml
+
+test:
+  - unit: >-
+      [l’]1 [d’]octubre
+
+  - unit: >-
+      [s']hi ha afegit
+
+  - unit: >-
+      a proposta d'|Esquera Unida
+
+  - unit: La petició d’empara a Llarena, acordada en una reunió el 16 d’agost passat, preveia –tal com s’ha fet– posar en coneixement dels ministeris de Justícia i Afers Exteriors la decisió “perquè adoptin les mesures necessàries per assegurar la integritat i immunitat de la jurisdicció espanyola davant els Tribunals del Regne de Bèlgica”.
+    tokens:
+      - La
+      - petició
+      - d’
+      - empara
+      - a
+      - Llarena
+      - ','
+      - acordada
+      - en
+      - una
+      - reunió
+      - el
+      - '16'
+      - d’
+      - agost
+      - passat
+      - ','
+      - preveia
+      - –
+      - tal
+      - com
+      - s’
+      - ha
+      - fet
+      - –
+      - posar
+      - en
+      - coneixement
+      - dels
+      - ministeris
+      - de
+      - Justícia
+      - i
+      - Afers
+      - Exteriors
+      - la
+      - decisió
+      - “
+      - perquè
+      - adoptin
+      - les
+      - mesures
+      - necessàries
+      - per
+      - assegurar
+      - la
+      - integritat
+      - i
+      - immunitat
+      - de
+      - la
+      - jurisdicció
+      - espanyola
+      - davant
+      - els
+      - Tribunals
+      - del
+      - Regne
+      - de
+      - Bèlgica
+      - ”
+      - .
+      - ''
+
+

@@ -6,21 +6,19 @@
 #
 
 ---
-name: Special Cases in Swedish
+name: Quotation in Catalan
 
 abbr:
-  - abbr/sv.list
+  - abbr/ca.list
 
 init:
-  - init/sv.list
+  - init/ca.list
 
 rule:
   - rule/common.yaml
-  - rule/sv.yaml
+  - rule/ca.yaml
 
 flag:
   - no-empty-tokens
 
-test:       
-  - unit: i [SVT:s] Agenda i kväll
-  - unit: Det rankades på [86:e] plats i världen
+test:

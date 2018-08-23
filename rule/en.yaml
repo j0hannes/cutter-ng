@@ -14,7 +14,7 @@ en4:
       - ?<!: \pL
       - enXqtA1: “
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +punct: "[.?!]+"
       - enXqtA2: ”
       - ?!: \pL
       - +EOS:

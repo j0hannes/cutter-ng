@@ -33,7 +33,7 @@ test:
       [«]Felice notte[,] venerabile Jorge[,]» disse[.] [«]Ci attendevi[?]»
 
   - unit: >-
-      [L’]ho letto nel [“]Corriere della Sera[”] 
+      [L’]ho letto nel [“]Corriere della Sera[”]
 
   - unit: >-
       Mario ha risposto|:| |«|È un ambiente molto |‘|cheap|’|»|.
@@ -48,3 +48,6 @@ test:
   - unit: >-
       ma quello non resta convinto|:| |«|Giornalista|?| |Peggio|»|.
 
+  - unit: >-
+      [«]Mi hanno tradotta male[»]
+      

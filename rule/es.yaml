@@ -113,7 +113,7 @@ es4:
       - _?
       - \right
 
-es8:
+es7:
   - name: initial punctuation
     parts:
       - \left

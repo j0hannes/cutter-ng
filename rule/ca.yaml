@@ -1,0 +1,239 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+ca4:
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXqtA1: «
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - caXqtA2: »
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXqtA1: «
+      - _?
+      - \center: .+?
+      - _?
+      - caXqtA2: »
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXqtB1: “
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - caXqtB2: ”
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXqtB1: “
+      - _?
+      - \center: .+?
+      - _?
+      - caXqtB2: ”
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXqtB1: ‘
+      - _?
+      - \center: .+?
+      - _?
+      - caXqtB2: ’
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXqtB1: ‘
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - caXqtB2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: pronoms febles (1)
+    parts:
+      - \left
+      - ?<!: >-
+          [‐-]
+      - caXpfA1: >-
+          [‐-]?[stmlnSTMLN]['’]
+      - caXpfA2:
+        - h[io]
+        - en
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: pronoms febles (2)
+    parts:
+      - \left
+      - ?<!: >-
+          [‐-]
+      - caXpfB1:
+        - >-
+            [‐-][stmSTM]e
+        - >-
+            [lL][ai]
+      - caXpfB2:
+        - >-
+            [’'][nmt]
+        - >-
+            [’'][ln]s?
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: pronoms febles (3)
+    parts:
+      - \left
+      - ?<=: \pL
+      - caXpfC1:
+        - >-
+            [‐-][stm]e
+        - >-
+            [‐-]us
+        - >-
+            [‐-][nv]os
+        - >-
+            [‐-]l[ai]
+        - >-
+            [‐-]l[eo]s
+      - caXpfC2:
+        - >-
+            [‐-]h[io]
+        - >-
+            [‐-]e[nlm]
+        - >-
+            [‐-]l[ai]
+        - >-
+            [‐-]e[nl]s
+        - >-
+            [‐-]us
+        - >-
+            [‐-]les
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: pronoms febles (4)
+    parts:
+      - \left
+      - ?<=: \pL
+      - caXpfD1: >-
+          [’'][nl]s
+      - caXpfD2:
+        - >-
+            [‐-]h[io]
+        - >-
+            [‐-]e[nl]
+        - >-
+            [‐-]l[ai]
+        - >-
+            [‐-]els
+        - >-
+            [‐-]les
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: pronoms febles (5)
+    parts:
+      - \left
+      - ?<=: \pL
+      - caXpfE:
+        - >-
+            [‐-][mtsn]e
+        - >-
+            [‐-]l[aoi]
+        - >-
+            [‐-]h[io]
+        - >-
+            [‐-]l[eo]s
+        - >-
+            [‐-][nv]os
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: pronoms febles (6)
+    parts:
+      - \left
+      - ?<=: \pL
+      - caXpfF:
+        - >-
+            [’'][mtsnl]
+        - >-
+            [’'][nul]s
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: pronoms febles (7) # + determiner
+    parts:
+      - \left
+      - ?<!: \pL
+      - caXpfG: >-
+          [mtsnldMTSNLD][’']
+#      - ?=: >-
+#          [\pL1]
+      - _?
+      - \right
+
+
+ca7:
+  - name: regular Catalan token
+    parts:
+      - caRtkA:
+        - '[a-zA-ZàèòçïéíóúÉ·‐-]+'
+      - _
+      - \right
+
+
+ca9:
+  - name: regular Catalan token (final)
+    parts:
+      - caRtkB:
+        - '[a-zA-ZàèòçïéíóúÉ·‐-]+'
+

@@ -16,6 +16,8 @@ import Cutter
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 profiles = {
+    'ca': ('Catalan', '-r {0}/rule/common.yaml {0}/rule/ca.yaml '
+          '-a {0}/abbr/ca.list -i {0}/init/ca.list'.format(dir_path)),
     'de': ('German', '-r {0}/rule/common.yaml {0}/rule/de.yaml '
           '-a {0}/abbr/de.list -i {0}/init/de.list'.format(dir_path)),
     'en': ('English', '-r {0}/rule/common.yaml {0}/rule/en.yaml '
@@ -117,7 +119,7 @@ def main(argv):
                 print('{}\t{}'.format(token[0], token[1]))
             else:
                 print('{}'.format(token))
-        if args.tt:
+        if args.tt and args.et:
             print('+NL\t')
         else:
             print()

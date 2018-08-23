@@ -83,8 +83,8 @@ nl4:
       - \left
       - ?<!: '[\pL\d\/]'
       - nlQps:
-        - \pL+[aeiouy][’\']s
-        - \p{Lu}+[AEIOUY][’\']s
+        - \pL+[aeiouy][’']s
+        - \p{Lu}+[AEIOUY][’']s
       - ?!: '[\pL\d]'
       - _?
       - \right
@@ -93,7 +93,7 @@ nl4:
     parts:
       - \left
       - ?<!: \pL
-      - nlQgn: \pL+(?:s|sch|x|sh|z)[’\']
+      - nlQgn: \pL+(?:s|sch|x|sh|z)[’']
       - ?!: \pL
       - _?
       - \right
@@ -113,7 +113,7 @@ nl4:
       - \left
       - ?<!: \pL
       - nlQel:
-        - zo[’\']n
+        - zo[’']n
       - ?!: \pL
       - _?
       - \right
@@ -123,7 +123,7 @@ nl4:
       - \left
       - ?<!: \pL
       - nlQs-: >-
-          [’\']s-\p{Lu}\pL+
+          [’']s[‐-]\p{Lu}\pL+
       - ?!: \pL
       - _?
       - \right

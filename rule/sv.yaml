@@ -110,7 +110,7 @@ sv4:
       - _?
       - \right
 
-  - name: # e.g. SVT:s
+  - name: # e.g. SVT:s, 86:e
     parts:
       - \left
       - ?<!: \pL
@@ -118,4 +118,21 @@ sv4:
       - ?!: \pL
       - _?
       - \right
+
+sv7:
+  - name: regular Swedish token
+    parts:
+      - svRtkA:
+        - '[a-zA-ZåäöÅÄÖ]+[-]?'
+        - '(?:[a-zA-ZåäöÅÄÖ]+-)+[a-zA-ZåäöÅÄÖ]+'
+      - _
+      - \right
+
+
+sv9:
+  - name: regular Swedish token (final)
+    parts:
+      - svRtkB:
+        - '[a-zA-ZåäöÅÄÖ]+[-]?'
+        - '(?:[a-zA-ZåäöÅÄÖ]+-)+[a-zA-ZåäöÅÄÖ]+'
 

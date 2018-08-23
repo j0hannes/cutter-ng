@@ -1,0 +1,35 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Pronoms febles (weak pronouns) in Catalan
+
+abbr:
+  - abbr/common.list
+  - abbr/ca.list
+
+init:
+  - init/ca.list
+
+rule:
+  - rule/common.yaml
+  - rule/ca.yaml
+
+test:
+  - unit: posar[-n']hi
+  - unit: n'|hi posar
+  - unit: posar[-se]'ls
+  - unit: se['ls] posar
+  - unit: fer[-vos]-ens
+  - unit: veure['ns]-hi
+  - unit: posar[-se]
+  - unit: veure[’ls]
+  - unit: dóna[’m]
+  - unit: m’|agrada
+  - unit: l’|home
+  - unit: d’|això
+
