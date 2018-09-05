@@ -1,0 +1,2280 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/en.list
+
+init:
+  - init/en.list
+
+rule:
+  - rule/common.yaml
+  - rule/en.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      Demand for ABB’s products and services grew in most business areas during the second quarter of 2005.
+    tokens:
+      - >-
+          Demand
+      - >-
+          for
+      - >-
+          ABB
+      - >-
+          ’s
+      - >-
+          products
+      - >-
+          and
+      - >-
+          services
+      - >-
+          grew
+      - >-
+          in
+      - >-
+          most
+      - >-
+          business
+      - >-
+          areas
+      - >-
+          during
+      - >-
+          the
+      - >-
+          second
+      - >-
+          quarter
+      - >-
+          of
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      In Asia, the Middle East and South America, utilities invested in new power infrastructure.
+    tokens:
+      - >-
+          In
+      - >-
+          Asia
+      - >-
+          ,
+      - >-
+          the
+      - >-
+          Middle
+      - >-
+          East
+      - >-
+          and
+      - >-
+          South
+      - >-
+          America
+      - >-
+          ,
+      - >-
+          utilities
+      - >-
+          invested
+      - >-
+          in
+      - >-
+          new
+      - >-
+          power
+      - >-
+          infrastructure
+      - >-
+          .
+
+  - unit: >-
+      Industrial orders increased in all regions.
+    tokens:
+      - >-
+          Industrial
+      - >-
+          orders
+      - >-
+          increased
+      - >-
+          in
+      - >-
+          all
+      - >-
+          regions
+      - >-
+          .
+
+  - unit: >-
+      Orders were also higher for AT in both eastern and western Europe.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          also
+      - >-
+          higher
+      - >-
+          for
+      - >-
+          AT
+      - >-
+          in
+      - >-
+          both
+      - >-
+          eastern
+      - >-
+          and
+      - >-
+          western
+      - >-
+          Europe
+      - >-
+          .
+
+  - unit: >-
+      Total AT orders in Asia increased in the quarter as higher orders in India and several other countries more than made up for a small decrease in China.
+    tokens:
+      - >-
+          Total
+      - >-
+          AT
+      - >-
+          orders
+      - >-
+          in
+      - >-
+          Asia
+      - >-
+          increased
+      - >-
+          in
+      - >-
+          the
+      - >-
+          quarter
+      - >-
+          as
+      - >-
+          higher
+      - >-
+          orders
+      - >-
+          in
+      - >-
+          India
+      - >-
+          and
+      - >-
+          several
+      - >-
+          other
+      - >-
+          countries
+      - >-
+          more
+      - >-
+          than
+      - >-
+          made
+      - >-
+          up
+      - >-
+          for
+      - >-
+          a
+      - >-
+          small
+      - >-
+          decrease
+      - >-
+          in
+      - >-
+          China
+      - >-
+          .
+
+  - unit: >-
+      The biggest improvement came from the Automation Technologies division, mainly the result of higher factory loading, ongoing productivity improvements and low-cost sourcing initiatives.
+    tokens:
+      - >-
+          The
+      - >-
+          biggest
+      - >-
+          improvement
+      - >-
+          came
+      - >-
+          from
+      - >-
+          the
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          division
+      - >-
+          ,
+      - >-
+          mainly
+      - >-
+          the
+      - >-
+          result
+      - >-
+          of
+      - >-
+          higher
+      - >-
+          factory
+      - >-
+          loading
+      - >-
+          ,
+      - >-
+          ongoing
+      - >-
+          productivity
+      - >-
+          improvements
+      - >-
+          and
+      - >-
+          low-cost
+      - >-
+          sourcing
+      - >-
+          initiatives
+      - >-
+          .
+
+  - unit: >-
+      The EBIT margin in the second quarter rose to 6.5 percent from 6.2 percent in the same quarter of 2004.
+    tokens:
+      - >-
+          The
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          in
+      - >-
+          the
+      - >-
+          second
+      - >-
+          quarter
+      - >-
+          rose
+      - >-
+          to
+      - >-
+          6.5
+      - >-
+          percent
+      - >-
+          from
+      - >-
+          6.2
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          the
+      - >-
+          same
+      - >-
+          quarter
+      - >-
+          of
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      The EBIT margin in Automation Technologies increased to 10.7 percent from 9.8 percent.
+    tokens:
+      - >-
+          The
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          in
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          increased
+      - >-
+          to
+      - >-
+          10.7
+      - >-
+          percent
+      - >-
+          from
+      - >-
+          9.8
+      - >-
+          percent
+      - >-
+          .
+
+  - unit: >-
+      The EBIT margin in Power Technologies decreased to 5.8 percent from 8.2 percent in the year-earlier period.
+    tokens:
+      - >-
+          The
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          in
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          decreased
+      - >-
+          to
+      - >-
+          5.8
+      - >-
+          percent
+      - >-
+          from
+      - >-
+          8.2
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          the
+      - >-
+          year-earlier
+      - >-
+          period
+      - >-
+          .
+
+  - unit: >-
+      The biggest improvements were in Non-core and Corporate activities.
+    tokens:
+      - >-
+          The
+      - >-
+          biggest
+      - >-
+          improvements
+      - >-
+          were
+      - >-
+          in
+      - >-
+          Non-core
+      - >-
+          and
+      - >-
+          Corporate
+      - >-
+          activities
+      - >-
+          .
+
+  - unit: >-
+      As a result of these additional charges, and higher raw material costs, ABB revised the 2005 EBIT margin target for the Power Technologies division and, consequently, for the ABB group.
+    tokens:
+      - >-
+          As
+      - >-
+          a
+      - >-
+          result
+      - >-
+          of
+      - >-
+          these
+      - >-
+          additional
+      - >-
+          charges
+      - >-
+          ,
+      - >-
+          and
+      - >-
+          higher
+      - >-
+          raw
+      - >-
+          material
+      - >-
+          costs
+      - >-
+          ,
+      - >-
+          ABB
+      - >-
+          revised
+      - >-
+          the
+      - >-
+          2005
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          target
+      - >-
+          for
+      - >-
+          the
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          division
+      - >-
+          and
+      - >-
+          ,
+      - >-
+          consequently
+      - >-
+          ,
+      - >-
+          for
+      - >-
+          the
+      - >-
+          ABB
+      - >-
+          group
+      - >-
+          .
+
+  - unit: >-
+      The new 2005 PT EBIT margin target is 6.8-7.3 percent.
+    tokens:
+      - >-
+          The
+      - >-
+          new
+      - >-
+          2005
+      - >-
+          PT
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          target
+      - >-
+          is
+      - >-
+          6.8-7.3
+      - >-
+          percent
+      - >-
+          .
+
+  - unit: >-
+      ABB lowered its 2005 group EBIT margin target to 6.6-7.1 percent from 7.7 percent.
+    tokens:
+      - >-
+          ABB
+      - >-
+          lowered
+      - >-
+          its
+      - >-
+          2005
+      - >-
+          group
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          target
+      - >-
+          to
+      - >-
+          6.6-7.1
+      - >-
+          percent
+      - >-
+          from
+      - >-
+          7.7
+      - >-
+          percent
+      - >-
+          .
+
+  - unit: >-
+      ABB’s revenue growth targets also remain unchanged.
+    tokens:
+      - >-
+          ABB
+      - >-
+          ’s
+      - >-
+          revenue
+      - >-
+          growth
+      - >-
+          targets
+      - >-
+          also
+      - >-
+          remain
+      - >-
+          unchanged
+      - >-
+          .
+
+  - unit: >-
+      From 2002 through to the end of 2005, ABB expects compound average annual revenue growth of 4 percent in local currencies.
+    tokens:
+      - >-
+          From
+      - >-
+          2002
+      - >-
+          through
+      - >-
+          to
+      - >-
+          the
+      - >-
+          end
+      - >-
+          of
+      - >-
+          2005
+      - >-
+          ,
+      - >-
+          ABB
+      - >-
+          expects
+      - >-
+          compound
+      - >-
+          average
+      - >-
+          annual
+      - >-
+          revenue
+      - >-
+          growth
+      - >-
+          of
+      - >-
+          4
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          local
+      - >-
+          currencies
+      - >-
+          .
+
+  - unit: >-
+      The Power Technologies division expects compound average annual revenue growth of 5.3 percent in local currencies.
+    tokens:
+      - >-
+          The
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          division
+      - >-
+          expects
+      - >-
+          compound
+      - >-
+          average
+      - >-
+          annual
+      - >-
+          revenue
+      - >-
+          growth
+      - >-
+          of
+      - >-
+          5.3
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          local
+      - >-
+          currencies
+      - >-
+          .
+
+  - unit: >-
+      The Automation Technologies division expects compound average annual revenue growth of 3.3 percent in local currencies.
+    tokens:
+      - >-
+          The
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          division
+      - >-
+          expects
+      - >-
+          compound
+      - >-
+          average
+      - >-
+          annual
+      - >-
+          revenue
+      - >-
+          growth
+      - >-
+          of
+      - >-
+          3.3
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          local
+      - >-
+          currencies
+      - >-
+          .
+
+  - unit: >-
+      Revenue and margin targets exclude major acquisitions, divestitures and business closures.
+    tokens:
+      - >-
+          Revenue
+      - >-
+          and
+      - >-
+          margin
+      - >-
+          targets
+      - >-
+          exclude
+      - >-
+          major
+      - >-
+          acquisitions
+      - >-
+          ,
+      - >-
+          divestitures
+      - >-
+          and
+      - >-
+          business
+      - >-
+          closures
+      - >-
+          .
+
+  - unit: >-
+      In particular, orders for medium-voltage products and transformers increased at a double-digit pace in both dollars and local currencies.
+    tokens:
+      - >-
+          In
+      - >-
+          particular
+      - >-
+          ,
+      - >-
+          orders
+      - >-
+          for
+      - >-
+          medium-voltage
+      - >-
+          products
+      - >-
+          and
+      - >-
+          transformers
+      - >-
+          increased
+      - >-
+          at
+      - >-
+          a
+      - >-
+          double-digit
+      - >-
+          pace
+      - >-
+          in
+      - >-
+          both
+      - >-
+          dollars
+      - >-
+          and
+      - >-
+          local
+      - >-
+          currencies
+      - >-
+          .
+
+  - unit: >-
+      Orders were higher in eastern Europe across all business units.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          higher
+      - >-
+          in
+      - >-
+          eastern
+      - >-
+          Europe
+      - >-
+          across
+      - >-
+          all
+      - >-
+          business
+      - >-
+          units
+      - >-
+          .
+
+  - unit: >-
+      Orders increased in the Middle East and Africa, mainly on higher demand for medium-voltage equipment.
+    tokens:
+      - >-
+          Orders
+      - >-
+          increased
+      - >-
+          in
+      - >-
+          the
+      - >-
+          Middle
+      - >-
+          East
+      - >-
+          and
+      - >-
+          Africa
+      - >-
+          ,
+      - >-
+          mainly
+      - >-
+          on
+      - >-
+          higher
+      - >-
+          demand
+      - >-
+          for
+      - >-
+          medium-voltage
+      - >-
+          equipment
+      - >-
+          .
+
+  - unit: >-
+      Large orders were also down in the Middle East and Africa.
+    tokens:
+      - >-
+          Large
+      - >-
+          orders
+      - >-
+          were
+      - >-
+          also
+      - >-
+          down
+      - >-
+          in
+      - >-
+          the
+      - >-
+          Middle
+      - >-
+          East
+      - >-
+          and
+      - >-
+          Africa
+      - >-
+          .
+
+  - unit: >-
+      In the Americas, recovering investments in power infrastructure in South America, especially Brazil, compensated for the continuing low level of large project orders in North America.
+    tokens:
+      - >-
+          In
+      - >-
+          the
+      - >-
+          Americas
+      - >-
+          ,
+      - >-
+          recovering
+      - >-
+          investments
+      - >-
+          in
+      - >-
+          power
+      - >-
+          infrastructure
+      - >-
+          in
+      - >-
+          South
+      - >-
+          America
+      - >-
+          ,
+      - >-
+          especially
+      - >-
+          Brazil
+      - >-
+          ,
+      - >-
+          compensated
+      - >-
+          for
+      - >-
+          the
+      - >-
+          continuing
+      - >-
+          low
+      - >-
+          level
+      - >-
+          of
+      - >-
+          large
+      - >-
+          project
+      - >-
+          orders
+      - >-
+          in
+      - >-
+          North
+      - >-
+          America
+      - >-
+          .
+
+  - unit: >-
+      Revenues were higher in both dollars and local currencies across all business units in Power Technology Products, with the strongest growth in Asia and the Americas.
+    tokens:
+      - >-
+          Revenues
+      - >-
+          were
+      - >-
+          higher
+      - >-
+          in
+      - >-
+          both
+      - >-
+          dollars
+      - >-
+          and
+      - >-
+          local
+      - >-
+          currencies
+      - >-
+          across
+      - >-
+          all
+      - >-
+          business
+      - >-
+          units
+      - >-
+          in
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Products
+      - >-
+          ,
+      - >-
+          with
+      - >-
+          the
+      - >-
+          strongest
+      - >-
+          growth
+      - >-
+          in
+      - >-
+          Asia
+      - >-
+          and
+      - >-
+          the
+      - >-
+          Americas
+      - >-
+          .
+
+  - unit: >-
+      The EBIT margin for the Power Technologies division in the quarter decreased to 5.8 percent from 8.2 percent in the second quarter of 2004.
+    tokens:
+      - >-
+          The
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          for
+      - >-
+          the
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          division
+      - >-
+          in
+      - >-
+          the
+      - >-
+          quarter
+      - >-
+          decreased
+      - >-
+          to
+      - >-
+          5.8
+      - >-
+          percent
+      - >-
+          from
+      - >-
+          8.2
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          the
+      - >-
+          second
+      - >-
+          quarter
+      - >-
+          of
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      In particular, higher base orders across all business areas more than compensated for lower large orders and are a sign that economic conditions remain positive.
+    tokens:
+      - >-
+          In
+      - >-
+          particular
+      - >-
+          ,
+      - >-
+          higher
+      - >-
+          base
+      - >-
+          orders
+      - >-
+          across
+      - >-
+          all
+      - >-
+          business
+      - >-
+          areas
+      - >-
+          more
+      - >-
+          than
+      - >-
+          compensated
+      - >-
+          for
+      - >-
+          lower
+      - >-
+          large
+      - >-
+          orders
+      - >-
+          and
+      - >-
+          are
+      - >-
+          a
+      - >-
+          sign
+      - >-
+          that
+      - >-
+          economic
+      - >-
+          conditions
+      - >-
+          remain
+      - >-
+          positive
+      - >-
+          .
+
+  - unit: >-
+      Orders were up in all regions.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          up
+      - >-
+          in
+      - >-
+          all
+      - >-
+          regions
+      - >-
+          .
+
+  - unit: >-
+      In Process Automation, orders improved by more than 10 percent in dollar and local currency terms in the second quarter compared to the same quarter in 2004.
+    tokens:
+      - >-
+          In
+      - >-
+          Process
+      - >-
+          Automation
+      - >-
+          ,
+      - >-
+          orders
+      - >-
+          improved
+      - >-
+          by
+      - >-
+          more
+      - >-
+          than
+      - >-
+          10
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          dollar
+      - >-
+          and
+      - >-
+          local
+      - >-
+          currency
+      - >-
+          terms
+      - >-
+          in
+      - >-
+          the
+      - >-
+          second
+      - >-
+          quarter
+      - >-
+          compared
+      - >-
+          to
+      - >-
+          the
+      - >-
+          same
+      - >-
+          quarter
+      - >-
+          in
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Orders grew in all regions.
+    tokens:
+      - >-
+          Orders
+      - >-
+          grew
+      - >-
+          in
+      - >-
+          all
+      - >-
+          regions
+      - >-
+          .
+
+  - unit: >-
+      In Asia, order growth in India and several other countries more than offset lower orders in China.
+    tokens:
+      - >-
+          In
+      - >-
+          Asia
+      - >-
+          ,
+      - >-
+          order
+      - >-
+          growth
+      - >-
+          in
+      - >-
+          India
+      - >-
+          and
+      - >-
+          several
+      - >-
+          other
+      - >-
+          countries
+      - >-
+          more
+      - >-
+          than
+      - >-
+          offset
+      - >-
+          lower
+      - >-
+          orders
+      - >-
+          in
+      - >-
+          China
+      - >-
+          .
+
+  - unit: >-
+      Orders were flat in eastern Europe.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          flat
+      - >-
+          in
+      - >-
+          eastern
+      - >-
+          Europe
+      - >-
+          .
+
+  - unit: >-
+      Orders were also higher in Manufacturing Automation, as a strong increase in base orders more than offset lower large project orders in the quarter.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          also
+      - >-
+          higher
+      - >-
+          in
+      - >-
+          Manufacturing
+      - >-
+          Automation
+      - >-
+          ,
+      - >-
+          as
+      - >-
+          a
+      - >-
+          strong
+      - >-
+          increase
+      - >-
+          in
+      - >-
+          base
+      - >-
+          orders
+      - >-
+          more
+      - >-
+          than
+      - >-
+          offset
+      - >-
+          lower
+      - >-
+          large
+      - >-
+          project
+      - >-
+          orders
+      - >-
+          in
+      - >-
+          the
+      - >-
+          quarter
+      - >-
+          .
+
+  - unit: >-
+      Orders were also higher in Europe, with an increase in eastern Europe making up for lower orders in western Europe.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          also
+      - >-
+          higher
+      - >-
+          in
+      - >-
+          Europe
+      - >-
+          ,
+      - >-
+          with
+      - >-
+          an
+      - >-
+          increase
+      - >-
+          in
+      - >-
+          eastern
+      - >-
+          Europe
+      - >-
+          making
+      - >-
+          up
+      - >-
+          for
+      - >-
+          lower
+      - >-
+          orders
+      - >-
+          in
+      - >-
+          western
+      - >-
+          Europe
+      - >-
+          .
+
+  - unit: >-
+      Orders were flat or lower in other regions.
+    tokens:
+      - >-
+          Orders
+      - >-
+          were
+      - >-
+          flat
+      - >-
+          or
+      - >-
+          lower
+      - >-
+          in
+      - >-
+          other
+      - >-
+          regions
+      - >-
+          .
+
+  - unit: >-
+      Regionally, the strongest revenue growth was in the Americas, Asia and Europe.
+    tokens:
+      - >-
+          Regionally
+      - >-
+          ,
+      - >-
+          the
+      - >-
+          strongest
+      - >-
+          revenue
+      - >-
+          growth
+      - >-
+          was
+      - >-
+          in
+      - >-
+          the
+      - >-
+          Americas
+      - >-
+          ,
+      - >-
+          Asia
+      - >-
+          and
+      - >-
+          Europe
+      - >-
+          .
+
+  - unit: >-
+      In Europe, revenues were up more than 50 percent in eastern Europe and improved by almost 10 percent in local currencies in western Europe.
+    tokens:
+      - >-
+          In
+      - >-
+          Europe
+      - >-
+          ,
+      - >-
+          revenues
+      - >-
+          were
+      - >-
+          up
+      - >-
+          more
+      - >-
+          than
+      - >-
+          50
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          eastern
+      - >-
+          Europe
+      - >-
+          and
+      - >-
+          improved
+      - >-
+          by
+      - >-
+          almost
+      - >-
+          10
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          local
+      - >-
+          currencies
+      - >-
+          in
+      - >-
+          western
+      - >-
+          Europe
+      - >-
+          .
+
+  - unit: >-
+      It was the eleventh consecutive quarter of higher EBIT and revenues for Automation Technologies.
+    tokens:
+      - >-
+          It
+      - >-
+          was
+      - >-
+          the
+      - >-
+          eleventh
+      - >-
+          consecutive
+      - >-
+          quarter
+      - >-
+          of
+      - >-
+          higher
+      - >-
+          EBIT
+      - >-
+          and
+      - >-
+          revenues
+      - >-
+          for
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          .
+
+  - unit: >-
+      EBIT also improved in Automation Products on higher revenues, improved factory loading, cost migration and productivity improvements.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          also
+      - >-
+          improved
+      - >-
+          in
+      - >-
+          Automation
+      - >-
+          Products
+      - >-
+          on
+      - >-
+          higher
+      - >-
+          revenues
+      - >-
+          ,
+      - >-
+          improved
+      - >-
+          factory
+      - >-
+          loading
+      - >-
+          ,
+      - >-
+          cost
+      - >-
+          migration
+      - >-
+          and
+      - >-
+          productivity
+      - >-
+          improvements
+      - >-
+          .
+
+  - unit: >-
+      The division’s EBIT margin increased to 10.7 percent from 9.8 percent in the second quarter of last year.
+    tokens:
+      - >-
+          The
+      - >-
+          division
+      - >-
+          ’s
+      - >-
+          EBIT
+      - >-
+          margin
+      - >-
+          increased
+      - >-
+          to
+      - >-
+          10.7
+      - >-
+          percent
+      - >-
+          from
+      - >-
+          9.8
+      - >-
+          percent
+      - >-
+          in
+      - >-
+          the
+      - >-
+          second
+      - >-
+          quarter
+      - >-
+          of
+      - >-
+          last
+      - >-
+          year
+      - >-
+          .
+
+  - unit: >-
+      The business achieved a break-even operational result in Germany in the second quarter.
+    tokens:
+      - >-
+          The
+      - >-
+          business
+      - >-
+          achieved
+      - >-
+          a
+      - >-
+          break-even
+      - >-
+          operational
+      - >-
+          result
+      - >-
+          in
+      - >-
+          Germany
+      - >-
+          in
+      - >-
+          the
+      - >-
+          second
+      - >-
+          quarter
+      - >-
+          .
+
+  - unit: >-
+      The 2005 Q2 results press release and presentation slides are available from July 28, 2005 on the ABB News Center at www.abb.com/news and on the Investor Relations homepage at www.abb.com/investorrelations.
+    tokens:
+      - >-
+          The
+      - >-
+          2005
+      - >-
+          Q2
+      - >-
+          results
+      - >-
+          press
+      - >-
+          release
+      - >-
+          and
+      - >-
+          presentation
+      - >-
+          slides
+      - >-
+          are
+      - >-
+          available
+      - >-
+          from
+      - >-
+          July
+      - >-
+          28
+      - >-
+          ,
+      - >-
+          2005
+      - >-
+          on
+      - >-
+          the
+      - >-
+          ABB
+      - >-
+          News
+      - >-
+          Center
+      - >-
+          at
+      - >-
+          www.abb.com/news
+      - >-
+          and
+      - >-
+          on
+      - >-
+          the
+      - >-
+          Investor
+      - >-
+          Relations
+      - >-
+          homepage
+      - >-
+          at
+      - >-
+          www.abb.com/investorrelations
+      - >-
+          .
+
+  - unit: >-
+      The audio playback of the conference call will start one hour after the end of the call and be available for 96 hours.
+    tokens:
+      - >-
+          The
+      - >-
+          audio
+      - >-
+          playback
+      - >-
+          of
+      - >-
+          the
+      - >-
+          conference
+      - >-
+          call
+      - >-
+          will
+      - >-
+          start
+      - >-
+          one
+      - >-
+          hour
+      - >-
+          after
+      - >-
+          the
+      - >-
+          end
+      - >-
+          of
+      - >-
+          the
+      - >-
+          call
+      - >-
+          and
+      - >-
+          be
+      - >-
+          available
+      - >-
+          for
+      - >-
+          96
+      - >-
+          hours
+      - >-
+          .
+
+  - unit: >-
+      The ABB Group of companies operates in around 100 countries and employs about 103,000 people.
+    tokens:
+      - >-
+          The
+      - >-
+          ABB
+      - >-
+          Group
+      - >-
+          of
+      - >-
+          companies
+      - >-
+          operates
+      - >-
+          in
+      - >-
+          around
+      - >-
+          100
+      - >-
+          countries
+      - >-
+          and
+      - >-
+          employs
+      - >-
+          about
+      - >-
+          103,000
+      - >-
+          people
+      - >-
+          .
+
+  - unit: >-
+      <h3>Improving the Environment, Worker Conditions and Communities</h3>
+    tokens:
+      - >-
+          <h3>
+      - >-
+          Improving
+      - >-
+          the
+      - >-
+          Environment
+      - >-
+          ,
+      - >-
+          Worker
+      - >-
+          Conditions
+      - >-
+          and
+      - >-
+          Communities
+      - >-
+          </h3>
+
+  - unit: >-
+      <h4>Practical Solutions</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Practical
+      - >-
+          Solutions
+      - >-
+          </h4>
+
+  - unit: >-
+      Those groups included scientists, farmers, community leaders and representatives of other nongovernmental organizations.
+    tokens:
+      - >-
+          Those
+      - >-
+          groups
+      - >-
+          included
+      - >-
+          scientists
+      - >-
+          ,
+      - >-
+          farmers
+      - >-
+          ,
+      - >-
+          community
+      - >-
+          leaders
+      - >-
+          and
+      - >-
+          representatives
+      - >-
+          of
+      - >-
+          other
+      - >-
+          nongovernmental
+      - >-
+          organizations
+      - >-
+          .
+
+  - unit: >-
+      <h4>Transforming an Industry</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Transforming
+      - >-
+          an
+      - >-
+          Industry
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Today, more than 15% of all the bananas in international trade come from Rainforest Alliance Certified farms.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Today
+      - >-
+          ,
+      - >-
+          more
+      - >-
+          than
+      - >-
+          15
+      - >-
+          %
+      - >-
+          of
+      - >-
+          all
+      - >-
+          the
+      - >-
+          bananas
+      - >-
+          in
+      - >-
+          international
+      - >-
+          trade
+      - >-
+          come
+      - >-
+          from
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          Certified
+      - >-
+          farms
+      - >-
+          .
+
+  - unit: >-
+      <h4>Tangible Improvements</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Tangible
+      - >-
+          Improvements
+      - >-
+          </h4>
+
+  - unit: >-
+      Chiquita has donated dozens of sports facilities, schools and clinics to communities, and has donated or sold hundreds of houses to workers for very low prices.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          has
+      - >-
+          donated
+      - >-
+          dozens
+      - >-
+          of
+      - >-
+          sports
+      - >-
+          facilities
+      - >-
+          ,
+      - >-
+          schools
+      - >-
+          and
+      - >-
+          clinics
+      - >-
+          to
+      - >-
+          communities
+      - >-
+          ,
+      - >-
+          and
+      - >-
+          has
+      - >-
+          donated
+      - >-
+          or
+      - >-
+          sold
+      - >-
+          hundreds
+      - >-
+          of
+      - >-
+          houses
+      - >-
+          to
+      - >-
+          workers
+      - >-
+          for
+      - >-
+          very
+      - >-
+          low
+      - >-
+          prices
+      - >-
+          .
+
+  - unit: >-
+      Both companies protect significant patches of tropical rainforest: Favorita at its Río Palenque Science Center, and Chiquita at the 100-hectare Nogal Nature Reserve, in Costa Rica, which it manages together with the Swiss supermarket chain Migros.
+    tokens:
+      - >-
+          Both
+      - >-
+          companies
+      - >-
+          protect
+      - >-
+          significant
+      - >-
+          patches
+      - >-
+          of
+      - >-
+          tropical
+      - >-
+          rainforest
+      - >-
+          :
+      - >-
+          Favorita
+      - >-
+          at
+      - >-
+          its
+      - >-
+          Río
+      - >-
+          Palenque
+      - >-
+          Science
+      - >-
+          Center
+      - >-
+          ,
+      - >-
+          and
+      - >-
+          Chiquita
+      - >-
+          at
+      - >-
+          the
+      - >-
+          100-hectare
+      - >-
+          Nogal
+      - >-
+          Nature
+      - >-
+          Reserve
+      - >-
+          ,
+      - >-
+          in
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          ,
+      - >-
+          which
+      - >-
+          it
+      - >-
+          manages
+      - >-
+          together
+      - >-
+          with
+      - >-
+          the
+      - >-
+          Swiss
+      - >-
+          supermarket
+      - >-
+          chain
+      - >-
+          Migros
+      - >-
+          .
+
+  - unit: >-
+      <h4>A Green Evolution</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          A
+      - >-
+          Green
+      - >-
+          Evolution
+      - >-
+          </h4>
+
+  - unit: >-
+      <h4>Working for the Future</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Working
+      - >-
+          for
+      - >-
+          the
+      - >-
+          Future
+      - >-
+          </h4>
+
+  - unit: >-
+      Thanks to the influence of Chiquita and Favorita, the number of certified farms has steadily grown.
+    tokens:
+      - >-
+          Thanks
+      - >-
+          to
+      - >-
+          the
+      - >-
+          influence
+      - >-
+          of
+      - >-
+          Chiquita
+      - >-
+          and
+      - >-
+          Favorita
+      - >-
+          ,
+      - >-
+          the
+      - >-
+          number
+      - >-
+          of
+      - >-
+          certified
+      - >-
+          farms
+      - >-
+          has
+      - >-
+          steadily
+      - >-
+          grown
+      - >-
+          .
+
+  - unit: >-
+      <p>As Rafael S. Wong, the President of Favorita, notes: "Certified farms are cleaner and safer and production is higher."
+    tokens:
+      - >-
+          <p>
+      - >-
+          As
+      - >-
+          Rafael
+      - >-
+          S.
+      - >-
+          Wong
+      - >-
+          ,
+      - >-
+          the
+      - >-
+          President
+      - >-
+          of
+      - >-
+          Favorita
+      - >-
+          ,
+      - >-
+          notes
+      - >-
+          :
+      - >-
+          "
+      - >-
+          Certified
+      - >-
+          farms
+      - >-
+          are
+      - >-
+          cleaner
+      - >-
+          and
+      - >-
+          safer
+      - >-
+          and
+      - >-
+          production
+      - >-
+          is
+      - >-
+          higher
+      - >-
+          .
+      - >-
+          "
+
+  - unit: >-
+      <h1>Sustainable Agriculture</h1>
+    tokens:
+      - >-
+          <h1>
+      - >-
+          Sustainable
+      - >-
+          Agriculture
+      - >-
+          </h1>
+
+  - unit: >-
+      <h2>Social and Environmental Criteria for Rainforest Alliance Agricultural Certification</h2>
+    tokens:
+      - >-
+          <h2>
+      - >-
+          Social
+      - >-
+          and
+      - >-
+          Environmental
+      - >-
+          Criteria
+      - >-
+          for
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          Agricultural
+      - >-
+          Certification
+      - >-
+          </h2>
+
+  - unit: >-
+      Planning and monitoring are essential to efficacious farm management, profitable production, crop quality and continual improvement.
+    tokens:
+      - >-
+          Planning
+      - >-
+          and
+      - >-
+          monitoring
+      - >-
+          are
+      - >-
+          essential
+      - >-
+          to
+      - >-
+          efficacious
+      - >-
+          farm
+      - >-
+          management
+      - >-
+          ,
+      - >-
+          profitable
+      - >-
+          production
+      - >-
+          ,
+      - >-
+          crop
+      - >-
+          quality
+      - >-
+          and
+      - >-
+          continual
+      - >-
+          improvement
+      - >-
+          .
+
+# 58 out of 473 found

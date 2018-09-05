@@ -1,0 +1,3604 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/es.list
+
+init:
+  - init/es.list
+
+rule:
+  - rule/common.yaml
+  - rule/es.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      INSTRUCCIONES DE SEGURIDAD IMPORTANTES
+    tokens:
+      - >-
+          INSTRUCCIONES
+      - >-
+          DE
+      - >-
+          SEGURIDAD
+      - >-
+          IMPORTANTES
+
+  - unit: >-
+      NOTA PARA EL INSTALADOR DEL SISTEMA CATV
+    tokens:
+      - >-
+          NOTA
+      - >-
+          PARA
+      - >-
+          EL
+      - >-
+          INSTALADOR
+      - >-
+          DEL
+      - >-
+          SISTEMA
+      - >-
+          CATV
+
+  - unit: >-
+      Este aviso se provee para que preste atención el instalador de un sistema CATV a la Sección 820-40 de NEC que provee directrices para la puesta a tierra apropiada y, en particular, especifica que la tierra de cable ha de conectarse al sistema de puesta a tierra del edificio, lo más cerca posible del punto de entrada del cable que prácticamente pueda ponerse.
+    tokens:
+      - >-
+          Este
+      - >-
+          aviso
+      - >-
+          se
+      - >-
+          provee
+      - >-
+          para
+      - >-
+          que
+      - >-
+          preste
+      - >-
+          atención
+      - >-
+          el
+      - >-
+          instalador
+      - >-
+          de
+      - >-
+          un
+      - >-
+          sistema
+      - >-
+          CATV
+      - >-
+          a
+      - >-
+          la
+      - >-
+          Sección
+      - >-
+          820-40
+      - >-
+          de
+      - >-
+          NEC
+      - >-
+          que
+      - >-
+          provee
+      - >-
+          directrices
+      - >-
+          para
+      - >-
+          la
+      - >-
+          puesta
+      - >-
+          a
+      - >-
+          tierra
+      - >-
+          apropiada
+      - >-
+          y
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          particular
+      - >-
+          ,
+      - >-
+          especifica
+      - >-
+          que
+      - >-
+          la
+      - >-
+          tierra
+      - >-
+          de
+      - >-
+          cable
+      - >-
+          ha
+      - >-
+          de
+      - >-
+          conectarse
+      - >-
+          al
+      - >-
+          sistema
+      - >-
+          de
+      - >-
+          puesta
+      - >-
+          a
+      - >-
+          tierra
+      - >-
+          del
+      - >-
+          edificio
+      - >-
+          ,
+      - >-
+          lo
+      - >-
+          más
+      - >-
+          cerca
+      - >-
+          posible
+      - >-
+          del
+      - >-
+          punto
+      - >-
+          de
+      - >-
+          entrada
+      - >-
+          del
+      - >-
+          cable
+      - >-
+          que
+      - >-
+          prácticamente
+      - >-
+          pueda
+      - >-
+          ponerse
+      - >-
+          .
+
+  - unit: >-
+      a) Cuando el cordón de suministro eléctrico o el enchufe se dañan.
+    tokens:
+      - >-
+          a)
+      - >-
+          Cuando
+      - >-
+          el
+      - >-
+          cordón
+      - >-
+          de
+      - >-
+          suministro
+      - >-
+          eléctrico
+      - >-
+          o
+      - >-
+          el
+      - >-
+          enchufe
+      - >-
+          se
+      - >-
+          dañan
+      - >-
+          .
+
+  - unit: >-
+      c) Si el producto ha quedado expuesto a la lluvia o al agua.
+    tokens:
+      - >-
+          c)
+      - >-
+          Si
+      - >-
+          el
+      - >-
+          producto
+      - >-
+          ha
+      - >-
+          quedado
+      - >-
+          expuesto
+      - >-
+          a
+      - >-
+          la
+      - >-
+          lluvia
+      - >-
+          o
+      - >-
+          al
+      - >-
+          agua
+      - >-
+          .
+
+  - unit: >-
+      e) Si el producto se ha caído o dañado de cualquier manera.
+    tokens:
+      - >-
+          e)
+      - >-
+          Si
+      - >-
+          el
+      - >-
+          producto
+      - >-
+          se
+      - >-
+          ha
+      - >-
+          caído
+      - >-
+          o
+      - >-
+          dañado
+      - >-
+          de
+      - >-
+          cualquier
+      - >-
+          manera
+      - >-
+          .
+
+  - unit: >-
+      AVISO
+    tokens:
+      - >-
+          AVISO
+
+  - unit: >-
+      PARA REDUCIR EL RIESGO DE INCENDIO O DE DESCARGA ELÉCTRICA, NO DEJE ESTE PRODUCTO EXPUESTO A LA LLUVIA O LA HUMEDAD.
+    tokens:
+      - >-
+          PARA
+      - >-
+          REDUCIR
+      - >-
+          EL
+      - >-
+          RIESGO
+      - >-
+          DE
+      - >-
+          INCENDIO
+      - >-
+          O
+      - >-
+          DE
+      - >-
+          DESCARGA
+      - >-
+          ELÉCTRICA
+      - >-
+          ,
+      - >-
+          NO
+      - >-
+          DEJE
+      - >-
+          ESTE
+      - >-
+          PRODUCTO
+      - >-
+          EXPUESTO
+      - >-
+          A
+      - >-
+          LA
+      - >-
+          LLUVIA
+      - >-
+          O
+      - >-
+          LA
+      - >-
+          HUMEDAD
+      - >-
+          .
+
+  - unit: >-
+      PARA EVITAR LAS DESCARGAS ELÉCTRICAS, HAGA COINCIDIR LA HOJA ANCHA DEL ENCHUFE CON LA RANURA ANCHA E INSÉRTELA TOTALMENTE.
+    tokens:
+      - >-
+          PARA
+      - >-
+          EVITAR
+      - >-
+          LAS
+      - >-
+          DESCARGAS
+      - >-
+          ELÉCTRICAS
+      - >-
+          ,
+      - >-
+          HAGA
+      - >-
+          COINCIDIR
+      - >-
+          LA
+      - >-
+          HOJA
+      - >-
+          ANCHA
+      - >-
+          DEL
+      - >-
+          ENCHUFE
+      - >-
+          CON
+      - >-
+          LA
+      - >-
+          RANURA
+      - >-
+          ANCHA
+      - >-
+          E
+      - >-
+          INSÉRTELA
+      - >-
+          TOTALMENTE
+      - >-
+          .
+
+  - unit: >-
+      PRECAUCIÓN
+    tokens:
+      - >-
+          PRECAUCIÓN
+
+  - unit: >-
+      PRECAUCIÓN
+    tokens:
+      - >-
+          PRECAUCIÓN
+
+  - unit: >-
+      NO MIRE AL RAYO.
+    tokens:
+      - >-
+          NO
+      - >-
+          MIRE
+      - >-
+          AL
+      - >-
+          RAYO
+      - >-
+          .
+
+  - unit: >-
+      AVISO FCC
+    tokens:
+      - >-
+          AVISO
+      - >-
+          FCC
+
+  - unit: >-
+      AVISO DE LA FCC
+    tokens:
+      - >-
+          AVISO
+      - >-
+          DE
+      - >-
+          LA
+      - >-
+          FCC
+
+  - unit: >-
+      Los cambios o modificaciones que no estén expresamente aprobados por la parte responsable de su cumplimiento podrían anular la autorización del usuario para hacer funcionar el equipo.
+    tokens:
+      - >-
+          Los
+      - >-
+          cambios
+      - >-
+          o
+      - >-
+          modificaciones
+      - >-
+          que
+      - >-
+          no
+      - >-
+          estén
+      - >-
+          expresamente
+      - >-
+          aprobados
+      - >-
+          por
+      - >-
+          la
+      - >-
+          parte
+      - >-
+          responsable
+      - >-
+          de
+      - >-
+          su
+      - >-
+          cumplimiento
+      - >-
+          podrían
+      - >-
+          anular
+      - >-
+          la
+      - >-
+          autorización
+      - >-
+          del
+      - >-
+          usuario
+      - >-
+          para
+      - >-
+          hacer
+      - >-
+          funcionar
+      - >-
+          el
+      - >-
+          equipo
+      - >-
+          .
+
+  - unit: >-
+      REQUERIMIENTOS DEL SECTOR EN CANADÁ
+    tokens:
+      - >-
+          REQUERIMIENTOS
+      - >-
+          DEL
+      - >-
+          SECTOR
+      - >-
+          EN
+      - >-
+          CANADÁ
+
+  - unit: >-
+      Este aparato digital de Clase B cumple con todos los requerimientos de la Normativa sobre Equipos que Causen Interferencias de Canadá.
+    tokens:
+      - >-
+          Este
+      - >-
+          aparato
+      - >-
+          digital
+      - >-
+          de
+      - >-
+          Clase
+      - >-
+          B
+      - >-
+          cumple
+      - >-
+          con
+      - >-
+          todos
+      - >-
+          los
+      - >-
+          requerimientos
+      - >-
+          de
+      - >-
+          la
+      - >-
+          Normativa
+      - >-
+          sobre
+      - >-
+          Equipos
+      - >-
+          que
+      - >-
+          Causen
+      - >-
+          Interferencias
+      - >-
+          de
+      - >-
+          Canadá
+      - >-
+          .
+
+  - unit: >-
+      EL SÍMBOLO CON UN RELÁMPAGO EN PUNTA DE FLECHA, DENTRO DE UN TRIÁNGULO EQUILÁTERO ES PARA AVISAR AL USARIO DE LA PRESENCIA DE "VOLTAJE PELIGROSO" SIN AISLAMIENTO DENTRO DE LA CARCASA DEL PRODUCTO, QUE PODRÍA SER DE UNA MAGNITUD BASTANTE PARA CONSTITUIR UN RIESGO DE DESCARGA ELÉCTRICA PARA LAS PERSONAS.
+    tokens:
+      - >-
+          EL
+      - >-
+          SÍMBOLO
+      - >-
+          CON
+      - >-
+          UN
+      - >-
+          RELÁMPAGO
+      - >-
+          EN
+      - >-
+          PUNTA
+      - >-
+          DE
+      - >-
+          FLECHA
+      - >-
+          ,
+      - >-
+          DENTRO
+      - >-
+          DE
+      - >-
+          UN
+      - >-
+          TRIÁNGULO
+      - >-
+          EQUILÁTERO
+      - >-
+          ES
+      - >-
+          PARA
+      - >-
+          AVISAR
+      - >-
+          AL
+      - >-
+          USARIO
+      - >-
+          DE
+      - >-
+          LA
+      - >-
+          PRESENCIA
+      - >-
+          DE
+      - >-
+          "
+      - >-
+          VOLTAJE
+      - >-
+          PELIGROSO
+      - >-
+          "
+      - >-
+          SIN
+      - >-
+          AISLAMIENTO
+      - >-
+          DENTRO
+      - >-
+          DE
+      - >-
+          LA
+      - >-
+          CARCASA
+      - >-
+          DEL
+      - >-
+          PRODUCTO
+      - >-
+          ,
+      - >-
+          QUE
+      - >-
+          PODRÍA
+      - >-
+          SER
+      - >-
+          DE
+      - >-
+          UNA
+      - >-
+          MAGNITUD
+      - >-
+          BASTANTE
+      - >-
+          PARA
+      - >-
+          CONSTITUIR
+      - >-
+          UN
+      - >-
+          RIESGO
+      - >-
+          DE
+      - >-
+          DESCARGA
+      - >-
+          ELÉCTRICA
+      - >-
+          PARA
+      - >-
+          LAS
+      - >-
+          PERSONAS
+      - >-
+          .
+
+  - unit: >-
+      EL SIGNO DE ADMIRACIÓN DENTRO DE UN TRIÁNGULO EQUILÁTERO ES PARA AVISAR AL USUARIO DE LA PRESENCIA DE INSTRUCCIONES IMPORTANTES PARA EL FUNCIONAMIENTO Y MANTENIMIENTO EN LA DOCUMENTACIÓN QUE ACOMPAÑA AL APARATO.
+    tokens:
+      - >-
+          EL
+      - >-
+          SIGNO
+      - >-
+          DE
+      - >-
+          ADMIRACIÓN
+      - >-
+          DENTRO
+      - >-
+          DE
+      - >-
+          UN
+      - >-
+          TRIÁNGULO
+      - >-
+          EQUILÁTERO
+      - >-
+          ES
+      - >-
+          PARA
+      - >-
+          AVISAR
+      - >-
+          AL
+      - >-
+          USUARIO
+      - >-
+          DE
+      - >-
+          LA
+      - >-
+          PRESENCIA
+      - >-
+          DE
+      - >-
+          INSTRUCCIONES
+      - >-
+          IMPORTANTES
+      - >-
+          PARA
+      - >-
+          EL
+      - >-
+          FUNCIONAMIENTO
+      - >-
+          Y
+      - >-
+          MANTENIMIENTO
+      - >-
+          EN
+      - >-
+          LA
+      - >-
+          DOCUMENTACIÓN
+      - >-
+          QUE
+      - >-
+          ACOMPAÑA
+      - >-
+          AL
+      - >-
+          APARATO
+      - >-
+          .
+
+  - unit: >-
+      El equipo toma corriente nominal residual del enchufe de corriente alterna con el botón de ENCENDIDO en la posición de ESPERA.
+    tokens:
+      - >-
+          El
+      - >-
+          equipo
+      - >-
+          toma
+      - >-
+          corriente
+      - >-
+          nominal
+      - >-
+          residual
+      - >-
+          del
+      - >-
+          enchufe
+      - >-
+          de
+      - >-
+          corriente
+      - >-
+          alterna
+      - >-
+          con
+      - >-
+          el
+      - >-
+          botón
+      - >-
+          de
+      - >-
+          ENCENDIDO
+      - >-
+          en
+      - >-
+          la
+      - >-
+          posición
+      - >-
+          de
+      - >-
+          ESPERA
+      - >-
+          .
+
+  - unit: >-
+      El enchufe debe estar instalado cerca del aparato y debería ser fácilmente accesible.
+    tokens:
+      - >-
+          El
+      - >-
+          enchufe
+      - >-
+          debe
+      - >-
+          estar
+      - >-
+          instalado
+      - >-
+          cerca
+      - >-
+          del
+      - >-
+          aparato
+      - >-
+          y
+      - >-
+          debería
+      - >-
+          ser
+      - >-
+          fácilmente
+      - >-
+          accesible
+      - >-
+          .
+
+  - unit: >-
+      PRECAUCIÓN
+    tokens:
+      - >-
+          PRECAUCIÓN
+
+  - unit: >-
+      PRECAUCIÓN
+    tokens:
+      - >-
+          PRECAUCIÓN
+
+  - unit: >-
+      Los cambios o modificaciones que no estén expresamente aprobados por NAD Electronics respecto al cumplimiento podrían anular la autorización del usuario para hacer funcionar el equipo.
+    tokens:
+      - >-
+          Los
+      - >-
+          cambios
+      - >-
+          o
+      - >-
+          modificaciones
+      - >-
+          que
+      - >-
+          no
+      - >-
+          estén
+      - >-
+          expresamente
+      - >-
+          aprobados
+      - >-
+          por
+      - >-
+          NAD
+      - >-
+          Electronics
+      - >-
+          respecto
+      - >-
+          al
+      - >-
+          cumplimiento
+      - >-
+          podrían
+      - >-
+          anular
+      - >-
+          la
+      - >-
+          autorización
+      - >-
+          del
+      - >-
+          usuario
+      - >-
+          para
+      - >-
+          hacer
+      - >-
+          funcionar
+      - >-
+          el
+      - >-
+          equipo
+      - >-
+          .
+
+  - unit: >-
+      PRECAUCIONES RELATIVAS A LA UBICACIÓN
+    tokens:
+      - >-
+          PRECAUCIONES
+      - >-
+          RELATIVAS
+      - >-
+          A
+      - >-
+          LA
+      - >-
+          UBICACIÓN
+
+  - unit: >-
+      Para mantener una ventilación adecuada, compruebe que deja espacio alrededor de la unidad (de las mayores dimensiones exteriores incluidas las proyecciones) que sea igual o mayor que las dimensiones que se indican seguidamente.
+    tokens:
+      - >-
+          Para
+      - >-
+          mantener
+      - >-
+          una
+      - >-
+          ventilación
+      - >-
+          adecuada
+      - >-
+          ,
+      - >-
+          compruebe
+      - >-
+          que
+      - >-
+          deja
+      - >-
+          espacio
+      - >-
+          alrededor
+      - >-
+          de
+      - >-
+          la
+      - >-
+          unidad
+      - >-
+          (
+      - >-
+          de
+      - >-
+          las
+      - >-
+          mayores
+      - >-
+          dimensiones
+      - >-
+          exteriores
+      - >-
+          incluidas
+      - >-
+          las
+      - >-
+          proyecciones
+      - >-
+          )
+      - >-
+          que
+      - >-
+          sea
+      - >-
+          igual
+      - >-
+          o
+      - >-
+          mayor
+      - >-
+          que
+      - >-
+          las
+      - >-
+          dimensiones
+      - >-
+          que
+      - >-
+          se
+      - >-
+          indican
+      - >-
+          seguidamente
+      - >-
+          .
+
+  - unit: >-
+      INFORMACIÓN IMPORTANTE PARA LOS CLIENTES DEL REINO UNIDO
+    tokens:
+      - >-
+          INFORMACIÓN
+      - >-
+          IMPORTANTE
+      - >-
+          PARA
+      - >-
+          LOS
+      - >-
+          CLIENTES
+      - >-
+          DEL
+      - >-
+          REINO
+      - >-
+          UNIDO
+
+  - unit: >-
+      IMPORTANTE
+    tokens:
+      - >-
+          IMPORTANTE
+
+  - unit: >-
+      Los cables de la corriente de este producto llevan los colores según el siguiente código:
+    tokens:
+      - >-
+          Los
+      - >-
+          cables
+      - >-
+          de
+      - >-
+          la
+      - >-
+          corriente
+      - >-
+          de
+      - >-
+          este
+      - >-
+          producto
+      - >-
+          llevan
+      - >-
+          los
+      - >-
+          colores
+      - >-
+          según
+      - >-
+          el
+      - >-
+          siguiente
+      - >-
+          código
+      - >-
+          :
+
+  - unit: >-
+      Como estos colores podrían no corresponderse con las marcas de colores que identifiquen los terminales de su clavija, siga como se indica:
+    tokens:
+      - >-
+          Como
+      - >-
+          estos
+      - >-
+          colores
+      - >-
+          podrían
+      - >-
+          no
+      - >-
+          corresponderse
+      - >-
+          con
+      - >-
+          las
+      - >-
+          marcas
+      - >-
+          de
+      - >-
+          colores
+      - >-
+          que
+      - >-
+          identifiquen
+      - >-
+          los
+      - >-
+          terminales
+      - >-
+          de
+      - >-
+          su
+      - >-
+          clavija
+      - >-
+          ,
+      - >-
+          siga
+      - >-
+          como
+      - >-
+          se
+      - >-
+          indica
+      - >-
+          :
+
+  - unit: >-
+      Cuando se reemplaza un fusible, sólo debe usarse uno autorizado y con el nominal correcto, y debe comprobarse que se ha vuelto a colocar la tapa del fusible.
+    tokens:
+      - >-
+          Cuando
+      - >-
+          se
+      - >-
+          reemplaza
+      - >-
+          un
+      - >-
+          fusible
+      - >-
+          ,
+      - >-
+          sólo
+      - >-
+          debe
+      - >-
+          usarse
+      - >-
+          uno
+      - >-
+          autorizado
+      - >-
+          y
+      - >-
+          con
+      - >-
+          el
+      - >-
+          nominal
+      - >-
+          correcto
+      - >-
+          ,
+      - >-
+          y
+      - >-
+          debe
+      - >-
+          comprobarse
+      - >-
+          que
+      - >-
+          se
+      - >-
+          ha
+      - >-
+          vuelto
+      - >-
+          a
+      - >-
+          colocar
+      - >-
+          la
+      - >-
+          tapa
+      - >-
+          del
+      - >-
+          fusible
+      - >-
+          .
+
+  - unit: >-
+      SI DUDA, ES MEJOR QUE CONSULTE CON UN ELECTRICISTA ESPECIALIZADO.
+    tokens:
+      - >-
+          SI
+      - >-
+          DUDA
+      - >-
+          ,
+      - >-
+          ES
+      - >-
+          MEJOR
+      - >-
+          QUE
+      - >-
+          CONSULTE
+      - >-
+          CON
+      - >-
+          UN
+      - >-
+          ELECTRICISTA
+      - >-
+          ESPECIALIZADO
+      - >-
+          .
+
+  - unit: >-
+      OBSERVACIONES SOBRE LA PROTECCIÓN MEDIOAMBIENTAL
+    tokens:
+      - >-
+          OBSERVACIONES
+      - >-
+          SOBRE
+      - >-
+          LA
+      - >-
+          PROTECCIÓN
+      - >-
+          MEDIOAMBIENTAL
+
+  - unit: >-
+      "DTS" y "DTS Digital Out" son marcas registradas de DTS, Inc.
+    tokens:
+      - >-
+          "
+      - >-
+          DTS
+      - >-
+          "
+      - >-
+          y
+      - >-
+          "
+      - >-
+          DTS
+      - >-
+          Digital
+      - >-
+          Out
+      - >-
+          "
+      - >-
+          son
+      - >-
+          marcas
+      - >-
+          registradas
+      - >-
+          de
+      - >-
+          DTS
+      - >-
+          ,
+      - >-
+          Inc.
+
+  - unit: >-
+      REGISTRE SU NÚMERO DE MODELO (AHORA QUE PUEDE VERLO)
+    tokens:
+      - >-
+          REGISTRE
+      - >-
+          SU
+      - >-
+          NÚMERO
+      - >-
+          DE
+      - >-
+          MODELO
+      - >-
+          (
+      - >-
+          AHORA
+      - >-
+          QUE
+      - >-
+          PUEDE
+      - >-
+          VERLO
+      - >-
+          )
+
+  - unit: >-
+      INTRODUCCIÓN
+    tokens:
+      - >-
+          INTRODUCCIÓN
+
+  - unit: >-
+      GRACIAS POR ELEGIR NAD
+    tokens:
+      - >-
+          GRACIAS
+      - >-
+          POR
+      - >-
+          ELEGIR
+      - >-
+          NAD
+
+  - unit: >-
+      Una cosa más: Le animamos a que se registre su L54 en el sitio Web de NAD: http://NADelectronics.com/warranty
+    tokens:
+      - >-
+          Una
+      - >-
+          cosa
+      - >-
+          más
+      - >-
+          :
+      - >-
+          Le
+      - >-
+          animamos
+      - >-
+          a
+      - >-
+          que
+      - >-
+          se
+      - >-
+          registre
+      - >-
+          su
+      - >-
+          L54
+      - >-
+          en
+      - >-
+          el
+      - >-
+          sitio
+      - >-
+          Web
+      - >-
+          de
+      - >-
+          NAD
+      - >-
+          :
+      - >-
+          http://NADelectronics.com/warranty
+
+  - unit: >-
+      Para información sobre la garantía, contacte con su distribuidor local.
+    tokens:
+      - >-
+          Para
+      - >-
+          información
+      - >-
+          sobre
+      - >-
+          la
+      - >-
+          garantía
+      - >-
+          ,
+      - >-
+          contacte
+      - >-
+          con
+      - >-
+          su
+      - >-
+          distribuidor
+      - >-
+          local
+      - >-
+          .
+
+  - unit: >-
+      PARA SACARLE EL MEJOR PARTIDO AL L54
+    tokens:
+      - >-
+          PARA
+      - >-
+          SACARLE
+      - >-
+          EL
+      - >-
+          MEJOR
+      - >-
+          PARTIDO
+      - >-
+          AL
+      - >-
+          L54
+
+  - unit: >-
+      QUÉ HAY EN LA CAJA
+    tokens:
+      - >-
+          QUÉ
+      - >-
+          HAY
+      - >-
+          EN
+      - >-
+          LA
+      - >-
+          CAJA
+
+  - unit: >-
+      Embalado junto a su L54 hallará:
+    tokens:
+      - >-
+          Embalado
+      - >-
+          junto
+      - >-
+          a
+      - >-
+          su
+      - >-
+          L54
+      - >-
+          hallará
+      - >-
+          :
+
+  - unit: >-
+      CONSERVE EL EMBALAJE
+    tokens:
+      - >-
+          CONSERVE
+      - >-
+          EL
+      - >-
+          EMBALAJE
+
+  - unit: >-
+      ESCOGER LA UBICACIÓN
+    tokens:
+      - >-
+          ESCOGER
+      - >-
+          LA
+      - >-
+          UBICACIÓN
+
+  - unit: >-
+      REPRODUCIR UN CD O UNA PELÍCULA DVD
+    tokens:
+      - >-
+          REPRODUCIR
+      - >-
+          UN
+      - >-
+          CD
+      - >-
+          O
+      - >-
+          UNA
+      - >-
+          PELÍCULA
+      - >-
+          DVD
+
+  - unit: >-
+      Disfrute de la película o de la música, pero no deje de leer atentamente este manual y configurar, calibrar y ajustar su L54 total y cuidadosamente.
+    tokens:
+      - >-
+          Disfrute
+      - >-
+          de
+      - >-
+          la
+      - >-
+          película
+      - >-
+          o
+      - >-
+          de
+      - >-
+          la
+      - >-
+          música
+      - >-
+          ,
+      - >-
+          pero
+      - >-
+          no
+      - >-
+          deje
+      - >-
+          de
+      - >-
+          leer
+      - >-
+          atentamente
+      - >-
+          este
+      - >-
+          manual
+      - >-
+          y
+      - >-
+          configurar
+      - >-
+          ,
+      - >-
+          calibrar
+      - >-
+          y
+      - >-
+          ajustar
+      - >-
+          su
+      - >-
+          L54
+      - >-
+          total
+      - >-
+          y
+      - >-
+          cuidadosamente
+      - >-
+          .
+
+  - unit: >-
+      SOBRE EL L54
+    tokens:
+      - >-
+          SOBRE
+      - >-
+          EL
+      - >-
+          L54
+
+  - unit: >-
+      SOBRE EL SISTEMA DE MANDO A DISTANCIA HTR4
+    tokens:
+      - >-
+          SOBRE
+      - >-
+          EL
+      - >-
+          SISTEMA
+      - >-
+          DE
+      - >-
+          MANDO
+      - >-
+          A
+      - >-
+          DISTANCIA
+      - >-
+          HTR4
+
+  - unit: >-
+      Distancia: Unos 7 m desde el frente del sensor remoto.
+    tokens:
+      - >-
+          Distancia
+      - >-
+          :
+      - >-
+          Unos
+      - >-
+          7
+      - >-
+          m
+      - >-
+          desde
+      - >-
+          el
+      - >-
+          frente
+      - >-
+          del
+      - >-
+          sensor
+      - >-
+          remoto
+      - >-
+          .
+
+  - unit: >-
+      Ángulo: Unos 30° en cada dirección desde el frontal del sensor remoto.
+    tokens:
+      - >-
+          Ángulo
+      - >-
+          :
+      - >-
+          Unos
+      - >-
+          30
+      - >-
+          °
+      - >-
+          en
+      - >-
+          cada
+      - >-
+          dirección
+      - >-
+          desde
+      - >-
+          el
+      - >-
+          frontal
+      - >-
+          del
+      - >-
+          sensor
+      - >-
+          remoto
+      - >-
+          .
+
+  - unit: >-
+      Si la bandeja del disco queda abierta, pulse este botón para cerrarla automáticamente e iniciar la reproducción si hay un disco cargado.
+    tokens:
+      - >-
+          Si
+      - >-
+          la
+      - >-
+          bandeja
+      - >-
+          del
+      - >-
+          disco
+      - >-
+          queda
+      - >-
+          abierta
+      - >-
+          ,
+      - >-
+          pulse
+      - >-
+          este
+      - >-
+          botón
+      - >-
+          para
+      - >-
+          cerrarla
+      - >-
+          automáticamente
+      - >-
+          e
+      - >-
+          iniciar
+      - >-
+          la
+      - >-
+          reproducción
+      - >-
+          si
+      - >-
+          hay
+      - >-
+          un
+      - >-
+          disco
+      - >-
+          cargado
+      - >-
+          .
+
+  - unit: >-
+      El botón de regulación del VOLUMEN también se utiliza para aumentar/reducir el nivel de Bajos/Agudos, el balance entre IZQUIERDA/DERECHA, ajustar el nivel del DRC y APAGAR/ENCENDER el SRS.
+    tokens:
+      - >-
+          El
+      - >-
+          botón
+      - >-
+          de
+      - >-
+          regulación
+      - >-
+          del
+      - >-
+          VOLUMEN
+      - >-
+          también
+      - >-
+          se
+      - >-
+          utiliza
+      - >-
+          para
+      - >-
+          aumentar
+      - >-
+          /
+      - >-
+          reducir
+      - >-
+          el
+      - >-
+          nivel
+      - >-
+          de
+      - >-
+          Bajos
+      - >-
+          /
+      - >-
+          Agudos
+      - >-
+          ,
+      - >-
+          el
+      - >-
+          balance
+      - >-
+          entre
+      - >-
+          IZQUIERDA
+      - >-
+          /
+      - >-
+          DERECHA
+      - >-
+          ,
+      - >-
+          ajustar
+      - >-
+          el
+      - >-
+          nivel
+      - >-
+          del
+      - >-
+          DRC
+      - >-
+          y
+      - >-
+          APAGAR
+      - >-
+          /
+      - >-
+          ENCENDER
+      - >-
+          el
+      - >-
+          SRS
+      - >-
+          .
+
+  - unit: >-
+      ¡ATENCIÓN!
+    tokens:
+      - >-
+          ¡
+      - >-
+          ATENCIÓN
+      - >-
+          !
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTAS
+    tokens:
+      - >-
+          NOTAS
+
+  - unit: >-
+      NOTAS
+    tokens:
+      - >-
+          NOTAS
+
+  - unit: >-
+      El reloj se pone a"00:00"cuando el cable de la corriente está desenchufado y se vuelve a enchufar a la corriente.
+    tokens:
+      - >-
+          El
+      - >-
+          reloj
+      - >-
+          se
+      - >-
+          pone
+      - >-
+          a
+      - >-
+          "
+      - >-
+          00:00
+      - >-
+          "
+      - >-
+          cuando
+      - >-
+          el
+      - >-
+          cable
+      - >-
+          de
+      - >-
+          la
+      - >-
+          corriente
+      - >-
+          está
+      - >-
+          desenchufado
+      - >-
+          y
+      - >-
+          se
+      - >-
+          vuelve
+      - >-
+          a
+      - >-
+          enchufar
+      - >-
+          a
+      - >-
+          la
+      - >-
+          corriente
+      - >-
+          .
+
+  - unit: >-
+      INICIO
+    tokens:
+      - >-
+          INICIO
+
+  - unit: >-
+      a   Conecte los altavoces sólo al L54, y compruebe si zumban.
+    tokens:
+      - >-
+          a
+      - >-
+          Conecte
+      - >-
+          los
+      - >-
+          altavoces
+      - >-
+          sólo
+      - >-
+          al
+      - >-
+          L54
+      - >-
+          ,
+      - >-
+          y
+      - >-
+          compruebe
+      - >-
+          si
+      - >-
+          zumban
+      - >-
+          .
+
+  - unit: >-
+      CONFIGURACIÓN POR DEFECTO DE FÁBRICA
+    tokens:
+      - >-
+          CONFIGURACIÓN
+      - >-
+          POR
+      - >-
+          DEFECTO
+      - >-
+          DE
+      - >-
+          FÁBRICA
+
+  - unit: >-
+      1 Coloque el L54 en modo AM.
+    tokens:
+      - >-
+          1
+      - >-
+          Coloque
+      - >-
+          el
+      - >-
+          L54
+      - >-
+          en
+      - >-
+          modo
+      - >-
+          AM
+      - >-
+          .
+
+  - unit: >-
+      Tenga en cuenta que la configuración por defecto del L54 borrará todas las presintonías AM y FM.
+    tokens:
+      - >-
+          Tenga
+      - >-
+          en
+      - >-
+          cuenta
+      - >-
+          que
+      - >-
+          la
+      - >-
+          configuración
+      - >-
+          por
+      - >-
+          defecto
+      - >-
+          del
+      - >-
+          L54
+      - >-
+          borrará
+      - >-
+          todas
+      - >-
+          las
+      - >-
+          presintonías
+      - >-
+          AM
+      - >-
+          y
+      - >-
+          FM
+      - >-
+          .
+
+  - unit: >-
+      SOBRE LA VISUALIZACIÓN EN PANTALLA (OSD)
+    tokens:
+      - >-
+          SOBRE
+      - >-
+          LA
+      - >-
+          VISUALIZACIÓN
+      - >-
+          EN
+      - >-
+          PANTALLA
+      - >-
+          (
+      - >-
+          OSD
+      - >-
+          )
+
+  - unit: >-
+      CÓMO VISUALIZAR LA OSD DEL DVD L54
+    tokens:
+      - >-
+          CÓMO
+      - >-
+          VISUALIZAR
+      - >-
+          LA
+      - >-
+          OSD
+      - >-
+          DEL
+      - >-
+          DVD
+      - >-
+          L54
+
+  - unit: >-
+      Aparecerá el Menú de Configuración OSD del L54 en la SALIDA (OUT) de elementos de vídeo (NTSC/PAL), salida de SCART/RGB (PAL), SALIDA de Monitor (Vídeo/S-Vídeo) y en las salidas de la grabadora de VCR.
+    tokens:
+      - >-
+          Aparecerá
+      - >-
+          el
+      - >-
+          Menú
+      - >-
+          de
+      - >-
+          Configuración
+      - >-
+          OSD
+      - >-
+          del
+      - >-
+          L54
+      - >-
+          en
+      - >-
+          la
+      - >-
+          SALIDA
+      - >-
+          (
+      - >-
+          OUT
+      - >-
+          )
+      - >-
+          de
+      - >-
+          elementos
+      - >-
+          de
+      - >-
+          vídeo
+      - >-
+          (
+      - >-
+          NTSC
+      - >-
+          /
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          salida
+      - >-
+          de
+      - >-
+          SCART
+      - >-
+          /
+      - >-
+          RGB
+      - >-
+          (
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          SALIDA
+      - >-
+          de
+      - >-
+          Monitor
+      - >-
+          (
+      - >-
+          Vídeo
+      - >-
+          /
+      - >-
+          S-Vídeo
+      - >-
+          )
+      - >-
+          y
+      - >-
+          en
+      - >-
+          las
+      - >-
+          salidas
+      - >-
+          de
+      - >-
+          la
+      - >-
+          grabadora
+      - >-
+          de
+      - >-
+          VCR
+      - >-
+          .
+
+  - unit: >-
+      SRS TRUSURROUND
+    tokens:
+      - >-
+          SRS
+      - >-
+          TRUSURROUND
+
+  - unit: >-
+      Los laboratorios SRS desarrollaron TruSurround, una tecnología patentada que acepta cualquier fuente multicanal como el Dolby Digital, Dolby Surround o el DTS, incluidos los MPEG 1 y 2, y los transforma en una irresistible experiencia en sonido con sólo dos altavoces o auriculares.
+    tokens:
+      - >-
+          Los
+      - >-
+          laboratorios
+      - >-
+          SRS
+      - >-
+          desarrollaron
+      - >-
+          TruSurround
+      - >-
+          ,
+      - >-
+          una
+      - >-
+          tecnología
+      - >-
+          patentada
+      - >-
+          que
+      - >-
+          acepta
+      - >-
+          cualquier
+      - >-
+          fuente
+      - >-
+          multicanal
+      - >-
+          como
+      - >-
+          el
+      - >-
+          Dolby
+      - >-
+          Digital
+      - >-
+          ,
+      - >-
+          Dolby
+      - >-
+          Surround
+      - >-
+          o
+      - >-
+          el
+      - >-
+          DTS
+      - >-
+          ,
+      - >-
+          incluidos
+      - >-
+          los
+      - >-
+          MPEG
+      - >-
+          1
+      - >-
+          y
+      - >-
+          2
+      - >-
+          ,
+      - >-
+          y
+      - >-
+          los
+      - >-
+          transforma
+      - >-
+          en
+      - >-
+          una
+      - >-
+          irresistible
+      - >-
+          experiencia
+      - >-
+          en
+      - >-
+          sonido
+      - >-
+          con
+      - >-
+          sólo
+      - >-
+          dos
+      - >-
+          altavoces
+      - >-
+          o
+      - >-
+          auriculares
+      - >-
+          .
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      La tecnología TruSurround se ha incorporado con licencia de SRS Labs, Inc.
+    tokens:
+      - >-
+          La
+      - >-
+          tecnología
+      - >-
+          TruSurround
+      - >-
+          se
+      - >-
+          ha
+      - >-
+          incorporado
+      - >-
+          con
+      - >-
+          licencia
+      - >-
+          de
+      - >-
+          SRS
+      - >-
+          Labs
+      - >-
+          ,
+      - >-
+          Inc.
+
+  - unit: >-
+      CONFIGURACIÓN IZQUIERDA Y DERECHA (AJUSTE DEL BALANCE)
+    tokens:
+      - >-
+          CONFIGURACIÓN
+      - >-
+          IZQUIERDA
+      - >-
+          Y
+      - >-
+          DERECHA
+      - >-
+          (
+      - >-
+          AJUSTE
+      - >-
+          DEL
+      - >-
+          BALANCE
+      - >-
+          )
+
+  - unit: >-
+      AJUSTE DE LOS CONTROLES DE TONO
+    tokens:
+      - >-
+          AJUSTE
+      - >-
+          DE
+      - >-
+          LOS
+      - >-
+          CONTROLES
+      - >-
+          DE
+      - >-
+          TONO
+
+  - unit: >-
+      CONTROL DE RANGO DINÁMICO (DYNAMIC RANGE CONTROL, DRC)
+    tokens:
+      - >-
+          CONTROL
+      - >-
+          DE
+      - >-
+          RANGO
+      - >-
+          DINÁMICO
+      - >-
+          (
+      - >-
+          DYNAMIC
+      - >-
+          RANGE
+      - >-
+          CONTROL
+      - >-
+          ,
+      - >-
+          DRC
+      - >-
+          )
+
+  - unit: >-
+      SELECCIÓN DE LA ENTRADA
+    tokens:
+      - >-
+          SELECCIÓN
+      - >-
+          DE
+      - >-
+          LA
+      - >-
+          ENTRADA
+
+  - unit: >-
+      La entrada de audio asignada siempre será la que se recuerde cuando se seleccione esa entrada desde el panel frontal con SELECCIÓN DE ENTRADA (INPUT SELECT) o con los botones de selección de entrada del mando a distancia HTR4.
+    tokens:
+      - >-
+          La
+      - >-
+          entrada
+      - >-
+          de
+      - >-
+          audio
+      - >-
+          asignada
+      - >-
+          siempre
+      - >-
+          será
+      - >-
+          la
+      - >-
+          que
+      - >-
+          se
+      - >-
+          recuerde
+      - >-
+          cuando
+      - >-
+          se
+      - >-
+          seleccione
+      - >-
+          esa
+      - >-
+          entrada
+      - >-
+          desde
+      - >-
+          el
+      - >-
+          panel
+      - >-
+          frontal
+      - >-
+          con
+      - >-
+          SELECCIÓN
+      - >-
+          DE
+      - >-
+          ENTRADA
+      - >-
+          (
+      - >-
+          INPUT
+      - >-
+          SELECT
+      - >-
+          )
+      - >-
+          o
+      - >-
+          con
+      - >-
+          los
+      - >-
+          botones
+      - >-
+          de
+      - >-
+          selección
+      - >-
+          de
+      - >-
+          entrada
+      - >-
+          del
+      - >-
+          mando
+      - >-
+          a
+      - >-
+          distancia
+      - >-
+          HTR4
+      - >-
+          .
+
+  - unit: >-
+      SILENCIAR EL SONIDO
+    tokens:
+      - >-
+          SILENCIAR
+      - >-
+          EL
+      - >-
+          SONIDO
+
+  - unit: >-
+      AJUSTE DEL NIVEL DE SUBWOOFER "SOBRE LA MARCHA"
+    tokens:
+      - >-
+          AJUSTE
+      - >-
+          DEL
+      - >-
+          NIVEL
+      - >-
+          DE
+      - >-
+          SUBWOOFER
+      - >-
+          "
+      - >-
+          SOBRE
+      - >-
+          LA
+      - >-
+          MARCHA
+      - >-
+          "
+
+  - unit: >-
+      Utilice las teclas 'SUB' del mando HTR4 para acceder directamente a estos canales en un rango de ±12 dB.
+    tokens:
+      - >-
+          Utilice
+      - >-
+          las
+      - >-
+          teclas
+      - >-
+          '
+      - >-
+          SUB
+      - >-
+          '
+      - >-
+          del
+      - >-
+          mando
+      - >-
+          HTR4
+      - >-
+          para
+      - >-
+          acceder
+      - >-
+          directamente
+      - >-
+          a
+      - >-
+          estos
+      - >-
+          canales
+      - >-
+          en
+      - >-
+          un
+      - >-
+          rango
+      - >-
+          de
+      - >-
+          ±12
+      - >-
+          dB
+      - >-
+          .
+
+  - unit: >-
+      FUNCIONAMIENTO
+    tokens:
+      - >-
+          FUNCIONAMIENTO
+
+  - unit: >-
+      INFORMACIÓN DE LA REGIÓN
+    tokens:
+      - >-
+          INFORMACIÓN
+      - >-
+          DE
+      - >-
+          LA
+      - >-
+          REGIÓN
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      CARGA DEL DISCO Y REPRODUCCIÓN
+    tokens:
+      - >-
+          CARGA
+      - >-
+          DEL
+      - >-
+          DISCO
+      - >-
+          Y
+      - >-
+          REPRODUCCIÓN
+
+  - unit: >-
+      Estas son algunas sugerencias importantes cuando se cargue un disco:
+    tokens:
+      - >-
+          Estas
+      - >-
+          son
+      - >-
+          algunas
+      - >-
+          sugerencias
+      - >-
+          importantes
+      - >-
+          cuando
+      - >-
+          se
+      - >-
+          cargue
+      - >-
+          un
+      - >-
+          disco
+      - >-
+          :
+
+  - unit: >-
+      Pulse la tecla "PARAR"(STOP) del mando HTR4 dos veces durante la reproducción para visualizar el número total de pistas del CD de audio y el tiempo total de reproducción en la pantalla VFD.
+    tokens:
+      - >-
+          Pulse
+      - >-
+          la
+      - >-
+          tecla
+      - >-
+          "
+      - >-
+          PARAR
+      - >-
+          "
+      - >-
+          (
+      - >-
+          STOP
+      - >-
+          )
+      - >-
+          del
+      - >-
+          mando
+      - >-
+          HTR4
+      - >-
+          dos
+      - >-
+          veces
+      - >-
+          durante
+      - >-
+          la
+      - >-
+          reproducción
+      - >-
+          para
+      - >-
+          visualizar
+      - >-
+          el
+      - >-
+          número
+      - >-
+          total
+      - >-
+          de
+      - >-
+          pistas
+      - >-
+          del
+      - >-
+          CD
+      - >-
+          de
+      - >-
+          audio
+      - >-
+          y
+      - >-
+          el
+      - >-
+          tiempo
+      - >-
+          total
+      - >-
+          de
+      - >-
+          reproducción
+      - >-
+          en
+      - >-
+          la
+      - >-
+          pantalla
+      - >-
+          VFD
+      - >-
+          .
+
+  - unit: >-
+      Después de finalizar la reproducción de todos los capítulos del título, el reproductor DVD del L54 se para automáticamente y vuelve a la pantalla del menú.
+    tokens:
+      - >-
+          Después
+      - >-
+          de
+      - >-
+          finalizar
+      - >-
+          la
+      - >-
+          reproducción
+      - >-
+          de
+      - >-
+          todos
+      - >-
+          los
+      - >-
+          capítulos
+      - >-
+          del
+      - >-
+          título
+      - >-
+          ,
+      - >-
+          el
+      - >-
+          reproductor
+      - >-
+          DVD
+      - >-
+          del
+      - >-
+          L54
+      - >-
+          se
+      - >-
+          para
+      - >-
+          automáticamente
+      - >-
+          y
+      - >-
+          vuelve
+      - >-
+          a
+      - >-
+          la
+      - >-
+          pantalla
+      - >-
+          del
+      - >-
+          menú
+      - >-
+          .
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NOTA
+    tokens:
+      - >-
+          NOTA
+
+  - unit: >-
+      NAVEGACIÓN OSD
+    tokens:
+      - >-
+          NAVEGACIÓN
+      - >-
+          OSD
+
+  - unit: >-
+      VISUALIZACIÓN DEL MENÚ DE CONFIGURACIÓN
+    tokens:
+      - >-
+          VISUALIZACIÓN
+      - >-
+          DEL
+      - >-
+          MENÚ
+      - >-
+          DE
+      - >-
+          CONFIGURACIÓN
+
+  - unit: >-
+      NAVEGACIÓN POR EL MENÚ DE CONFIGURACIÓN OSD Y CÓMO HACER CAMBIOS
+    tokens:
+      - >-
+          NAVEGACIÓN
+      - >-
+          POR
+      - >-
+          EL
+      - >-
+          MENÚ
+      - >-
+          DE
+      - >-
+          CONFIGURACIÓN
+      - >-
+          OSD
+      - >-
+          Y
+      - >-
+          CÓMO
+      - >-
+          HACER
+      - >-
+          CAMBIOS
+
+  - unit: >-
+      Para navegar por las opciones del Menú de Configuración OSD, siga los siguientes pasos utilizando el mando HTR4 (compruebe que el Selector de Aparato del HTR4 está en DVD):
+    tokens:
+      - >-
+          Para
+      - >-
+          navegar
+      - >-
+          por
+      - >-
+          las
+      - >-
+          opciones
+      - >-
+          del
+      - >-
+          Menú
+      - >-
+          de
+      - >-
+          Configuración
+      - >-
+          OSD
+      - >-
+          ,
+      - >-
+          siga
+      - >-
+          los
+      - >-
+          siguientes
+      - >-
+          pasos
+      - >-
+          utilizando
+      - >-
+          el
+      - >-
+          mando
+      - >-
+          HTR4
+      - >-
+          (
+      - >-
+          compruebe
+      - >-
+          que
+      - >-
+          el
+      - >-
+          Selector
+      - >-
+          de
+      - >-
+          Aparato
+      - >-
+          del
+      - >-
+          HTR4
+      - >-
+          está
+      - >-
+          en
+      - >-
+          DVD
+      - >-
+          )
+      - >-
+          :
+
+#  - unit: >-
+#      1 Pulse las teclas ^/v para desplazarse arriba y abajo por las opciones del menú.
+#    tokens:
+#      - >-
+#          1
+#      - >-
+#          Pulse
+#      - >-
+#          las
+#      - >-
+#          teclas
+#      - >-
+#          ^
+#      - >-
+#          /
+#      - >-
+#          v
+#      - >-
+#          para
+#      - >-
+#          desplazarse
+#      - >-
+#          arriba
+#      - >-
+#          y
+#      - >-
+#          abajo
+#      - >-
+#          por
+#      - >-
+#          las
+#      - >-
+#          opciones
+#      - >-
+#          del
+#      - >-
+#          menú
+#      - >-
+#          .
+
+#  - unit: >-
+#      2 Utilice las teclas </> para seleccionar entre las opciones de un menú en particular.
+#    tokens:
+#      - >-
+#          2
+#      - >-
+#          Utilice
+#      - >-
+#          las
+#      - >-
+#          teclas
+#      - >-
+#          </>
+#      - >-
+#          para
+#      - >-
+#          seleccionar
+#      - >-
+#          entre
+#      - >-
+#          las
+#      - >-
+#          opciones
+#      - >-
+#          de
+#      - >-
+#          un
+#      - >-
+#          menú
+#      - >-
+#          en
+#      - >-
+#          particular
+#      - >-
+#          .
+
+  - unit: >-
+      3 Pulse "INTRO" (ENTER) para grabar la configuración.
+    tokens:
+      - >-
+          3
+      - >-
+          Pulse
+      - >-
+          "
+      - >-
+          INTRO
+      - >-
+          "
+      - >-
+          (
+      - >-
+          ENTER
+      - >-
+          )
+      - >-
+          para
+      - >-
+          grabar
+      - >-
+          la
+      - >-
+          configuración
+      - >-
+          .
+
+  - unit: >-
+      VISUALIZACIÓN DEL OSD DEL DISCO
+    tokens:
+      - >-
+          VISUALIZACIÓN
+      - >-
+          DEL
+      - >-
+          OSD
+      - >-
+          DEL
+      - >-
+          DISCO
+
+  - unit: >-
+      1 Pulse VISUALIZACIÓN (DISPLAY) durante la reproducción.
+    tokens:
+      - >-
+          1
+      - >-
+          Pulse
+      - >-
+          VISUALIZACIÓN
+      - >-
+          (
+      - >-
+          DISPLAY
+      - >-
+          )
+      - >-
+          durante
+      - >-
+          la
+      - >-
+          reproducción
+      - >-
+          .
+
+  - unit: >-
+      NOTAS
+    tokens:
+      - >-
+          NOTAS
+
+  - unit: >-
+      NOTAS
+    tokens:
+      - >-
+          NOTAS
+
+  - unit: >-
+      MENÚ DE CONFIGURACIÓN
+    tokens:
+      - >-
+          MENÚ
+      - >-
+          DE
+      - >-
+          CONFIGURACIÓN
+
+  - unit: >-
+      Para acceder y navegar por las opciones del Menú de Configuración, por favor consulte y siga las instrucciones indicadas en la sección anterior sobre "Navegación por el menú de configuración OSD y cómo hacer cambios".
+    tokens:
+      - >-
+          Para
+      - >-
+          acceder
+      - >-
+          y
+      - >-
+          navegar
+      - >-
+          por
+      - >-
+          las
+      - >-
+          opciones
+      - >-
+          del
+      - >-
+          Menú
+      - >-
+          de
+      - >-
+          Configuración
+      - >-
+          ,
+      - >-
+          por
+      - >-
+          favor
+      - >-
+          consulte
+      - >-
+          y
+      - >-
+          siga
+      - >-
+          las
+      - >-
+          instrucciones
+      - >-
+          indicadas
+      - >-
+          en
+      - >-
+          la
+      - >-
+          sección
+      - >-
+          anterior
+      - >-
+          sobre
+      - >-
+          "
+      - >-
+          Navegación
+      - >-
+          por
+      - >-
+          el
+      - >-
+          menú
+      - >-
+          de
+      - >-
+          configuración
+      - >-
+          OSD
+      - >-
+          y
+      - >-
+          cómo
+      - >-
+          hacer
+      - >-
+          cambios
+      - >-
+          "
+      - >-
+          .
+
+  - unit: >-
+      RELACIÓN DE ASPECTO DEL TELEVISOR
+    tokens:
+      - >-
+          RELACIÓN
+      - >-
+          DE
+      - >-
+          ASPECTO
+      - >-
+          DEL
+      - >-
+          TELEVISOR
+
+  - unit: >-
+      4:3 Seleccionar cuando hay conectado un televisor estándar de 4:3.
+    tokens:
+      - >-
+          4:3
+      - >-
+          Seleccionar
+      - >-
+          cuando
+      - >-
+          hay
+      - >-
+          conectado
+      - >-
+          un
+      - >-
+          televisor
+      - >-
+          estándar
+      - >-
+          de
+      - >-
+          4:3
+      - >-
+          .
+
+  - unit: >-
+      16:9 Seleccionar cuando hay conectado un televisor panorámico de 16:9.
+    tokens:
+      - >-
+          16:9
+      - >-
+          Seleccionar
+      - >-
+          cuando
+      - >-
+          hay
+      - >-
+          conectado
+      - >-
+          un
+      - >-
+          televisor
+      - >-
+          panorámico
+      - >-
+          de
+      - >-
+          16:9
+      - >-
+          .
+
+  - unit: >-
+      SISTEMA DEL TELEVISOR
+    tokens:
+      - >-
+          SISTEMA
+      - >-
+          DEL
+      - >-
+          TELEVISOR
+
+  - unit: >-
+      IDIOMA
+    tokens:
+      - >-
+          IDIOMA
+
+# 184 out of 518 found

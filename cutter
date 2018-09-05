@@ -46,7 +46,7 @@ def main(argv):
         description='Tokenize using language models.',
         formatter_class=argparse.RawTextHelpFormatter,
         epilog='alternative usage: %(prog)s profile\n\nprofiles:\n  {}'.format(
-            '\n  '.join(sorted('{}: {}'.format(
+            '\n  '.join(sorted('{} ({})'.format(
                 s, profiles[s][0]) for s in profiles.keys()))))
     parser.add_argument(
         '-v', '--verbose',
@@ -72,23 +72,36 @@ def main(argv):
         type=argparse.FileType('r'), default=sys.stdin,
         help='read from a file (default: stdin)')
     parser.add_argument(
-        '-w', '--whitespace-tokens',
+        '-w', '--whitespace',
         action='store_true',
         dest='wt',
         help='return whitespace tokens')
     parser.add_argument(
-        '-E', '--no-empty-tokens',
+        '-E', '--no-empty',
         action='store_false',
         dest='et',
         help='suppress empty tokens')
     parser.add_argument(
-        '-T', '--no-tokenizer-tags',
+        '-T', '--no-tags',
         action='store_false',
         dest='tt',
         help='suppress tokenizer tags')
     parser.add_argument(
-        '-c', '--cache',
-        help='load model from cache (if available)')
+        '-p', '--positions',
+        action='store_true',
+        dest='positions',
+        help='indicate positions of token in input string')
+    parser.add_argument(
+        '-s', '--structure',
+        action='store_true',
+        dest='structure',
+        help='indicate structure (level in tokenization tree)')
+#    parser.add_argument(
+#        '-c', '--cache',
+#        help='load model from cache')
+#    parser.add_argument(
+#        '-u', '--update-cache',
+#        help='write model to cache')
 
     if not len(argv):
         parser.print_help()
@@ -112,15 +125,20 @@ def main(argv):
 
     flags = (args.wt * Cutter.WHITESPACE_TOKENS + args.et * Cutter.EMPTY_TOKENS
              + args.tt * Cutter.TOKENIZATION_TAGS)
+    formatstr = ''
+    if args.positions:
+        formatstr += '{3}\t{4}\t'
+    if args.structure:
+        formatstr += '{2}\t'
+    if args.tt:
+        formatstr += '{1}\t'
+    formatstr += '{0}'
     for line in args.text:
         tokens = cutter.cut(line, flags)
         for token in tokens:
-            if args.tt:
-                print('{}\t{}'.format(token[0], token[1]))
-            else:
-                print('{}'.format(token))
+            print(formatstr.format(*token))
         if args.tt and args.et:
-            print('+NL\t')
+            print(formatstr.format('', '+NL', 0, token[4], token[4]))
         else:
             print()
 

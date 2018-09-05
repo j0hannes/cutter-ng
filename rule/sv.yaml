@@ -6,7 +6,7 @@
 #
 
 ---
-sv4:
+sv2:
 
   - name: enclosing quotation marks (first level)
     parts:
@@ -43,7 +43,7 @@ sv4:
       - _?
       - \right
 
-  - name: enclosing quotation marks (alternative first level, first variant)
+  - name: enclosing quotation marks (alternative first level)
     parts:
       - \left
       - ?<!: \pL
@@ -51,13 +51,13 @@ sv4:
       - ?=: \pL
       - \center: .+?
       - +dot: "[.?!]+"
-      - svXqtC2: «
+      - svXqtC2: '[«»]'
       - ?!: \pL
       - +EOS:
       - _?
       - \right
 
-  - name: enclosing quotation marks (alternative first level, first variant)
+  - name: enclosing quotation marks (alternative first level)
     parts:
       - \left
       - ?<!: \pL
@@ -65,34 +65,7 @@ sv4:
       - ?=: \pL
       - \center: .+?
       - ?<=: \pL
-      - svXqtC2: «
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (alternative first level, second variant)
-    parts:
-      - \left
-      - ?<!: \pL
-      - svXqtD1: »
-      - ?=: \pL
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - svXqtD2: »
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (alternative first level, second variant)
-    parts:
-      - \left
-      - ?<!: \pL
-      - svXqtD1: »
-      - ?=: \pL
-      - \center: .+?
-      - ?<=: \pL
-      - svXqtD2: »
+      - svXqtC2: '[«»]'
       - ?!: \pL
       - _?
       - \right
@@ -110,12 +83,56 @@ sv4:
       - _?
       - \right
 
-  - name: # e.g. SVT:s, 86:e
+  - name: compound nouns with quoted part (”...”-...)
     parts:
       - \left
       - ?<!: \pL
-      - svQac: (?:\p{Lu}+|\p{Nd}+%?|%)[:]\p{Ll}+
+      - svQqtnA: >-
+          ”\pL[\pL\s‐-]+(?<=\pL)”[‐-]\pL+
       - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (’...‘-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svQqtnB: >-
+          ’\pL[\pL\s‐-]+(?<=\pL)‘[‐-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part (»...«/»-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svQqtnC: >-
+          »\pL[\pL\s‐-]+(?<=\pL)[«»][‐-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound nouns with quoted part ("..."-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - svQqtnD: >-
+          "\pL[\pL\s‐-]+(?<=\pL)"[‐-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
+
+
+sv4:
+
+  - name: # e.g. SVT:s, 86:e
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - svQac: (?:\p{Lu}[\pL\d]*|\p{Nd}+%?|%)[:]\pL+
+      - ?!: '[\pL\d]'
       - _?
       - \right
 

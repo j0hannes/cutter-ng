@@ -38,10 +38,10 @@ de2:
     parts:
       - \left
       - ?<!: \pl
-      - dexqtb1: ‚
+      - deXqtB1: ‚
       - \center: .+?
       - +dot: "[.?!]+"
-      - dexqtb2: ‘
+      - deXqtB2: ‘
       - ?!: >-
           [\pL‐-]
       - +EOS:
@@ -52,9 +52,9 @@ de2:
     parts:
       - \left
       - ?<!: \pl
-      - dexqtb1: ‚
+      - deXqtB1: ‚
       - \center: .+?
-      - dexqtb2: ‘
+      - deXqtB2: ‘
       - ?!: >-
           [\pL‐-]
       - _?
@@ -210,6 +210,16 @@ de4:
       - _?
       - \right
 
+  - name: compound nouns with quoted part ("..."-...)
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQqtnD: >-
+          "\pL[\pL\s‐-]+(?<=\pL)"[‐-]\pL+
+      - ?!: \pL
+      - _?
+      - \right
+
   - name: compound nouns with quoted part (...-„...“)
     parts:
       - \left
@@ -249,6 +259,36 @@ de4:
       - ?!: \pL
       - _?
       - \right
+
+  - name: compound nouns with quoted part (...-"...")
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQnqtD: >-
+          \pL+[‐-]"\pL[\pL\s‐-]+(?<=\pL)"
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: compound noun with hyphen
+    parts:
+      - \left
+      - ?<!: \pL
+      - deQcp: >-
+          [\pL\d:/]+[‐-]\pL[\pL‐-]+(?<=\pL)
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: ordinal number
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - deQon: \d{1,3}[.]
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
 
 
 de7:

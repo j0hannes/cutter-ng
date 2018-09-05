@@ -1,0 +1,348 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/en.list
+
+init:
+  - init/en.list
+
+rule:
+  - rule/common.yaml
+  - rule/en.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      This Class B digital apparatus meets all requirements of the Canadian Interference-Causing Equipment Regulations.
+    tokens:
+      - >-
+          This
+      - >-
+          Class
+      - >-
+          B
+      - >-
+          digital
+      - >-
+          apparatus
+      - >-
+          meets
+      - >-
+          all
+      - >-
+          requirements
+      - >-
+          of
+      - >-
+          the
+      - >-
+          Canadian
+      - >-
+          Interference-Causing
+      - >-
+          Equipment
+      - >-
+          Regulations
+      - >-
+          .
+
+  - unit: >-
+      <li> Left and Right Panels: 10 cm
+    tokens:
+      - >-
+          <li>
+      - >-
+          Left
+      - >-
+          and
+      - >-
+          Right
+      - >-
+          Panels
+      - >-
+          :
+      - >-
+          10
+      - >-
+          cm
+
+  - unit: >-
+      <li> Rear Panel: 10 cm
+    tokens:
+      - >-
+          <li>
+      - >-
+          Rear
+      - >-
+          Panel
+      - >-
+          :
+      - >-
+          10
+      - >-
+          cm
+
+  - unit: >-
+      <li> Top Panel: 50 cm
+    tokens:
+      - >-
+          <li>
+      - >-
+          Top
+      - >-
+          Panel
+      - >-
+          :
+      - >-
+          50
+      - >-
+          cm
+
+  - unit: >-
+      ATTENTION!
+    tokens:
+      - >-
+          ATTENTION
+      - >-
+          !
+
+  - unit: >-
+      The L54's Setup Menu OSD will appear on the Component Video OUT (NTSC/PAL), SCART/RGB (PAL) output, Monitor OUT (Video/S-Video) and on the VCR record outputs.
+    tokens:
+      - >-
+          The
+      - >-
+          L54
+      - >-
+          's
+      - >-
+          Setup
+      - >-
+          Menu
+      - >-
+          OSD
+      - >-
+          will
+      - >-
+          appear
+      - >-
+          on
+      - >-
+          the
+      - >-
+          Component
+      - >-
+          Video
+      - >-
+          OUT
+      - >-
+          (
+      - >-
+          NTSC
+      - >-
+          /
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          SCART
+      - >-
+          /
+      - >-
+          RGB
+      - >-
+          (
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          output
+      - >-
+          ,
+      - >-
+          Monitor
+      - >-
+          OUT
+      - >-
+          (
+      - >-
+          Video
+      - >-
+          /
+      - >-
+          S-Video
+      - >-
+          )
+      - >-
+          and
+      - >-
+          on
+      - >-
+          the
+      - >-
+          VCR
+      - >-
+          record
+      - >-
+          outputs
+      - >-
+          .
+
+  - unit: >-
+      <li> The display feature may not be available for all disc media and is media dependent.
+    tokens:
+      - >-
+          <li>
+      - >-
+          The
+      - >-
+          display
+      - >-
+          feature
+      - >-
+          may
+      - >-
+          not
+      - >-
+          be
+      - >-
+          available
+      - >-
+          for
+      - >-
+          all
+      - >-
+          disc
+      - >-
+          media
+      - >-
+          and
+      - >-
+          is
+      - >-
+          media
+      - >-
+          dependent
+      - >-
+          .
+
+  - unit: >-
+      <li> The front panel and HTR4's "DISP" button toggles between time/track/chapters and subtitle/angles/audio configuration (DVD only).
+    tokens:
+      - >-
+          <li>
+      - >-
+          The
+      - >-
+          front
+      - >-
+          panel
+      - >-
+          and
+      - >-
+          HTR4
+      - >-
+          's
+      - >-
+          "
+      - >-
+          DISP
+      - >-
+          "
+      - >-
+          button
+      - >-
+          toggles
+      - >-
+          between
+      - >-
+          time
+      - >-
+          /
+      - >-
+          track
+      - >-
+          /
+      - >-
+          chapters
+      - >-
+          and
+      - >-
+          subtitle
+      - >-
+          /
+      - >-
+          angles
+      - >-
+          /
+      - >-
+          audio
+      - >-
+          configuration
+      - >-
+          (
+      - >-
+          DVD
+      - >-
+          only
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      4:3 LB Displays a wide picture with bands on the upper and lower portions of the screen.
+    tokens:
+      - >-
+          4:3
+      - >-
+          LB
+      - >-
+          Displays
+      - >-
+          a
+      - >-
+          wide
+      - >-
+          picture
+      - >-
+          with
+      - >-
+          bands
+      - >-
+          on
+      - >-
+          the
+      - >-
+          upper
+      - >-
+          and
+      - >-
+          lower
+      - >-
+          portions
+      - >-
+          of
+      - >-
+          the
+      - >-
+          screen
+      - >-
+          .
+
+# 9 out of 512 found

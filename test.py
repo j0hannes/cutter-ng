@@ -112,7 +112,8 @@ class Tester:
                         regex.escape(markers[1]),
                         regex.escape('|')),
                     '', test['unit'])
-            tokens_test = list(self.cutter.cut(text, flags=self.flags));
+            tokens = list(self.cutter.cut(text, flags=self.flags));
+            tokens_test = [(t[1], t[0]) for t in tokens]
             errors = sum([g[1] != t[1] or (g[0] is not None and g[0] != t[0])
                 for (g, t) in itertools.zip_longest(
                     tokens_gold,
@@ -238,25 +239,27 @@ def main(argv):
         if tester.failed > 0:
             sets_failed[name] += tester.failed
         errors += tester.errors
-    print(
-        '\033[31m{} test{} in {} set{} failed ({} error{}).\033[0m'.format(
-            tests_failed, '' if tests_failed == 1 else 's',
-            len(sets_failed), '' if len(sets_failed) == 1 else 's',
-            errors, '' if errors == 1 else 's')
-        if sets_failed else
-        '\033[32mEverything OK ({} test{} in {} set{} evaluated).\033[0m'
-        ''.format(
-            tests_processed, '' if tests_processed == 1 else 's',
-            len(sets_processed), '' if len(sets_processed) == 1 else 's'))
+    if sets_failed:
+        print('\033[31m{} out of {} test{} in {} set{} failed '
+            '({} error{}).\033[0m'.format(
+                tests_failed, 
+                tests_processed, '' if tests_processed == 1 else 's',
+                len(sets_failed), '' if len(sets_failed) == 1 else 's',
+                errors, '' if errors == 1 else 's'))
+    else:
+        print('\033[32mEverything OK '
+            '({} test{} in {} test set{} evaluated).\033[0m'.format(
+                tests_processed, '' if tests_processed == 1 else 's',
+                len(sets_processed), '' if len(sets_processed) == 1 else 's'))
     if args.summary:
         for testset, n in sets_processed.items():
-            print("* {} test{}, \033[{}m{} {}\033[0m `{}'".format(
+            print("* {:3} test{}  \033[{}m{:3} {}\033[0m  {}".format(
                 n, '' if n == 1 else 's',
                 31 if testset in sets_failed else 32,
-                '{} out of {}'.format(
-                    sets_failed[testset], n) if testset in sets_failed else n,
+                sets_failed[testset] if testset in sets_failed else 'all',
                 'failed' if testset in sets_failed else 'passed',
                 testset))
+        print()
         if len(sets_failed):
             sys.exit(1)
 

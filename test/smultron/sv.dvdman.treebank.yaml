@@ -1,0 +1,5684 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/sv.list
+
+init:
+  - init/sv.list
+
+rule:
+  - rule/common.yaml
+  - rule/sv.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      VIKTIGA SÄKERHETSFÖRESKRIFTER
+    tokens:
+      - >-
+          VIKTIGA
+      - >-
+          SÄKERHETSFÖRESKRIFTER
+
+  - unit: >-
+      SPARA DESSA INSTRUKTIONER FÖR SENARE BRUK
+    tokens:
+      - >-
+          SPARA
+      - >-
+          DESSA
+      - >-
+          INSTRUKTIONER
+      - >-
+          FÖR
+      - >-
+          SENARE
+      - >-
+          BRUK
+
+  - unit: >-
+      FÖLJ ALLA VARNINGAR OCH INSTRUKTIONER SOM FINNS PÅ APPARATEN.
+    tokens:
+      - >-
+          FÖLJ
+      - >-
+          ALLA
+      - >-
+          VARNINGAR
+      - >-
+          OCH
+      - >-
+          INSTRUKTIONER
+      - >-
+          SOM
+      - >-
+          FINNS
+      - >-
+          PÅ
+      - >-
+          APPARATEN
+      - >-
+          .
+
+  - unit: >-
+      1 Läs instruktionerna - Alla säkerhets och användarinstruktioner skall läsas innan apparaten tas i bruk
+    tokens:
+      - >-
+          1
+      - >-
+          Läs
+      - >-
+          instruktionerna
+      - >-
+          -
+      - >-
+          Alla
+      - >-
+          säkerhets
+      - >-
+          och
+      - >-
+          användarinstruktioner
+      - >-
+          skall
+      - >-
+          läsas
+      - >-
+          innan
+      - >-
+          apparaten
+      - >-
+          tas
+      - >-
+          i
+      - >-
+          bruk
+
+  - unit: >-
+      2 Spara instruktionerna - Säkerhets och bruksanvisningen skall sparas för framtida bruk.
+    tokens:
+      - >-
+          2
+      - >-
+          Spara
+      - >-
+          instruktionerna
+      - >-
+          -
+      - >-
+          Säkerhets
+      - >-
+          och
+      - >-
+          bruksanvisningen
+      - >-
+          skall
+      - >-
+          sparas
+      - >-
+          för
+      - >-
+          framtida
+      - >-
+          bruk
+      - >-
+          .
+
+  - unit: >-
+      3 Beakta Varningarna - Alla varningar på apparaten och i bruksanvisningen måste följas.
+    tokens:
+      - >-
+          3
+      - >-
+          Beakta
+      - >-
+          Varningarna
+      - >-
+          -
+      - >-
+          Alla
+      - >-
+          varningar
+      - >-
+          på
+      - >-
+          apparaten
+      - >-
+          och
+      - >-
+          i
+      - >-
+          bruksanvisningen
+      - >-
+          måste
+      - >-
+          följas
+      - >-
+          .
+
+  - unit: >-
+      4 Följ Instruktionerna - Alla instruktioner om drift och skötsel skall följas.
+    tokens:
+      - >-
+          4
+      - >-
+          Följ
+      - >-
+          Instruktionerna
+      - >-
+          -
+      - >-
+          Alla
+      - >-
+          instruktioner
+      - >-
+          om
+      - >-
+          drift
+      - >-
+          och
+      - >-
+          skötsel
+      - >-
+          skall
+      - >-
+          följas
+      - >-
+          .
+
+  - unit: >-
+      6 Tillbehör - Använd inga tillbehör som inte rekommenderas av tillverkaren eftersom de kan orsaka skada.
+    tokens:
+      - >-
+          6
+      - >-
+          Tillbehör
+      - >-
+          -
+      - >-
+          Använd
+      - >-
+          inga
+      - >-
+          tillbehör
+      - >-
+          som
+      - >-
+          inte
+      - >-
+          rekommenderas
+      - >-
+          av
+      - >-
+          tillverkaren
+      - >-
+          eftersom
+      - >-
+          de
+      - >-
+          kan
+      - >-
+          orsaka
+      - >-
+          skada
+      - >-
+          .
+
+  - unit: >-
+      Gäller enbart USA/Kanada:
+    tokens:
+      - >-
+          Gäller
+      - >-
+          enbart
+      - >-
+          USA
+      - >-
+          /
+      - >-
+          Kanada
+      - >-
+          :
+
+  - unit: >-
+      BRA ATT VETA FÖR KABEL-TV INSTALLATÖRER
+    tokens:
+      - >-
+          BRA
+      - >-
+          ATT
+      - >-
+          VETA
+      - >-
+          FÖR
+      - >-
+          KABEL-TV
+      - >-
+          INSTALLATÖRER
+
+  - unit: >-
+      Gäller enbart USA/Kanada:
+    tokens:
+      - >-
+          Gäller
+      - >-
+          enbart
+      - >-
+          USA
+      - >-
+          /
+      - >-
+          Kanada
+      - >-
+          :
+
+  - unit: >-
+      17 Överbelastning - Överbelasta inte vägguttag, förlängningskablar eller uttag på apparaten eftersom detta kan resultera i brand eller elektriska stötar.
+    tokens:
+      - >-
+          17
+      - >-
+          Överbelastning
+      - >-
+          -
+      - >-
+          Överbelasta
+      - >-
+          inte
+      - >-
+          vägguttag
+      - >-
+          ,
+      - >-
+          förlängningskablar
+      - >-
+          eller
+      - >-
+          uttag
+      - >-
+          på
+      - >-
+          apparaten
+      - >-
+          eftersom
+      - >-
+          detta
+      - >-
+          kan
+      - >-
+          resultera
+      - >-
+          i
+      - >-
+          brand
+      - >-
+          eller
+      - >-
+          elektriska
+      - >-
+          stötar
+      - >-
+          .
+
+  - unit: >-
+      a) När nätsladden eller kontakten skadats.
+    tokens:
+      - >-
+          a)
+      - >-
+          När
+      - >-
+          nätsladden
+      - >-
+          eller
+      - >-
+          kontakten
+      - >-
+          skadats
+      - >-
+          .
+
+  - unit: >-
+      b) Om vätska kommit in i apparaten.
+    tokens:
+      - >-
+          b)
+      - >-
+          Om
+      - >-
+          vätska
+      - >-
+          kommit
+      - >-
+          in
+      - >-
+          i
+      - >-
+          apparaten
+      - >-
+          .
+
+  - unit: >-
+      c) Om produkten varit utsatt för vatten eller annan vätska.
+    tokens:
+      - >-
+          c)
+      - >-
+          Om
+      - >-
+          produkten
+      - >-
+          varit
+      - >-
+          utsatt
+      - >-
+          för
+      - >-
+          vatten
+      - >-
+          eller
+      - >-
+          annan
+      - >-
+          vätska
+      - >-
+          .
+
+  - unit: >-
+      d) Om produkten inte fungerar normalt enligt bruksanvisningen.
+    tokens:
+      - >-
+          d)
+      - >-
+          Om
+      - >-
+          produkten
+      - >-
+          inte
+      - >-
+          fungerar
+      - >-
+          normalt
+      - >-
+          enligt
+      - >-
+          bruksanvisningen
+      - >-
+          .
+
+  - unit: >-
+      Justera enbart de kontroller som beskrivs i bruksanvisningen eftersom en felaktig inställning av andra kontroller kan resultera i skador på apparaten som kan kräva omfattande reparationer för att återställa apparaten.
+    tokens:
+      - >-
+          Justera
+      - >-
+          enbart
+      - >-
+          de
+      - >-
+          kontroller
+      - >-
+          som
+      - >-
+          beskrivs
+      - >-
+          i
+      - >-
+          bruksanvisningen
+      - >-
+          eftersom
+      - >-
+          en
+      - >-
+          felaktig
+      - >-
+          inställning
+      - >-
+          av
+      - >-
+          andra
+      - >-
+          kontroller
+      - >-
+          kan
+      - >-
+          resultera
+      - >-
+          i
+      - >-
+          skador
+      - >-
+          på
+      - >-
+          apparaten
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          kräva
+      - >-
+          omfattande
+      - >-
+          reparationer
+      - >-
+          för
+      - >-
+          att
+      - >-
+          återställa
+      - >-
+          apparaten
+      - >-
+          .
+
+  - unit: >-
+      e) Om apparaten tappats eller skadats på något sätt.
+    tokens:
+      - >-
+          e)
+      - >-
+          Om
+      - >-
+          apparaten
+      - >-
+          tappats
+      - >-
+          eller
+      - >-
+          skadats
+      - >-
+          på
+      - >-
+          något
+      - >-
+          sätt
+      - >-
+          .
+
+  - unit: >-
+      f) Om apparaten visar klara skillnader i prestanda är detta ett tecken på att den behöver lämnas in för reparation.
+    tokens:
+      - >-
+          f)
+      - >-
+          Om
+      - >-
+          apparaten
+      - >-
+          visar
+      - >-
+          klara
+      - >-
+          skillnader
+      - >-
+          i
+      - >-
+          prestanda
+      - >-
+          är
+      - >-
+          detta
+      - >-
+          ett
+      - >-
+          tecken
+      - >-
+          på
+      - >-
+          att
+      - >-
+          den
+      - >-
+          behöver
+      - >-
+          lämnas
+      - >-
+          in
+      - >-
+          för
+      - >-
+          reparation
+      - >-
+          .
+
+  - unit: >-
+      21 Säkerhetskontroll - Efter att service gjorts på apparaten be teknikern att utföra en säkerhetskontroll på apparaten för att se om den fungerar som avsett.
+    tokens:
+      - >-
+          21
+      - >-
+          Säkerhetskontroll
+      - >-
+          -
+      - >-
+          Efter
+      - >-
+          att
+      - >-
+          service
+      - >-
+          gjorts
+      - >-
+          på
+      - >-
+          apparaten
+      - >-
+          be
+      - >-
+          teknikern
+      - >-
+          att
+      - >-
+          utföra
+      - >-
+          en
+      - >-
+          säkerhetskontroll
+      - >-
+          på
+      - >-
+          apparaten
+      - >-
+          för
+      - >-
+          att
+      - >-
+          se
+      - >-
+          om
+      - >-
+          den
+      - >-
+          fungerar
+      - >-
+          som
+      - >-
+          avsett
+      - >-
+          .
+
+  - unit: >-
+      22 Vägg eller takmontering - Produkten skall enbart monteras på sätt som rekommenderas av tillverkaren.
+    tokens:
+      - >-
+          22
+      - >-
+          Vägg
+      - >-
+          eller
+      - >-
+          takmontering
+      - >-
+          -
+      - >-
+          Produkten
+      - >-
+          skall
+      - >-
+          enbart
+      - >-
+          monteras
+      - >-
+          på
+      - >-
+          sätt
+      - >-
+          som
+      - >-
+          rekommenderas
+      - >-
+          av
+      - >-
+          tillverkaren
+      - >-
+          .
+
+  - unit: >-
+      VARNING!
+    tokens:
+      - >-
+          VARNING
+      - >-
+          !
+
+  - unit: >-
+      FÖR ATT MINIMERA RISKEN FÖR BRAND ELLER ELEKTRISKA STÖTAR SKALL DU UNDVIKA ATT UTSÄTTA APPARATEN FÖR REGN ELLER FUKT.
+    tokens:
+      - >-
+          FÖR
+      - >-
+          ATT
+      - >-
+          MINIMERA
+      - >-
+          RISKEN
+      - >-
+          FÖR
+      - >-
+          BRAND
+      - >-
+          ELLER
+      - >-
+          ELEKTRISKA
+      - >-
+          STÖTAR
+      - >-
+          SKALL
+      - >-
+          DU
+      - >-
+          UNDVIKA
+      - >-
+          ATT
+      - >-
+          UTSÄTTA
+      - >-
+          APPARATEN
+      - >-
+          FÖR
+      - >-
+          REGN
+      - >-
+          ELLER
+      - >-
+          FUKT
+      - >-
+          .
+
+  - unit: >-
+      FÖR ATT FÖRHINDRA ELEKTRISKA STÖTAR SKALL DU SE TILL ATT DET BREDA STIFET PÅ STICKKONTAKTEN HAMNAR MITT FÖR DET BREDA HÅLET OCH SEDAN STICKA IN KONTAKTEN HELT.
+    tokens:
+      - >-
+          FÖR
+      - >-
+          ATT
+      - >-
+          FÖRHINDRA
+      - >-
+          ELEKTRISKA
+      - >-
+          STÖTAR
+      - >-
+          SKALL
+      - >-
+          DU
+      - >-
+          SE
+      - >-
+          TILL
+      - >-
+          ATT
+      - >-
+          DET
+      - >-
+          BREDA
+      - >-
+          STIFET
+      - >-
+          PÅ
+      - >-
+          STICKKONTAKTEN
+      - >-
+          HAMNAR
+      - >-
+          MITT
+      - >-
+          FÖR
+      - >-
+          DET
+      - >-
+          BREDA
+      - >-
+          HÅLET
+      - >-
+          OCH
+      - >-
+          SEDAN
+      - >-
+          STICKA
+      - >-
+          IN
+      - >-
+          KONTAKTEN
+      - >-
+          HELT
+      - >-
+          .
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      TITTA INTE IN I LASERSTRÅLEN.
+    tokens:
+      - >-
+          TITTA
+      - >-
+          INTE
+      - >-
+          IN
+      - >-
+          I
+      - >-
+          LASERSTRÅLEN
+      - >-
+          .
+
+  - unit: >-
+      FCC-DEKLARATION
+    tokens:
+      - >-
+          FCC-DEKLARATION
+
+  - unit: >-
+      FCC-VARNING
+    tokens:
+      - >-
+          FCC-VARNING
+
+  - unit: >-
+      Ändringar eller modifieringar av apparaten som inte uttryckligen godkänts av den part som ansvarar för utrustningens uppfyllande av nämnda regler och krav kan upphäva användarens rätt att använda utrustningen.
+    tokens:
+      - >-
+          Ändringar
+      - >-
+          eller
+      - >-
+          modifieringar
+      - >-
+          av
+      - >-
+          apparaten
+      - >-
+          som
+      - >-
+          inte
+      - >-
+          uttryckligen
+      - >-
+          godkänts
+      - >-
+          av
+      - >-
+          den
+      - >-
+          part
+      - >-
+          som
+      - >-
+          ansvarar
+      - >-
+          för
+      - >-
+          utrustningens
+      - >-
+          uppfyllande
+      - >-
+          av
+      - >-
+          nämnda
+      - >-
+          regler
+      - >-
+          och
+      - >-
+          krav
+      - >-
+          kan
+      - >-
+          upphäva
+      - >-
+          användarens
+      - >-
+          rätt
+      - >-
+          att
+      - >-
+          använda
+      - >-
+          utrustningen
+      - >-
+          .
+
+  - unit: >-
+      KRAV ENLIGT INDUSTRY CANADA
+    tokens:
+      - >-
+          KRAV
+      - >-
+          ENLIGT
+      - >-
+          INDUSTRY
+      - >-
+          CANADA
+
+  - unit: >-
+      Denna digitala apparat av klass B uppfyller alla krav i de kanadensiska regelverken för "Interference-Causing Equipment".
+    tokens:
+      - >-
+          Denna
+      - >-
+          digitala
+      - >-
+          apparat
+      - >-
+          av
+      - >-
+          klass
+      - >-
+          B
+      - >-
+          uppfyller
+      - >-
+          alla
+      - >-
+          krav
+      - >-
+          i
+      - >-
+          de
+      - >-
+          kanadensiska
+      - >-
+          regelverken
+      - >-
+          för
+      - >-
+          "
+      - >-
+          Interference-Causing
+      - >-
+          Equipment
+      - >-
+          "
+      - >-
+          .
+
+  - unit: >-
+      SYMBOLEN MED EN BLIXT INUTI EN TRIANGEL VARNAR FÖR ATT DET INUTI APPARATEN FINNS OISOLERADE SPÄNNINGSFÖRANDE DELAR SOM KAN SKADA EN MÄNNISKA.
+    tokens:
+      - >-
+          SYMBOLEN
+      - >-
+          MED
+      - >-
+          EN
+      - >-
+          BLIXT
+      - >-
+          INUTI
+      - >-
+          EN
+      - >-
+          TRIANGEL
+      - >-
+          VARNAR
+      - >-
+          FÖR
+      - >-
+          ATT
+      - >-
+          DET
+      - >-
+          INUTI
+      - >-
+          APPARATEN
+      - >-
+          FINNS
+      - >-
+          OISOLERADE
+      - >-
+          SPÄNNINGSFÖRANDE
+      - >-
+          DELAR
+      - >-
+          SOM
+      - >-
+          KAN
+      - >-
+          SKADA
+      - >-
+          EN
+      - >-
+          MÄNNISKA
+      - >-
+          .
+
+  - unit: >-
+      SYMBOLEN MED ETT UTROPSTECKEN INUTI EN TRIANGEL TALAR OM ATT DET FINNS VIKTIGA INSTRUKTIONER OM APPARATENS ANVÄNDNING OCH UNDERHÅLL I DE DOKUMENT SOM MEDFÖLJER APPARATEN.
+    tokens:
+      - >-
+          SYMBOLEN
+      - >-
+          MED
+      - >-
+          ETT
+      - >-
+          UTROPSTECKEN
+      - >-
+          INUTI
+      - >-
+          EN
+      - >-
+          TRIANGEL
+      - >-
+          TALAR
+      - >-
+          OM
+      - >-
+          ATT
+      - >-
+          DET
+      - >-
+          FINNS
+      - >-
+          VIKTIGA
+      - >-
+          INSTRUKTIONER
+      - >-
+          OM
+      - >-
+          APPARATENS
+      - >-
+          ANVÄNDNING
+      - >-
+          OCH
+      - >-
+          UNDERHÅLL
+      - >-
+          I
+      - >-
+          DE
+      - >-
+          DOKUMENT
+      - >-
+          SOM
+      - >-
+          MEDFÖLJER
+      - >-
+          APPARATEN
+      - >-
+          .
+
+  - unit: >-
+      När POWER-strömbrytaren står i läge STANDBY förbrukar apparaten ändå en viss nominell viloström från vägguttaget.
+    tokens:
+      - >-
+          När
+      - >-
+          POWER-strömbrytaren
+      - >-
+          står
+      - >-
+          i
+      - >-
+          läge
+      - >-
+          STANDBY
+      - >-
+          förbrukar
+      - >-
+          apparaten
+      - >-
+          ändå
+      - >-
+          en
+      - >-
+          viss
+      - >-
+          nominell
+      - >-
+          viloström
+      - >-
+          från
+      - >-
+          vägguttaget
+      - >-
+          .
+
+  - unit: >-
+      Vägguttaget skall finnas nära apparaten och vara lättåtkomligt.
+    tokens:
+      - >-
+          Vägguttaget
+      - >-
+          skall
+      - >-
+          finnas
+      - >-
+          nära
+      - >-
+          apparaten
+      - >-
+          och
+      - >-
+          vara
+      - >-
+          lättåtkomligt
+      - >-
+          .
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      Ändringar eller modifieringar av denna apparat som inte uttryckligen godkänts av NAD Electronics vad gäller uppfyllande av nämnda regler och krav kan upphäva användarens rätt att använda apparaten.
+    tokens:
+      - >-
+          Ändringar
+      - >-
+          eller
+      - >-
+          modifieringar
+      - >-
+          av
+      - >-
+          denna
+      - >-
+          apparat
+      - >-
+          som
+      - >-
+          inte
+      - >-
+          uttryckligen
+      - >-
+          godkänts
+      - >-
+          av
+      - >-
+          NAD
+      - >-
+          Electronics
+      - >-
+          vad
+      - >-
+          gäller
+      - >-
+          uppfyllande
+      - >-
+          av
+      - >-
+          nämnda
+      - >-
+          regler
+      - >-
+          och
+      - >-
+          krav
+      - >-
+          kan
+      - >-
+          upphäva
+      - >-
+          användarens
+      - >-
+          rätt
+      - >-
+          att
+      - >-
+          använda
+      - >-
+          apparaten
+      - >-
+          .
+
+  - unit: >-
+      FÖRSIKTIGHETSFÖRESKRIFTER FÖR PLACERING
+    tokens:
+      - >-
+          FÖRSIKTIGHETSFÖRESKRIFTER
+      - >-
+          FÖR
+      - >-
+          PLACERING
+
+  - unit: >-
+      För att få tillräcklig ventilation runt apparaten måste du lämna ett öppet utrymme (räknat från apparatens största mått, inklusive utskjutande delar) på minst:
+    tokens:
+      - >-
+          För
+      - >-
+          att
+      - >-
+          få
+      - >-
+          tillräcklig
+      - >-
+          ventilation
+      - >-
+          runt
+      - >-
+          apparaten
+      - >-
+          måste
+      - >-
+          du
+      - >-
+          lämna
+      - >-
+          ett
+      - >-
+          öppet
+      - >-
+          utrymme
+      - >-
+          (
+      - >-
+          räknat
+      - >-
+          från
+      - >-
+          apparatens
+      - >-
+          största
+      - >-
+          mått
+      - >-
+          ,
+      - >-
+          inklusive
+      - >-
+          utskjutande
+      - >-
+          delar
+      - >-
+          )
+      - >-
+          på
+      - >-
+          minst
+      - >-
+          :
+
+  - unit: >-
+      Höger och vänster sida: 10 cm
+    tokens:
+      - >-
+          Höger
+      - >-
+          och
+      - >-
+          vänster
+      - >-
+          sida
+      - >-
+          :
+      - >-
+          10
+      - >-
+          cm
+
+  - unit: >-
+      Baksidan: 10 cm
+    tokens:
+      - >-
+          Baksidan
+      - >-
+          :
+      - >-
+          10
+      - >-
+          cm
+
+  - unit: >-
+      Ovansidan: 50 cm
+    tokens:
+      - >-
+          Ovansidan
+      - >-
+          :
+      - >-
+          50
+      - >-
+          cm
+
+  - unit: >-
+      VIKTIG INFORMATION TILL KUNDER I STORBRITANNIEN
+    tokens:
+      - >-
+          VIKTIG
+      - >-
+          INFORMATION
+      - >-
+          TILL
+      - >-
+          KUNDER
+      - >-
+          I
+      - >-
+          STORBRITANNIEN
+
+  - unit: >-
+      VIKTIGT!
+    tokens:
+      - >-
+          VIKTIGT
+      - >-
+          !
+
+  - unit: >-
+      ANSLUT INTE någon ledare till den större polen, som är märkt med bokstaven "E" eller med symbolen för skyddsjord eller med GRÖN eller GRÖN OCH GUL färg.
+    tokens:
+      - >-
+          ANSLUT
+      - >-
+          INTE
+      - >-
+          någon
+      - >-
+          ledare
+      - >-
+          till
+      - >-
+          den
+      - >-
+          större
+      - >-
+          polen
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          är
+      - >-
+          märkt
+      - >-
+          med
+      - >-
+          bokstaven
+      - >-
+          "
+      - >-
+          E
+      - >-
+          "
+      - >-
+          eller
+      - >-
+          med
+      - >-
+          symbolen
+      - >-
+          för
+      - >-
+          skyddsjord
+      - >-
+          eller
+      - >-
+          med
+      - >-
+          GRÖN
+      - >-
+          eller
+      - >-
+          GRÖN
+      - >-
+          OCH
+      - >-
+          GUL
+      - >-
+          färg
+      - >-
+          .
+
+  - unit: >-
+      Ledarna i nätsladden till denna produkt är färgade enligt följande kod: BLÅ-NOLLA BRUN-FAS
+    tokens:
+      - >-
+          Ledarna
+      - >-
+          i
+      - >-
+          nätsladden
+      - >-
+          till
+      - >-
+          denna
+      - >-
+          produkt
+      - >-
+          är
+      - >-
+          färgade
+      - >-
+          enligt
+      - >-
+          följande
+      - >-
+          kod
+      - >-
+          :
+      - >-
+          BLÅ-NOLLA
+      - >-
+          BRUN-FAS
+
+  - unit: >-
+      Eftersom det kan hända att dessa färger inte överensstämmer med färgmarkeringarna för polerna i stickkontakten, skall du göra så här:
+    tokens:
+      - >-
+          Eftersom
+      - >-
+          det
+      - >-
+          kan
+      - >-
+          hända
+      - >-
+          att
+      - >-
+          dessa
+      - >-
+          färger
+      - >-
+          inte
+      - >-
+          överensstämmer
+      - >-
+          med
+      - >-
+          färgmarkeringarna
+      - >-
+          för
+      - >-
+          polerna
+      - >-
+          i
+      - >-
+          stickkontakten
+      - >-
+          ,
+      - >-
+          skall
+      - >-
+          du
+      - >-
+          göra
+      - >-
+          så
+      - >-
+          här
+      - >-
+          :
+
+  - unit: >-
+      Den BLÅA ledaren måste anslutas till den pol som är märkt med bokstaven "N" eller med SVART färg.
+    tokens:
+      - >-
+          Den
+      - >-
+          BLÅA
+      - >-
+          ledaren
+      - >-
+          måste
+      - >-
+          anslutas
+      - >-
+          till
+      - >-
+          den
+      - >-
+          pol
+      - >-
+          som
+      - >-
+          är
+      - >-
+          märkt
+      - >-
+          med
+      - >-
+          bokstaven
+      - >-
+          "
+      - >-
+          N
+      - >-
+          "
+      - >-
+          eller
+      - >-
+          med
+      - >-
+          SVART
+      - >-
+          färg
+      - >-
+          .
+
+  - unit: >-
+      Den BRUNA ledaren måste anslutas till den pol som är märkt med bokstaven "L" eller med RÖD färg.
+    tokens:
+      - >-
+          Den
+      - >-
+          BRUNA
+      - >-
+          ledaren
+      - >-
+          måste
+      - >-
+          anslutas
+      - >-
+          till
+      - >-
+          den
+      - >-
+          pol
+      - >-
+          som
+      - >-
+          är
+      - >-
+          märkt
+      - >-
+          med
+      - >-
+          bokstaven
+      - >-
+          "
+      - >-
+          L
+      - >-
+          "
+      - >-
+          eller
+      - >-
+          med
+      - >-
+          RÖD
+      - >-
+          färg
+      - >-
+          .
+
+  - unit: >-
+      När du byter säkringen skall du endast använda en godkänd säkring av korrekt typ och komma ihåg att sätta tillbaka säkringslocket.
+    tokens:
+      - >-
+          När
+      - >-
+          du
+      - >-
+          byter
+      - >-
+          säkringen
+      - >-
+          skall
+      - >-
+          du
+      - >-
+          endast
+      - >-
+          använda
+      - >-
+          en
+      - >-
+          godkänd
+      - >-
+          säkring
+      - >-
+          av
+      - >-
+          korrekt
+      - >-
+          typ
+      - >-
+          och
+      - >-
+          komma
+      - >-
+          ihåg
+      - >-
+          att
+      - >-
+          sätta
+      - >-
+          tillbaka
+      - >-
+          säkringslocket
+      - >-
+          .
+
+  - unit: >-
+      OM DU ÄR TVEKSAM SKALL DU KONTAKTA EN UTBILDAD ELEKTRIKER
+    tokens:
+      - >-
+          OM
+      - >-
+          DU
+      - >-
+          ÄR
+      - >-
+          TVEKSAM
+      - >-
+          SKALL
+      - >-
+          DU
+      - >-
+          KONTAKTA
+      - >-
+          EN
+      - >-
+          UTBILDAD
+      - >-
+          ELEKTRIKER
+
+  - unit: >-
+      MILJÖSKYDDSANVISNINGAR
+    tokens:
+      - >-
+          MILJÖSKYDDSANVISNINGAR
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      DENNA DVD-RECEIVER HAR INTE AUTOMATISKT SPÄNNINGSVAL.
+    tokens:
+      - >-
+          DENNA
+      - >-
+          DVD-RECEIVER
+      - >-
+          HAR
+      - >-
+          INTE
+      - >-
+          AUTOMATISKT
+      - >-
+          SPÄNNINGSVAL
+      - >-
+          .
+
+  - unit: >-
+      DEN FÅR ENDAST ANSLUTAS TILL ANGIVEN NÄTSPÄNNING, ALLTSÅ 230 V 50 HZ ELLER 120 V 60 HZ.
+    tokens:
+      - >-
+          DEN
+      - >-
+          FÅR
+      - >-
+          ENDAST
+      - >-
+          ANSLUTAS
+      - >-
+          TILL
+      - >-
+          ANGIVEN
+      - >-
+          NÄTSPÄNNING
+      - >-
+          ,
+      - >-
+          ALLTSÅ
+      - >-
+          230
+      - >-
+          V
+      - >-
+          50
+      - >-
+          HZ
+      - >-
+          ELLER
+      - >-
+          120
+      - >-
+          V
+      - >-
+          60
+      - >-
+          HZ
+      - >-
+          .
+
+  - unit: >-
+      "DTS" och "DTS Digital Out" är registrerade varumärken som tillhör DTS, Inc.
+    tokens:
+      - >-
+          "
+      - >-
+          DTS
+      - >-
+          "
+      - >-
+          och
+      - >-
+          "
+      - >-
+          DTS
+      - >-
+          Digital
+      - >-
+          Out
+      - >-
+          "
+      - >-
+          är
+      - >-
+          registrerade
+      - >-
+          varumärken
+      - >-
+          som
+      - >-
+          tillhör
+      - >-
+          DTS
+      - >-
+          ,
+      - >-
+          Inc.
+
+  - unit: >-
+      ANTECKNA APPARATENS MODELLNUMMER (NU NÄR DU LÄTT KAN SE DET)
+    tokens:
+      - >-
+          ANTECKNA
+      - >-
+          APPARATENS
+      - >-
+          MODELLNUMMER
+      - >-
+          (
+      - >-
+          NU
+      - >-
+          NÄR
+      - >-
+          DU
+      - >-
+          LÄTT
+      - >-
+          KAN
+      - >-
+          SE
+      - >-
+          DET
+      - >-
+          )
+
+  - unit: >-
+      NAD är ett varumärke som tillhör NAD Electronics International, en division inom Lenbrook Industries Limited
+    tokens:
+      - >-
+          NAD
+      - >-
+          är
+      - >-
+          ett
+      - >-
+          varumärke
+      - >-
+          som
+      - >-
+          tillhör
+      - >-
+          NAD
+      - >-
+          Electronics
+      - >-
+          International
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          division
+      - >-
+          inom
+      - >-
+          Lenbrook
+      - >-
+          Industries
+      - >-
+          Limited
+
+  - unit: >-
+      Copyright 2007, NAD Electronics International, en division inom Lenbrook Industries Limited
+    tokens:
+      - >-
+          Copyright
+      - >-
+          2007
+      - >-
+          ,
+      - >-
+          NAD
+      - >-
+          Electronics
+      - >-
+          International
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          division
+      - >-
+          inom
+      - >-
+          Lenbrook
+      - >-
+          Industries
+      - >-
+          Limited
+
+  - unit: >-
+      INTRODUKTION
+    tokens:
+      - >-
+          INTRODUKTION
+
+  - unit: >-
+      TACK FÖR ATT DU VALDE NAD!
+    tokens:
+      - >-
+          TACK
+      - >-
+          FÖR
+      - >-
+          ATT
+      - >-
+          DU
+      - >-
+          VALDE
+      - >-
+          NAD
+      - >-
+          !
+
+  - unit: >-
+      En sak till:
+    tokens:
+      - >-
+          En
+      - >-
+          sak
+      - >-
+          till
+      - >-
+          :
+
+  - unit: >-
+      Vi uppmanar dig verkligen att registrera dig som ägare till L54 på NADs webbsida: http://NADelectronics.com/warranty
+    tokens:
+      - >-
+          Vi
+      - >-
+          uppmanar
+      - >-
+          dig
+      - >-
+          verkligen
+      - >-
+          att
+      - >-
+          registrera
+      - >-
+          dig
+      - >-
+          som
+      - >-
+          ägare
+      - >-
+          till
+      - >-
+          L54
+      - >-
+          på
+      - >-
+          NADs
+      - >-
+          webbsida
+      - >-
+          :
+      - >-
+          http://NADelectronics.com/warranty
+
+  - unit: >-
+      För garantiärenden ber vi dig att kontakta din lokala återförsäljare.
+    tokens:
+      - >-
+          För
+      - >-
+          garantiärenden
+      - >-
+          ber
+      - >-
+          vi
+      - >-
+          dig
+      - >-
+          att
+      - >-
+          kontakta
+      - >-
+          din
+      - >-
+          lokala
+      - >-
+          återförsäljare
+      - >-
+          .
+
+  - unit: >-
+      FÅ UT SÅ MYCKET SOM MÖJLIGT AV L54
+    tokens:
+      - >-
+          FÅ
+      - >-
+          UT
+      - >-
+          SÅ
+      - >-
+          MYCKET
+      - >-
+          SOM
+      - >-
+          MÖJLIGT
+      - >-
+          AV
+      - >-
+          L54
+
+  - unit: >-
+      UPPACKNING OCH INSTALLATION
+    tokens:
+      - >-
+          UPPACKNING
+      - >-
+          OCH
+      - >-
+          INSTALLATION
+
+  - unit: >-
+      VAD INGÅR?
+    tokens:
+      - >-
+          VAD
+      - >-
+          INGÅR
+      - >-
+          ?
+
+  - unit: >-
+      Tillsammans med din L54 hittar du:
+    tokens:
+      - >-
+          Tillsammans
+      - >-
+          med
+      - >-
+          din
+      - >-
+          L54
+      - >-
+          hittar
+      - >-
+          du
+      - >-
+          :
+
+  - unit: >-
+      SPARA FÖRPACKNINGSMATERIALET
+    tokens:
+      - >-
+          SPARA
+      - >-
+          FÖRPACKNINGSMATERIALET
+
+  - unit: >-
+      VAL AV PLACERING
+    tokens:
+      - >-
+          VAL
+      - >-
+          AV
+      - >-
+          PLACERING
+
+  - unit: >-
+      SNABBSTART
+    tokens:
+      - >-
+          SNABBSTART
+
+  - unit: >-
+      SPELA EN CD ELLER DVD-FILM
+    tokens:
+      - >-
+          SPELA
+      - >-
+          EN
+      - >-
+          CD
+      - >-
+          ELLER
+      - >-
+          DVD-FILM
+
+  - unit: >-
+      lysdioden på frontpanelen tänds och lyser blått som en signal på att L54 är i standbyläge, klar att ta emot kommandon antingen från strömbrytaren på frontpanelen eller från fjärrkontrollen HTR4.
+    tokens:
+      - >-
+          lysdioden
+      - >-
+          på
+      - >-
+          frontpanelen
+      - >-
+          tänds
+      - >-
+          och
+      - >-
+          lyser
+      - >-
+          blått
+      - >-
+          som
+      - >-
+          en
+      - >-
+          signal
+      - >-
+          på
+      - >-
+          att
+      - >-
+          L54
+      - >-
+          är
+      - >-
+          i
+      - >-
+          standbyläge
+      - >-
+          ,
+      - >-
+          klar
+      - >-
+          att
+      - >-
+          ta
+      - >-
+          emot
+      - >-
+          kommandon
+      - >-
+          antingen
+      - >-
+          från
+      - >-
+          strömbrytaren
+      - >-
+          på
+      - >-
+          frontpanelen
+      - >-
+          eller
+      - >-
+          från
+      - >-
+          fjärrkontrollen
+      - >-
+          HTR4
+      - >-
+          .
+
+  - unit: >-
+      Nu kan du njuta av filmen eller musiken, men se till att ta dig tid senare att läsa igenom den här bruksanvisningen noga, och att installera, kalibrera och konfigurera din L54 noggrant och fullständigt.
+    tokens:
+      - >-
+          Nu
+      - >-
+          kan
+      - >-
+          du
+      - >-
+          njuta
+      - >-
+          av
+      - >-
+          filmen
+      - >-
+          eller
+      - >-
+          musiken
+      - >-
+          ,
+      - >-
+          men
+      - >-
+          se
+      - >-
+          till
+      - >-
+          att
+      - >-
+          ta
+      - >-
+          dig
+      - >-
+          tid
+      - >-
+          senare
+      - >-
+          att
+      - >-
+          läsa
+      - >-
+          igenom
+      - >-
+          den
+      - >-
+          här
+      - >-
+          bruksanvisningen
+      - >-
+          noga
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          att
+      - >-
+          installera
+      - >-
+          ,
+      - >-
+          kalibrera
+      - >-
+          och
+      - >-
+          konfigurera
+      - >-
+          din
+      - >-
+          L54
+      - >-
+          noggrant
+      - >-
+          och
+      - >-
+          fullständigt
+      - >-
+          .
+
+  - unit: >-
+      OM L54
+    tokens:
+      - >-
+          OM
+      - >-
+          L54
+
+  - unit: >-
+      LÄTTANVÄND
+    tokens:
+      - >-
+          LÄTTANVÄND
+
+  - unit: >-
+      OM FJÄRRKONTROLLEN HTR4
+    tokens:
+      - >-
+          OM
+      - >-
+          FJÄRRKONTROLLEN
+      - >-
+          HTR4
+
+  - unit: >-
+      PRESENTATION AV REGLAGEN
+    tokens:
+      - >-
+          PRESENTATION
+      - >-
+          AV
+      - >-
+          REGLAGEN
+
+  - unit: >-
+      FRONTPANELEN
+    tokens:
+      - >-
+          FRONTPANELEN
+
+  - unit: >-
+      2 INDIKATOR: När L54 är i standbyläge lyser lysdioden med klarblått sken, samtidigt som VFD-displayen visar receiverns inbyggda klocka.
+    tokens:
+      - >-
+          2
+      - >-
+          INDIKATOR
+      - >-
+          :
+      - >-
+          När
+      - >-
+          L54
+      - >-
+          är
+      - >-
+          i
+      - >-
+          standbyläge
+      - >-
+          lyser
+      - >-
+          lysdioden
+      - >-
+          med
+      - >-
+          klarblått
+      - >-
+          sken
+      - >-
+          ,
+      - >-
+          samtidigt
+      - >-
+          som
+      - >-
+          VFD-displayen
+      - >-
+          visar
+      - >-
+          receiverns
+      - >-
+          inbyggda
+      - >-
+          klocka
+      - >-
+          .
+
+  - unit: >-
+      Indikatorn slocknar när du drar ut kontakten ur vägguttaget.
+    tokens:
+      - >-
+          Indikatorn
+      - >-
+          slocknar
+      - >-
+          när
+      - >-
+          du
+      - >-
+          drar
+      - >-
+          ut
+      - >-
+          kontakten
+      - >-
+          ur
+      - >-
+          vägguttaget
+      - >-
+          .
+
+  - unit: >-
+      Räckvidd: Cirka 7 m från sensorns främre yta.
+    tokens:
+      - >-
+          Räckvidd
+      - >-
+          :
+      - >-
+          Cirka
+      - >-
+          7
+      - >-
+          m
+      - >-
+          från
+      - >-
+          sensorns
+      - >-
+          främre
+      - >-
+          yta
+      - >-
+          .
+
+  - unit: >-
+      Vinkelomfång: Cirka 30° i varje riktning räknat från sensorns främre yta.
+    tokens:
+      - >-
+          Vinkelomfång
+      - >-
+          :
+      - >-
+          Cirka
+      - >-
+          30
+      - >-
+          °
+      - >-
+          i
+      - >-
+          varje
+      - >-
+          riktning
+      - >-
+          räknat
+      - >-
+          från
+      - >-
+          sensorns
+      - >-
+          främre
+      - >-
+          yta
+      - >-
+          .
+
+  - unit: >-
+      6 SETUP/MEMORY: Använd denna knapp för att lagra inställda stationer i receiverns minne för upp till 60 radiosnabbval (se "Lyssna på radio").
+    tokens:
+      - >-
+          6
+      - >-
+          SETUP
+      - >-
+          /
+      - >-
+          MEMORY
+      - >-
+          :
+      - >-
+          Använd
+      - >-
+          denna
+      - >-
+          knapp
+      - >-
+          för
+      - >-
+          att
+      - >-
+          lagra
+      - >-
+          inställda
+      - >-
+          stationer
+      - >-
+          i
+      - >-
+          receiverns
+      - >-
+          minne
+      - >-
+          för
+      - >-
+          upp
+      - >-
+          till
+      - >-
+          60
+      - >-
+          radiosnabbval
+      - >-
+          (
+      - >-
+          se
+      - >-
+          "
+      - >-
+          Lyssna
+      - >-
+          på
+      - >-
+          radio
+      - >-
+          "
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      8 SKIVSLÄDE: När skivsläden är öppen kan du lägga i en DVD, VCD, CD eller annan kompatibel skiva med den blanka sidan nedåt.
+    tokens:
+      - >-
+          8
+      - >-
+          SKIVSLÄDE
+      - >-
+          :
+      - >-
+          När
+      - >-
+          skivsläden
+      - >-
+          är
+      - >-
+          öppen
+      - >-
+          kan
+      - >-
+          du
+      - >-
+          lägga
+      - >-
+          i
+      - >-
+          en
+      - >-
+          DVD
+      - >-
+          ,
+      - >-
+          VCD
+      - >-
+          ,
+      - >-
+          CD
+      - >-
+          eller
+      - >-
+          annan
+      - >-
+          kompatibel
+      - >-
+          skiva
+      - >-
+          med
+      - >-
+          den
+      - >-
+          blanka
+      - >-
+          sidan
+      - >-
+          nedåt
+      - >-
+          .
+
+  - unit: >-
+      Om du lägger skivan uppochner och det är en enkelsidig skiva, visas texten "NO DISC" på receiverns display och "INGEN SKIVA" på TV/monitor-skärmen.
+    tokens:
+      - >-
+          Om
+      - >-
+          du
+      - >-
+          lägger
+      - >-
+          skivan
+      - >-
+          uppochner
+      - >-
+          och
+      - >-
+          det
+      - >-
+          är
+      - >-
+          en
+      - >-
+          enkelsidig
+      - >-
+          skiva
+      - >-
+          ,
+      - >-
+          visas
+      - >-
+          texten
+      - >-
+          "
+      - >-
+          NO
+      - >-
+          DISC
+      - >-
+          "
+      - >-
+          på
+      - >-
+          receiverns
+      - >-
+          display
+      - >-
+          och
+      - >-
+          "
+      - >-
+          INGEN
+      - >-
+          SKIVA
+      - >-
+          "
+      - >-
+          på
+      - >-
+          TV
+      - >-
+          /
+      - >-
+          monitor-skärmen
+      - >-
+          .
+
+  - unit: >-
+      Om skivsläden är öppen och det ligger en skiva i den, kan du trycka på den här knappen för att automatiskt stänga släden och starta uppspelning.
+    tokens:
+      - >-
+          Om
+      - >-
+          skivsläden
+      - >-
+          är
+      - >-
+          öppen
+      - >-
+          och
+      - >-
+          det
+      - >-
+          ligger
+      - >-
+          en
+      - >-
+          skiva
+      - >-
+          i
+      - >-
+          den
+      - >-
+          ,
+      - >-
+          kan
+      - >-
+          du
+      - >-
+          trycka
+      - >-
+          på
+      - >-
+          den
+      - >-
+          här
+      - >-
+          knappen
+      - >-
+          för
+      - >-
+          att
+      - >-
+          automatiskt
+      - >-
+          stänga
+      - >-
+          släden
+      - >-
+          och
+      - >-
+          starta
+      - >-
+          uppspelning
+      - >-
+          .
+
+  - unit: >-
+      Du använder även volymratten för att öka/minska bas/diskantnivån, justera höger/vänsterbalansen, ställa in DRC-nivån och slå AV/PÅ SRS.
+    tokens:
+      - >-
+          Du
+      - >-
+          använder
+      - >-
+          även
+      - >-
+          volymratten
+      - >-
+          för
+      - >-
+          att
+      - >-
+          öka
+      - >-
+          /
+      - >-
+          minska
+      - >-
+          bas
+      - >-
+          /
+      - >-
+          diskantnivån
+      - >-
+          ,
+      - >-
+          justera
+      - >-
+          höger
+      - >-
+          /
+      - >-
+          vänsterbalansen
+      - >-
+          ,
+      - >-
+          ställa
+      - >-
+          in
+      - >-
+          DRC-nivån
+      - >-
+          och
+      - >-
+          slå
+      - >-
+          AV
+      - >-
+          /
+      - >-
+          PÅ
+      - >-
+          SRS
+      - >-
+          .
+
+  - unit: >-
+      16 VFD: Vakuumfluorescensdisplayen (VFD-displayen) ger visuell information om receiverns viktigaste lägen, inställningar och funktioner.
+    tokens:
+      - >-
+          16
+      - >-
+          VFD
+      - >-
+          :
+      - >-
+          Vakuumfluorescensdisplayen
+      - >-
+          (
+      - >-
+          VFD-displayen
+      - >-
+          )
+      - >-
+          ger
+      - >-
+          visuell
+      - >-
+          information
+      - >-
+          om
+      - >-
+          receiverns
+      - >-
+          viktigaste
+      - >-
+          lägen
+      - >-
+          ,
+      - >-
+          inställningar
+      - >-
+          och
+      - >-
+          funktioner
+      - >-
+          .
+
+  - unit: >-
+      BAKSIDAN
+    tokens:
+      - >-
+          BAKSIDAN
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBSERVERA!
+    tokens:
+      - >-
+          OBSERVERA
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      I områden med besvärliga mottagningsförhållanden för FM kan en utomhusantenn ge dramatiska förbättringar av mottagningskvaliteten;
+    tokens:
+      - >-
+          I
+      - >-
+          områden
+      - >-
+          med
+      - >-
+          besvärliga
+      - >-
+          mottagningsförhållanden
+      - >-
+          för
+      - >-
+          FM
+      - >-
+          kan
+      - >-
+          en
+      - >-
+          utomhusantenn
+      - >-
+          ge
+      - >-
+          dramatiska
+      - >-
+          förbättringar
+      - >-
+          av
+      - >-
+          mottagningskvaliteten
+      - >-
+          ;
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      5 PRE-OUT SUBWOOFER: Anslut detta jack till utgången på en aktiv subwoofer (eller till ett slutsteg som driver ett passivt system).
+    tokens:
+      - >-
+          5
+      - >-
+          PRE-OUT
+      - >-
+          SUBWOOFER
+      - >-
+          :
+      - >-
+          Anslut
+      - >-
+          detta
+      - >-
+          jack
+      - >-
+          till
+      - >-
+          utgången
+      - >-
+          på
+      - >-
+          en
+      - >-
+          aktiv
+      - >-
+          subwoofer
+      - >-
+          (
+      - >-
+          eller
+      - >-
+          till
+      - >-
+          ett
+      - >-
+          slutsteg
+      - >-
+          som
+      - >-
+          driver
+      - >-
+          ett
+      - >-
+          passivt
+      - >-
+          system
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      8 DIGITAL OUTPUT, OPTICAL: Anslut den optiska digitala utgången till motsvarande digitala ingång för S/PDIF-format på en inspelningskomponent som en CD-recorder, ett DAT-däck eller ett datorljudkort.
+    tokens:
+      - >-
+          8
+      - >-
+          DIGITAL
+      - >-
+          OUTPUT
+      - >-
+          ,
+      - >-
+          OPTICAL
+      - >-
+          :
+      - >-
+          Anslut
+      - >-
+          den
+      - >-
+          optiska
+      - >-
+          digitala
+      - >-
+          utgången
+      - >-
+          till
+      - >-
+          motsvarande
+      - >-
+          digitala
+      - >-
+          ingång
+      - >-
+          för
+      - >-
+          S/PDIF-format
+      - >-
+          på
+      - >-
+          en
+      - >-
+          inspelningskomponent
+      - >-
+          som
+      - >-
+          en
+      - >-
+          CD-recorder
+      - >-
+          ,
+      - >-
+          ett
+      - >-
+          DAT-däck
+      - >-
+          eller
+      - >-
+          ett
+      - >-
+          datorljudkort
+      - >-
+          .
+
+  - unit: >-
+      Om man drar ur nätkontakten och sedan sätter i den igen återställs klockan till "00:00".
+    tokens:
+      - >-
+          Om
+      - >-
+          man
+      - >-
+          drar
+      - >-
+          ur
+      - >-
+          nätkontakten
+      - >-
+          och
+      - >-
+          sedan
+      - >-
+          sätter
+      - >-
+          i
+      - >-
+          den
+      - >-
+          igen
+      - >-
+          återställs
+      - >-
+          klockan
+      - >-
+          till
+      - >-
+          "
+      - >-
+          00:00
+      - >-
+          "
+      - >-
+          .
+
+  - unit: >-
+      13 MONITOR OUT: Anslut detta uttag till videoingången på din monitor/TV.
+    tokens:
+      - >-
+          13
+      - >-
+          MONITOR
+      - >-
+          OUT
+      - >-
+          :
+      - >-
+          Anslut
+      - >-
+          detta
+      - >-
+          uttag
+      - >-
+          till
+      - >-
+          videoingången
+      - >-
+          på
+      - >-
+          din
+      - >-
+          monitor
+      - >-
+          /
+      - >-
+          TV
+      - >-
+          .
+
+  - unit: >-
+      Du måste också ställa in "VIDEO UT" till "S-video" i menyn "INSTÄLLNINGAR" för att videosignalen skall vara tillgänglig i "Monitor OUT".
+    tokens:
+      - >-
+          Du
+      - >-
+          måste
+      - >-
+          också
+      - >-
+          ställa
+      - >-
+          in
+      - >-
+          "
+      - >-
+          VIDEO
+      - >-
+          UT
+      - >-
+          "
+      - >-
+          till
+      - >-
+          "
+      - >-
+          S-video
+      - >-
+          "
+      - >-
+          i
+      - >-
+          menyn
+      - >-
+          "
+      - >-
+          INSTÄLLNINGAR
+      - >-
+          "
+      - >-
+          för
+      - >-
+          att
+      - >-
+          videosignalen
+      - >-
+          skall
+      - >-
+          vara
+      - >-
+          tillgänglig
+      - >-
+          i
+      - >-
+          "
+      - >-
+          Monitor
+      - >-
+          OUT
+      - >-
+          "
+      - >-
+          .
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      Jacket "COMPONENTVIDEOOUT" ger endast videosignalen från den inbyggda DVD-spelaren.
+    tokens:
+      - >-
+          Jacket
+      - >-
+          "
+      - >-
+          COMPONENTVIDEOOUT
+      - >-
+          "
+      - >-
+          ger
+      - >-
+          endast
+      - >-
+          videosignalen
+      - >-
+          från
+      - >-
+          den
+      - >-
+          inbyggda
+      - >-
+          DVD-spelaren
+      - >-
+          .
+
+  - unit: >-
+      INSTALLATION
+    tokens:
+      - >-
+          INSTALLATION
+
+  - unit: >-
+      INSTALLERA L54
+    tokens:
+      - >-
+          INSTALLERA
+      - >-
+          L54
+
+  - unit: >-
+      KOMMA IGÅNG
+    tokens:
+      - >-
+          KOMMA
+      - >-
+          IGÅNG
+
+  - unit: >-
+      HUR DU ELIMINERAR BRUM OCH BRUS
+    tokens:
+      - >-
+          HUR
+      - >-
+          DU
+      - >-
+          ELIMINERAR
+      - >-
+          BRUM
+      - >-
+          OCH
+      - >-
+          BRUS
+
+  - unit: >-
+      b   Anslut sedan en enda ytterligare komponent (t.ex. en CD-spelare) och kontrollera om du får några störningar,
+    tokens:
+      - >-
+          b
+      - >-
+          Anslut
+      - >-
+          sedan
+      - >-
+          en
+      - >-
+          enda
+      - >-
+          ytterligare
+      - >-
+          komponent
+      - >-
+          (
+      - >-
+          t.ex.
+      - >-
+          en
+      - >-
+          CD-spelare
+      - >-
+          )
+      - >-
+          och
+      - >-
+          kontrollera
+      - >-
+          om
+      - >-
+          du
+      - >-
+          får
+      - >-
+          några
+      - >-
+          störningar
+      - >-
+          ,
+
+  - unit: >-
+      c   Anslut övriga komponenter, en i taget, och kontrollera hela tiden om du får några störningar.
+    tokens:
+      - >-
+          c
+      - >-
+          Anslut
+      - >-
+          övriga
+      - >-
+          komponenter
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          i
+      - >-
+          taget
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          kontrollera
+      - >-
+          hela
+      - >-
+          tiden
+      - >-
+          om
+      - >-
+          du
+      - >-
+          får
+      - >-
+          några
+      - >-
+          störningar
+      - >-
+          .
+
+  - unit: >-
+      ÅTERSTÄLLA FABRIKSINSTÄLLNINGARNA
+    tokens:
+      - >-
+          ÅTERSTÄLLA
+      - >-
+          FABRIKSINSTÄLLNINGARNA
+
+  - unit: >-
+      ÅTERSTÄLLA FABRIKSINSTÄLLNINGARNA
+    tokens:
+      - >-
+          ÅTERSTÄLLA
+      - >-
+          FABRIKSINSTÄLLNINGARNA
+
+  - unit: >-
+      1 Ställ receivern i AM-läge.
+    tokens:
+      - >-
+          1
+      - >-
+          Ställ
+      - >-
+          receivern
+      - >-
+          i
+      - >-
+          AM-läge
+      - >-
+          .
+
+  - unit: >-
+      Observera att när du återställer fabriksinställningarna i receivern så raderas också FM- och AM-snabbvalen.
+    tokens:
+      - >-
+          Observera
+      - >-
+          att
+      - >-
+          när
+      - >-
+          du
+      - >-
+          återställer
+      - >-
+          fabriksinställningarna
+      - >-
+          i
+      - >-
+          receivern
+      - >-
+          så
+      - >-
+          raderas
+      - >-
+          också
+      - >-
+          FM-
+      - >-
+          och
+      - >-
+          AM-snabbvalen
+      - >-
+          .
+
+  - unit: >-
+      OM SKÄRMMENYERNA (OSD)
+    tokens:
+      - >-
+          OM
+      - >-
+          SKÄRMMENYERNA
+      - >-
+          (
+      - >-
+          OSD
+      - >-
+          )
+
+  - unit: >-
+      VISA RECEIVERNS SKÄRMMENYER FÖR DVD
+    tokens:
+      - >-
+          VISA
+      - >-
+          RECEIVERNS
+      - >-
+          SKÄRMMENYER
+      - >-
+          FÖR
+      - >-
+          DVD
+
+  - unit: >-
+      Receivern skickar skärmmenyn "Inställningar" till utgångarna Component Video OUT (NTSC/PAL), SCART/RGB (PAL), Monitor OUT (Video/S-video) och VCR Out.
+    tokens:
+      - >-
+          Receivern
+      - >-
+          skickar
+      - >-
+          skärmmenyn
+      - >-
+          "
+      - >-
+          Inställningar
+      - >-
+          "
+      - >-
+          till
+      - >-
+          utgångarna
+      - >-
+          Component
+      - >-
+          Video
+      - >-
+          OUT
+      - >-
+          (
+      - >-
+          NTSC
+      - >-
+          /
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          SCART
+      - >-
+          /
+      - >-
+          RGB
+      - >-
+          (
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          Monitor
+      - >-
+          OUT
+      - >-
+          (
+      - >-
+          Video
+      - >-
+          /
+      - >-
+          S-video
+      - >-
+          )
+      - >-
+          och
+      - >-
+          VCR
+      - >-
+          Out
+      - >-
+          .
+
+  - unit: >-
+      AUDIO MODE
+    tokens:
+      - >-
+          AUDIO
+      - >-
+          MODE
+
+  - unit: >-
+      SRS TRUSURROUND
+    tokens:
+      - >-
+          SRS
+      - >-
+          TRUSURROUND
+
+  - unit: >-
+      SRS Labs har tagit fram den patenterade tekniken TruSurround®, som tar ljud från valfri flerkanalig källa (som Dolby Digital, Dolby Surround eller DTS, inklusive MPEG 1 och 2) och transformerar det till en övertygande surroundljudupplevelse med bara två högtalare eller hörlurar.
+    tokens:
+      - >-
+          SRS
+      - >-
+          Labs
+      - >-
+          har
+      - >-
+          tagit
+      - >-
+          fram
+      - >-
+          den
+      - >-
+          patenterade
+      - >-
+          tekniken
+      - >-
+          TruSurround®
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          tar
+      - >-
+          ljud
+      - >-
+          från
+      - >-
+          valfri
+      - >-
+          flerkanalig
+      - >-
+          källa
+      - >-
+          (
+      - >-
+          som
+      - >-
+          Dolby
+      - >-
+          Digital
+      - >-
+          ,
+      - >-
+          Dolby
+      - >-
+          Surround
+      - >-
+          eller
+      - >-
+          DTS
+      - >-
+          ,
+      - >-
+          inklusive
+      - >-
+          MPEG
+      - >-
+          1
+      - >-
+          och
+      - >-
+          2
+      - >-
+          )
+      - >-
+          och
+      - >-
+          transformerar
+      - >-
+          det
+      - >-
+          till
+      - >-
+          en
+      - >-
+          övertygande
+      - >-
+          surroundljudupplevelse
+      - >-
+          med
+      - >-
+          bara
+      - >-
+          två
+      - >-
+          högtalare
+      - >-
+          eller
+      - >-
+          hörlurar
+      - >-
+          .
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      SRS är ett varumärke som tillhör SRS Labs, Inc.
+    tokens:
+      - >-
+          SRS
+      - >-
+          är
+      - >-
+          ett
+      - >-
+          varumärke
+      - >-
+          som
+      - >-
+          tillhör
+      - >-
+          SRS
+      - >-
+          Labs
+      - >-
+          ,
+      - >-
+          Inc.
+
+  - unit: >-
+      TruSurround-tekniken ingår i L54 på licens från SRS Labs, Inc.
+    tokens:
+      - >-
+          TruSurround-tekniken
+      - >-
+          ingår
+      - >-
+          i
+      - >-
+          L54
+      - >-
+          på
+      - >-
+          licens
+      - >-
+          från
+      - >-
+          SRS
+      - >-
+          Labs
+      - >-
+          ,
+      - >-
+          Inc.
+
+  - unit: >-
+      INSTÄLLNING AV HÖGER OCH VÄNSTER KANAL (BALANSJUSTERING)
+    tokens:
+      - >-
+          INSTÄLLNING
+      - >-
+          AV
+      - >-
+          HÖGER
+      - >-
+          OCH
+      - >-
+          VÄNSTER
+      - >-
+          KANAL
+      - >-
+          (
+      - >-
+          BALANSJUSTERING
+      - >-
+          )
+
+#  - unit: >-
+#      När du har valt "AUDIO MODE" kan du växla mellan justeringen av "LEFT" (vänster) och "RIGHT" (höger) och fininställa nivån för varje kanal med volymratten eller med ^/v-knapparna på fjärrkontrollen.
+#    tokens:
+#      - >-
+#          När
+#      - >-
+#          du
+#      - >-
+#          har
+#      - >-
+#          valt
+#      - >-
+#          "
+#      - >-
+#          AUDIO
+#      - >-
+#          MODE
+#      - >-
+#          "
+#      - >-
+#          kan
+#      - >-
+#          du
+#      - >-
+#          växla
+#      - >-
+#          mellan
+#      - >-
+#          justeringen
+#      - >-
+#          av
+#      - >-
+#          "
+#      - >-
+#          LEFT
+#      - >-
+#          "
+#      - >-
+#          (
+#      - >-
+#          vänster
+#      - >-
+#          )
+#      - >-
+#          och
+#      - >-
+#          "
+#      - >-
+#          RIGHT
+#      - >-
+#          "
+#      - >-
+#          (
+#      - >-
+#          höger
+#      - >-
+#          )
+#      - >-
+#          och
+#      - >-
+#          fininställa
+#      - >-
+#          nivån
+#      - >-
+#          för
+#      - >-
+#          varje
+#      - >-
+#          kanal
+#      - >-
+#          med
+#      - >-
+#          volymratten
+#      - >-
+#          eller
+#      - >-
+#          med
+#      - >-
+#          ^
+#      - >-
+#          /
+#      - >-
+#          v-knapparna
+#      - >-
+#          på
+#      - >-
+#          fjärrkontrollen
+#      - >-
+#          .
+
+  - unit: >-
+      JUSTERA TONKONTROLLERNA
+    tokens:
+      - >-
+          JUSTERA
+      - >-
+          TONKONTROLLERNA
+
+  - unit: >-
+      DYNAMIKOMFÅNGSKONTROLL (DRC)
+    tokens:
+      - >-
+          DYNAMIKOMFÅNGSKONTROLL
+      - >-
+          (
+      - >-
+          DRC
+      - >-
+          )
+
+  - unit: >-
+      INPUT SELECT
+    tokens:
+      - >-
+          INPUT
+      - >-
+          SELECT
+
+  - unit: >-
+      När du sedan väljer respektive insignal med INPUT SELECT på frontpanelen eller med fjärrkontrollens knappar för val av programkälla kommer receivern alltid att använda den tilldelade audioingången.
+    tokens:
+      - >-
+          När
+      - >-
+          du
+      - >-
+          sedan
+      - >-
+          väljer
+      - >-
+          respektive
+      - >-
+          insignal
+      - >-
+          med
+      - >-
+          INPUT
+      - >-
+          SELECT
+      - >-
+          på
+      - >-
+          frontpanelen
+      - >-
+          eller
+      - >-
+          med
+      - >-
+          fjärrkontrollens
+      - >-
+          knappar
+      - >-
+          för
+      - >-
+          val
+      - >-
+          av
+      - >-
+          programkälla
+      - >-
+          kommer
+      - >-
+          receivern
+      - >-
+          alltid
+      - >-
+          att
+      - >-
+          använda
+      - >-
+          den
+      - >-
+          tilldelade
+      - >-
+          audioingången
+      - >-
+          .
+
+  - unit: >-
+      STÄLLA IN VOLYMEN
+    tokens:
+      - >-
+          STÄLLA
+      - >-
+          IN
+      - >-
+          VOLYMEN
+
+  - unit: >-
+      HUR DU STÄNGER AV LJUDET (MUTING)
+    tokens:
+      - >-
+          HUR
+      - >-
+          DU
+      - >-
+          STÄNGER
+      - >-
+          AV
+      - >-
+          LJUDET
+      - >-
+          (
+      - >-
+          MUTING
+      - >-
+          )
+
+  - unit: >-
+      HUR DU JUSTERAR SUBWOOFER-NIVÅN MEDAN DU LYSSNAR
+    tokens:
+      - >-
+          HUR
+      - >-
+          DU
+      - >-
+          JUSTERAR
+      - >-
+          SUBWOOFER-NIVÅN
+      - >-
+          MEDAN
+      - >-
+          DU
+      - >-
+          LYSSNAR
+
+  - unit: >-
+      Använd "SUB"-tangenterna på fjärrkontrollen för att direkt justera dessa kanaler inom ett område på ±12 dB.
+    tokens:
+      - >-
+          Använd
+      - >-
+          "SUB"-tangenterna
+      - >-
+          på
+      - >-
+          fjärrkontrollen
+      - >-
+          för
+      - >-
+          att
+      - >-
+          direkt
+      - >-
+          justera
+      - >-
+          dessa
+      - >-
+          kanaler
+      - >-
+          inom
+      - >-
+          ett
+      - >-
+          område
+      - >-
+          på
+      - >-
+          ±12
+      - >-
+          dB
+      - >-
+          .
+
+  - unit: >-
+      HANTERING
+    tokens:
+      - >-
+          HANTERING
+
+  - unit: >-
+      ANVÄNDA L54
+    tokens:
+      - >-
+          ANVÄNDA
+      - >-
+          L54
+
+  - unit: >-
+      REGIONKODER
+    tokens:
+      - >-
+          REGIONKODER
+
+  - unit: >-
+      OM DVD/SVCD/VCD/CD
+    tokens:
+      - >-
+          OM
+      - >-
+          DVD
+      - >-
+          /
+      - >-
+          SVCD
+      - >-
+          /
+      - >-
+          VCD
+      - >-
+          /
+      - >-
+          CD
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      LADDA OCH SPELA UPP EN SKIVA
+    tokens:
+      - >-
+          LADDA
+      - >-
+          OCH
+      - >-
+          SPELA
+      - >-
+          UPP
+      - >-
+          EN
+      - >-
+          SKIVA
+
+  - unit: >-
+      Här följer några viktiga tips att tänka på när du laddar en skiva
+    tokens:
+      - >-
+          Här
+      - >-
+          följer
+      - >-
+          några
+      - >-
+          viktiga
+      - >-
+          tips
+      - >-
+          att
+      - >-
+          tänka
+      - >-
+          på
+      - >-
+          när
+      - >-
+          du
+      - >-
+          laddar
+      - >-
+          en
+      - >-
+          skiva
+
+  - unit: >-
+      Om du trycker två gånger på fjärrkontrollens "STOP"-knapp under uppspelning så visas det totala antalet spår och den totala speltiden för en ljud-CD på displayen.
+    tokens:
+      - >-
+          Om
+      - >-
+          du
+      - >-
+          trycker
+      - >-
+          två
+      - >-
+          gånger
+      - >-
+          på
+      - >-
+          fjärrkontrollens
+      - >-
+          "STOP"-knapp
+      - >-
+          under
+      - >-
+          uppspelning
+      - >-
+          så
+      - >-
+          visas
+      - >-
+          det
+      - >-
+          totala
+      - >-
+          antalet
+      - >-
+          spår
+      - >-
+          och
+      - >-
+          den
+      - >-
+          totala
+      - >-
+          speltiden
+      - >-
+          för
+      - >-
+          en
+      - >-
+          ljud-CD
+      - >-
+          på
+      - >-
+          displayen
+      - >-
+          .
+
+  - unit: >-
+      När DVD-spelaren har spelat upp alla kapitel i en titel stannar den automatiskt och går tillbaka till menyskärmen.
+    tokens:
+      - >-
+          När
+      - >-
+          DVD-spelaren
+      - >-
+          har
+      - >-
+          spelat
+      - >-
+          upp
+      - >-
+          alla
+      - >-
+          kapitel
+      - >-
+          i
+      - >-
+          en
+      - >-
+          titel
+      - >-
+          stannar
+      - >-
+          den
+      - >-
+          automatiskt
+      - >-
+          och
+      - >-
+          går
+      - >-
+          tillbaka
+      - >-
+          till
+      - >-
+          menyskärmen
+      - >-
+          .
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      ANVÄNDA L54:S INBYGGDA DVD-SPELARE - MENYN INSTÄLLNINGAR
+    tokens:
+      - >-
+          ANVÄNDA
+      - >-
+          L54:S
+      - >-
+          INBYGGDA
+      - >-
+          DVD-SPELARE
+      - >-
+          -
+      - >-
+          MENYN
+      - >-
+          INSTÄLLNINGAR
+
+  - unit: >-
+      NAVIGERING MED SKÄRMMENYER (OSD)
+    tokens:
+      - >-
+          NAVIGERING
+      - >-
+          MED
+      - >-
+          SKÄRMMENYER
+      - >-
+          (
+      - >-
+          OSD
+      - >-
+          )
+
+  - unit: >-
+      VISA MENYN INSTÄLLNINGAR
+    tokens:
+      - >-
+          VISA
+      - >-
+          MENYN
+      - >-
+          INSTÄLLNINGAR
+
+  - unit: >-
+      NAVIGERA OCH GÖRA ÄNDRINGAR I SKÄRMMENYN "INSTÄLLNINGAR"
+    tokens:
+      - >-
+          NAVIGERA
+      - >-
+          OCH
+      - >-
+          GÖRA
+      - >-
+          ÄNDRINGAR
+      - >-
+          I
+      - >-
+          SKÄRMMENYN
+      - >-
+          "
+      - >-
+          INSTÄLLNINGAR
+      - >-
+          "
+
+  - unit: >-
+      Använd fjärrkontrollen på följande sätt för att navigera bland de olika inställningsalternativen i menyn (kom ihåg att välja DVD-läge i fältet Device Selector på fjärrkontrollen):
+    tokens:
+      - >-
+          Använd
+      - >-
+          fjärrkontrollen
+      - >-
+          på
+      - >-
+          följande
+      - >-
+          sätt
+      - >-
+          för
+      - >-
+          att
+      - >-
+          navigera
+      - >-
+          bland
+      - >-
+          de
+      - >-
+          olika
+      - >-
+          inställningsalternativen
+      - >-
+          i
+      - >-
+          menyn
+      - >-
+          (
+      - >-
+          kom
+      - >-
+          ihåg
+      - >-
+          att
+      - >-
+          välja
+      - >-
+          DVD-läge
+      - >-
+          i
+      - >-
+          fältet
+      - >-
+          Device
+      - >-
+          Selector
+      - >-
+          på
+      - >-
+          fjärrkontrollen
+      - >-
+          )
+      - >-
+          :
+
+#  - unit: >-
+#      1 Tryck på ^/v-knapparna för att gå uppåt eller nedåt bland menyvalen.
+#    tokens:
+#      - >-
+#          1
+#      - >-
+#          Tryck
+#      - >-
+#          på
+#      - >-
+#          ^
+#      - >-
+#          /
+#      - >-
+#          v-knapparna
+#      - >-
+#          för
+#      - >-
+#          att
+#      - >-
+#          gå
+#      - >-
+#          uppåt
+#      - >-
+#          eller
+#      - >-
+#          nedåt
+#      - >-
+#          bland
+#      - >-
+#          menyvalen
+#      - >-
+#          .
+
+  - unit: >-
+      3 Tryck på "ENTER" för att spara inställningarna.
+    tokens:
+      - >-
+          3
+      - >-
+          Tryck
+      - >-
+          på
+      - >-
+          "
+      - >-
+          ENTER
+      - >-
+          "
+      - >-
+          för
+      - >-
+          att
+      - >-
+          spara
+      - >-
+          inställningarna
+      - >-
+          .
+
+  - unit: >-
+      VISA SKÄRMINFORMATION FÖR SKIVA
+    tokens:
+      - >-
+          VISA
+      - >-
+          SKÄRMINFORMATION
+      - >-
+          FÖR
+      - >-
+          SKIVA
+
+  - unit: >-
+      1 Tryck på DISPLAY medan en skiva spelas upp.
+    tokens:
+      - >-
+          1
+      - >-
+          Tryck
+      - >-
+          på
+      - >-
+          DISPLAY
+      - >-
+          medan
+      - >-
+          en
+      - >-
+          skiva
+      - >-
+          spelas
+      - >-
+          upp
+      - >-
+          .
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      OBS!
+    tokens:
+      - >-
+          OBS
+      - >-
+          !
+
+  - unit: >-
+      Skärminformationen fungerar eventuellt inte för alla skivor, och vilken information som kan visas är beroende på disken.
+    tokens:
+      - >-
+          Skärminformationen
+      - >-
+          fungerar
+      - >-
+          eventuellt
+      - >-
+          inte
+      - >-
+          för
+      - >-
+          alla
+      - >-
+          skivor
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          vilken
+      - >-
+          information
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          visas
+      - >-
+          är
+      - >-
+          beroende
+      - >-
+          på
+      - >-
+          disken
+      - >-
+          .
+
+  - unit: >-
+      Med "DISP"-knapparna på frontpanelen och på fjärrkontrollen kan du växla mellan visning av tid/spår/kapitel och undertexter/bildvinkel/ljudspår (gäller endast DVD).
+    tokens:
+      - >-
+          Med
+      - >-
+          "DISP"-knapparna
+      - >-
+          på
+      - >-
+          frontpanelen
+      - >-
+          och
+      - >-
+          på
+      - >-
+          fjärrkontrollen
+      - >-
+          kan
+      - >-
+          du
+      - >-
+          växla
+      - >-
+          mellan
+      - >-
+          visning
+      - >-
+          av
+      - >-
+          tid
+      - >-
+          /
+      - >-
+          spår
+      - >-
+          /
+      - >-
+          kapitel
+      - >-
+          och
+      - >-
+          undertexter
+      - >-
+          /
+      - >-
+          bildvinkel
+      - >-
+          /
+      - >-
+          ljudspår
+      - >-
+          (
+      - >-
+          gäller
+      - >-
+          endast
+      - >-
+          DVD
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Om du inte trycker på någon knapp inom 10 sekunder försvinner skärminformationen.
+    tokens:
+      - >-
+          Om
+      - >-
+          du
+      - >-
+          inte
+      - >-
+          trycker
+      - >-
+          på
+      - >-
+          någon
+      - >-
+          knapp
+      - >-
+          inom
+      - >-
+          10
+      - >-
+          sekunder
+      - >-
+          försvinner
+      - >-
+          skärminformationen
+      - >-
+          .
+
+  - unit: >-
+      MENYN "INSTÄLLNINGAR"
+    tokens:
+      - >-
+          MENYN
+      - >-
+          "
+      - >-
+          INSTÄLLNINGAR
+      - >-
+          "
+
+  - unit: >-
+      För att visa menyn och navigera i den följer du anvisningarna i avsnittet "Navigera och göra ändringar i skärmmenyn 'Inställningar"' här ovan.
+    tokens:
+      - >-
+          För
+      - >-
+          att
+      - >-
+          visa
+      - >-
+          menyn
+      - >-
+          och
+      - >-
+          navigera
+      - >-
+          i
+      - >-
+          den
+      - >-
+          följer
+      - >-
+          du
+      - >-
+          anvisningarna
+      - >-
+          i
+      - >-
+          avsnittet
+      - >-
+          "
+      - >-
+          Navigera
+      - >-
+          och
+      - >-
+          göra
+      - >-
+          ändringar
+      - >-
+          i
+      - >-
+          skärmmenyn
+      - >-
+          '
+      - >-
+          Inställningar
+      - >-
+          "
+      - >-
+          '
+      - >-
+          här
+      - >-
+          ovan
+      - >-
+          .
+
+  - unit: >-
+      TV-SYSTEM
+    tokens:
+      - >-
+          TV-SYSTEM
+
+  - unit: >-
+      SPRÅK
+    tokens:
+      - >-
+          SPRÅK
+
+  - unit: >-
+      UNDERTEXTER
+    tokens:
+      - >-
+          UNDERTEXTER
+
+# 316 out of 533 found

@@ -1,0 +1,10504 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/sv.list
+
+init:
+  - init/sv.list
+
+rule:
+  - rule/common.yaml
+  - rule/sv.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      EBIT steg med 16 procent till 371 miljoner dollar, främst till följd av starkt resultat i divisionen Automation Technologies som rapporterade tvåsiffrig order-, intäkts- och EBIT-tillväxt.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          steg
+      - >-
+          med
+      - >-
+          16
+      - >-
+          procent
+      - >-
+          till
+      - >-
+          371
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          starkt
+      - >-
+          resultat
+      - >-
+          i
+      - >-
+          divisionen
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          som
+      - >-
+          rapporterade
+      - >-
+          tvåsiffrig
+      - >-
+          order-
+      - >-
+          ,
+      - >-
+          intäkts-
+      - >-
+          och
+      - >-
+          EBIT-tillväxt
+      - >-
+          .
+
+  - unit: >-
+      Orderingången och intäkterna var också högre i divisionen Power Technologies men en kostnad på 66 miljoner dollar i samband med konsolideringen av transformatorverksamheten, aviserad i juni, sänkte EBIT jämfört med samma kvartal 2004.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          och
+      - >-
+          intäkterna
+      - >-
+          var
+      - >-
+          också
+      - >-
+          högre
+      - >-
+          i
+      - >-
+          divisionen
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          men
+      - >-
+          en
+      - >-
+          kostnad
+      - >-
+          på
+      - >-
+          66
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          konsolideringen
+      - >-
+          av
+      - >-
+          transformatorverksamheten
+      - >-
+          ,
+      - >-
+          aviserad
+      - >-
+          i
+      - >-
+          juni
+      - >-
+          ,
+      - >-
+          sänkte
+      - >-
+          EBIT
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Trots dessa betydande kostnader steg nettovinsten med 42 procent till 126 miljoner dollar jämfört med samma kvartal 2004 men sjönk från 199 miljoner dollar första kvartalet 2005.
+    tokens:
+      - >-
+          Trots
+      - >-
+          dessa
+      - >-
+          betydande
+      - >-
+          kostnader
+      - >-
+          steg
+      - >-
+          nettovinsten
+      - >-
+          med
+      - >-
+          42
+      - >-
+          procent
+      - >-
+          till
+      - >-
+          126
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          men
+      - >-
+          sjönk
+      - >-
+          från
+      - >-
+          199
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          första
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Kassaflödet från rörelsen ökade med 280 miljoner dollar jämfört med samma kvartal 2004, främst från icke-kärnverksamheter och koncerngemensam verksamhet.
+    tokens:
+      - >-
+          Kassaflödet
+      - >-
+          från
+      - >-
+          rörelsen
+      - >-
+          ökade
+      - >-
+          med
+      - >-
+          280
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          från
+      - >-
+          icke-kärnverksamheter
+      - >-
+          och
+      - >-
+          koncerngemensam
+      - >-
+          verksamhet
+      - >-
+          .
+
+  - unit: >-
+      Efterfrågan på ABB:s produkter och lösningar steg i de flesta affärsområden under andra kvartalet 2005.
+    tokens:
+      - >-
+          Efterfrågan
+      - >-
+          på
+      - >-
+          ABB:s
+      - >-
+          produkter
+      - >-
+          och
+      - >-
+          lösningar
+      - >-
+          steg
+      - >-
+          i
+      - >-
+          de
+      - >-
+          flesta
+      - >-
+          affärsområden
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Den fortsatt starka tillväxten av basorder (mindre än 15 miljoner dollar) i nästan alla affärsområden visar att underliggande ekonomiska villkor fortfarande var gynnsamma, och bidrog till att behålla ABB:s orderstock på höga nivåer.
+    tokens:
+      - >-
+          Den
+      - >-
+          fortsatt
+      - >-
+          starka
+      - >-
+          tillväxten
+      - >-
+          av
+      - >-
+          basorder
+      - >-
+          (
+      - >-
+          mindre
+      - >-
+          än
+      - >-
+          15
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          )
+      - >-
+          i
+      - >-
+          nästan
+      - >-
+          alla
+      - >-
+          affärsområden
+      - >-
+          visar
+      - >-
+          att
+      - >-
+          underliggande
+      - >-
+          ekonomiska
+      - >-
+          villkor
+      - >-
+          fortfarande
+      - >-
+          var
+      - >-
+          gynnsamma
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          bidrog
+      - >-
+          till
+      - >-
+          att
+      - >-
+          behålla
+      - >-
+          ABB:s
+      - >-
+          orderstock
+      - >-
+          på
+      - >-
+          höga
+      - >-
+          nivåer
+      - >-
+          .
+
+  - unit: >-
+      Kraftindustrin i Nordamerika och Europa fortsatte att investera i ersättning och uppgradering av utrustning för överföring och distribution.
+    tokens:
+      - >-
+          Kraftindustrin
+      - >-
+          i
+      - >-
+          Nordamerika
+      - >-
+          och
+      - >-
+          Europa
+      - >-
+          fortsatte
+      - >-
+          att
+      - >-
+          investera
+      - >-
+          i
+      - >-
+          ersättning
+      - >-
+          och
+      - >-
+          uppgradering
+      - >-
+          av
+      - >-
+          utrustning
+      - >-
+          för
+      - >-
+          överföring
+      - >-
+          och
+      - >-
+          distribution
+      - >-
+          .
+
+  - unit: >-
+      I Asien, Mellanöstern och Sydamerika investerade energisektorn i ny kraftinfrastruktur.
+    tokens:
+      - >-
+          I
+      - >-
+          Asien
+      - >-
+          ,
+      - >-
+          Mellanöstern
+      - >-
+          och
+      - >-
+          Sydamerika
+      - >-
+          investerade
+      - >-
+          energisektorn
+      - >-
+          i
+      - >-
+          ny
+      - >-
+          kraftinfrastruktur
+      - >-
+          .
+
+  - unit: >-
+      Antalet stora order inom kraftöverföring var färre under kvartalet jämfört med samma period i fjol, vilket medförde lägre orderingång i Asien, men tillväxttakten för sådana projekt väntas fortsatt vara god på längre sikt i alla regioner.
+    tokens:
+      - >-
+          Antalet
+      - >-
+          stora
+      - >-
+          order
+      - >-
+          inom
+      - >-
+          kraftöverföring
+      - >-
+          var
+      - >-
+          färre
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          period
+      - >-
+          i
+      - >-
+          fjol
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          medförde
+      - >-
+          lägre
+      - >-
+          orderingång
+      - >-
+          i
+      - >-
+          Asien
+      - >-
+          ,
+      - >-
+          men
+      - >-
+          tillväxttakten
+      - >-
+          för
+      - >-
+          sådana
+      - >-
+          projekt
+      - >-
+          väntas
+      - >-
+          fortsatt
+      - >-
+          vara
+      - >-
+          god
+      - >-
+          på
+      - >-
+          längre
+      - >-
+          sikt
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          .
+
+  - unit: >-
+      I takt med konjunkturcyklerna i de flesta industrisegment som ABB betjänar, investerade kunderna främst i effektivitetsförbättringar i befintliga anläggningar och utrustningar, och efterfrågan fortsatte öka i sektorerna olja och gas, mineraler och metaller, marin, kemi och fordonsindustrin.
+    tokens:
+      - >-
+          I
+      - >-
+          takt
+      - >-
+          med
+      - >-
+          konjunkturcyklerna
+      - >-
+          i
+      - >-
+          de
+      - >-
+          flesta
+      - >-
+          industrisegment
+      - >-
+          som
+      - >-
+          ABB
+      - >-
+          betjänar
+      - >-
+          ,
+      - >-
+          investerade
+      - >-
+          kunderna
+      - >-
+          främst
+      - >-
+          i
+      - >-
+          effektivitetsförbättringar
+      - >-
+          i
+      - >-
+          befintliga
+      - >-
+          anläggningar
+      - >-
+          och
+      - >-
+          utrustningar
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          efterfrågan
+      - >-
+          fortsatte
+      - >-
+          öka
+      - >-
+          i
+      - >-
+          sektorerna
+      - >-
+          olja
+      - >-
+          och
+      - >-
+          gas
+      - >-
+          ,
+      - >-
+          mineraler
+      - >-
+          och
+      - >-
+          metaller
+      - >-
+          ,
+      - >-
+          marin
+      - >-
+          ,
+      - >-
+          kemi
+      - >-
+          och
+      - >-
+          fordonsindustrin
+      - >-
+          .
+
+  - unit: >-
+      Efterfrågan var fortsatt svag inom massa och papper samt i byggsektorn.
+    tokens:
+      - >-
+          Efterfrågan
+      - >-
+          var
+      - >-
+          fortsatt
+      - >-
+          svag
+      - >-
+          inom
+      - >-
+          massa
+      - >-
+          och
+      - >-
+          papper
+      - >-
+          samt
+      - >-
+          i
+      - >-
+          byggsektorn
+      - >-
+          .
+
+  - unit: >-
+      Liksom i energisektorn satsade industrikunderna främst på uppgraderingar av befintliga tillgångar snarare än på nyinvesteringar.
+    tokens:
+      - >-
+          Liksom
+      - >-
+          i
+      - >-
+          energisektorn
+      - >-
+          satsade
+      - >-
+          industrikunderna
+      - >-
+          främst
+      - >-
+          på
+      - >-
+          uppgraderingar
+      - >-
+          av
+      - >-
+          befintliga
+      - >-
+          tillgångar
+      - >-
+          snarare
+      - >-
+          än
+      - >-
+          på
+      - >-
+          nyinvesteringar
+      - >-
+          .
+
+  - unit: >-
+      Orderingången från industrin ökade i alla regioner.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          från
+      - >-
+          industrin
+      - >-
+          ökade
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          .
+
+  - unit: >-
+      Basorder ökade i nästan alla affärsområden och alla regioner till följd av fortsatt ökad efterfrågan i de flesta kundsegment.
+    tokens:
+      - >-
+          Basorder
+      - >-
+          ökade
+      - >-
+          i
+      - >-
+          nästan
+      - >-
+          alla
+      - >-
+          affärsområden
+      - >-
+          och
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          fortsatt
+      - >-
+          ökad
+      - >-
+          efterfrågan
+      - >-
+          i
+      - >-
+          de
+      - >-
+          flesta
+      - >-
+          kundsegment
+      - >-
+          .
+
+  - unit: >-
+      Denna ökning mer än uppvägde en minskning med runt 50 procent av stora order (över 15 miljoner dollar).
+    tokens:
+      - >-
+          Denna
+      - >-
+          ökning
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          uppvägde
+      - >-
+          en
+      - >-
+          minskning
+      - >-
+          med
+      - >-
+          runt
+      - >-
+          50
+      - >-
+          procent
+      - >-
+          av
+      - >-
+          stora
+      - >-
+          order
+      - >-
+          (
+      - >-
+          över
+      - >-
+          15
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Den högre nivån stora order andra kvartalet 2004 var främst en följd av en kraftöverföringsorder i Power Technologies till Kina, värd 390 miljoner dollar och en stor robotorder i Automation Technologies till USA.
+    tokens:
+      - >-
+          Den
+      - >-
+          högre
+      - >-
+          nivån
+      - >-
+          stora
+      - >-
+          order
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          var
+      - >-
+          främst
+      - >-
+          en
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          en
+      - >-
+          kraftöverföringsorder
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          till
+      - >-
+          Kina
+      - >-
+          ,
+      - >-
+          värd
+      - >-
+          390
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          en
+      - >-
+          stor
+      - >-
+          robotorder
+      - >-
+          i
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          till
+      - >-
+          USA
+      - >-
+          .
+
+  - unit: >-
+      Energisektorn i Nordamerika fortsatte investera i uppgradering av utrustning samtidigt som de flesta industrisegment visade fortsatt ökad tillväxt.
+    tokens:
+      - >-
+          Energisektorn
+      - >-
+          i
+      - >-
+          Nordamerika
+      - >-
+          fortsatte
+      - >-
+          investera
+      - >-
+          i
+      - >-
+          uppgradering
+      - >-
+          av
+      - >-
+          utrustning
+      - >-
+          samtidigt
+      - >-
+          som
+      - >-
+          de
+      - >-
+          flesta
+      - >-
+          industrisegment
+      - >-
+          visade
+      - >-
+          fortsatt
+      - >-
+          ökad
+      - >-
+          tillväxt
+      - >-
+          .
+
+  - unit: >-
+      För Power Technologies steg orderingången både i dollar och lokala valutor.
+    tokens:
+      - >-
+          För
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          steg
+      - >-
+          orderingången
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          .
+
+  - unit: >-
+      Bidragande var främst högre produktorder i Västeuropa och en stor order avseende kraftöverföringssystem i Östeuropa.
+    tokens:
+      - >-
+          Bidragande
+      - >-
+          var
+      - >-
+          främst
+      - >-
+          högre
+      - >-
+          produktorder
+      - >-
+          i
+      - >-
+          Västeuropa
+      - >-
+          och
+      - >-
+          en
+      - >-
+          stor
+      - >-
+          order
+      - >-
+          avseende
+      - >-
+          kraftöverföringssystem
+      - >-
+          i
+      - >-
+          Östeuropa
+      - >-
+          .
+
+  - unit: >-
+      Orderingången ökade även för Automation Technologies, både i Öst- och Västeuropa.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          ökade
+      - >-
+          även
+      - >-
+          för
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          ,
+      - >-
+          både
+      - >-
+          i
+      - >-
+          Öst-
+      - >-
+          och
+      - >-
+          Västeuropa
+      - >-
+          .
+
+  - unit: >-
+      Basorder för Power Technologies i Kina fortsatte dock att öka.
+    tokens:
+      - >-
+          Basorder
+      - >-
+          för
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          i
+      - >-
+          Kina
+      - >-
+          fortsatte
+      - >-
+          dock
+      - >-
+          att
+      - >-
+          öka
+      - >-
+          .
+
+  - unit: >-
+      För Automation Technologies ökade den totala orderingången i Asien då högre order i Indien och flera andra länder mer än uppvägde en något lägre orderingång i Kina.
+    tokens:
+      - >-
+          För
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          ökade
+      - >-
+          den
+      - >-
+          totala
+      - >-
+          orderingången
+      - >-
+          i
+      - >-
+          Asien
+      - >-
+          då
+      - >-
+          högre
+      - >-
+          order
+      - >-
+          i
+      - >-
+          Indien
+      - >-
+          och
+      - >-
+          flera
+      - >-
+          andra
+      - >-
+          länder
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          uppvägde
+      - >-
+          en
+      - >-
+          något
+      - >-
+          lägre
+      - >-
+          orderingång
+      - >-
+          i
+      - >-
+          Kina
+      - >-
+          .
+
+  - unit: >-
+      I Mellanöstern och Afrika var orderingången 6 procent lägre under andra kvartalet och uppgick till 511 miljoner dollar (8 procent lägre i lokala valutor), främst till följd av minskade stora order i olje- och gasverksamheten i icke-kärnverksamheter samt i affärsområdet Power Technology Systems.
+    tokens:
+      - >-
+          I
+      - >-
+          Mellanöstern
+      - >-
+          och
+      - >-
+          Afrika
+      - >-
+          var
+      - >-
+          orderingången
+      - >-
+          6
+      - >-
+          procent
+      - >-
+          lägre
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          och
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          511
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          (
+      - >-
+          8
+      - >-
+          procent
+      - >-
+          lägre
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          minskade
+      - >-
+          stora
+      - >-
+          order
+      - >-
+          i
+      - >-
+          olje-
+      - >-
+          och
+      - >-
+          gasverksamheten
+      - >-
+          i
+      - >-
+          icke-kärnverksamheter
+      - >-
+          samt
+      - >-
+          i
+      - >-
+          affärsområdet
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          .
+
+  - unit: >-
+      Intäkterna var högre i de flesta affärsområden och i alla regioner utom Mellanöstern och Afrika.
+    tokens:
+      - >-
+          Intäkterna
+      - >-
+          var
+      - >-
+          högre
+      - >-
+          i
+      - >-
+          de
+      - >-
+          flesta
+      - >-
+          affärsområden
+      - >-
+          och
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          utom
+      - >-
+          Mellanöstern
+      - >-
+          och
+      - >-
+          Afrika
+      - >-
+          .
+
+  - unit: >-
+      I Mellanöstern och Afrika minskade intäkterna med 4 procent till 494 miljoner dollar (ned 6 procent i lokala valutor).
+    tokens:
+      - >-
+          I
+      - >-
+          Mellanöstern
+      - >-
+          och
+      - >-
+          Afrika
+      - >-
+          minskade
+      - >-
+          intäkterna
+      - >-
+          med
+      - >-
+          4
+      - >-
+          procent
+      - >-
+          till
+      - >-
+          494
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          (
+      - >-
+          ned
+      - >-
+          6
+      - >-
+          procent
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Intäktsökningen var främst ett resultat av högre volymer, även om prishöjningar uppnåddes i vissa produktlinjer.
+    tokens:
+      - >-
+          Intäktsökningen
+      - >-
+          var
+      - >-
+          främst
+      - >-
+          ett
+      - >-
+          resultat
+      - >-
+          av
+      - >-
+          högre
+      - >-
+          volymer
+      - >-
+          ,
+      - >-
+          även
+      - >-
+          om
+      - >-
+          prishöjningar
+      - >-
+          uppnåddes
+      - >-
+          i
+      - >-
+          vissa
+      - >-
+          produktlinjer
+      - >-
+          .
+
+  - unit: >-
+      EBIT var 371 miljoner dollar för andra kvartalet 2005, upp 16 procent jämfört med samma period 2004.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          var
+      - >-
+          371
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          för
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          ,
+      - >-
+          upp
+      - >-
+          16
+      - >-
+          procent
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          period
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Den största förbättringen skedde i Automation Technologies, främst till följd av högre fabriksbeläggning, pågående produktivitetsförbättringar samt åtgärder för att sänka inköpskostnader.
+    tokens:
+      - >-
+          Den
+      - >-
+          största
+      - >-
+          förbättringen
+      - >-
+          skedde
+      - >-
+          i
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          högre
+      - >-
+          fabriksbeläggning
+      - >-
+          ,
+      - >-
+          pågående
+      - >-
+          produktivitetsförbättringar
+      - >-
+          samt
+      - >-
+          åtgärder
+      - >-
+          för
+      - >-
+          att
+      - >-
+          sänka
+      - >-
+          inköpskostnader
+      - >-
+          .
+
+  - unit: >-
+      EBIT i Power Technologies minskade då bättre produktivitet och kapacitetsutnyttjande i en del verksamheter, tillsammans med en nettovinst på cirka 10 miljoner dollar från försäljning av fast egendom, inte kompenserade för kostnader på 66 miljoner dollar relaterade till programmet för konsolidering av transformatorverksamheten som presenterades i juni 2005 samt en avsättning för eventuella rättskostnader i verksamheten Power Technology Systems.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          minskade
+      - >-
+          då
+      - >-
+          bättre
+      - >-
+          produktivitet
+      - >-
+          och
+      - >-
+          kapacitetsutnyttjande
+      - >-
+          i
+      - >-
+          en
+      - >-
+          del
+      - >-
+          verksamheter
+      - >-
+          ,
+      - >-
+          tillsammans
+      - >-
+          med
+      - >-
+          en
+      - >-
+          nettovinst
+      - >-
+          på
+      - >-
+          cirka
+      - >-
+          10
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          från
+      - >-
+          försäljning
+      - >-
+          av
+      - >-
+          fast
+      - >-
+          egendom
+      - >-
+          ,
+      - >-
+          inte
+      - >-
+          kompenserade
+      - >-
+          för
+      - >-
+          kostnader
+      - >-
+          på
+      - >-
+          66
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          relaterade
+      - >-
+          till
+      - >-
+          programmet
+      - >-
+          för
+      - >-
+          konsolidering
+      - >-
+          av
+      - >-
+          transformatorverksamheten
+      - >-
+          som
+      - >-
+          presenterades
+      - >-
+          i
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          samt
+      - >-
+          en
+      - >-
+          avsättning
+      - >-
+          för
+      - >-
+          eventuella
+      - >-
+          rättskostnader
+      - >-
+          i
+      - >-
+          verksamheten
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          .
+
+  - unit: >-
+      Koncerngemensamma kostnader minskade med 35 miljoner dollar då kostnaderna för huvudkontor i flera länder och i Zürich var lägre jämfört med samma period 2004.
+    tokens:
+      - >-
+          Koncerngemensamma
+      - >-
+          kostnader
+      - >-
+          minskade
+      - >-
+          med
+      - >-
+          35
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          då
+      - >-
+          kostnaderna
+      - >-
+          för
+      - >-
+          huvudkontor
+      - >-
+          i
+      - >-
+          flera
+      - >-
+          länder
+      - >-
+          och
+      - >-
+          i
+      - >-
+          Zürich
+      - >-
+          var
+      - >-
+          lägre
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          period
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      EBIT i icke-kärnverksamheterna minskade till en förlust på 10 miljoner dollar, jämfört med en vinst på 2 miljoner dollar andra kvartalet 2004, till följd av att en nedskrivning av tillgångar och kostnader i samband med en potentiell process mer än motvägde verksamhetsförbättringar i verksamheten Building Systems i Tyskland.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          i
+      - >-
+          icke-kärnverksamheterna
+      - >-
+          minskade
+      - >-
+          till
+      - >-
+          en
+      - >-
+          förlust
+      - >-
+          på
+      - >-
+          10
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          en
+      - >-
+          vinst
+      - >-
+          på
+      - >-
+          2
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          att
+      - >-
+          en
+      - >-
+          nedskrivning
+      - >-
+          av
+      - >-
+          tillgångar
+      - >-
+          och
+      - >-
+          kostnader
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          en
+      - >-
+          potentiell
+      - >-
+          process
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          motvägde
+      - >-
+          verksamhetsförbättringar
+      - >-
+          i
+      - >-
+          verksamheten
+      - >-
+          Building
+      - >-
+          Systems
+      - >-
+          i
+      - >-
+          Tyskland
+      - >-
+          .
+
+  - unit: >-
+      EBIT-marginalen under andra kvartalet steg till 6,5 procent från 6,2 procent samma kvartal 2004.
+    tokens:
+      - >-
+          EBIT-marginalen
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          steg
+      - >-
+          till
+      - >-
+          6,5
+      - >-
+          procent
+      - >-
+          från
+      - >-
+          6,2
+      - >-
+          procent
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      EBIT-marginalen i Automation Technologies ökade till 10,7 procent från 9,8 procent.
+    tokens:
+      - >-
+          EBIT-marginalen
+      - >-
+          i
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          ökade
+      - >-
+          till
+      - >-
+          10,7
+      - >-
+          procent
+      - >-
+          från
+      - >-
+          9,8
+      - >-
+          procent
+      - >-
+          .
+
+  - unit: >-
+      EBIT-marginalen i Power Technologies minskade till 5,8 procent från 8,2 procent samma period 2004.
+    tokens:
+      - >-
+          EBIT-marginalen
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          minskade
+      - >-
+          till
+      - >-
+          5,8
+      - >-
+          procent
+      - >-
+          från
+      - >-
+          8,2
+      - >-
+          procent
+      - >-
+          samma
+      - >-
+          period
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      I finansnetto för andra kvartalet 2005 ingår en engångsräntekostnad på cirka 40 miljoner dollar, varav merparten är relaterat till en process som härrör från en bot påförd ABB 1998 efter överträdelser av EU:s konkurrensregler inom fjärrvärmeverksamheten (avyttrad 1999).
+    tokens:
+      - >-
+          I
+      - >-
+          finansnetto
+      - >-
+          för
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          ingår
+      - >-
+          en
+      - >-
+          engångsräntekostnad
+      - >-
+          på
+      - >-
+          cirka
+      - >-
+          40
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          varav
+      - >-
+          merparten
+      - >-
+          är
+      - >-
+          relaterat
+      - >-
+          till
+      - >-
+          en
+      - >-
+          process
+      - >-
+          som
+      - >-
+          härrör
+      - >-
+          från
+      - >-
+          en
+      - >-
+          bot
+      - >-
+          påförd
+      - >-
+          ABB
+      - >-
+          1998
+      - >-
+          efter
+      - >-
+          överträdelser
+      - >-
+          av
+      - >-
+          EU:s
+      - >-
+          konkurrensregler
+      - >-
+          inom
+      - >-
+          fjärrvärmeverksamheten
+      - >-
+          (
+      - >-
+          avyttrad
+      - >-
+          1999
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Skattekostnader uppgick till 101 miljoner dollar (effektiv skattesats cirka 37 procent) under andra kvartalet 2005 jämfört med 96 miljoner dollar (effektiv skattesats cirka 35 procent) under andra kvartalet 2004.
+    tokens:
+      - >-
+          Skattekostnader
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          101
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          (
+      - >-
+          effektiv
+      - >-
+          skattesats
+      - >-
+          cirka
+      - >-
+          37
+      - >-
+          procent
+      - >-
+          )
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          96
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          (
+      - >-
+          effektiv
+      - >-
+          skattesats
+      - >-
+          cirka
+      - >-
+          35
+      - >-
+          procent
+      - >-
+          )
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Den högre skattesatsen är främst en följd av särskilda kostnader redovisade under kvartalet.
+    tokens:
+      - >-
+          Den
+      - >-
+          högre
+      - >-
+          skattesatsen
+      - >-
+          är
+      - >-
+          främst
+      - >-
+          en
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          särskilda
+      - >-
+          kostnader
+      - >-
+          redovisade
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          .
+
+  - unit: >-
+      Nettoförlusten i Avvecklade verksamheter uppgick till 22 miljoner dollar, inklusive en förlust på 6 miljoner dollar i samband med försäljningen av kraftledningsverksamheten i Tyskland och en kostnad på 10 miljoner dollar för marknadsvärderingen av de cirka 30 miljoner ABB-aktier som reserverats för täckning av delar av företagets asbestförpliktelser (för mer information, se Appendix I på sidan 10 i det här pressmeddelandet).
+    tokens:
+      - >-
+          Nettoförlusten
+      - >-
+          i
+      - >-
+          Avvecklade
+      - >-
+          verksamheter
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          22
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          inklusive
+      - >-
+          en
+      - >-
+          förlust
+      - >-
+          på
+      - >-
+          6
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          försäljningen
+      - >-
+          av
+      - >-
+          kraftledningsverksamheten
+      - >-
+          i
+      - >-
+          Tyskland
+      - >-
+          och
+      - >-
+          en
+      - >-
+          kostnad
+      - >-
+          på
+      - >-
+          10
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          för
+      - >-
+          marknadsvärderingen
+      - >-
+          av
+      - >-
+          de
+      - >-
+          cirka
+      - >-
+          30
+      - >-
+          miljoner
+      - >-
+          ABB-aktier
+      - >-
+          som
+      - >-
+          reserverats
+      - >-
+          för
+      - >-
+          täckning
+      - >-
+          av
+      - >-
+          delar
+      - >-
+          av
+      - >-
+          företagets
+      - >-
+          asbestförpliktelser
+      - >-
+          (
+      - >-
+          för
+      - >-
+          mer
+      - >-
+          information
+      - >-
+          ,
+      - >-
+          se
+      - >-
+          Appendix
+      - >-
+          I
+      - >-
+          på
+      - >-
+          sidan
+      - >-
+          10
+      - >-
+          i
+      - >-
+          det
+      - >-
+          här
+      - >-
+          pressmeddelandet
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      ABB:s nettovinst för andra kvartalet var 126 miljoner dollar, jämfört med 89 miljoner dollar för samma period 2004, trots avsättningar under kvartalet för att täcka konsolidering av transformatorverksamheten, rättskostnader och eventuell process, allt på sammanlagt mer än 130 miljoner dollar.
+    tokens:
+      - >-
+          ABB:s
+      - >-
+          nettovinst
+      - >-
+          för
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          var
+      - >-
+          126
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          89
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          för
+      - >-
+          samma
+      - >-
+          period
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          trots
+      - >-
+          avsättningar
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          för
+      - >-
+          att
+      - >-
+          täcka
+      - >-
+          konsolidering
+      - >-
+          av
+      - >-
+          transformatorverksamheten
+      - >-
+          ,
+      - >-
+          rättskostnader
+      - >-
+          och
+      - >-
+          eventuell
+      - >-
+          process
+      - >-
+          ,
+      - >-
+          allt
+      - >-
+          på
+      - >-
+          sammanlagt
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          130
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          .
+
+  - unit: >-
+      Likvida medel och kortsiktiga placeringar vid slutet av juni 2005 uppgick till 3,6 miljarder dollar (exklusive Avvecklade verksamheter), en minskning från 3,7 miljarder dollar vid slutet av mars 2005.
+    tokens:
+      - >-
+          Likvida
+      - >-
+          medel
+      - >-
+          och
+      - >-
+          kortsiktiga
+      - >-
+          placeringar
+      - >-
+          vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          3,6
+      - >-
+          miljarder
+      - >-
+          dollar
+      - >-
+          (
+      - >-
+          exklusive
+      - >-
+          Avvecklade
+      - >-
+          verksamheter
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          minskning
+      - >-
+          från
+      - >-
+          3,7
+      - >-
+          miljarder
+      - >-
+          dollar
+      - >-
+          vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          mars
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Vid slutet av juni 2005 uppgick den totala skulden (definierad som total kort- och långsiktig upplåning) till 4,9 miljarder dollar, jämfört med 5,2 miljarder dollar den 31 mars 2005.
+    tokens:
+      - >-
+          Vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          uppgick
+      - >-
+          den
+      - >-
+          totala
+      - >-
+          skulden
+      - >-
+          (
+      - >-
+          definierad
+      - >-
+          som
+      - >-
+          total
+      - >-
+          kort-
+      - >-
+          och
+      - >-
+          långsiktig
+      - >-
+          upplåning
+      - >-
+          )
+      - >-
+          till
+      - >-
+          4,9
+      - >-
+          miljarder
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          5,2
+      - >-
+          miljarder
+      - >-
+          dollar
+      - >-
+          den
+      - >-
+          31
+      - >-
+          mars
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Minskningen återspeglar att dollarn stärktes under kvartalet, vilket innebar att företagets bokförda skuld minskade när skulder i euro och schweizerfrancs räknades om till dollar.
+    tokens:
+      - >-
+          Minskningen
+      - >-
+          återspeglar
+      - >-
+          att
+      - >-
+          dollarn
+      - >-
+          stärktes
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          innebar
+      - >-
+          att
+      - >-
+          företagets
+      - >-
+          bokförda
+      - >-
+          skuld
+      - >-
+          minskade
+      - >-
+          när
+      - >-
+          skulder
+      - >-
+          i
+      - >-
+          euro
+      - >-
+          och
+      - >-
+          schweizerfrancs
+      - >-
+          räknades
+      - >-
+          om
+      - >-
+          till
+      - >-
+          dollar
+      - >-
+          .
+
+  - unit: >-
+      I ABB:s totala skuld ingår cirka 200 miljoner dollar i obligationer som förfaller till betalning under tredje kvartalet 2005.
+    tokens:
+      - >-
+          I
+      - >-
+          ABB:s
+      - >-
+          totala
+      - >-
+          skuld
+      - >-
+          ingår
+      - >-
+          cirka
+      - >-
+          200
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          i
+      - >-
+          obligationer
+      - >-
+          som
+      - >-
+          förfaller
+      - >-
+          till
+      - >-
+          betalning
+      - >-
+          under
+      - >-
+          tredje
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Detta resulterade i att nettoskulden (totala skulden minus likvida medel och kortsiktiga placeringar) uppgick till 1,3 miljarder dollar vid slutet av andra kvartalet 2005, jämfört med 1,5 miljarder dollar vid slutet av första kvartalet 2005.
+    tokens:
+      - >-
+          Detta
+      - >-
+          resulterade
+      - >-
+          i
+      - >-
+          att
+      - >-
+          nettoskulden
+      - >-
+          (
+      - >-
+          totala
+      - >-
+          skulden
+      - >-
+          minus
+      - >-
+          likvida
+      - >-
+          medel
+      - >-
+          och
+      - >-
+          kortsiktiga
+      - >-
+          placeringar
+      - >-
+          )
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          1,3
+      - >-
+          miljarder
+      - >-
+          dollar
+      - >-
+          vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          1,5
+      - >-
+          miljarder
+      - >-
+          dollar
+      - >-
+          vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          första
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Utväxlingseffekten, definierad som total skuld dividerad med total skuld plus eget kapital (inklusive minoritetsintressen), var 60 procent vid slutet av juni 2005, jämfört med 61 procent vid slutet av föregående kvartal.
+    tokens:
+      - >-
+          Utväxlingseffekten
+      - >-
+          ,
+      - >-
+          definierad
+      - >-
+          som
+      - >-
+          total
+      - >-
+          skuld
+      - >-
+          dividerad
+      - >-
+          med
+      - >-
+          total
+      - >-
+          skuld
+      - >-
+          plus
+      - >-
+          eget
+      - >-
+          kapital
+      - >-
+          (
+      - >-
+          inklusive
+      - >-
+          minoritetsintressen
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          var
+      - >-
+          60
+      - >-
+          procent
+      - >-
+          vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          61
+      - >-
+          procent
+      - >-
+          vid
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          föregående
+      - >-
+          kvartal
+      - >-
+          .
+
+  - unit: >-
+      Nettokassaflödet från rörelsen i koncernen ökade under andra kvartalet 2005 med 280 miljoner dollar jämfört med andra kvartalet 2004.
+    tokens:
+      - >-
+          Nettokassaflödet
+      - >-
+          från
+      - >-
+          rörelsen
+      - >-
+          i
+      - >-
+          koncernen
+      - >-
+          ökade
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          med
+      - >-
+          280
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Störst förbättringar rapporterades i icke-kärnverksamheter och koncerngemensam verksamhet.
+    tokens:
+      - >-
+          Störst
+      - >-
+          förbättringar
+      - >-
+          rapporterades
+      - >-
+          i
+      - >-
+          icke-kärnverksamheter
+      - >-
+          och
+      - >-
+          koncerngemensam
+      - >-
+          verksamhet
+      - >-
+          .
+
+  - unit: >-
+      Det förbättrade kassaflödet i icke-kärnverksamheter återspeglar det stora kassautflödet under andra kvartalet 2004 från minskningen av värdepappersverksamhet med cirka 100 miljoner dollar i samband med förberedelser för försäljning av utvinningsverksamheten inom olja och gas i juli 2004.
+    tokens:
+      - >-
+          Det
+      - >-
+          förbättrade
+      - >-
+          kassaflödet
+      - >-
+          i
+      - >-
+          icke-kärnverksamheter
+      - >-
+          återspeglar
+      - >-
+          det
+      - >-
+          stora
+      - >-
+          kassautflödet
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          från
+      - >-
+          minskningen
+      - >-
+          av
+      - >-
+          värdepappersverksamhet
+      - >-
+          med
+      - >-
+          cirka
+      - >-
+          100
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          förberedelser
+      - >-
+          för
+      - >-
+          försäljning
+      - >-
+          av
+      - >-
+          utvinningsverksamheten
+      - >-
+          inom
+      - >-
+          olja
+      - >-
+          och
+      - >-
+          gas
+      - >-
+          i
+      - >-
+          juli
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Det ökade kassaflödet i koncerngemensam verksamhet återspeglar sänkta kostnader, skillnader i tidpunkter för värdepappersutgivning jämfört med samma kvartal 2004 och minskat kassautflöde avseende asbestutbetalningar (12 miljoner dollar andra kvartalet 2005 jämfört med 28 miljoner dollar andra kvartalet 2004).
+    tokens:
+      - >-
+          Det
+      - >-
+          ökade
+      - >-
+          kassaflödet
+      - >-
+          i
+      - >-
+          koncerngemensam
+      - >-
+          verksamhet
+      - >-
+          återspeglar
+      - >-
+          sänkta
+      - >-
+          kostnader
+      - >-
+          ,
+      - >-
+          skillnader
+      - >-
+          i
+      - >-
+          tidpunkter
+      - >-
+          för
+      - >-
+          värdepappersutgivning
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          och
+      - >-
+          minskat
+      - >-
+          kassautflöde
+      - >-
+          avseende
+      - >-
+          asbestutbetalningar
+      - >-
+          (
+      - >-
+          12
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          28
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      De två divisionerna redovisade ett kassaflöde under kvartalet på 291 miljoner dollar, upp 31 miljoner dollar, jämfört med samma kvartal 2004.
+    tokens:
+      - >-
+          De
+      - >-
+          två
+      - >-
+          divisionerna
+      - >-
+          redovisade
+      - >-
+          ett
+      - >-
+          kassaflöde
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          på
+      - >-
+          291
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          upp
+      - >-
+          31
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Kassaflödet i Power Technologies ökade till följd av att rörelsekapitalet, procentuellt av intäkterna, minskade ytterligare.
+    tokens:
+      - >-
+          Kassaflödet
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          ökade
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          att
+      - >-
+          rörelsekapitalet
+      - >-
+          ,
+      - >-
+          procentuellt
+      - >-
+          av
+      - >-
+          intäkterna
+      - >-
+          ,
+      - >-
+          minskade
+      - >-
+          ytterligare
+      - >-
+          .
+
+  - unit: >-
+      Kassaflödet i Automation Technologies minskade till följd av ökat rörelsekapitalbehov i samband med den starka intäktstillväxten.
+    tokens:
+      - >-
+          Kassaflödet
+      - >-
+          i
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          minskade
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          ökat
+      - >-
+          rörelsekapitalbehov
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          den
+      - >-
+          starka
+      - >-
+          intäktstillväxten
+      - >-
+          .
+
+  - unit: >-
+      Koncernens minskade värdepappersutgivning bidrog till att kassaflödet sjönk under första halvåret 2005 med ungefär 150 miljoner dollar.
+    tokens:
+      - >-
+          Koncernens
+      - >-
+          minskade
+      - >-
+          värdepappersutgivning
+      - >-
+          bidrog
+      - >-
+          till
+      - >-
+          att
+      - >-
+          kassaflödet
+      - >-
+          sjönk
+      - >-
+          under
+      - >-
+          första
+      - >-
+          halvåret
+      - >-
+          2005
+      - >-
+          med
+      - >-
+          ungefär
+      - >-
+          150
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          .
+
+  - unit: >-
+      Den 21 mars 2005 meddelade ABB att en överenskommelse nåtts på vissa punkter för uppgörelse, som skulle utgöra grunden för en reviderad plan för reglerad konkurs av företagets amerikanska dotterföretag Combustion Engineering (CE) och ABB Lummus Global Inc. i syfte att lösa de asbestrelaterade skadeståndskraven mot de två företagen enligt beslutet i US Third Circuit Court of Appeals den 2 december 2004.
+    tokens:
+      - >-
+          Den
+      - >-
+          21
+      - >-
+          mars
+      - >-
+          2005
+      - >-
+          meddelade
+      - >-
+          ABB
+      - >-
+          att
+      - >-
+          en
+      - >-
+          överenskommelse
+      - >-
+          nåtts
+      - >-
+          på
+      - >-
+          vissa
+      - >-
+          punkter
+      - >-
+          för
+      - >-
+          uppgörelse
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          skulle
+      - >-
+          utgöra
+      - >-
+          grunden
+      - >-
+          för
+      - >-
+          en
+      - >-
+          reviderad
+      - >-
+          plan
+      - >-
+          för
+      - >-
+          reglerad
+      - >-
+          konkurs
+      - >-
+          av
+      - >-
+          företagets
+      - >-
+          amerikanska
+      - >-
+          dotterföretag
+      - >-
+          Combustion
+      - >-
+          Engineering
+      - >-
+          (
+      - >-
+          CE
+      - >-
+          )
+      - >-
+          och
+      - >-
+          ABB
+      - >-
+          Lummus
+      - >-
+          Global
+      - >-
+          Inc.
+      - >-
+          i
+      - >-
+          syfte
+      - >-
+          att
+      - >-
+          lösa
+      - >-
+          de
+      - >-
+          asbestrelaterade
+      - >-
+          skadeståndskraven
+      - >-
+          mot
+      - >-
+          de
+      - >-
+          två
+      - >-
+          företagen
+      - >-
+          enligt
+      - >-
+          beslutet
+      - >-
+          i
+      - >-
+          US
+      - >-
+          Third
+      - >-
+          Circuit
+      - >-
+          Court
+      - >-
+          of
+      - >-
+          Appeals
+      - >-
+          den
+      - >-
+          2
+      - >-
+          december
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      En reviderad CE-plan för reglerad konkurs inlämnades till US Bankruptcy Court i Pittsburgh, Pennsylvania, den 24 juni 2005.
+    tokens:
+      - >-
+          En
+      - >-
+          reviderad
+      - >-
+          CE-plan
+      - >-
+          för
+      - >-
+          reglerad
+      - >-
+          konkurs
+      - >-
+          inlämnades
+      - >-
+          till
+      - >-
+          US
+      - >-
+          Bankruptcy
+      - >-
+          Court
+      - >-
+          i
+      - >-
+          Pittsburgh
+      - >-
+          ,
+      - >-
+          Pennsylvania
+      - >-
+          ,
+      - >-
+          den
+      - >-
+          24
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      En förhandling om planens Disclosure Statement inför domstolen ska äga rum den 19 augusti 2005.
+    tokens:
+      - >-
+          En
+      - >-
+          förhandling
+      - >-
+          om
+      - >-
+          planens
+      - >-
+          Disclosure
+      - >-
+          Statement
+      - >-
+          inför
+      - >-
+          domstolen
+      - >-
+          ska
+      - >-
+          äga
+      - >-
+          rum
+      - >-
+          den
+      - >-
+          19
+      - >-
+          augusti
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Därefter kommer planen att läggas fram till de skadeståndssökande (claimants) för godkännandeomröstning.
+    tokens:
+      - >-
+          Därefter
+      - >-
+          kommer
+      - >-
+          planen
+      - >-
+          att
+      - >-
+          läggas
+      - >-
+          fram
+      - >-
+          till
+      - >-
+          de
+      - >-
+          skadeståndssökande
+      - >-
+          (
+      - >-
+          claimants
+      - >-
+          )
+      - >-
+          för
+      - >-
+          godkännandeomröstning
+      - >-
+          .
+
+  - unit: >-
+      ABB fortsätter att arbeta med de olika parterna som berörs av uppgörelsen i en ansträngning att lösa alla frågor inom rimlig tid.
+    tokens:
+      - >-
+          ABB
+      - >-
+          fortsätter
+      - >-
+          att
+      - >-
+          arbeta
+      - >-
+          med
+      - >-
+          de
+      - >-
+          olika
+      - >-
+          parterna
+      - >-
+          som
+      - >-
+          berörs
+      - >-
+          av
+      - >-
+          uppgörelsen
+      - >-
+          i
+      - >-
+          en
+      - >-
+          ansträngning
+      - >-
+          att
+      - >-
+          lösa
+      - >-
+          alla
+      - >-
+          frågor
+      - >-
+          inom
+      - >-
+          rimlig
+      - >-
+          tid
+      - >-
+          .
+
+  - unit: >-
+      Den 30 juni 2005 aviserade ABB ett fyraårigt konsolideringsprogram för dess globala transformatorverksamhet.
+    tokens:
+      - >-
+          Den
+      - >-
+          30
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          aviserade
+      - >-
+          ABB
+      - >-
+          ett
+      - >-
+          fyraårigt
+      - >-
+          konsolideringsprogram
+      - >-
+          för
+      - >-
+          dess
+      - >-
+          globala
+      - >-
+          transformatorverksamhet
+      - >-
+          .
+
+  - unit: >-
+      Programmet beräknas medföra kostnader på totalt cirka 240 miljoner dollar under perioden 2005 till 2008.
+    tokens:
+      - >-
+          Programmet
+      - >-
+          beräknas
+      - >-
+          medföra
+      - >-
+          kostnader
+      - >-
+          på
+      - >-
+          totalt
+      - >-
+          cirka
+      - >-
+          240
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          under
+      - >-
+          perioden
+      - >-
+          2005
+      - >-
+          till
+      - >-
+          2008
+      - >-
+          .
+
+  - unit: >-
+      Av dessa kommer cirka 120 miljoner dollar att belasta 2005.
+    tokens:
+      - >-
+          Av
+      - >-
+          dessa
+      - >-
+          kommer
+      - >-
+          cirka
+      - >-
+          120
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          att
+      - >-
+          belasta
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Till följd av dessa tillkommande kostnader samt ökade råmaterialkostnader, har ABB reviderat EBIT-marginalmålet för 2005 för Power Technologies, och således för ABB-koncernen.
+    tokens:
+      - >-
+          Till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          dessa
+      - >-
+          tillkommande
+      - >-
+          kostnader
+      - >-
+          samt
+      - >-
+          ökade
+      - >-
+          råmaterialkostnader
+      - >-
+          ,
+      - >-
+          har
+      - >-
+          ABB
+      - >-
+          reviderat
+      - >-
+          EBIT-marginalmålet
+      - >-
+          för
+      - >-
+          2005
+      - >-
+          för
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          således
+      - >-
+          för
+      - >-
+          ABB-koncernen
+      - >-
+          .
+
+  - unit: >-
+      Det nya EBIT-marginalmålet för Power Technologies 2005 är 6,8-7,3 procent.
+    tokens:
+      - >-
+          Det
+      - >-
+          nya
+      - >-
+          EBIT-marginalmålet
+      - >-
+          för
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          2005
+      - >-
+          är
+      - >-
+          6,8-7,3
+      - >-
+          procent
+      - >-
+          .
+
+  - unit: >-
+      ABB:s EBIT-marginalmål för koncernen 2005 är sänkt till 6,6-7,1 procent från 7,7 procent.
+    tokens:
+      - >-
+          ABB:s
+      - >-
+          EBIT-marginalmål
+      - >-
+          för
+      - >-
+          koncernen
+      - >-
+          2005
+      - >-
+          är
+      - >-
+          sänkt
+      - >-
+          till
+      - >-
+          6,6-7,1
+      - >-
+          procent
+      - >-
+          från
+      - >-
+          7,7
+      - >-
+          procent
+      - >-
+          .
+
+  - unit: >-
+      Konsolideringsprogrammet påverkar inte EBIT-marginalmålet för Automation Technologies 2005, vilket kvarstår oförändrat på 10,7 procent.
+    tokens:
+      - >-
+          Konsolideringsprogrammet
+      - >-
+          påverkar
+      - >-
+          inte
+      - >-
+          EBIT-marginalmålet
+      - >-
+          för
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          2005
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          kvarstår
+      - >-
+          oförändrat
+      - >-
+          på
+      - >-
+          10,7
+      - >-
+          procent
+      - >-
+          .
+
+  - unit: >-
+      Arbetet framskrider väl mot de tidigare kommunicerade målsättningarna för koncerngemensamma kostnader (högst 450 miljoner dollar för helåret 2005) och för icke-kärnverksamheternas rörelseresultat (nollresultat för helåret 2005).
+    tokens:
+      - >-
+          Arbetet
+      - >-
+          framskrider
+      - >-
+          väl
+      - >-
+          mot
+      - >-
+          de
+      - >-
+          tidigare
+      - >-
+          kommunicerade
+      - >-
+          målsättningarna
+      - >-
+          för
+      - >-
+          koncerngemensamma
+      - >-
+          kostnader
+      - >-
+          (
+      - >-
+          högst
+      - >-
+          450
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          för
+      - >-
+          helåret
+      - >-
+          2005
+      - >-
+          )
+      - >-
+          och
+      - >-
+          för
+      - >-
+          icke-kärnverksamheternas
+      - >-
+          rörelseresultat
+      - >-
+          (
+      - >-
+          nollresultat
+      - >-
+          för
+      - >-
+          helåret
+      - >-
+          2005
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      ABB:s intäktsmål är också oförändrade.
+    tokens:
+      - >-
+          ABB:s
+      - >-
+          intäktsmål
+      - >-
+          är
+      - >-
+          också
+      - >-
+          oförändrade
+      - >-
+          .
+
+  - unit: >-
+      Från 2002 fram till slutet av 2005 väntas ABB öka de genomsnittliga intäkterna med 4 procent årligen i lokala valutor.
+    tokens:
+      - >-
+          Från
+      - >-
+          2002
+      - >-
+          fram
+      - >-
+          till
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          2005
+      - >-
+          väntas
+      - >-
+          ABB
+      - >-
+          öka
+      - >-
+          de
+      - >-
+          genomsnittliga
+      - >-
+          intäkterna
+      - >-
+          med
+      - >-
+          4
+      - >-
+          procent
+      - >-
+          årligen
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          .
+
+  - unit: >-
+      Power Technologies väntas öka intäkterna med i genomsnitt 5,3 procent årligen i lokala valutor och Automation Technologies väntas öka intäkterna med i genomsnitt 3,3 procent årligen i lokala valutor.
+    tokens:
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          väntas
+      - >-
+          öka
+      - >-
+          intäkterna
+      - >-
+          med
+      - >-
+          i
+      - >-
+          genomsnitt
+      - >-
+          5,3
+      - >-
+          procent
+      - >-
+          årligen
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          och
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          väntas
+      - >-
+          öka
+      - >-
+          intäkterna
+      - >-
+          med
+      - >-
+          i
+      - >-
+          genomsnitt
+      - >-
+          3,3
+      - >-
+          procent
+      - >-
+          årligen
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          .
+
+  - unit: >-
+      Företaget fortsätter att minska sina finansiella förpliktelser.
+    tokens:
+      - >-
+          Företaget
+      - >-
+          fortsätter
+      - >-
+          att
+      - >-
+          minska
+      - >-
+          sina
+      - >-
+          finansiella
+      - >-
+          förpliktelser
+      - >-
+          .
+
+  - unit: >-
+      Fokus kommer att vara att skapa mest värde för företaget genom att minska övergripande finansiella kostnader och justera riskprofilen i den totala skulden.
+    tokens:
+      - >-
+          Fokus
+      - >-
+          kommer
+      - >-
+          att
+      - >-
+          vara
+      - >-
+          att
+      - >-
+          skapa
+      - >-
+          mest
+      - >-
+          värde
+      - >-
+          för
+      - >-
+          företaget
+      - >-
+          genom
+      - >-
+          att
+      - >-
+          minska
+      - >-
+          övergripande
+      - >-
+          finansiella
+      - >-
+          kostnader
+      - >-
+          och
+      - >-
+          justera
+      - >-
+          riskprofilen
+      - >-
+          i
+      - >-
+          den
+      - >-
+          totala
+      - >-
+          skulden
+      - >-
+          .
+
+  - unit: >-
+      Intäkts- och marginalmål exkluderar större förvärv, avyttringar och nedläggningar.
+    tokens:
+      - >-
+          Intäkts-
+      - >-
+          och
+      - >-
+          marginalmål
+      - >-
+          exkluderar
+      - >-
+          större
+      - >-
+          förvärv
+      - >-
+          ,
+      - >-
+          avyttringar
+      - >-
+          och
+      - >-
+          nedläggningar
+      - >-
+          .
+
+  - unit: >-
+      Den 6 september 2005 avser ABB presentera nya finansiella mål för perioden 2006 till 2009.
+    tokens:
+      - >-
+          Den
+      - >-
+          6
+      - >-
+          september
+      - >-
+          2005
+      - >-
+          avser
+      - >-
+          ABB
+      - >-
+          presentera
+      - >-
+          nya
+      - >-
+          finansiella
+      - >-
+          mål
+      - >-
+          för
+      - >-
+          perioden
+      - >-
+          2006
+      - >-
+          till
+      - >-
+          2009
+      - >-
+          .
+
+  - unit: >-
+      En kraftig ökning av basorder med 17 procent i Power Technologies under andra kvartalet 2005 (upp 14 procent i lokala valutor) uppvägde en minskning av stora order till följd av en stor kraftöverföringsorder till Kina under andra kvartalet 2004.
+    tokens:
+      - >-
+          En
+      - >-
+          kraftig
+      - >-
+          ökning
+      - >-
+          av
+      - >-
+          basorder
+      - >-
+          med
+      - >-
+          17
+      - >-
+          procent
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          (
+      - >-
+          upp
+      - >-
+          14
+      - >-
+          procent
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          )
+      - >-
+          uppvägde
+      - >-
+          en
+      - >-
+          minskning
+      - >-
+          av
+      - >-
+          stora
+      - >-
+          order
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          en
+      - >-
+          stor
+      - >-
+          kraftöverföringsorder
+      - >-
+          till
+      - >-
+          Kina
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      I affärsområdet Power Technology Products ökade intäkterna i alla affärsenheter, både i dollar och lokala valutor, med störst ökning för transformatorer och mellanspänningsprodukter.
+    tokens:
+      - >-
+          I
+      - >-
+          affärsområdet
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Products
+      - >-
+          ökade
+      - >-
+          intäkterna
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsenheter
+      - >-
+          ,
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          ,
+      - >-
+          med
+      - >-
+          störst
+      - >-
+          ökning
+      - >-
+          för
+      - >-
+          transformatorer
+      - >-
+          och
+      - >-
+          mellanspänningsprodukter
+      - >-
+          .
+
+  - unit: >-
+      Regionalt ökade Nord- och Sydamerika mest, till följd av fortsatta investeringar i energisektorn för att ersätta och uppgradera befintlig utrustning.
+    tokens:
+      - >-
+          Regionalt
+      - >-
+          ökade
+      - >-
+          Nord-
+      - >-
+          och
+      - >-
+          Sydamerika
+      - >-
+          mest
+      - >-
+          ,
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          fortsatta
+      - >-
+          investeringar
+      - >-
+          i
+      - >-
+          energisektorn
+      - >-
+          för
+      - >-
+          att
+      - >-
+          ersätta
+      - >-
+          och
+      - >-
+          uppgradera
+      - >-
+          befintlig
+      - >-
+          utrustning
+      - >-
+          .
+
+  - unit: >-
+      Orderingången ökade för alla affärsenheter i Sydamerika under andra kvartalet, vilket visar att återhämtningen som nyligen noterades i regionen fortsätter.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          ökade
+      - >-
+          för
+      - >-
+          alla
+      - >-
+          affärsenheter
+      - >-
+          i
+      - >-
+          Sydamerika
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          visar
+      - >-
+          att
+      - >-
+          återhämtningen
+      - >-
+          som
+      - >-
+          nyligen
+      - >-
+          noterades
+      - >-
+          i
+      - >-
+          regionen
+      - >-
+          fortsätter
+      - >-
+          .
+
+  - unit: >-
+      Investeringar bland energiföretag i Europa för att ersätta befintlig utrustning resulterade i högre order i regionen.
+    tokens:
+      - >-
+          Investeringar
+      - >-
+          bland
+      - >-
+          energiföretag
+      - >-
+          i
+      - >-
+          Europa
+      - >-
+          för
+      - >-
+          att
+      - >-
+          ersätta
+      - >-
+          befintlig
+      - >-
+          utrustning
+      - >-
+          resulterade
+      - >-
+          i
+      - >-
+          högre
+      - >-
+          order
+      - >-
+          i
+      - >-
+          regionen
+      - >-
+          .
+
+  - unit: >-
+      Ökningen var särskilt stor för mellanspänningsprodukter och transformatorer, som uppvisade tvåsiffrig tillväxt både i dollar och lokala valutor.
+    tokens:
+      - >-
+          Ökningen
+      - >-
+          var
+      - >-
+          särskilt
+      - >-
+          stor
+      - >-
+          för
+      - >-
+          mellanspänningsprodukter
+      - >-
+          och
+      - >-
+          transformatorer
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          uppvisade
+      - >-
+          tvåsiffrig
+      - >-
+          tillväxt
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          .
+
+  - unit: >-
+      Orderingången ökade i östra Europa i alla affärsenheter.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          ökade
+      - >-
+          i
+      - >-
+          östra
+      - >-
+          Europa
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsenheter
+      - >-
+          .
+
+  - unit: >-
+      I Asien ökade orderingången i alla affärsenheter till följd av fortsatt efterfrågan från både energiföretag och industrikunder.
+    tokens:
+      - >-
+          I
+      - >-
+          Asien
+      - >-
+          ökade
+      - >-
+          orderingången
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsenheter
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          fortsatt
+      - >-
+          efterfrågan
+      - >-
+          från
+      - >-
+          både
+      - >-
+          energiföretag
+      - >-
+          och
+      - >-
+          industrikunder
+      - >-
+          .
+
+  - unit: >-
+      Ordertillväxten fortsatte i Kina men långsammare jämfört med den snabba takten under 2004.
+    tokens:
+      - >-
+          Ordertillväxten
+      - >-
+          fortsatte
+      - >-
+          i
+      - >-
+          Kina
+      - >-
+          men
+      - >-
+          långsammare
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          den
+      - >-
+          snabba
+      - >-
+          takten
+      - >-
+          under
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Orderingången ökade i Mellanöstern och Afrika, främst till följd av högre efterfrågan på mellanspänningsutrustning.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          ökade
+      - >-
+          i
+      - >-
+          Mellanöstern
+      - >-
+          och
+      - >-
+          Afrika
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          högre
+      - >-
+          efterfrågan
+      - >-
+          på
+      - >-
+          mellanspänningsutrustning
+      - >-
+          .
+
+  - unit: >-
+      I affärsområdet Power Technology Systems minskade orderingången mer än 10 procent, både i dollar och lokala valutor under andra kvartalet.
+    tokens:
+      - >-
+          I
+      - >-
+          affärsområdet
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          minskade
+      - >-
+          orderingången
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          10
+      - >-
+          procent
+      - >-
+          ,
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          .
+
+  - unit: >-
+      Orderingången minskade i Asien jämfört med andra kvartalet 2004, under vilket en stor order på en överföringslänk i Kina redovisades.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          minskade
+      - >-
+          i
+      - >-
+          Asien
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          under
+      - >-
+          vilket
+      - >-
+          en
+      - >-
+          stor
+      - >-
+          order
+      - >-
+          på
+      - >-
+          en
+      - >-
+          överföringslänk
+      - >-
+          i
+      - >-
+          Kina
+      - >-
+          redovisades
+      - >-
+          .
+
+  - unit: >-
+      Stora order minskade också i Mellanöstern och Afrika.
+    tokens:
+      - >-
+          Stora
+      - >-
+          order
+      - >-
+          minskade
+      - >-
+          också
+      - >-
+          i
+      - >-
+          Mellanöstern
+      - >-
+          och
+      - >-
+          Afrika
+      - >-
+          .
+
+  - unit: >-
+      En kraftöverföringsorder under andra kvartalet avseende en högspänningslänk för kraftöverföring mellan Finland och Estland (Estlink), värd över 100 miljoner dollar, bidrog till ökad orderingång i Europa.
+    tokens:
+      - >-
+          En
+      - >-
+          kraftöverföringsorder
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          avseende
+      - >-
+          en
+      - >-
+          högspänningslänk
+      - >-
+          för
+      - >-
+          kraftöverföring
+      - >-
+          mellan
+      - >-
+          Finland
+      - >-
+          och
+      - >-
+          Estland
+      - >-
+          (
+      - >-
+          Estlink
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          värd
+      - >-
+          över
+      - >-
+          100
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          bidrog
+      - >-
+          till
+      - >-
+          ökad
+      - >-
+          orderingång
+      - >-
+          i
+      - >-
+          Europa
+      - >-
+          .
+
+  - unit: >-
+      I Nord- och Sydamerika bidrog investeringar för upprustning av kraftinfrastrukturen i Sydamerika, särskilt i Brasilien, till att kompensera för fortsatt låg nivå på stora projektorder i Nordamerika.
+    tokens:
+      - >-
+          I
+      - >-
+          Nord-
+      - >-
+          och
+      - >-
+          Sydamerika
+      - >-
+          bidrog
+      - >-
+          investeringar
+      - >-
+          för
+      - >-
+          upprustning
+      - >-
+          av
+      - >-
+          kraftinfrastrukturen
+      - >-
+          i
+      - >-
+          Sydamerika
+      - >-
+          ,
+      - >-
+          särskilt
+      - >-
+          i
+      - >-
+          Brasilien
+      - >-
+          ,
+      - >-
+          till
+      - >-
+          att
+      - >-
+          kompensera
+      - >-
+          för
+      - >-
+          fortsatt
+      - >-
+          låg
+      - >-
+          nivå
+      - >-
+          på
+      - >-
+          stora
+      - >-
+          projektorder
+      - >-
+          i
+      - >-
+          Nordamerika
+      - >-
+          .
+
+  - unit: >-
+      Bidragande var främst högre volymer i basverksamheten.
+    tokens:
+      - >-
+          Bidragande
+      - >-
+          var
+      - >-
+          främst
+      - >-
+          högre
+      - >-
+          volymer
+      - >-
+          i
+      - >-
+          basverksamheten
+      - >-
+          .
+
+  - unit: >-
+      Intäkterna var högre både i dollar och lokala valutor i alla affärsenheter i Power Technology Products, med starkast tillväxt i Asien och Nord- och Sydamerika.
+    tokens:
+      - >-
+          Intäkterna
+      - >-
+          var
+      - >-
+          högre
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsenheter
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Products
+      - >-
+          ,
+      - >-
+          med
+      - >-
+          starkast
+      - >-
+          tillväxt
+      - >-
+          i
+      - >-
+          Asien
+      - >-
+          och
+      - >-
+          Nord-
+      - >-
+          och
+      - >-
+          Sydamerika
+      - >-
+          .
+
+  - unit: >-
+      Intäkterna i Power Technology Systems ökade i dollar och var oförändrade i lokala valutor, med en ökning i Västeuropa och Mellanöstern som motvägdes av en minskning i Asien.
+    tokens:
+      - >-
+          Intäkterna
+      - >-
+          i
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          ökade
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          var
+      - >-
+          oförändrade
+      - >-
+          i
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          ,
+      - >-
+          med
+      - >-
+          en
+      - >-
+          ökning
+      - >-
+          i
+      - >-
+          Västeuropa
+      - >-
+          och
+      - >-
+          Mellanöstern
+      - >-
+          som
+      - >-
+          motvägdes
+      - >-
+          av
+      - >-
+          en
+      - >-
+          minskning
+      - >-
+          i
+      - >-
+          Asien
+      - >-
+          .
+
+  - unit: >-
+      EBIT för andra kvartalet minskade med 25 procent, till 138 miljoner dollar, jämfört med samma period 2004, och minskade i båda affärsområdena.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          för
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          minskade
+      - >-
+          med
+      - >-
+          25
+      - >-
+          procent
+      - >-
+          ,
+      - >-
+          till
+      - >-
+          138
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          period
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          minskade
+      - >-
+          i
+      - >-
+          båda
+      - >-
+          affärsområdena
+      - >-
+          .
+
+  - unit: >-
+      EBIT-förbättringar i både hög- och mellanspänningsverksamheterna, bland annat till följd av en reavinst på 10 miljoner dollar från försäljning av fast egendom, kunde inte kompensera för en kostnad på 66 miljoner dollar avseende programmet för konsolidering av transformatorverksamheten, som presenterades i slutet av juni 2005.
+    tokens:
+      - >-
+          EBIT-förbättringar
+      - >-
+          i
+      - >-
+          både
+      - >-
+          hög-
+      - >-
+          och
+      - >-
+          mellanspänningsverksamheterna
+      - >-
+          ,
+      - >-
+          bland
+      - >-
+          annat
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          en
+      - >-
+          reavinst
+      - >-
+          på
+      - >-
+          10
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          från
+      - >-
+          försäljning
+      - >-
+          av
+      - >-
+          fast
+      - >-
+          egendom
+      - >-
+          ,
+      - >-
+          kunde
+      - >-
+          inte
+      - >-
+          kompensera
+      - >-
+          för
+      - >-
+          en
+      - >-
+          kostnad
+      - >-
+          på
+      - >-
+          66
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          avseende
+      - >-
+          programmet
+      - >-
+          för
+      - >-
+          konsolidering
+      - >-
+          av
+      - >-
+          transformatorverksamheten
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          presenterades
+      - >-
+          i
+      - >-
+          slutet
+      - >-
+          av
+      - >-
+          juni
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Programmet som löper över fyra år väntas kosta totalt cirka 240 miljoner dollar, varav cirka 120 miljoner dollar väntas belasta 2005.
+    tokens:
+      - >-
+          Programmet
+      - >-
+          som
+      - >-
+          löper
+      - >-
+          över
+      - >-
+          fyra
+      - >-
+          år
+      - >-
+          väntas
+      - >-
+          kosta
+      - >-
+          totalt
+      - >-
+          cirka
+      - >-
+          240
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          varav
+      - >-
+          cirka
+      - >-
+          120
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          väntas
+      - >-
+          belasta
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      EBIT i affärsområdet Power Technology Products sjönk även med cirka 10 miljoner dollar till följd av högre råvarukostnader som inte kunde täckas fullt ut av prishöjningar, inköpsåtgärder och andra åtgärder.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          i
+      - >-
+          affärsområdet
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Products
+      - >-
+          sjönk
+      - >-
+          även
+      - >-
+          med
+      - >-
+          cirka
+      - >-
+          10
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          högre
+      - >-
+          råvarukostnader
+      - >-
+          som
+      - >-
+          inte
+      - >-
+          kunde
+      - >-
+          täckas
+      - >-
+          fullt
+      - >-
+          ut
+      - >-
+          av
+      - >-
+          prishöjningar
+      - >-
+          ,
+      - >-
+          inköpsåtgärder
+      - >-
+          och
+      - >-
+          andra
+      - >-
+          åtgärder
+      - >-
+          .
+
+  - unit: >-
+      I affärsområdet Power Technology Systems minskade EBIT, främst på grund av en avsättning för att täcka potentiella rättskostnader.
+    tokens:
+      - >-
+          I
+      - >-
+          affärsområdet
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          minskade
+      - >-
+          EBIT
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          på
+      - >-
+          grund
+      - >-
+          av
+      - >-
+          en
+      - >-
+          avsättning
+      - >-
+          för
+      - >-
+          att
+      - >-
+          täcka
+      - >-
+          potentiella
+      - >-
+          rättskostnader
+      - >-
+          .
+
+  - unit: >-
+      EBIT-marginalen för Power Technologies sjönk under andra kvartalet till 5,8 procent, från 8,2 procent under andra kvartalet 2004.
+    tokens:
+      - >-
+          EBIT-marginalen
+      - >-
+          för
+      - >-
+          Power
+      - >-
+          Technologies
+      - >-
+          sjönk
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          till
+      - >-
+          5,8
+      - >-
+          procent
+      - >-
+          ,
+      - >-
+          från
+      - >-
+          8,2
+      - >-
+          procent
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Kassaflödet från rörelsen under andra kvartalet uppgick till 101 miljoner dollar, jämfört med 35 miljoner dollar samma kvartal 2004, som ett resultat av ytterligare förbättringar i rörelsekapital.
+    tokens:
+      - >-
+          Kassaflödet
+      - >-
+          från
+      - >-
+          rörelsen
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          101
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          35
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          ett
+      - >-
+          resultat
+      - >-
+          av
+      - >-
+          ytterligare
+      - >-
+          förbättringar
+      - >-
+          i
+      - >-
+          rörelsekapital
+      - >-
+          .
+
+  - unit: >-
+      Orderingången ökade under andra kvartalet i alla affärsområden och över alla regioner, både i dollar och lokala valutor.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          ökade
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsområden
+      - >-
+          och
+      - >-
+          över
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          ,
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          .
+
+  - unit: >-
+      Detta återspeglar fortsatt tillväxt på de flesta av ABB:s industriella marknader runt om i världen.
+    tokens:
+      - >-
+          Detta
+      - >-
+          återspeglar
+      - >-
+          fortsatt
+      - >-
+          tillväxt
+      - >-
+          på
+      - >-
+          de
+      - >-
+          flesta
+      - >-
+          av
+      - >-
+          ABB:s
+      - >-
+          industriella
+      - >-
+          marknader
+      - >-
+          runt
+      - >-
+          om
+      - >-
+          i
+      - >-
+          världen
+      - >-
+          .
+
+  - unit: >-
+      I synnerhet ökade basorder i alla affärsområden, vilket mer än uppvägde en minskning av stora order och vilket indikerar fortsatt gynnsamma ekonomiska villkor.
+    tokens:
+      - >-
+          I
+      - >-
+          synnerhet
+      - >-
+          ökade
+      - >-
+          basorder
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsområden
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          uppvägde
+      - >-
+          en
+      - >-
+          minskning
+      - >-
+          av
+      - >-
+          stora
+      - >-
+          order
+      - >-
+          och
+      - >-
+          vilket
+      - >-
+          indikerar
+      - >-
+          fortsatt
+      - >-
+          gynnsamma
+      - >-
+          ekonomiska
+      - >-
+          villkor
+      - >-
+          .
+
+  - unit: >-
+      Den ökade orderingången i affärsområdet Automation Products var främst en följd av större efterfrågan på låg- och mellanspänningsdrivsystem, lågspänningsbrytare och -omkopplare samt kraftelektronik.
+    tokens:
+      - >-
+          Den
+      - >-
+          ökade
+      - >-
+          orderingången
+      - >-
+          i
+      - >-
+          affärsområdet
+      - >-
+          Automation
+      - >-
+          Products
+      - >-
+          var
+      - >-
+          främst
+      - >-
+          en
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          större
+      - >-
+          efterfrågan
+      - >-
+          på
+      - >-
+          låg-
+      - >-
+          och
+      - >-
+          mellanspänningsdrivsystem
+      - >-
+          ,
+      - >-
+          lågspänningsbrytare
+      - >-
+          och
+      - >-
+          -omkopplare
+      - >-
+          samt
+      - >-
+          kraftelektronik
+      - >-
+          .
+
+  - unit: >-
+      Orderingången steg i alla regioner.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          steg
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          .
+
+  - unit: >-
+      Orderingången steg i alla regioner.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          steg
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          .
+
+  - unit: >-
+      I Asien var ökningen störst i Kina och Indien.
+    tokens:
+      - >-
+          I
+      - >-
+          Asien
+      - >-
+          var
+      - >-
+          ökningen
+      - >-
+          störst
+      - >-
+          i
+      - >-
+          Kina
+      - >-
+          och
+      - >-
+          Indien
+      - >-
+          .
+
+  - unit: >-
+      Både Nord- och Sydamerika ökade och i Europa var ökningen störst i de nordiska länderna och stora delar av östra Europa, medan tillväxten var blandad i centrala Europa, bland annat till följd av den relativt svaga byggkonjunkturen i Tyskland.
+    tokens:
+      - >-
+          Både
+      - >-
+          Nord-
+      - >-
+          och
+      - >-
+          Sydamerika
+      - >-
+          ökade
+      - >-
+          och
+      - >-
+          i
+      - >-
+          Europa
+      - >-
+          var
+      - >-
+          ökningen
+      - >-
+          störst
+      - >-
+          i
+      - >-
+          de
+      - >-
+          nordiska
+      - >-
+          länderna
+      - >-
+          och
+      - >-
+          stora
+      - >-
+          delar
+      - >-
+          av
+      - >-
+          östra
+      - >-
+          Europa
+      - >-
+          ,
+      - >-
+          medan
+      - >-
+          tillväxten
+      - >-
+          var
+      - >-
+          blandad
+      - >-
+          i
+      - >-
+          centrala
+      - >-
+          Europa
+      - >-
+          ,
+      - >-
+          bland
+      - >-
+          annat
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          den
+      - >-
+          relativt
+      - >-
+          svaga
+      - >-
+          byggkonjunkturen
+      - >-
+          i
+      - >-
+          Tyskland
+      - >-
+          .
+
+  - unit: >-
+      Process Automation ökade sin orderingång med mer än 10 procent i dollar och lokala valutor under andra kvartalet jämfört med samma kvartal 2004.
+    tokens:
+      - >-
+          Process
+      - >-
+          Automation
+      - >-
+          ökade
+      - >-
+          sin
+      - >-
+          orderingång
+      - >-
+          med
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          10
+      - >-
+          procent
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Orderingången ökade i alla affärsenheter, utom för segmentet massa och papper som visar fortsatt svag efterfrågan.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          ökade
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsenheter
+      - >-
+          ,
+      - >-
+          utom
+      - >-
+          för
+      - >-
+          segmentet
+      - >-
+          massa
+      - >-
+          och
+      - >-
+          papper
+      - >-
+          som
+      - >-
+          visar
+      - >-
+          fortsatt
+      - >-
+          svag
+      - >-
+          efterfrågan
+      - >-
+          .
+
+  - unit: >-
+      Orderingången steg i alla regioner.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          steg
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          .
+
+  - unit: >-
+      Orderingången steg i alla regioner.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          steg
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          regioner
+      - >-
+          .
+
+  - unit: >-
+      I Asien kunde ökade order i Indien och flera andra länder uppväga lägre order i Kina.
+    tokens:
+      - >-
+          I
+      - >-
+          Asien
+      - >-
+          kunde
+      - >-
+          ökade
+      - >-
+          order
+      - >-
+          i
+      - >-
+          Indien
+      - >-
+          och
+      - >-
+          flera
+      - >-
+          andra
+      - >-
+          länder
+      - >-
+          uppväga
+      - >-
+          lägre
+      - >-
+          order
+      - >-
+          i
+      - >-
+          Kina
+      - >-
+          .
+
+  - unit: >-
+      I Europa var det efterfrågan i den västeuropeiska industrin som främst bidrog till den ökade orderingången.
+    tokens:
+      - >-
+          I
+      - >-
+          Europa
+      - >-
+          var
+      - >-
+          det
+      - >-
+          efterfrågan
+      - >-
+          i
+      - >-
+          den
+      - >-
+          västeuropeiska
+      - >-
+          industrin
+      - >-
+          som
+      - >-
+          främst
+      - >-
+          bidrog
+      - >-
+          till
+      - >-
+          den
+      - >-
+          ökade
+      - >-
+          orderingången
+      - >-
+          .
+
+  - unit: >-
+      I östra Europa var orderingången oförändrad.
+    tokens:
+      - >-
+          I
+      - >-
+          östra
+      - >-
+          Europa
+      - >-
+          var
+      - >-
+          orderingången
+      - >-
+          oförändrad
+      - >-
+          .
+
+  - unit: >-
+      Orderingången steg också i Manufacturing Automation.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          steg
+      - >-
+          också
+      - >-
+          i
+      - >-
+          Manufacturing
+      - >-
+          Automation
+      - >-
+          .
+
+  - unit: >-
+      En stark ökning av basorder mer än uppvägde lägre stora projektorder under kvartalet.
+    tokens:
+      - >-
+          En
+      - >-
+          stark
+      - >-
+          ökning
+      - >-
+          av
+      - >-
+          basorder
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          uppvägde
+      - >-
+          lägre
+      - >-
+          stora
+      - >-
+          projektorder
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          .
+
+  - unit: >-
+      Orderingången i Asien visade störst ökning, särskilt Kina.
+    tokens:
+      - >-
+          Orderingången
+      - >-
+          i
+      - >-
+          Asien
+      - >-
+          visade
+      - >-
+          störst
+      - >-
+          ökning
+      - >-
+          ,
+      - >-
+          särskilt
+      - >-
+          Kina
+      - >-
+          .
+
+  - unit: >-
+      Även i Europa var orderingången högre, med en ökning i Östeuropa som mer än uppvägde en minskning i Västeuropa.
+    tokens:
+      - >-
+          Även
+      - >-
+          i
+      - >-
+          Europa
+      - >-
+          var
+      - >-
+          orderingången
+      - >-
+          högre
+      - >-
+          ,
+      - >-
+          med
+      - >-
+          en
+      - >-
+          ökning
+      - >-
+          i
+      - >-
+          Östeuropa
+      - >-
+          som
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          uppvägde
+      - >-
+          en
+      - >-
+          minskning
+      - >-
+          i
+      - >-
+          Västeuropa
+      - >-
+          .
+
+  - unit: >-
+      I övriga regioner var orderingången oförändrad eller lägre.
+    tokens:
+      - >-
+          I
+      - >-
+          övriga
+      - >-
+          regioner
+      - >-
+          var
+      - >-
+          orderingången
+      - >-
+          oförändrad
+      - >-
+          eller
+      - >-
+          lägre
+      - >-
+          .
+
+  - unit: >-
+      Intäkterna var högre i alla affärsområden, både i dollar och lokala valutor, främst till följd av högre volymer men också högre priser i vissa produktaffärsenheter som kompensation för ökade råmaterialkostnader.
+    tokens:
+      - >-
+          Intäkterna
+      - >-
+          var
+      - >-
+          högre
+      - >-
+          i
+      - >-
+          alla
+      - >-
+          affärsområden
+      - >-
+          ,
+      - >-
+          både
+      - >-
+          i
+      - >-
+          dollar
+      - >-
+          och
+      - >-
+          lokala
+      - >-
+          valutor
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          högre
+      - >-
+          volymer
+      - >-
+          men
+      - >-
+          också
+      - >-
+          högre
+      - >-
+          priser
+      - >-
+          i
+      - >-
+          vissa
+      - >-
+          produktaffärsenheter
+      - >-
+          som
+      - >-
+          kompensation
+      - >-
+          för
+      - >-
+          ökade
+      - >-
+          råmaterialkostnader
+      - >-
+          .
+
+  - unit: >-
+      Regionalt rapporterades störst intäktsökning i Nord- och Sydamerika, Asien samt Europa.
+    tokens:
+      - >-
+          Regionalt
+      - >-
+          rapporterades
+      - >-
+          störst
+      - >-
+          intäktsökning
+      - >-
+          i
+      - >-
+          Nord-
+      - >-
+          och
+      - >-
+          Sydamerika
+      - >-
+          ,
+      - >-
+          Asien
+      - >-
+          samt
+      - >-
+          Europa
+      - >-
+          .
+
+  - unit: >-
+      EBIT steg med 28 procent till 336 miljoner dollar jämfört med samma kvartal 2004.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          steg
+      - >-
+          med
+      - >-
+          28
+      - >-
+          procent
+      - >-
+          till
+      - >-
+          336
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          jämfört
+      - >-
+          med
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Andra kvartalet 2005 var det elfte kvartalet i följd som Automation Technologies rapporterade högre intäkter och högre EBIT.
+    tokens:
+      - >-
+          Andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          var
+      - >-
+          det
+      - >-
+          elfte
+      - >-
+          kvartalet
+      - >-
+          i
+      - >-
+          följd
+      - >-
+          som
+      - >-
+          Automation
+      - >-
+          Technologies
+      - >-
+          rapporterade
+      - >-
+          högre
+      - >-
+          intäkter
+      - >-
+          och
+      - >-
+          högre
+      - >-
+          EBIT
+      - >-
+          .
+
+  - unit: >-
+      Process Automation uppvisade störst EBIT-ökning till följd av produktivitetsvinster och kostnadssänkande åtgärder, i tillägg till ökade intäkter.
+    tokens:
+      - >-
+          Process
+      - >-
+          Automation
+      - >-
+          uppvisade
+      - >-
+          störst
+      - >-
+          EBIT-ökning
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          produktivitetsvinster
+      - >-
+          och
+      - >-
+          kostnadssänkande
+      - >-
+          åtgärder
+      - >-
+          ,
+      - >-
+          i
+      - >-
+          tillägg
+      - >-
+          till
+      - >-
+          ökade
+      - >-
+          intäkter
+      - >-
+          .
+
+  - unit: >-
+      Även Automation Products förbättrade sitt EBIT till följd av högre intäkter, högre fabriksbeläggning, kostnadsnedskärningar och produktivitetsförbättringar.
+    tokens:
+      - >-
+          Även
+      - >-
+          Automation
+      - >-
+          Products
+      - >-
+          förbättrade
+      - >-
+          sitt
+      - >-
+          EBIT
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          högre
+      - >-
+          intäkter
+      - >-
+          ,
+      - >-
+          högre
+      - >-
+          fabriksbeläggning
+      - >-
+          ,
+      - >-
+          kostnadsnedskärningar
+      - >-
+          och
+      - >-
+          produktivitetsförbättringar
+      - >-
+          .
+
+  - unit: >-
+      EBIT var oförändrat i Manufacturing Automation till följd av en vinst av engångskaraktär under samma kvartal 2004 från försäljningen av en mindre enhet i Sverige.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          var
+      - >-
+          oförändrat
+      - >-
+          i
+      - >-
+          Manufacturing
+      - >-
+          Automation
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          en
+      - >-
+          vinst
+      - >-
+          av
+      - >-
+          engångskaraktär
+      - >-
+          under
+      - >-
+          samma
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          från
+      - >-
+          försäljningen
+      - >-
+          av
+      - >-
+          en
+      - >-
+          mindre
+      - >-
+          enhet
+      - >-
+          i
+      - >-
+          Sverige
+      - >-
+          .
+
+  - unit: >-
+      Divisionens EBIT-marginal ökade till 10,7 procent under andra kvartalet från 9,8 procent under andra kvartalet 2004.
+    tokens:
+      - >-
+          Divisionens
+      - >-
+          EBIT-marginal
+      - >-
+          ökade
+      - >-
+          till
+      - >-
+          10,7
+      - >-
+          procent
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          från
+      - >-
+          9,8
+      - >-
+          procent
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          .
+
+  - unit: >-
+      Kassaflödet från rörelsen i divisionen uppgick till 190 miljoner dollar, ned från 225 miljoner dollar för andra kvartalet 2004, främst till följd av ökat rörelsekapitalbehov i samband med stark intäktsökning.
+    tokens:
+      - >-
+          Kassaflödet
+      - >-
+          från
+      - >-
+          rörelsen
+      - >-
+          i
+      - >-
+          divisionen
+      - >-
+          uppgick
+      - >-
+          till
+      - >-
+          190
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          ,
+      - >-
+          ned
+      - >-
+          från
+      - >-
+          225
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          för
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2004
+      - >-
+          ,
+      - >-
+          främst
+      - >-
+          till
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          ökat
+      - >-
+          rörelsekapitalbehov
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          stark
+      - >-
+          intäktsökning
+      - >-
+          .
+
+  - unit: >-
+      Förlusten i Building Systems under andra kvartalet 2005 är en följd av kostnader i samband med nedläggning av ett antal projekt i flera länder.
+    tokens:
+      - >-
+          Förlusten
+      - >-
+          i
+      - >-
+          Building
+      - >-
+          Systems
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          är
+      - >-
+          en
+      - >-
+          följd
+      - >-
+          av
+      - >-
+          kostnader
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          nedläggning
+      - >-
+          av
+      - >-
+          ett
+      - >-
+          antal
+      - >-
+          projekt
+      - >-
+          i
+      - >-
+          flera
+      - >-
+          länder
+      - >-
+          .
+
+  - unit: >-
+      Verksamheten nådde ett nollresultat i rörelsen i Tyskland under andra kvartalet.
+    tokens:
+      - >-
+          Verksamheten
+      - >-
+          nådde
+      - >-
+          ett
+      - >-
+          nollresultat
+      - >-
+          i
+      - >-
+          rörelsen
+      - >-
+          i
+      - >-
+          Tyskland
+      - >-
+          under
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          .
+
+  - unit: >-
+      I Equity Ventures medförde en nedskrivning av värdet av en investering på 10 miljoner dollar samt lägre vinst under kvartalet från andra investeringar att EBIT sjönk till nollresultat.
+    tokens:
+      - >-
+          I
+      - >-
+          Equity
+      - >-
+          Ventures
+      - >-
+          medförde
+      - >-
+          en
+      - >-
+          nedskrivning
+      - >-
+          av
+      - >-
+          värdet
+      - >-
+          av
+      - >-
+          en
+      - >-
+          investering
+      - >-
+          på
+      - >-
+          10
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          samt
+      - >-
+          lägre
+      - >-
+          vinst
+      - >-
+          under
+      - >-
+          kvartalet
+      - >-
+          från
+      - >-
+          andra
+      - >-
+          investeringar
+      - >-
+          att
+      - >-
+          EBIT
+      - >-
+          sjönk
+      - >-
+          till
+      - >-
+          nollresultat
+      - >-
+          .
+
+  - unit: >-
+      EBIT för andra kvartalet påverkades också av en kostnad relaterad till en potentiell process under Övriga icke-kärnverksamheter.
+    tokens:
+      - >-
+          EBIT
+      - >-
+          för
+      - >-
+          andra
+      - >-
+          kvartalet
+      - >-
+          påverkades
+      - >-
+          också
+      - >-
+          av
+      - >-
+          en
+      - >-
+          kostnad
+      - >-
+          relaterad
+      - >-
+          till
+      - >-
+          en
+      - >-
+          potentiell
+      - >-
+          process
+      - >-
+          under
+      - >-
+          Övriga
+      - >-
+          icke-kärnverksamheter
+      - >-
+          .
+
+  - unit: >-
+      Koncerngemensamma kostnader för motsvarande kvartal 2004 inkluderade en kapitalvinst på cirka 15 miljoner dollar från försäljning av fastigheter, redovisade under posten Övrigt.
+    tokens:
+      - >-
+          Koncerngemensamma
+      - >-
+          kostnader
+      - >-
+          för
+      - >-
+          motsvarande
+      - >-
+          kvartal
+      - >-
+          2004
+      - >-
+          inkluderade
+      - >-
+          en
+      - >-
+          kapitalvinst
+      - >-
+          på
+      - >-
+          cirka
+      - >-
+          15
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          från
+      - >-
+          försäljning
+      - >-
+          av
+      - >-
+          fastigheter
+      - >-
+          ,
+      - >-
+          redovisade
+      - >-
+          under
+      - >-
+          posten
+      - >-
+          Övrigt
+      - >-
+          .
+
+  - unit: >-
+      Telefonlinjerna hålls öppna 15 minuter innan konferensen startar.
+    tokens:
+      - >-
+          Telefonlinjerna
+      - >-
+          hålls
+      - >-
+          öppna
+      - >-
+          15
+      - >-
+          minuter
+      - >-
+          innan
+      - >-
+          konferensen
+      - >-
+          startar
+      - >-
+          .
+
+  - unit: >-
+      Den inspelade konferensen kommer att finnas tillgänglig under 72 timmar med start en timme efter konferensens slut.
+    tokens:
+      - >-
+          Den
+      - >-
+          inspelade
+      - >-
+          konferensen
+      - >-
+          kommer
+      - >-
+          att
+      - >-
+          finnas
+      - >-
+          tillgänglig
+      - >-
+          under
+      - >-
+          72
+      - >-
+          timmar
+      - >-
+          med
+      - >-
+          start
+      - >-
+          en
+      - >-
+          timme
+      - >-
+          efter
+      - >-
+          konferensens
+      - >-
+          slut
+      - >-
+          .
+
+  - unit: >-
+      Den inspelade konferensen kommer att finnas tillgänglig under 72 timmar med start en timme efter konferensens slut.
+    tokens:
+      - >-
+          Den
+      - >-
+          inspelade
+      - >-
+          konferensen
+      - >-
+          kommer
+      - >-
+          att
+      - >-
+          finnas
+      - >-
+          tillgänglig
+      - >-
+          under
+      - >-
+          72
+      - >-
+          timmar
+      - >-
+          med
+      - >-
+          start
+      - >-
+          en
+      - >-
+          timme
+      - >-
+          efter
+      - >-
+          konferensens
+      - >-
+          slut
+      - >-
+          .
+
+  - unit: >-
+      ABB håller telefonkonferens idag för analytiker och investerare med start kl 15:00 CET.
+    tokens:
+      - >-
+          ABB
+      - >-
+          håller
+      - >-
+          telefonkonferens
+      - >-
+          idag
+      - >-
+          för
+      - >-
+          analytiker
+      - >-
+          och
+      - >-
+          investerare
+      - >-
+          med
+      - >-
+          start
+      - >-
+          kl
+      - >-
+          15:00
+      - >-
+          CET
+      - >-
+          .
+
+  - unit: >-
+      Den inspelade konferensen kommer att finnas tillgänglig under 72 timmar med start en timme efter konferensens slut.
+    tokens:
+      - >-
+          Den
+      - >-
+          inspelade
+      - >-
+          konferensen
+      - >-
+          kommer
+      - >-
+          att
+      - >-
+          finnas
+      - >-
+          tillgänglig
+      - >-
+          under
+      - >-
+          72
+      - >-
+          timmar
+      - >-
+          med
+      - >-
+          start
+      - >-
+          en
+      - >-
+          timme
+      - >-
+          efter
+      - >-
+          konferensens
+      - >-
+          slut
+      - >-
+          .
+
+  - unit: >-
+      Den inspelade konferensen kommer att finnas tillgänglig under 72 timmar med start en timme efter konferensens slut.
+    tokens:
+      - >-
+          Den
+      - >-
+          inspelade
+      - >-
+          konferensen
+      - >-
+          kommer
+      - >-
+          att
+      - >-
+          finnas
+      - >-
+          tillgänglig
+      - >-
+          under
+      - >-
+          72
+      - >-
+          timmar
+      - >-
+          med
+      - >-
+          start
+      - >-
+          en
+      - >-
+          timme
+      - >-
+          efter
+      - >-
+          konferensens
+      - >-
+          slut
+      - >-
+          .
+
+  - unit: >-
+      Rapportdatum för resultatet för tredje kvartalet 2005 är 28 oktober (ändrat från 27 oktober som tidigare aviserats).
+    tokens:
+      - >-
+          Rapportdatum
+      - >-
+          för
+      - >-
+          resultatet
+      - >-
+          för
+      - >-
+          tredje
+      - >-
+          kvartalet
+      - >-
+          2005
+      - >-
+          är
+      - >-
+          28
+      - >-
+          oktober
+      - >-
+          (
+      - >-
+          ändrat
+      - >-
+          från
+      - >-
+          27
+      - >-
+          oktober
+      - >-
+          som
+      - >-
+          tidigare
+      - >-
+          aviserats
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      ABB avser publicera nya finansiella mål för perioden från 2006 till 2009 den 6 september 2005.
+    tokens:
+      - >-
+          ABB
+      - >-
+          avser
+      - >-
+          publicera
+      - >-
+          nya
+      - >-
+          finansiella
+      - >-
+          mål
+      - >-
+          för
+      - >-
+          perioden
+      - >-
+          från
+      - >-
+          2006
+      - >-
+          till
+      - >-
+          2009
+      - >-
+          den
+      - >-
+          6
+      - >-
+          september
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      ABB (www.abb.com) är ledande inom kraft och automationsteknik.
+    tokens:
+      - >-
+          ABB
+      - >-
+          (
+      - >-
+          www.abb.com
+      - >-
+          )
+      - >-
+          är
+      - >-
+          ledande
+      - >-
+          inom
+      - >-
+          kraft
+      - >-
+          och
+      - >-
+          automationsteknik
+      - >-
+          .
+
+  - unit: >-
+      Våra lösningar förbättrar prestanda och minimerar miljöpåverkan för energiföretag och industrier.
+    tokens:
+      - >-
+          Våra
+      - >-
+          lösningar
+      - >-
+          förbättrar
+      - >-
+          prestanda
+      - >-
+          och
+      - >-
+          minimerar
+      - >-
+          miljöpåverkan
+      - >-
+          för
+      - >-
+          energiföretag
+      - >-
+          och
+      - >-
+          industrier
+      - >-
+          .
+
+  - unit: >-
+      Dessa uttalanden bygger på aktuella förväntningar, uppskattningar och prognoser om faktorer som kan inverka på vårt framtida resultat, inklusive globala ekonomiska förhållanden, ekonomiska villkor i de regioner och industrier, vilka utgör viktiga marknader för ABB Ltd och ABB Ltd:s affärsverksamheter.
+    tokens:
+      - >-
+          Dessa
+      - >-
+          uttalanden
+      - >-
+          bygger
+      - >-
+          på
+      - >-
+          aktuella
+      - >-
+          förväntningar
+      - >-
+          ,
+      - >-
+          uppskattningar
+      - >-
+          och
+      - >-
+          prognoser
+      - >-
+          om
+      - >-
+          faktorer
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          inverka
+      - >-
+          på
+      - >-
+          vårt
+      - >-
+          framtida
+      - >-
+          resultat
+      - >-
+          ,
+      - >-
+          inklusive
+      - >-
+          globala
+      - >-
+          ekonomiska
+      - >-
+          förhållanden
+      - >-
+          ,
+      - >-
+          ekonomiska
+      - >-
+          villkor
+      - >-
+          i
+      - >-
+          de
+      - >-
+          regioner
+      - >-
+          och
+      - >-
+          industrier
+      - >-
+          ,
+      - >-
+          vilka
+      - >-
+          utgör
+      - >-
+          viktiga
+      - >-
+          marknader
+      - >-
+          för
+      - >-
+          ABB
+      - >-
+          Ltd
+      - >-
+          och
+      - >-
+          ABB
+      - >-
+          Ltd:s
+      - >-
+          affärsverksamheter
+      - >-
+          .
+
+  - unit: >-
+      Emellertid föreligger riskfaktorer och osäkerheter, av vilka många är utanför vår kontroll, som kan medföra att det faktiska resultatet avviker väsentligt från framåtsyftande information och uttalanden i det här pressmeddelandet.
+    tokens:
+      - >-
+          Emellertid
+      - >-
+          föreligger
+      - >-
+          riskfaktorer
+      - >-
+          och
+      - >-
+          osäkerheter
+      - >-
+          ,
+      - >-
+          av
+      - >-
+          vilka
+      - >-
+          många
+      - >-
+          är
+      - >-
+          utanför
+      - >-
+          vår
+      - >-
+          kontroll
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          medföra
+      - >-
+          att
+      - >-
+          det
+      - >-
+          faktiska
+      - >-
+          resultatet
+      - >-
+          avviker
+      - >-
+          väsentligt
+      - >-
+          från
+      - >-
+          framåtsyftande
+      - >-
+          information
+      - >-
+          och
+      - >-
+          uttalanden
+      - >-
+          i
+      - >-
+          det
+      - >-
+          här
+      - >-
+          pressmeddelandet
+      - >-
+          .
+
+  - unit: >-
+      Väsentliga faktorer som kan orsaka sådana avvikelser är bland andra ABB:s förmåga att avyttra vissa icke-kärnverksamheter på tillfredsställande villkor, villkoren enligt vilka asbestrelaterade skadeståndsanspråk kan lösas, summan av intäkter vi förmår inbringa från orderstock och orderingång, prisutvecklingen på råvaror, ekonomiska och marknadsmässiga villkor på geografiska marknader och i industrier viktiga för ABB:s verksamhet, marknadens accept för ABB:s nya produkter och tjänster, förändringar i statliga regleringar och kostnader förknippade med efterlevnadsaktiviteter, räntesatser, fluktuationer i valutakurser och sådana övriga faktorer som kan diskuteras från tid till annan i ABB:s dokument till U.S. Securities and Exchange Commission, inklusive årsredovisningar i dokument 20-F.
+    tokens:
+      - >-
+          Väsentliga
+      - >-
+          faktorer
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          orsaka
+      - >-
+          sådana
+      - >-
+          avvikelser
+      - >-
+          är
+      - >-
+          bland
+      - >-
+          andra
+      - >-
+          ABB:s
+      - >-
+          förmåga
+      - >-
+          att
+      - >-
+          avyttra
+      - >-
+          vissa
+      - >-
+          icke-kärnverksamheter
+      - >-
+          på
+      - >-
+          tillfredsställande
+      - >-
+          villkor
+      - >-
+          ,
+      - >-
+          villkoren
+      - >-
+          enligt
+      - >-
+          vilka
+      - >-
+          asbestrelaterade
+      - >-
+          skadeståndsanspråk
+      - >-
+          kan
+      - >-
+          lösas
+      - >-
+          ,
+      - >-
+          summan
+      - >-
+          av
+      - >-
+          intäkter
+      - >-
+          vi
+      - >-
+          förmår
+      - >-
+          inbringa
+      - >-
+          från
+      - >-
+          orderstock
+      - >-
+          och
+      - >-
+          orderingång
+      - >-
+          ,
+      - >-
+          prisutvecklingen
+      - >-
+          på
+      - >-
+          råvaror
+      - >-
+          ,
+      - >-
+          ekonomiska
+      - >-
+          och
+      - >-
+          marknadsmässiga
+      - >-
+          villkor
+      - >-
+          på
+      - >-
+          geografiska
+      - >-
+          marknader
+      - >-
+          och
+      - >-
+          i
+      - >-
+          industrier
+      - >-
+          viktiga
+      - >-
+          för
+      - >-
+          ABB:s
+      - >-
+          verksamhet
+      - >-
+          ,
+      - >-
+          marknadens
+      - >-
+          accept
+      - >-
+          för
+      - >-
+          ABB:s
+      - >-
+          nya
+      - >-
+          produkter
+      - >-
+          och
+      - >-
+          tjänster
+      - >-
+          ,
+      - >-
+          förändringar
+      - >-
+          i
+      - >-
+          statliga
+      - >-
+          regleringar
+      - >-
+          och
+      - >-
+          kostnader
+      - >-
+          förknippade
+      - >-
+          med
+      - >-
+          efterlevnadsaktiviteter
+      - >-
+          ,
+      - >-
+          räntesatser
+      - >-
+          ,
+      - >-
+          fluktuationer
+      - >-
+          i
+      - >-
+          valutakurser
+      - >-
+          och
+      - >-
+          sådana
+      - >-
+          övriga
+      - >-
+          faktorer
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          diskuteras
+      - >-
+          från
+      - >-
+          tid
+      - >-
+          till
+      - >-
+          annan
+      - >-
+          i
+      - >-
+          ABB:s
+      - >-
+          dokument
+      - >-
+          till
+      - >-
+          U.S.
+      - >-
+          Securities
+      - >-
+          and
+      - >-
+          Exchange
+      - >-
+          Commission
+      - >-
+          ,
+      - >-
+          inklusive
+      - >-
+          årsredovisningar
+      - >-
+          i
+      - >-
+          dokument
+      - >-
+          20-F
+      - >-
+          .
+
+  - unit: >-
+      Trots att ABB Ltd bedömer att företagets förväntningar återgivna i sådana framåtsyftande uttalanden bygger på rationella antaganden kan inte garantier ges för att dessa förväntningar kommer att uppfyllas.
+    tokens:
+      - >-
+          Trots
+      - >-
+          att
+      - >-
+          ABB
+      - >-
+          Ltd
+      - >-
+          bedömer
+      - >-
+          att
+      - >-
+          företagets
+      - >-
+          förväntningar
+      - >-
+          återgivna
+      - >-
+          i
+      - >-
+          sådana
+      - >-
+          framåtsyftande
+      - >-
+          uttalanden
+      - >-
+          bygger
+      - >-
+          på
+      - >-
+          rationella
+      - >-
+          antaganden
+      - >-
+          kan
+      - >-
+          inte
+      - >-
+          garantier
+      - >-
+          ges
+      - >-
+          för
+      - >-
+          att
+      - >-
+          dessa
+      - >-
+          förväntningar
+      - >-
+          kommer
+      - >-
+          att
+      - >-
+          uppfyllas
+      - >-
+          .
+
+  - unit: >-
+      Om tolkningsfrågor uppstår gäller den engelska versionen av det här pressmeddelandet.
+    tokens:
+      - >-
+          Om
+      - >-
+          tolkningsfrågor
+      - >-
+          uppstår
+      - >-
+          gäller
+      - >-
+          den
+      - >-
+          engelska
+      - >-
+          versionen
+      - >-
+          av
+      - >-
+          det
+      - >-
+          här
+      - >-
+          pressmeddelandet
+      - >-
+          .
+
+  - unit: >-
+      <h2>Rainforest Alliance's Certifiering av Bananer</h2>
+    tokens:
+      - >-
+          <h2>
+      - >-
+          Rainforest
+      - >-
+          Alliance's
+      - >-
+          Certifiering
+      - >-
+          av
+      - >-
+          Bananer
+      - >-
+          </h2>
+
+  - unit: >-
+      <h3>Förbättrar Miljön och Arbetsmiljön för Befolkningen</h3>
+    tokens:
+      - >-
+          <h3>
+      - >-
+          Förbättrar
+      - >-
+          Miljön
+      - >-
+          och
+      - >-
+          Arbetsmiljön
+      - >-
+          för
+      - >-
+          Befolkningen
+      - >-
+          </h3>
+
+  - unit: >-
+      <p>Rainforest Alliance började intressera sig för bananer 1990, då ökade produktionen i de Sydamerikanska tropikerna och regnskogar höggs ned för att öka odlingsarealen.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          började
+      - >-
+          intressera
+      - >-
+          sig
+      - >-
+          för
+      - >-
+          bananer
+      - >-
+          1990
+      - >-
+          ,
+      - >-
+          då
+      - >-
+          ökade
+      - >-
+          produktionen
+      - >-
+          i
+      - >-
+          de
+      - >-
+          Sydamerikanska
+      - >-
+          tropikerna
+      - >-
+          och
+      - >-
+          regnskogar
+      - >-
+          höggs
+      - >-
+          ned
+      - >-
+          för
+      - >-
+          att
+      - >-
+          öka
+      - >-
+          odlingsarealen
+      - >-
+          .
+
+  - unit: >-
+      Bananfarmerna påverkade både miljön och arbetarna mycket negativt.
+    tokens:
+      - >-
+          Bananfarmerna
+      - >-
+          påverkade
+      - >-
+          både
+      - >-
+          miljön
+      - >-
+          och
+      - >-
+          arbetarna
+      - >-
+          mycket
+      - >-
+          negativt
+      - >-
+          .
+
+  - unit: >-
+      De bestod bland annat av användning av farliga bekämpningsmedel, dålig arbetsmiljö, vattenföroreningar och avskogning.
+    tokens:
+      - >-
+          De
+      - >-
+          bestod
+      - >-
+          bland
+      - >-
+          annat
+      - >-
+          av
+      - >-
+          användning
+      - >-
+          av
+      - >-
+          farliga
+      - >-
+          bekämpningsmedel
+      - >-
+          ,
+      - >-
+          dålig
+      - >-
+          arbetsmiljö
+      - >-
+          ,
+      - >-
+          vattenföroreningar
+      - >-
+          och
+      - >-
+          avskogning
+      - >-
+          .
+
+  - unit: >-
+      Giftindränkta plastpåsar, som skyddade bananstockarna medan de växte, låg ofta och skräpade på flod- och havsstränderna i närheten av bananfarmerna.
+    tokens:
+      - >-
+          Giftindränkta
+      - >-
+          plastpåsar
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          skyddade
+      - >-
+          bananstockarna
+      - >-
+          medan
+      - >-
+          de
+      - >-
+          växte
+      - >-
+          ,
+      - >-
+          låg
+      - >-
+          ofta
+      - >-
+          och
+      - >-
+          skräpade
+      - >-
+          på
+      - >-
+          flod-
+      - >-
+          och
+      - >-
+          havsstränderna
+      - >-
+          i
+      - >-
+          närheten
+      - >-
+          av
+      - >-
+          bananfarmerna
+      - >-
+          .
+
+  - unit: >-
+      Jordbrukskemikalier och erosion dödade fisken, slammade igen floder och kvävde korallrev.
+    tokens:
+      - >-
+          Jordbrukskemikalier
+      - >-
+          och
+      - >-
+          erosion
+      - >-
+          dödade
+      - >-
+          fisken
+      - >-
+          ,
+      - >-
+          slammade
+      - >-
+          igen
+      - >-
+          floder
+      - >-
+          och
+      - >-
+          kvävde
+      - >-
+          korallrev
+      - >-
+          .
+
+  - unit: >-
+      Bananfarmernas närhet till bostadsområden i samband med slappt regelverk kring bekämpningsmedelsanvändning gjorde att arbetare och närboende ofta hade hälsoproblem.
+    tokens:
+      - >-
+          Bananfarmernas
+      - >-
+          närhet
+      - >-
+          till
+      - >-
+          bostadsområden
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          slappt
+      - >-
+          regelverk
+      - >-
+          kring
+      - >-
+          bekämpningsmedelsanvändning
+      - >-
+          gjorde
+      - >-
+          att
+      - >-
+          arbetare
+      - >-
+          och
+      - >-
+          närboende
+      - >-
+          ofta
+      - >-
+          hade
+      - >-
+          hälsoproblem
+      - >-
+          .
+
+  - unit: >-
+      <p>"Bananproduktion var den mest förorenande aktiviteten i Costa Rica's havsnära lågland," påminner sig biologen Alejandro Alvarez, som hjälpte till att utveckla Rainforest Aliance's regler för certifiering på tidigt 90-tal.
+    tokens:
+      - >-
+          <p>
+      - >-
+          "
+      - >-
+          Bananproduktion
+      - >-
+          var
+      - >-
+          den
+      - >-
+          mest
+      - >-
+          förorenande
+      - >-
+          aktiviteten
+      - >-
+          i
+      - >-
+          Costa
+      - >-
+          Rica's
+      - >-
+          havsnära
+      - >-
+          lågland
+      - >-
+          ,
+      - >-
+          "
+      - >-
+          påminner
+      - >-
+          sig
+      - >-
+          biologen
+      - >-
+          Alejandro
+      - >-
+          Alvarez
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          hjälpte
+      - >-
+          till
+      - >-
+          att
+      - >-
+          utveckla
+      - >-
+          Rainforest
+      - >-
+          Aliance's
+      - >-
+          regler
+      - >-
+          för
+      - >-
+          certifiering
+      - >-
+          på
+      - >-
+          tidigt
+      - >-
+          90-tal
+      - >-
+          .
+
+  - unit: >-
+      <h4>Praktiska Lösningar</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Praktiska
+      - >-
+          Lösningar
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Med problemen i åtanke organiserade Rainforest Alliance arbetsgrupper 1990, deras uppdrag var att studera bananfarmer och rekommendera möjliga förbättringar.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Med
+      - >-
+          problemen
+      - >-
+          i
+      - >-
+          åtanke
+      - >-
+          organiserade
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          arbetsgrupper
+      - >-
+          1990
+      - >-
+          ,
+      - >-
+          deras
+      - >-
+          uppdrag
+      - >-
+          var
+      - >-
+          att
+      - >-
+          studera
+      - >-
+          bananfarmer
+      - >-
+          och
+      - >-
+          rekommendera
+      - >-
+          möjliga
+      - >-
+          förbättringar
+      - >-
+          .
+
+  - unit: >-
+      Grupperna bestod av vetenskapsmän, bönder, byledare och representanter från intresseorganisationer.
+    tokens:
+      - >-
+          Grupperna
+      - >-
+          bestod
+      - >-
+          av
+      - >-
+          vetenskapsmän
+      - >-
+          ,
+      - >-
+          bönder
+      - >-
+          ,
+      - >-
+          byledare
+      - >-
+          och
+      - >-
+          representanter
+      - >-
+          från
+      - >-
+          intresseorganisationer
+      - >-
+          .
+
+  - unit: >-
+      Efter två års övervägande producerades de första riktlinjerna för uthållig odling 1992, riktlinjerna grundades på ett dussintal mätbara, konkreta regler.
+    tokens:
+      - >-
+          Efter
+      - >-
+          två
+      - >-
+          års
+      - >-
+          övervägande
+      - >-
+          producerades
+      - >-
+          de
+      - >-
+          första
+      - >-
+          riktlinjerna
+      - >-
+          för
+      - >-
+          uthållig
+      - >-
+          odling
+      - >-
+          1992
+      - >-
+          ,
+      - >-
+          riktlinjerna
+      - >-
+          grundades
+      - >-
+          på
+      - >-
+          ett
+      - >-
+          dussintal
+      - >-
+          mätbara
+      - >-
+          ,
+      - >-
+          konkreta
+      - >-
+          regler
+      - >-
+          .
+
+  - unit: >-
+      <p>Därefter uppmuntrade Rainforest Alliance bananföretagen att pröva reglerna på sina odlingar, som motprestation erbjöds ett sigill till de odlingar som följde reglerna.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Därefter
+      - >-
+          uppmuntrade
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          bananföretagen
+      - >-
+          att
+      - >-
+          pröva
+      - >-
+          reglerna
+      - >-
+          på
+      - >-
+          sina
+      - >-
+          odlingar
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          motprestation
+      - >-
+          erbjöds
+      - >-
+          ett
+      - >-
+          sigill
+      - >-
+          till
+      - >-
+          de
+      - >-
+          odlingar
+      - >-
+          som
+      - >-
+          följde
+      - >-
+          reglerna
+      - >-
+          .
+
+  - unit: >-
+      Ett antal fristående odlingar började göra förbättringar enligt reglerna och 1993 certifierades två odlingar enligt Rainforest Alliance's regler, en i Costa Rica och den andra på Hawaii.
+    tokens:
+      - >-
+          Ett
+      - >-
+          antal
+      - >-
+          fristående
+      - >-
+          odlingar
+      - >-
+          började
+      - >-
+          göra
+      - >-
+          förbättringar
+      - >-
+          enligt
+      - >-
+          reglerna
+      - >-
+          och
+      - >-
+          1993
+      - >-
+          certifierades
+      - >-
+          två
+      - >-
+          odlingar
+      - >-
+          enligt
+      - >-
+          Rainforest
+      - >-
+          Alliance's
+      - >-
+          regler
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          i
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          och
+      - >-
+          den
+      - >-
+          andra
+      - >-
+          på
+      - >-
+          Hawaii
+      - >-
+          .
+
+  - unit: >-
+      Chiquita Brands International's sektion i Costa Rica började tillämpa reglerna 1992 och två av deras odlingar blev certifierade enligt Rainforest Alliance's regler 1994.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          Brands
+      - >-
+          International's
+      - >-
+          sektion
+      - >-
+          i
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          började
+      - >-
+          tillämpa
+      - >-
+          reglerna
+      - >-
+          1992
+      - >-
+          och
+      - >-
+          två
+      - >-
+          av
+      - >-
+          deras
+      - >-
+          odlingar
+      - >-
+          blev
+      - >-
+          certifierade
+      - >-
+          enligt
+      - >-
+          Rainforest
+      - >-
+          Alliance's
+      - >-
+          regler
+      - >-
+          1994
+      - >-
+          .
+
+  - unit: >-
+      Samma år började Favorita Fruit Company eller Reybancorp, den näst största bananexportören i Ecuador, tillämpa Rainforest Alliance's regler.
+    tokens:
+      - >-
+          Samma
+      - >-
+          år
+      - >-
+          började
+      - >-
+          Favorita
+      - >-
+          Fruit
+      - >-
+          Company
+      - >-
+          eller
+      - >-
+          Reybancorp
+      - >-
+          ,
+      - >-
+          den
+      - >-
+          näst
+      - >-
+          största
+      - >-
+          bananexportören
+      - >-
+          i
+      - >-
+          Ecuador
+      - >-
+          ,
+      - >-
+          tillämpa
+      - >-
+          Rainforest
+      - >-
+          Alliance's
+      - >-
+          regler
+      - >-
+          .
+
+  - unit: >-
+      <h4>Att Förändra en hel Branch</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Att
+      - >-
+          Förändra
+      - >-
+          en
+      - >-
+          hel
+      - >-
+          Branch
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Under 1990-talet investerade Chiquita och Favorita miljontals dollar i arbetet med att få sina odlingar att följa Rainforest Alliance's stränga regler.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Under
+      - >-
+          1990-talet
+      - >-
+          investerade
+      - >-
+          Chiquita
+      - >-
+          och
+      - >-
+          Favorita
+      - >-
+          miljontals
+      - >-
+          dollar
+      - >-
+          i
+      - >-
+          arbetet
+      - >-
+          med
+      - >-
+          att
+      - >-
+          få
+      - >-
+          sina
+      - >-
+          odlingar
+      - >-
+          att
+      - >-
+          följa
+      - >-
+          Rainforest
+      - >-
+          Alliance's
+      - >-
+          stränga
+      - >-
+          regler
+      - >-
+          .
+
+  - unit: >-
+      Reglerna består bland annat av nolltolerans mot avskogning, regler för avfallshantering och återvinning, anständiga löner, arbetstider och arbetsförhållanden, minskad bekämpningsmedelsanvändning och strikta regler för handhavande och säkerhet i hanteringen av jordbrukskemikalier.
+    tokens:
+      - >-
+          Reglerna
+      - >-
+          består
+      - >-
+          bland
+      - >-
+          annat
+      - >-
+          av
+      - >-
+          nolltolerans
+      - >-
+          mot
+      - >-
+          avskogning
+      - >-
+          ,
+      - >-
+          regler
+      - >-
+          för
+      - >-
+          avfallshantering
+      - >-
+          och
+      - >-
+          återvinning
+      - >-
+          ,
+      - >-
+          anständiga
+      - >-
+          löner
+      - >-
+          ,
+      - >-
+          arbetstider
+      - >-
+          och
+      - >-
+          arbetsförhållanden
+      - >-
+          ,
+      - >-
+          minskad
+      - >-
+          bekämpningsmedelsanvändning
+      - >-
+          och
+      - >-
+          strikta
+      - >-
+          regler
+      - >-
+          för
+      - >-
+          handhavande
+      - >-
+          och
+      - >-
+          säkerhet
+      - >-
+          i
+      - >-
+          hanteringen
+      - >-
+          av
+      - >-
+          jordbrukskemikalier
+      - >-
+          .
+
+  - unit: >-
+      År 2000 erhöll båda företagen en 100 procentig certifiering av företagsägda odlingar, vilket innebar att miljöpåverkan  förbättrats på enorma ytor av tropiskt lågland och att hundratals byar nära bananodlingar har fått bättre levnadsförhållanden.
+    tokens:
+      - >-
+          År
+      - >-
+          2000
+      - >-
+          erhöll
+      - >-
+          båda
+      - >-
+          företagen
+      - >-
+          en
+      - >-
+          100
+      - >-
+          procentig
+      - >-
+          certifiering
+      - >-
+          av
+      - >-
+          företagsägda
+      - >-
+          odlingar
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          innebar
+      - >-
+          att
+      - >-
+          miljöpåverkan
+      - >-
+          förbättrats
+      - >-
+          på
+      - >-
+          enorma
+      - >-
+          ytor
+      - >-
+          av
+      - >-
+          tropiskt
+      - >-
+          lågland
+      - >-
+          och
+      - >-
+          att
+      - >-
+          hundratals
+      - >-
+          byar
+      - >-
+          nära
+      - >-
+          bananodlingar
+      - >-
+          har
+      - >-
+          fått
+      - >-
+          bättre
+      - >-
+          levnadsförhållanden
+      - >-
+          .
+
+  - unit: >-
+      <p>Idag kommer mer än 15 procent av alla bananer i den internationella handeln från odlingar som är certifierade av Rainforest Alliance.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Idag
+      - >-
+          kommer
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          15
+      - >-
+          procent
+      - >-
+          av
+      - >-
+          alla
+      - >-
+          bananer
+      - >-
+          i
+      - >-
+          den
+      - >-
+          internationella
+      - >-
+          handeln
+      - >-
+          från
+      - >-
+          odlingar
+      - >-
+          som
+      - >-
+          är
+      - >-
+          certifierade
+      - >-
+          av
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          .
+
+  - unit: >-
+      Alla Favoritas 45 bananodlingar i Ecuador och alla Chiquitas 115 odlingar i Guatemala, Honduras, Costa Rica, Panama och Colombia är certifierade av Rainforest Alliance.
+    tokens:
+      - >-
+          Alla
+      - >-
+          Favoritas
+      - >-
+          45
+      - >-
+          bananodlingar
+      - >-
+          i
+      - >-
+          Ecuador
+      - >-
+          och
+      - >-
+          alla
+      - >-
+          Chiquitas
+      - >-
+          115
+      - >-
+          odlingar
+      - >-
+          i
+      - >-
+          Guatemala
+      - >-
+          ,
+      - >-
+          Honduras
+      - >-
+          ,
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          ,
+      - >-
+          Panama
+      - >-
+          och
+      - >-
+          Colombia
+      - >-
+          är
+      - >-
+          certifierade
+      - >-
+          av
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          .
+
+  - unit: >-
+      Certifieringen genomförs av Sustainable Agriculture Network (SAN), en sammanslutning av åtta miljögrupper i Latinamerika som samordnas av Rainforest Alliance.
+    tokens:
+      - >-
+          Certifieringen
+      - >-
+          genomförs
+      - >-
+          av
+      - >-
+          Sustainable
+      - >-
+          Agriculture
+      - >-
+          Network
+      - >-
+          (
+      - >-
+          SAN
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          en
+      - >-
+          sammanslutning
+      - >-
+          av
+      - >-
+          åtta
+      - >-
+          miljögrupper
+      - >-
+          i
+      - >-
+          Latinamerika
+      - >-
+          som
+      - >-
+          samordnas
+      - >-
+          av
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          .
+
+  - unit: >-
+      SANs inspektörer besöker varje odling minst en gång per år för att försäkra sig om att de följer Rainforest Alliance's strikta regler.
+    tokens:
+      - >-
+          SANs
+      - >-
+          inspektörer
+      - >-
+          besöker
+      - >-
+          varje
+      - >-
+          odling
+      - >-
+          minst
+      - >-
+          en
+      - >-
+          gång
+      - >-
+          per
+      - >-
+          år
+      - >-
+          för
+      - >-
+          att
+      - >-
+          försäkra
+      - >-
+          sig
+      - >-
+          om
+      - >-
+          att
+      - >-
+          de
+      - >-
+          följer
+      - >-
+          Rainforest
+      - >-
+          Alliance's
+      - >-
+          strikta
+      - >-
+          regler
+      - >-
+          .
+
+  - unit: >-
+      <p>Under åren har ett fåtal odlingar fått sin certifiering indragen eller upphävd, beroende på bristande säkerhet för arbetarna och brott mot avfallshateringsregler, men företagen har snabbt åtgärdat problemen och odlingarna har därefter åter blivit certifierade.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Under
+      - >-
+          åren
+      - >-
+          har
+      - >-
+          ett
+      - >-
+          fåtal
+      - >-
+          odlingar
+      - >-
+          fått
+      - >-
+          sin
+      - >-
+          certifiering
+      - >-
+          indragen
+      - >-
+          eller
+      - >-
+          upphävd
+      - >-
+          ,
+      - >-
+          beroende
+      - >-
+          på
+      - >-
+          bristande
+      - >-
+          säkerhet
+      - >-
+          för
+      - >-
+          arbetarna
+      - >-
+          och
+      - >-
+          brott
+      - >-
+          mot
+      - >-
+          avfallshateringsregler
+      - >-
+          ,
+      - >-
+          men
+      - >-
+          företagen
+      - >-
+          har
+      - >-
+          snabbt
+      - >-
+          åtgärdat
+      - >-
+          problemen
+      - >-
+          och
+      - >-
+          odlingarna
+      - >-
+          har
+      - >-
+          därefter
+      - >-
+          åter
+      - >-
+          blivit
+      - >-
+          certifierade
+      - >-
+          .
+
+  - unit: >-
+      Chiquita är också certifierade enligt SA 8000 (Social Accountability International) och har en ISO 14001 certifiering, vilket ytterligare har stärkt företagets sociala och miljömässiga ställning.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          är
+      - >-
+          också
+      - >-
+          certifierade
+      - >-
+          enligt
+      - >-
+          SA
+      - >-
+          8000
+      - >-
+          (
+      - >-
+          Social
+      - >-
+          Accountability
+      - >-
+          International
+      - >-
+          )
+      - >-
+          och
+      - >-
+          har
+      - >-
+          en
+      - >-
+          ISO
+      - >-
+          14001
+      - >-
+          certifiering
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          ytterligare
+      - >-
+          har
+      - >-
+          stärkt
+      - >-
+          företagets
+      - >-
+          sociala
+      - >-
+          och
+      - >-
+          miljömässiga
+      - >-
+          ställning
+      - >-
+          .
+
+  - unit: >-
+      "Vi har dragit ned på bekämpningsmedlen.
+    tokens:
+      - >-
+          "
+      - >-
+          Vi
+      - >-
+          har
+      - >-
+          dragit
+      - >-
+          ned
+      - >-
+          på
+      - >-
+          bekämpningsmedlen
+      - >-
+          .
+
+  - unit: >-
+      Vi har planterat hundratals träd utefter vägar och vattendrag.
+    tokens:
+      - >-
+          Vi
+      - >-
+          har
+      - >-
+          planterat
+      - >-
+          hundratals
+      - >-
+          träd
+      - >-
+          utefter
+      - >-
+          vägar
+      - >-
+          och
+      - >-
+          vattendrag
+      - >-
+          .
+
+  - unit: >-
+      Vi ordnar miljöutbildning.
+    tokens:
+      - >-
+          Vi
+      - >-
+          ordnar
+      - >-
+          miljöutbildning
+      - >-
+          .
+
+  - unit: >-
+      Allt för mänsklighetens bästa, så att vi kan lämna något positivt till våra barn.
+    tokens:
+      - >-
+          Allt
+      - >-
+          för
+      - >-
+          mänsklighetens
+      - >-
+          bästa
+      - >-
+          ,
+      - >-
+          så
+      - >-
+          att
+      - >-
+          vi
+      - >-
+          kan
+      - >-
+          lämna
+      - >-
+          något
+      - >-
+          positivt
+      - >-
+          till
+      - >-
+          våra
+      - >-
+          barn
+      - >-
+          .
+
+  - unit: >-
+      "<h4>Konkreta Förbättringar</h4>
+    tokens:
+      - >-
+          "
+      - >-
+          <h4>
+      - >-
+          Konkreta
+      - >-
+          Förbättringar
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Certifieringsprocessen resulterat i en rad tydliga förbättringar i områden där bananodling dominerar både landskapet och den lokala ekonomin.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Certifieringsprocessen
+      - >-
+          resulterat
+      - >-
+          i
+      - >-
+          en
+      - >-
+          rad
+      - >-
+          tydliga
+      - >-
+          förbättringar
+      - >-
+          i
+      - >-
+          områden
+      - >-
+          där
+      - >-
+          bananodling
+      - >-
+          dominerar
+      - >-
+          både
+      - >-
+          landskapet
+      - >-
+          och
+      - >-
+          den
+      - >-
+          lokala
+      - >-
+          ekonomin
+      - >-
+          .
+
+  - unit: >-
+      Chiquita har till exempel planterat närmare 1 miljon träd och buskar på sina odlingar för att skapa naturliga buffertzoner mot allmänna vägar och vattendrag, liksom runt bostäder och kontor.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          har
+      - >-
+          till
+      - >-
+          exempel
+      - >-
+          planterat
+      - >-
+          närmare
+      - >-
+          1
+      - >-
+          miljon
+      - >-
+          träd
+      - >-
+          och
+      - >-
+          buskar
+      - >-
+          på
+      - >-
+          sina
+      - >-
+          odlingar
+      - >-
+          för
+      - >-
+          att
+      - >-
+          skapa
+      - >-
+          naturliga
+      - >-
+          buffertzoner
+      - >-
+          mot
+      - >-
+          allmänna
+      - >-
+          vägar
+      - >-
+          och
+      - >-
+          vattendrag
+      - >-
+          ,
+      - >-
+          liksom
+      - >-
+          runt
+      - >-
+          bostäder
+      - >-
+          och
+      - >-
+          kontor
+      - >-
+          .
+
+  - unit: >-
+      Företaget har slutat använda de farligaste bekämpningsmedlen och har börjat tillämpa stränga regler för den bekämpningsmedelsanvändning som sker.
+    tokens:
+      - >-
+          Företaget
+      - >-
+          har
+      - >-
+          slutat
+      - >-
+          använda
+      - >-
+          de
+      - >-
+          farligaste
+      - >-
+          bekämpningsmedlen
+      - >-
+          och
+      - >-
+          har
+      - >-
+          börjat
+      - >-
+          tillämpa
+      - >-
+          stränga
+      - >-
+          regler
+      - >-
+          för
+      - >-
+          den
+      - >-
+          bekämpningsmedelsanvändning
+      - >-
+          som
+      - >-
+          sker
+      - >-
+          .
+
+  - unit: >-
+      Sådana regler är obligatorisk skyddsutrustning, dusch vid arbetsdagens slut och 24 till 48 timmars avspärrning av områden som har bekämpats.
+    tokens:
+      - >-
+          Sådana
+      - >-
+          regler
+      - >-
+          är
+      - >-
+          obligatorisk
+      - >-
+          skyddsutrustning
+      - >-
+          ,
+      - >-
+          dusch
+      - >-
+          vid
+      - >-
+          arbetsdagens
+      - >-
+          slut
+      - >-
+          och
+      - >-
+          24
+      - >-
+          till
+      - >-
+          48
+      - >-
+          timmars
+      - >-
+          avspärrning
+      - >-
+          av
+      - >-
+          områden
+      - >-
+          som
+      - >-
+          har
+      - >-
+          bekämpats
+      - >-
+          .
+
+  - unit: >-
+      <p>Chiquita återvinner omkring 3 100 ton plastpåsar och plastband varje år de återanvänder också träpallar som bananlådor staplas på, detta sparar tiotusentals träd varje år.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Chiquita
+      - >-
+          återvinner
+      - >-
+          omkring
+      - >-
+          3 100
+      - >-
+          ton
+      - >-
+          plastpåsar
+      - >-
+          och
+      - >-
+          plastband
+      - >-
+          varje
+      - >-
+          år
+      - >-
+          de
+      - >-
+          återanvänder
+      - >-
+          också
+      - >-
+          träpallar
+      - >-
+          som
+      - >-
+          bananlådor
+      - >-
+          staplas
+      - >-
+          på
+      - >-
+          ,
+      - >-
+          detta
+      - >-
+          sparar
+      - >-
+          tiotusentals
+      - >-
+          träd
+      - >-
+          varje
+      - >-
+          år
+      - >-
+          .
+
+  - unit: >-
+      Favorita har startat en fond som ger stöd till 33 skolor nära deras odlingar, mer än 3 000 barn drar nytta av detta.
+    tokens:
+      - >-
+          Favorita
+      - >-
+          har
+      - >-
+          startat
+      - >-
+          en
+      - >-
+          fond
+      - >-
+          som
+      - >-
+          ger
+      - >-
+          stöd
+      - >-
+          till
+      - >-
+          33
+      - >-
+          skolor
+      - >-
+          nära
+      - >-
+          deras
+      - >-
+          odlingar
+      - >-
+          ,
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          3 000
+      - >-
+          barn
+      - >-
+          drar
+      - >-
+          nytta
+      - >-
+          av
+      - >-
+          detta
+      - >-
+          .
+
+  - unit: >-
+      Chiquita har donerat dussintals gymnastiksalar, skolor och sjukstugor till olika samhällen, de har också gett bort eller sålt hundratals hus till arbetare till väldigt låga priser.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          har
+      - >-
+          donerat
+      - >-
+          dussintals
+      - >-
+          gymnastiksalar
+      - >-
+          ,
+      - >-
+          skolor
+      - >-
+          och
+      - >-
+          sjukstugor
+      - >-
+          till
+      - >-
+          olika
+      - >-
+          samhällen
+      - >-
+          ,
+      - >-
+          de
+      - >-
+          har
+      - >-
+          också
+      - >-
+          gett
+      - >-
+          bort
+      - >-
+          eller
+      - >-
+          sålt
+      - >-
+          hundratals
+      - >-
+          hus
+      - >-
+          till
+      - >-
+          arbetare
+      - >-
+          till
+      - >-
+          väldigt
+      - >-
+          låga
+      - >-
+          priser
+      - >-
+          .
+
+  - unit: >-
+      Båda företagen skyddar betydande områden av tropisk regnskog.
+    tokens:
+      - >-
+          Båda
+      - >-
+          företagen
+      - >-
+          skyddar
+      - >-
+          betydande
+      - >-
+          områden
+      - >-
+          av
+      - >-
+          tropisk
+      - >-
+          regnskog
+      - >-
+          .
+
+  - unit: >-
+      Favorita gör detta vid sitt Río Palenque Science Center, och Chiquita i det 100 hektar stora naturreservatet Nogal i Costa Rica som de förvaltar tillsammans med den schweitziska butikskedjan Migros.
+    tokens:
+      - >-
+          Favorita
+      - >-
+          gör
+      - >-
+          detta
+      - >-
+          vid
+      - >-
+          sitt
+      - >-
+          Río
+      - >-
+          Palenque
+      - >-
+          Science
+      - >-
+          Center
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          Chiquita
+      - >-
+          i
+      - >-
+          det
+      - >-
+          100
+      - >-
+          hektar
+      - >-
+          stora
+      - >-
+          naturreservatet
+      - >-
+          Nogal
+      - >-
+          i
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          som
+      - >-
+          de
+      - >-
+          förvaltar
+      - >-
+          tillsammans
+      - >-
+          med
+      - >-
+          den
+      - >-
+          schweitziska
+      - >-
+          butikskedjan
+      - >-
+          Migros
+      - >-
+          .
+
+  - unit: >-
+      I båda dessa naturvårdsprojekt ingår miljöutbildning för lantarbetare och deras familjer, vilket är ytterligare ett av målen med certifieringen.
+    tokens:
+      - >-
+          I
+      - >-
+          båda
+      - >-
+          dessa
+      - >-
+          naturvårdsprojekt
+      - >-
+          ingår
+      - >-
+          miljöutbildning
+      - >-
+          för
+      - >-
+          lantarbetare
+      - >-
+          och
+      - >-
+          deras
+      - >-
+          familjer
+      - >-
+          ,
+      - >-
+          vilket
+      - >-
+          är
+      - >-
+          ytterligare
+      - >-
+          ett
+      - >-
+          av
+      - >-
+          målen
+      - >-
+          med
+      - >-
+          certifieringen
+      - >-
+          .
+
+  - unit: >-
+      <h4>Den Gröna Evolutionen</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Den
+      - >-
+          Gröna
+      - >-
+          Evolutionen
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>En av de viktigaste aspekterna av Rainforest Alliances program för uthålligt jordbruk är att jordbruken kommer in i en process av ständig förbättring.
+    tokens:
+      - >-
+          <p>
+      - >-
+          En
+      - >-
+          av
+      - >-
+          de
+      - >-
+          viktigaste
+      - >-
+          aspekterna
+      - >-
+          av
+      - >-
+          Rainforest
+      - >-
+          Alliances
+      - >-
+          program
+      - >-
+          för
+      - >-
+          uthålligt
+      - >-
+          jordbruk
+      - >-
+          är
+      - >-
+          att
+      - >-
+          jordbruken
+      - >-
+          kommer
+      - >-
+          in
+      - >-
+          i
+      - >-
+          en
+      - >-
+          process
+      - >-
+          av
+      - >-
+          ständig
+      - >-
+          förbättring
+      - >-
+          .
+
+  - unit: >-
+      Reglerna är tillräckligt handfasta för att företagen ska kunna vara konkurrenskraftiga på den internationella marknaden, samtidigt så kräver de en fortsatt förbättring av miljömässiga och sociala förhållanden.
+    tokens:
+      - >-
+          Reglerna
+      - >-
+          är
+      - >-
+          tillräckligt
+      - >-
+          handfasta
+      - >-
+          för
+      - >-
+          att
+      - >-
+          företagen
+      - >-
+          ska
+      - >-
+          kunna
+      - >-
+          vara
+      - >-
+          konkurrenskraftiga
+      - >-
+          på
+      - >-
+          den
+      - >-
+          internationella
+      - >-
+          marknaden
+      - >-
+          ,
+      - >-
+          samtidigt
+      - >-
+          så
+      - >-
+          kräver
+      - >-
+          de
+      - >-
+          en
+      - >-
+          fortsatt
+      - >-
+          förbättring
+      - >-
+          av
+      - >-
+          miljömässiga
+      - >-
+          och
+      - >-
+          sociala
+      - >-
+          förhållanden
+      - >-
+          .
+
+  - unit: >-
+      Chiquita är till exempel på gång att installera ett filtersystem i sina packlokaler som ska minska vattenförbrukningen med 80 procent.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          är
+      - >-
+          till
+      - >-
+          exempel
+      - >-
+          på
+      - >-
+          gång
+      - >-
+          att
+      - >-
+          installera
+      - >-
+          ett
+      - >-
+          filtersystem
+      - >-
+          i
+      - >-
+          sina
+      - >-
+          packlokaler
+      - >-
+          som
+      - >-
+          ska
+      - >-
+          minska
+      - >-
+          vattenförbrukningen
+      - >-
+          med
+      - >-
+          80
+      - >-
+          procent
+      - >-
+          .
+
+  - unit: >-
+      Samtidigt studerar företagets vetenskapsmän biologisk bekämpning som ska hjälpa dem att skära ner bekämpningsmedelsanvändningen.
+    tokens:
+      - >-
+          Samtidigt
+      - >-
+          studerar
+      - >-
+          företagets
+      - >-
+          vetenskapsmän
+      - >-
+          biologisk
+      - >-
+          bekämpning
+      - >-
+          som
+      - >-
+          ska
+      - >-
+          hjälpa
+      - >-
+          dem
+      - >-
+          att
+      - >-
+          skära
+      - >-
+          ner
+      - >-
+          bekämpningsmedelsanvändningen
+      - >-
+          .
+
+  - unit: >-
+      <p>Enligt Chris Wille, chef för Hållbart jordbruk inom Rainforest Alliance, bör tekniska framsteg och en gynnsammare marknad underlätta för en stabil utveckling mot ännu bättre förhållanden på de certifierade odlingarna.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Enligt
+      - >-
+          Chris
+      - >-
+          Wille
+      - >-
+          ,
+      - >-
+          chef
+      - >-
+          för
+      - >-
+          Hållbart
+      - >-
+          jordbruk
+      - >-
+          inom
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          ,
+      - >-
+          bör
+      - >-
+          tekniska
+      - >-
+          framsteg
+      - >-
+          och
+      - >-
+          en
+      - >-
+          gynnsammare
+      - >-
+          marknad
+      - >-
+          underlätta
+      - >-
+          för
+      - >-
+          en
+      - >-
+          stabil
+      - >-
+          utveckling
+      - >-
+          mot
+      - >-
+          ännu
+      - >-
+          bättre
+      - >-
+          förhållanden
+      - >-
+          på
+      - >-
+          de
+      - >-
+          certifierade
+      - >-
+          odlingarna
+      - >-
+          .
+
+  - unit: >-
+      <p>"Bananföretagen, vilkas odlingar vi nu har certifierat, har påbörjat en positiv förändringsprocess som troligen aldrig tar slut.
+    tokens:
+      - >-
+          <p>
+      - >-
+          "
+      - >-
+          Bananföretagen
+      - >-
+          ,
+      - >-
+          vilkas
+      - >-
+          odlingar
+      - >-
+          vi
+      - >-
+          nu
+      - >-
+          har
+      - >-
+          certifierat
+      - >-
+          ,
+      - >-
+          har
+      - >-
+          påbörjat
+      - >-
+          en
+      - >-
+          positiv
+      - >-
+          förändringsprocess
+      - >-
+          som
+      - >-
+          troligen
+      - >-
+          aldrig
+      - >-
+          tar
+      - >-
+          slut
+      - >-
+          .
+
+  - unit: >-
+      Under nästa årtionde vill Rainforest Alliance se en stadigt minskad användning av jordbrukskemikalier på certifierade odlingar, och en fortsatt förbättring av miljö och livskvalitet i bananproducerande samhällen," säger Wille.
+    tokens:
+      - >-
+          Under
+      - >-
+          nästa
+      - >-
+          årtionde
+      - >-
+          vill
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          se
+      - >-
+          en
+      - >-
+          stadigt
+      - >-
+          minskad
+      - >-
+          användning
+      - >-
+          av
+      - >-
+          jordbrukskemikalier
+      - >-
+          på
+      - >-
+          certifierade
+      - >-
+          odlingar
+      - >-
+          ,
+      - >-
+          och
+      - >-
+          en
+      - >-
+          fortsatt
+      - >-
+          förbättring
+      - >-
+          av
+      - >-
+          miljö
+      - >-
+          och
+      - >-
+          livskvalitet
+      - >-
+          i
+      - >-
+          bananproducerande
+      - >-
+          samhällen
+      - >-
+          ,
+      - >-
+          "
+      - >-
+          säger
+      - >-
+          Wille
+      - >-
+          .
+
+  - unit: >-
+      <h4>Framtidens Bananer</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Framtidens
+      - >-
+          Bananer
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Rainforest Alliance certifiering är öppen för alla bananproducenter som kan uppfylla SAN's regler.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          certifiering
+      - >-
+          är
+      - >-
+          öppen
+      - >-
+          för
+      - >-
+          alla
+      - >-
+          bananproducenter
+      - >-
+          som
+      - >-
+          kan
+      - >-
+          uppfylla
+      - >-
+          SAN's
+      - >-
+          regler
+      - >-
+          .
+
+  - unit: >-
+      Tack vare inflytande från Chiquita och Favorita har antalet certifierade odlingar växt stadigt.
+    tokens:
+      - >-
+          Tack
+      - >-
+          vare
+      - >-
+          inflytande
+      - >-
+          från
+      - >-
+          Chiquita
+      - >-
+          och
+      - >-
+          Favorita
+      - >-
+          har
+      - >-
+          antalet
+      - >-
+          certifierade
+      - >-
+          odlingar
+      - >-
+          växt
+      - >-
+          stadigt
+      - >-
+          .
+
+  - unit: >-
+      Båda företagen köper mycket av sin frukt från små, självständiga odlare som uppmuntras att certifiera sig.
+    tokens:
+      - >-
+          Båda
+      - >-
+          företagen
+      - >-
+          köper
+      - >-
+          mycket
+      - >-
+          av
+      - >-
+          sin
+      - >-
+          frukt
+      - >-
+          från
+      - >-
+          små
+      - >-
+          ,
+      - >-
+          självständiga
+      - >-
+          odlare
+      - >-
+          som
+      - >-
+          uppmuntras
+      - >-
+          att
+      - >-
+          certifiera
+      - >-
+          sig
+      - >-
+          .
+
+  - unit: >-
+      Eftersom dessa mindre odlare ofta saknar nödvändig kunskap och resurser för att klara av certifieringskraven, har internationellt stöd spelat en avgörande roll genom att hjälpa dem att nå målet.
+    tokens:
+      - >-
+          Eftersom
+      - >-
+          dessa
+      - >-
+          mindre
+      - >-
+          odlare
+      - >-
+          ofta
+      - >-
+          saknar
+      - >-
+          nödvändig
+      - >-
+          kunskap
+      - >-
+          och
+      - >-
+          resurser
+      - >-
+          för
+      - >-
+          att
+      - >-
+          klara
+      - >-
+          av
+      - >-
+          certifieringskraven
+      - >-
+          ,
+      - >-
+          har
+      - >-
+          internationellt
+      - >-
+          stöd
+      - >-
+          spelat
+      - >-
+          en
+      - >-
+          avgörande
+      - >-
+          roll
+      - >-
+          genom
+      - >-
+          att
+      - >-
+          hjälpa
+      - >-
+          dem
+      - >-
+          att
+      - >-
+          nå
+      - >-
+          målet
+      - >-
+          .
+
+  - unit: >-
+      International Finance Corporation, som är Världsbankens avdelning för den privata sektorn, gav ett bidrag om 50 000 US dollar till en utbildning för närmare 400 självständiga bananleverantörer kopplade till Favorita.
+    tokens:
+      - >-
+          International
+      - >-
+          Finance
+      - >-
+          Corporation
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          är
+      - >-
+          Världsbankens
+      - >-
+          avdelning
+      - >-
+          för
+      - >-
+          den
+      - >-
+          privata
+      - >-
+          sektorn
+      - >-
+          ,
+      - >-
+          gav
+      - >-
+          ett
+      - >-
+          bidrag
+      - >-
+          om
+      - >-
+          50 000
+      - >-
+          US
+      - >-
+          dollar
+      - >-
+          till
+      - >-
+          en
+      - >-
+          utbildning
+      - >-
+          för
+      - >-
+          närmare
+      - >-
+          400
+      - >-
+          självständiga
+      - >-
+          bananleverantörer
+      - >-
+          kopplade
+      - >-
+          till
+      - >-
+          Favorita
+      - >-
+          .
+
+  - unit: >-
+      I Centralamerika gav US Agency for International Development (motsvarar Sida i Sverige) ett bidrag för att hjälpa självständiga bananleverantörer kopplade till Chiquita att bli certifierade.
+    tokens:
+      - >-
+          I
+      - >-
+          Centralamerika
+      - >-
+          gav
+      - >-
+          US
+      - >-
+          Agency
+      - >-
+          for
+      - >-
+          International
+      - >-
+          Development
+      - >-
+          (
+      - >-
+          motsvarar
+      - >-
+          Sida
+      - >-
+          i
+      - >-
+          Sverige
+      - >-
+          )
+      - >-
+          ett
+      - >-
+          bidrag
+      - >-
+          för
+      - >-
+          att
+      - >-
+          hjälpa
+      - >-
+          självständiga
+      - >-
+          bananleverantörer
+      - >-
+          kopplade
+      - >-
+          till
+      - >-
+          Chiquita
+      - >-
+          att
+      - >-
+          bli
+      - >-
+          certifierade
+      - >-
+          .
+
+  - unit: >-
+      FN:s globala nätverk för utveckling, UNDP, stöder fortsatt utveckling av SAN programmet.
+    tokens:
+      - >-
+          FN:s
+      - >-
+          globala
+      - >-
+          nätverk
+      - >-
+          för
+      - >-
+          utveckling
+      - >-
+          ,
+      - >-
+          UNDP
+      - >-
+          ,
+      - >-
+          stöder
+      - >-
+          fortsatt
+      - >-
+          utveckling
+      - >-
+          av
+      - >-
+          SAN
+      - >-
+          programmet
+      - >-
+          .
+
+  - unit: >-
+      <p>Trots det omfattande arbete och de investeringar som inledningsvis krävs för att en odling ska bli certifierad, har de stora bananföretagen insett att många av förändringarna betalar sig själva.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Trots
+      - >-
+          det
+      - >-
+          omfattande
+      - >-
+          arbete
+      - >-
+          och
+      - >-
+          de
+      - >-
+          investeringar
+      - >-
+          som
+      - >-
+          inledningsvis
+      - >-
+          krävs
+      - >-
+          för
+      - >-
+          att
+      - >-
+          en
+      - >-
+          odling
+      - >-
+          ska
+      - >-
+          bli
+      - >-
+          certifierad
+      - >-
+          ,
+      - >-
+          har
+      - >-
+          de
+      - >-
+          stora
+      - >-
+          bananföretagen
+      - >-
+          insett
+      - >-
+          att
+      - >-
+          många
+      - >-
+          av
+      - >-
+          förändringarna
+      - >-
+          betalar
+      - >-
+          sig
+      - >-
+          själva
+      - >-
+          .
+
+  - unit: >-
+      Favorita uppskattar att de sparar ungefär 350 000 US dollar per år enbart genom minskad användning av jordbrukskemikalier.
+    tokens:
+      - >-
+          Favorita
+      - >-
+          uppskattar
+      - >-
+          att
+      - >-
+          de
+      - >-
+          sparar
+      - >-
+          ungefär
+      - >-
+          350 000
+      - >-
+          US
+      - >-
+          dollar
+      - >-
+          per
+      - >-
+          år
+      - >-
+          enbart
+      - >-
+          genom
+      - >-
+          minskad
+      - >-
+          användning
+      - >-
+          av
+      - >-
+          jordbrukskemikalier
+      - >-
+          .
+
+  - unit: >-
+      Och även om Chiquita har investerat 20 miljoner dollar i certifieringssystemet har produktionskostnaderna sjunkit med mer än 100 miljoner dollar.
+    tokens:
+      - >-
+          Och
+      - >-
+          även
+      - >-
+          om
+      - >-
+          Chiquita
+      - >-
+          har
+      - >-
+          investerat
+      - >-
+          20
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          i
+      - >-
+          certifieringssystemet
+      - >-
+          har
+      - >-
+          produktionskostnaderna
+      - >-
+          sjunkit
+      - >-
+          med
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          100
+      - >-
+          miljoner
+      - >-
+          dollar
+      - >-
+          .
+
+  - unit: >-
+      <p>Andra bra saker som Chiquita har uppnått i samband med sin Rainforest Alliance-certifiering är att bland annat att ogräsbekämpning minskat med mer än 50%, arbetarnas löner och förmåner ligger över lokalt genomsnitt och 80% av plastförpackningar och rep återanvänds.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Andra
+      - >-
+          bra
+      - >-
+          saker
+      - >-
+          som
+      - >-
+          Chiquita
+      - >-
+          har
+      - >-
+          uppnått
+      - >-
+          i
+      - >-
+          samband
+      - >-
+          med
+      - >-
+          sin
+      - >-
+          Rainforest
+      - >-
+          Alliance-certifiering
+      - >-
+          är
+      - >-
+          att
+      - >-
+          bland
+      - >-
+          annat
+      - >-
+          att
+      - >-
+          ogräsbekämpning
+      - >-
+          minskat
+      - >-
+          med
+      - >-
+          mer
+      - >-
+          än
+      - >-
+          50
+      - >-
+          %
+      - >-
+          ,
+      - >-
+          arbetarnas
+      - >-
+          löner
+      - >-
+          och
+      - >-
+          förmåner
+      - >-
+          ligger
+      - >-
+          över
+      - >-
+          lokalt
+      - >-
+          genomsnitt
+      - >-
+          och
+      - >-
+          80
+      - >-
+          %
+      - >-
+          av
+      - >-
+          plastförpackningar
+      - >-
+          och
+      - >-
+          rep
+      - >-
+          återanvänds
+      - >-
+          .
+
+  - unit: >-
+      <p>När SAN motsatte sig Chiquitas vana att slänga dåliga bananer i dikena, bestämde de sig för att bygga en bananpuréfabrik, som nu genererar en betydande vinst.
+    tokens:
+      - >-
+          <p>
+      - >-
+          När
+      - >-
+          SAN
+      - >-
+          motsatte
+      - >-
+          sig
+      - >-
+          Chiquitas
+      - >-
+          vana
+      - >-
+          att
+      - >-
+          slänga
+      - >-
+          dåliga
+      - >-
+          bananer
+      - >-
+          i
+      - >-
+          dikena
+      - >-
+          ,
+      - >-
+          bestämde
+      - >-
+          de
+      - >-
+          sig
+      - >-
+          för
+      - >-
+          att
+      - >-
+          bygga
+      - >-
+          en
+      - >-
+          bananpuréfabrik
+      - >-
+          ,
+      - >-
+          som
+      - >-
+          nu
+      - >-
+          genererar
+      - >-
+          en
+      - >-
+          betydande
+      - >-
+          vinst
+      - >-
+          .
+
+  - unit: >-
+      Viktigare är dock att de, genom att förbättra arbetstider, arbetsmiljö, löner och förmåner, har fått nöjdare och effektivare arbetare samtidigt som omsättningen av arbetskraft har minskat.
+    tokens:
+      - >-
+          Viktigare
+      - >-
+          är
+      - >-
+          dock
+      - >-
+          att
+      - >-
+          de
+      - >-
+          ,
+      - >-
+          genom
+      - >-
+          att
+      - >-
+          förbättra
+      - >-
+          arbetstider
+      - >-
+          ,
+      - >-
+          arbetsmiljö
+      - >-
+          ,
+      - >-
+          löner
+      - >-
+          och
+      - >-
+          förmåner
+      - >-
+          ,
+      - >-
+          har
+      - >-
+          fått
+      - >-
+          nöjdare
+      - >-
+          och
+      - >-
+          effektivare
+      - >-
+          arbetare
+      - >-
+          samtidigt
+      - >-
+          som
+      - >-
+          omsättningen
+      - >-
+          av
+      - >-
+          arbetskraft
+      - >-
+          har
+      - >-
+          minskat
+      - >-
+          .
+
+  - unit: >-
+      <h2>Sociala och Miljökriterier för Rainforest Alliances Jordbrukscertifierin</h2>
+    tokens:
+      - >-
+          <h2>
+      - >-
+          Sociala
+      - >-
+          och
+      - >-
+          Miljökriterier
+      - >-
+          för
+      - >-
+          Rainforest
+      - >-
+          Alliances
+      - >-
+          Jordbrukscertifierin
+      - >-
+          </h2>
+
+  - unit: >-
+      De ska också fungera som en positiv kraft vilken främjar ekonomisk och social utveckling.
+    tokens:
+      - >-
+          De
+      - >-
+          ska
+      - >-
+          också
+      - >-
+          fungera
+      - >-
+          som
+      - >-
+          en
+      - >-
+          positiv
+      - >-
+          kraft
+      - >-
+          vilken
+      - >-
+          främjar
+      - >-
+          ekonomisk
+      - >-
+          och
+      - >-
+          social
+      - >-
+          utveckling
+      - >-
+          .
+
+  - unit: >-
+      Vattnets lopp måste skyddas med skyddsvallar som utgörs av växter.
+    tokens:
+      - >-
+          Vattnets
+      - >-
+          lopp
+      - >-
+          måste
+      - >-
+          skyddas
+      - >-
+          med
+      - >-
+          skyddsvallar
+      - >-
+          som
+      - >-
+          utgörs
+      - >-
+          av
+      - >-
+          växter
+      - >-
+          .
+
+  - unit: >-
+      Det måste också tillmötesgående mot lagar och certifieringsstandarder.
+    tokens:
+      - >-
+          Det
+      - >-
+          måste
+      - >-
+          också
+      - >-
+          tillmötesgående
+      - >-
+          mot
+      - >-
+          lagar
+      - >-
+          och
+      - >-
+          certifieringsstandarder
+      - >-
+          .
+
+  - unit: >-
+      Planering och övervakning är väsentliga för ett effektivt jordbruk, lönsam produktion, kvalitet av skörd och för en fortsatt förbättring.
+    tokens:
+      - >-
+          Planering
+      - >-
+          och
+      - >-
+          övervakning
+      - >-
+          är
+      - >-
+          väsentliga
+      - >-
+          för
+      - >-
+          ett
+      - >-
+          effektivt
+      - >-
+          jordbruk
+      - >-
+          ,
+      - >-
+          lönsam
+      - >-
+          produktion
+      - >-
+          ,
+      - >-
+          kvalitet
+      - >-
+          av
+      - >-
+          skörd
+      - >-
+          och
+      - >-
+          för
+      - >-
+          en
+      - >-
+          fortsatt
+      - >-
+          förbättring
+      - >-
+          .
+
+# 218 out of 494 found

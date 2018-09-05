@@ -6,7 +6,7 @@
 #
 
 ---
-name: extralinguistic entities
+name: Extralinguistic entities
 
 rule:
   - rule/common.yaml
@@ -47,4 +47,7 @@ test:
 
   - unit: "Sinéad [O'Connor]"
   - unit: "recurring events like [#conference2012|+hashtg] or [#SXSW12|+hashtg]"
+  - unit: "This is a test|. [#abc]"
+  - unit: "Dies ist (|ein|) Test|. @#$"
+  - unit: "Eckhard Goudschmidt [FAZ.NET]."
 

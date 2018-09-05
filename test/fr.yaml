@@ -1,0 +1,39 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special cases in French
+
+abbr:
+  - abbr/fr.list
+
+init:
+  - init/fr.list
+
+rule:
+  - rule/common.yaml
+  - rule/fr.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      dépenses ([art.] 159|, [al.] 3|, [let.] b|, [Cst.])|. Continuer
+
+  - unit: >-
+      [L’]initiative respecte les exigences de validité prévues à [l’][art.] 139[,] [al.] 3[,] [Cst.]:
+
+  - unit: >-
+      système [d’]incitation comportant des taxes sur [l’]énergie ([cf.] [ch.] [2.3.3])|.
+
+  - unit: >-
+      7 [Cf.] INFRAS 2007[,] IEEP 2013a[,] [p.] 38 [ss.], IEEP 2013b[,] [p.] 19 [s.], 44 [s.], 76 [s.] et 85 [s.], Patuelli
+
+  - unit: >-
+      les [art.] 130|, 196|, [ch.] 3|, [al.] 2|, [let.] e et 196|, [ch.] 14 sont abrogés|;
+

@@ -24,3 +24,4 @@ flag:
 test:       
   - unit: i [SVT:s] Agenda i kväll
   - unit: Det rankades på [86:e] plats i världen
+  - unit: Nyhetsmorgon är [TV4:s] morgonprogram

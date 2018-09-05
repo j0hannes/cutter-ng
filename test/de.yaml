@@ -19,6 +19,9 @@ rule:
   - rule/common.yaml
   - rule/de.yaml
 
+flag:
+  - no-empty-tokens
+
 test:
   - unit: >-
       „Mr. Zick-Zack“ nannte ihn mal ein Basismitglied in einem offenen Brief, als er noch Vorsitzender war.
@@ -43,10 +46,9 @@ test:
       - Vorsitzender
       - war
       - .
-      - ''
 
   - unit: >-
-      In einem kurzweiligen politischen [Tour'd'horizon], inklusive Seitenhiebe gegen politische Gegner wie den [«]korrupten Clinton-Clan[»], erwähnte Bannon den [Brexit-Erfolg] und die [Trump-Wahl] im vorletzten Jahr[,] die Entwicklungen in Polen und Ungarn[,] den Vormarsch der AfD in Deutschland und zuletzt die Wahlerfolge der [Anti-System-Parteien] wie Lega und Fünfsternebewegung in Italien[.][|+EOS5]
+      In einem kurzweiligen politischen [Tour'd'horizon], inklusive Seitenhiebe gegen politische Gegner wie den [«]korrupten Clinton-Clan[»], erwähnte Bannon den [Brexit-Erfolg] und die [Trump-Wahl] im vorletzten Jahr[,] die Entwicklungen in Polen und Ungarn[,] den Vormarsch der AfD in Deutschland und zuletzt die Wahlerfolge der [Anti-System-Parteien] wie Lega und Fünfsternebewegung in Italien[.]
   
   - unit: >-
       sehr bemerkenswert. «Wir werden nicht jede Wahl gewinnen», sagte Bannon
@@ -54,7 +56,6 @@ test:
       - sehr
       - bemerkenswert
       - .
-      - ''
       - «
       - Wir
       - werden
@@ -75,7 +76,6 @@ test:
       - Welt
       - statt
       - .
-      - ''
       - «
       - Wenn
       - sich
@@ -101,6 +101,8 @@ test:
 
   - unit: unser neuer [CSU-„Heimatschutzminister“] diese einlegt
 
+  - unit: unser neuer [CSU-"Heimatschutzminister"] diese einlegt
+
   - unit: Das führt der Film in einer so [humor-] wie endlosen Eingangssequenz vor
 
   - unit: '[Max.] Anziehdrehmoment'
@@ -108,4 +110,8 @@ test:
   - unit: '[IEEE754] [32bit]'
 
   - unit: die Auflösung der [„Welcome to Hell“-Demo]
+
+  - unit: dem Finanzchef des [Trump'schen] Firmenkonsortiums
+
+  - unit: Der Name des ["Tagesschau"-Moderators] sagt jedoch niemandem etwas|.
 

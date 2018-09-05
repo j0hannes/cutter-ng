@@ -6,7 +6,7 @@
 #
 
 ---
-name: xml elements
+name: XML elements
 
 rule:
   - rule/common.yaml

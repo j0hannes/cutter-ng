@@ -38,6 +38,19 @@ en4:
       - ?<!: \pL
       - enXqtB1: ‘
       - \center: .+?
+      - +punct: "[.?!]+"
+      - enXqtB2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level)
+    parts:
+      - \left
+      - ?<!: \pL
+      - enXqtB1: ‘
+      - \center: .+?
       - enXqtB2: ’
       - ?!: \pL
       - _?
@@ -58,5 +71,31 @@ en4:
           \pL+in[’']
       - ?!: \pL
       - _?
+      - \right
+
+  - name: possesive s (right)
+    parts:
+      - \left
+      - ?<=: '[\pL\d]'
+      - enXpo: "[’']s"
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: possesive s (left)
+    parts:
+      - \left
+      - ?<=: s
+      - enXps: "[’']"
+      - ?=: \p{Zs}
+      - _?
+      - \right
+
+  - name: parenthetical em-dash
+    parts:
+      - \left
+      - ?<=: \pL
+      - enXmd: —
+      - ?=: \pL
       - \right
 

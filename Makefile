@@ -1,6 +1,6 @@
 SHELL = bash
 
-VERSION = "2.1"
+VERSION = "2.2"
 
 .PHONY: version
 

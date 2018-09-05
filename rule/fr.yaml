@@ -14,7 +14,8 @@ fr4:
       - ?<!: \pL
       - frXqtA1: «
       - _?
-      - \center: .+?
+      - \center: >-
+          [^«]+?
       - +dot: "[.?!]+"
       - _?
       - frXqtA2: »
@@ -29,7 +30,8 @@ fr4:
       - ?<!: \pL
       - frXqtA1: «
       - _?
-      - \center: .+?
+      - \center: >-
+          [^«]+?
       - _?
       - frXqtA2: »
       - ?!: \pL
@@ -87,6 +89,34 @@ fr4:
       - +dot: "[.?!]+"
       - _?
       - frXqtB2: ’
+      - ?!: \pL
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level, Swiss)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtB1: ‹
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtB2: ›
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level, Swiss)
+    parts:
+      - \left
+      - ?<!: \pL
+      - frXqtB1: ‹
+      - _?
+      - \center: .+?
+      - +dot: "[.?!]+"
+      - _?
+      - frXqtB2: ›
       - ?!: \pL
       - +EOS:
       - _?
@@ -148,4 +178,21 @@ fr4:
       - ?!: \pL
       - _?
       - \right
+
+fr7:
+  - name: regular French token
+    parts:
+      - frRtkA:
+        - '[a-zA-ZàâæçéèêeëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+?'
+        - '(?:[a-zA-ZàâæçéèêeëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+-)+[a-zA-ZàâæçéèêeëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+'
+      - _
+      - \right
+
+
+fr9:
+  - name: regular French token (final)
+    parts:
+      - frRtkB:
+        - '[a-zA-ZàâæçéèêeëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+'
+        - '(?:[a-zA-ZàâæçéèêeëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+-)+[a-zA-ZàâæçéèêeëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ]+'
 

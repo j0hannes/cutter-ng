@@ -6,7 +6,7 @@
 #
 
 ---
-name: numbers
+name: Numbers
 
 rule:
   - rule/common.yaml

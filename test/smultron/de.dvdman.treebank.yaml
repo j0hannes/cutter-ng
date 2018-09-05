@@ -1,0 +1,2886 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/de.list
+
+init:
+  - init/de.list
+
+rule:
+  - rule/common.yaml
+  - rule/de.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      WICHTIGE SICHERHEITSHINWEISE
+    tokens:
+      - >-
+          WICHTIGE
+      - >-
+          SICHERHEITSHINWEISE
+
+  - unit: >-
+      1  Anleitungen lesen - Alle Sicherheits- und Betriebsanleitungen  vor der Gerätebenutzung aufmerksam lesen.
+    tokens:
+      - >-
+          1
+      - >-
+          Anleitungen
+      - >-
+          lesen
+      - >-
+          -
+      - >-
+          Alle
+      - >-
+          Sicherheits-
+      - >-
+          und
+      - >-
+          Betriebsanleitungen
+      - >-
+          vor
+      - >-
+          der
+      - >-
+          Gerätebenutzung
+      - >-
+          aufmerksam
+      - >-
+          lesen
+      - >-
+          .
+
+  - unit: >-
+      HINWEIS FÜR INSTALLATEURE VON KABEL-TV-SYSTEMEN
+    tokens:
+      - >-
+          HINWEIS
+      - >-
+          FÜR
+      - >-
+          INSTALLATEURE
+      - >-
+          VON
+      - >-
+          KABEL-TV-SYSTEMEN
+
+  - unit: >-
+      Wir möchten die Installateure von Kabel-TV-Systemen auf den Abschnitt 820- 40 des NEC aufmerksam machen, in dem Richtlinien für sachgemäße Erdung zu finden sind und in dem insbesondere festgelegt ist, daß die Kabelerdung mit dem Erdungssystem des Gebäudes verbunden werden soll, und zwar so nahe wie möglich an der Kabeleinführung.
+    tokens:
+      - >-
+          Wir
+      - >-
+          möchten
+      - >-
+          die
+      - >-
+          Installateure
+      - >-
+          von
+      - >-
+          Kabel-TV-Systemen
+      - >-
+          auf
+      - >-
+          den
+      - >-
+          Abschnitt
+      - >-
+          820-
+      - >-
+          40
+      - >-
+          des
+      - >-
+          NEC
+      - >-
+          aufmerksam
+      - >-
+          machen
+      - >-
+          ,
+      - >-
+          in
+      - >-
+          dem
+      - >-
+          Richtlinien
+      - >-
+          für
+      - >-
+          sachgemäße
+      - >-
+          Erdung
+      - >-
+          zu
+      - >-
+          finden
+      - >-
+          sind
+      - >-
+          und
+      - >-
+          in
+      - >-
+          dem
+      - >-
+          insbesondere
+      - >-
+          festgelegt
+      - >-
+          ist
+      - >-
+          ,
+      - >-
+          daß
+      - >-
+          die
+      - >-
+          Kabelerdung
+      - >-
+          mit
+      - >-
+          dem
+      - >-
+          Erdungssystem
+      - >-
+          des
+      - >-
+          Gebäudes
+      - >-
+          verbunden
+      - >-
+          werden
+      - >-
+          soll
+      - >-
+          ,
+      - >-
+          und
+      - >-
+          zwar
+      - >-
+          so
+      - >-
+          nahe
+      - >-
+          wie
+      - >-
+          möglich
+      - >-
+          an
+      - >-
+          der
+      - >-
+          Kabeleinführung
+      - >-
+          .
+
+  - unit: >-
+      17 Überlastung  - Wandsteckdosen, Verlängerungskabel oder integrierte Mehrfachsteckdosen dürfen nicht überlastet werden.
+    tokens:
+      - >-
+          17
+      - >-
+          Überlastung
+      - >-
+          -
+      - >-
+          Wandsteckdosen
+      - >-
+          ,
+      - >-
+          Verlängerungskabel
+      - >-
+          oder
+      - >-
+          integrierte
+      - >-
+          Mehrfachsteckdosen
+      - >-
+          dürfen
+      - >-
+          nicht
+      - >-
+          überlastet
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Gefahr von elektrischem Schlag und Feuer.
+    tokens:
+      - >-
+          Gefahr
+      - >-
+          von
+      - >-
+          elektrischem
+      - >-
+          Schlag
+      - >-
+          und
+      - >-
+          Feuer
+      - >-
+          .
+
+  - unit: >-
+      b) Flüssigkeit in das Gerät geschüttet worden ist oder Fremdkörper hineingefallen sind.
+    tokens:
+      - >-
+          b)
+      - >-
+          Flüssigkeit
+      - >-
+          in
+      - >-
+          das
+      - >-
+          Gerät
+      - >-
+          geschüttet
+      - >-
+          worden
+      - >-
+          ist
+      - >-
+          oder
+      - >-
+          Fremdkörper
+      - >-
+          hineingefallen
+      - >-
+          sind
+      - >-
+          .
+
+  - unit: >-
+      c) das Gerät Regen oder Wasser ausgesetzt worden ist.
+    tokens:
+      - >-
+          c)
+      - >-
+          das
+      - >-
+          Gerät
+      - >-
+          Regen
+      - >-
+          oder
+      - >-
+          Wasser
+      - >-
+          ausgesetzt
+      - >-
+          worden
+      - >-
+          ist
+      - >-
+          .
+
+  - unit: >-
+      e) das Gerät heruntergefallen oder in irgendeiner Weise beschädigt worden ist.
+    tokens:
+      - >-
+          e)
+      - >-
+          das
+      - >-
+          Gerät
+      - >-
+          heruntergefallen
+      - >-
+          oder
+      - >-
+          in
+      - >-
+          irgendeiner
+      - >-
+          Weise
+      - >-
+          beschädigt
+      - >-
+          worden
+      - >-
+          ist
+      - >-
+          .
+
+  - unit: >-
+      21 Sicherheitsüberprüfung  - Bitten Sie den Servicetechniker nach allen Wartungen oder Reparaturen an diesem Gerät darum, eine Sicherheitsüberprüfung durchzuführen und den einwandfreien Betriebszustand des Gerätes festzustellen.
+    tokens:
+      - >-
+          21
+      - >-
+          Sicherheitsüberprüfung
+      - >-
+          -
+      - >-
+          Bitten
+      - >-
+          Sie
+      - >-
+          den
+      - >-
+          Servicetechniker
+      - >-
+          nach
+      - >-
+          allen
+      - >-
+          Wartungen
+      - >-
+          oder
+      - >-
+          Reparaturen
+      - >-
+          an
+      - >-
+          diesem
+      - >-
+          Gerät
+      - >-
+          darum
+      - >-
+          ,
+      - >-
+          eine
+      - >-
+          Sicherheitsüberprüfung
+      - >-
+          durchzuführen
+      - >-
+          und
+      - >-
+          den
+      - >-
+          einwandfreien
+      - >-
+          Betriebszustand
+      - >-
+          des
+      - >-
+          Gerätes
+      - >-
+          festzustellen
+      - >-
+          .
+
+  - unit: >-
+      WARNUNG
+    tokens:
+      - >-
+          WARNUNG
+
+  - unit: >-
+      UM DIE GEFAHR VON FEUER ODER STROMSCHLÄGEN ZU VERRINGERN, SOLLTE DAS GERÄT WEDER REGEN NOCH FEUCHTIGKEIT AUSGESETZT WERDEN.
+    tokens:
+      - >-
+          UM
+      - >-
+          DIE
+      - >-
+          GEFAHR
+      - >-
+          VON
+      - >-
+          FEUER
+      - >-
+          ODER
+      - >-
+          STROMSCHLÄGEN
+      - >-
+          ZU
+      - >-
+          VERRINGERN
+      - >-
+          ,
+      - >-
+          SOLLTE
+      - >-
+          DAS
+      - >-
+          GERÄT
+      - >-
+          WEDER
+      - >-
+          REGEN
+      - >-
+          NOCH
+      - >-
+          FEUCHTIGKEIT
+      - >-
+          AUSGESETZT
+      - >-
+          WERDEN
+      - >-
+          .
+
+  - unit: >-
+      UM EINEN STROMSCHLAG ZU VERHINDERN, MUSS DER STECKER MIT DEM BREITEN STIFT VOLLSTÄNDIG IN DER BREITEN BUCHSE EINGESTECKT WERDEN.
+    tokens:
+      - >-
+          UM
+      - >-
+          EINEN
+      - >-
+          STROMSCHLAG
+      - >-
+          ZU
+      - >-
+          VERHINDERN
+      - >-
+          ,
+      - >-
+          MUSS
+      - >-
+          DER
+      - >-
+          STECKER
+      - >-
+          MIT
+      - >-
+          DEM
+      - >-
+          BREITEN
+      - >-
+          STIFT
+      - >-
+          VOLLSTÄNDIG
+      - >-
+          IN
+      - >-
+          DER
+      - >-
+          BREITEN
+      - >-
+          BUCHSE
+      - >-
+          EINGESTECKT
+      - >-
+          WERDEN
+      - >-
+          .
+
+  - unit: >-
+      VORSICHT
+    tokens:
+      - >-
+          VORSICHT
+
+  - unit: >-
+      VORSICHT
+    tokens:
+      - >-
+          VORSICHT
+
+  - unit: >-
+      FCC-WARNUNG
+    tokens:
+      - >-
+          FCC-WARNUNG
+
+  - unit: >-
+      Wenn an diesem Gerät Änderungen vorgenommen werden, die von der für Einhaltungsfragen zuständigen Partei nicht ausdrücklich genehmigt wurden, kann die Berechtigung zur Verwendung des Geräts aufgehoben werden.
+    tokens:
+      - >-
+          Wenn
+      - >-
+          an
+      - >-
+          diesem
+      - >-
+          Gerät
+      - >-
+          Änderungen
+      - >-
+          vorgenommen
+      - >-
+          werden
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          von
+      - >-
+          der
+      - >-
+          für
+      - >-
+          Einhaltungsfragen
+      - >-
+          zuständigen
+      - >-
+          Partei
+      - >-
+          nicht
+      - >-
+          ausdrücklich
+      - >-
+          genehmigt
+      - >-
+          wurden
+      - >-
+          ,
+      - >-
+          kann
+      - >-
+          die
+      - >-
+          Berechtigung
+      - >-
+          zur
+      - >-
+          Verwendung
+      - >-
+          des
+      - >-
+          Geräts
+      - >-
+          aufgehoben
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      ANFORDERUNGEN VON INDUSTRY CANADA
+    tokens:
+      - >-
+          ANFORDERUNGEN
+      - >-
+          VON
+      - >-
+          INDUSTRY
+      - >-
+          CANADA
+
+  - unit: >-
+      Dieses digitale Gerät der Klasse B entspricht allen Anforderungen der  Canadian Interference-Causing Equipment Regulations.
+    tokens:
+      - >-
+          Dieses
+      - >-
+          digitale
+      - >-
+          Gerät
+      - >-
+          der
+      - >-
+          Klasse
+      - >-
+          B
+      - >-
+          entspricht
+      - >-
+          allen
+      - >-
+          Anforderungen
+      - >-
+          der
+      - >-
+          Canadian
+      - >-
+          Interference-Causing
+      - >-
+          Equipment
+      - >-
+          Regulations
+      - >-
+          .
+
+  - unit: >-
+      Wenn sich der Netzschalter in der Position STANDBY befindet, bezieht das  Gerät den Nennstrom für den Bereitschaftsbetrieb aus der Steckdose.
+    tokens:
+      - >-
+          Wenn
+      - >-
+          sich
+      - >-
+          der
+      - >-
+          Netzschalter
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Position
+      - >-
+          STANDBY
+      - >-
+          befindet
+      - >-
+          ,
+      - >-
+          bezieht
+      - >-
+          das
+      - >-
+          Gerät
+      - >-
+          den
+      - >-
+          Nennstrom
+      - >-
+          für
+      - >-
+          den
+      - >-
+          Bereitschaftsbetrieb
+      - >-
+          aus
+      - >-
+          der
+      - >-
+          Steckdose
+      - >-
+          .
+
+  - unit: >-
+      Die Steckdose muß in der Nähe des Geräts installiert werden und leicht  zugänglich sein.
+    tokens:
+      - >-
+          Die
+      - >-
+          Steckdose
+      - >-
+          muß
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Nähe
+      - >-
+          des
+      - >-
+          Geräts
+      - >-
+          installiert
+      - >-
+          werden
+      - >-
+          und
+      - >-
+          leicht
+      - >-
+          zugänglich
+      - >-
+          sein
+      - >-
+          .
+
+  - unit: >-
+      FCC-HINWEIS
+    tokens:
+      - >-
+          FCC-HINWEIS
+
+  - unit: >-
+      VORSICHT
+    tokens:
+      - >-
+          VORSICHT
+
+  - unit: >-
+      VORSICHT
+    tokens:
+      - >-
+          VORSICHT
+
+  - unit: >-
+      Wenn an diesem Gerät Änderungen vorgenommen werden, die von NAD Electronics nicht ausdrücklich genehmigt wurden, kann die Berechtigung zur Verwendung des Geräts aufgehoben werden.
+    tokens:
+      - >-
+          Wenn
+      - >-
+          an
+      - >-
+          diesem
+      - >-
+          Gerät
+      - >-
+          Änderungen
+      - >-
+          vorgenommen
+      - >-
+          werden
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          von
+      - >-
+          NAD
+      - >-
+          Electronics
+      - >-
+          nicht
+      - >-
+          ausdrücklich
+      - >-
+          genehmigt
+      - >-
+          wurden
+      - >-
+          ,
+      - >-
+          kann
+      - >-
+          die
+      - >-
+          Berechtigung
+      - >-
+          zur
+      - >-
+          Verwendung
+      - >-
+          des
+      - >-
+          Geräts
+      - >-
+          aufgehoben
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      HINWEIS ZUR AUFSTELLUNG
+    tokens:
+      - >-
+          HINWEIS
+      - >-
+          ZUR
+      - >-
+          AUFSTELLUNG
+
+  - unit: >-
+      WICHTIGE INFORMATIONEN FÜR KUNDEN IN GROSSBRITANNIEN
+    tokens:
+      - >-
+          WICHTIGE
+      - >-
+          INFORMATIONEN
+      - >-
+          FÜR
+      - >-
+          KUNDEN
+      - >-
+          IN
+      - >-
+          GROSSBRITANNIEN
+
+  - unit: >-
+      WICHTIG
+    tokens:
+      - >-
+          WICHTIG
+
+  - unit: >-
+      WENN ZWEIFEL BESTEHEN, WENDEN SIE SICH AN EINEN  ERFAHRENEN ELEKTRIKER.
+    tokens:
+      - >-
+          WENN
+      - >-
+          ZWEIFEL
+      - >-
+          BESTEHEN
+      - >-
+          ,
+      - >-
+          WENDEN
+      - >-
+          SIE
+      - >-
+          SICH
+      - >-
+          AN
+      - >-
+          EINEN
+      - >-
+          ERFAHRENEN
+      - >-
+          ELEKTRIKER
+      - >-
+          .
+
+  - unit: >-
+      HINWEISE ZUM UMWELTSCHUTZ
+    tokens:
+      - >-
+          HINWEISE
+      - >-
+          ZUM
+      - >-
+          UMWELTSCHUTZ
+
+  - unit: >-
+      EINFÜHRUNG
+    tokens:
+      - >-
+          EINFÜHRUNG
+
+  - unit: >-
+      VIELEN DANK, DASS SIE SICH FÜR NAD ENTSCHIEDEN HABEN.
+    tokens:
+      - >-
+          VIELEN
+      - >-
+          DANK
+      - >-
+          ,
+      - >-
+          DASS
+      - >-
+          SIE
+      - >-
+          SICH
+      - >-
+          FÜR
+      - >-
+          NAD
+      - >-
+          ENTSCHIEDEN
+      - >-
+          HABEN
+      - >-
+          .
+
+  - unit: >-
+      Informationen zur Gewährleistung erhalten Sie von Ihrem örtlichen NAD-Händler.
+    tokens:
+      - >-
+          Informationen
+      - >-
+          zur
+      - >-
+          Gewährleistung
+      - >-
+          erhalten
+      - >-
+          Sie
+      - >-
+          von
+      - >-
+          Ihrem
+      - >-
+          örtlichen
+      - >-
+          NAD-Händler
+      - >-
+          .
+
+  - unit: >-
+      OPTIMALE VERWENDUNG DES L54
+    tokens:
+      - >-
+          OPTIMALE
+      - >-
+          VERWENDUNG
+      - >-
+          DES
+      - >-
+          L54
+
+  - unit: >-
+      AUSPACKEN UND AUFSTELLEN
+    tokens:
+      - >-
+          AUSPACKEN
+      - >-
+          UND
+      - >-
+          AUFSTELLEN
+
+  - unit: >-
+      LIEFERUMFANG
+    tokens:
+      - >-
+          LIEFERUMFANG
+
+  - unit: >-
+      BEWAHREN SIE DIE VERPACKUNG AUF
+    tokens:
+      - >-
+          BEWAHREN
+      - >-
+          SIE
+      - >-
+          DIE
+      - >-
+          VERPACKUNG
+      - >-
+          AUF
+
+  - unit: >-
+      AUSWAHL DES STANDORTS
+    tokens:
+      - >-
+          AUSWAHL
+      - >-
+          DES
+      - >-
+          STANDORTS
+
+  - unit: >-
+      SCHNELLSTART
+    tokens:
+      - >-
+          SCHNELLSTART
+
+  - unit: >-
+      ABSPIELEN EINER CD ODER EINES DVD-FILMS
+    tokens:
+      - >-
+          ABSPIELEN
+      - >-
+          EINER
+      - >-
+          CD
+      - >-
+          ODER
+      - >-
+          EINES
+      - >-
+          DVD-FILMS
+
+  - unit: >-
+      INFO ZUM L54
+    tokens:
+      - >-
+          INFO
+      - >-
+          ZUM
+      - >-
+          L54
+
+  - unit: >-
+      Vergoldete Kontakte an allen Anschlüssen stellen ein Maximum an Signalintegrität sicher.
+    tokens:
+      - >-
+          Vergoldete
+      - >-
+          Kontakte
+      - >-
+          an
+      - >-
+          allen
+      - >-
+          Anschlüssen
+      - >-
+          stellen
+      - >-
+          ein
+      - >-
+          Maximum
+      - >-
+          an
+      - >-
+          Signalintegrität
+      - >-
+          sicher
+      - >-
+          .
+
+  - unit: >-
+      BEDIENERFREUNDLICHKEIT
+    tokens:
+      - >-
+          BEDIENERFREUNDLICHKEIT
+
+  - unit: >-
+      ANZEIGE- UND BEDIENELEMENTE
+    tokens:
+      - >-
+          ANZEIGE-
+      - >-
+          UND
+      - >-
+          BEDIENELEMENTE
+
+  - unit: >-
+      FRONTPLATTE
+    tokens:
+      - >-
+          FRONTPLATTE
+
+  - unit: >-
+      Bei geöffnetem Diskfach können Sie diese Taste drücken, um das Fach automatisch zu schließen und die Wiedergabe der eingelegten Disk zu starten.
+    tokens:
+      - >-
+          Bei
+      - >-
+          geöffnetem
+      - >-
+          Diskfach
+      - >-
+          können
+      - >-
+          Sie
+      - >-
+          diese
+      - >-
+          Taste
+      - >-
+          drücken
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          das
+      - >-
+          Fach
+      - >-
+          automatisch
+      - >-
+          zu
+      - >-
+          schließen
+      - >-
+          und
+      - >-
+          die
+      - >-
+          Wiedergabe
+      - >-
+          der
+      - >-
+          eingelegten
+      - >-
+          Disk
+      - >-
+          zu
+      - >-
+          starten
+      - >-
+          .
+
+  - unit: >-
+      16  VFD : Das Vakuumfluoreszenzdisplay (VFD) bietet visuelle Informationen zu allen wichtigen Modi, Einstellungen und Funktionen des L54.
+    tokens:
+      - >-
+          16
+      - >-
+          VFD
+      - >-
+          :
+      - >-
+          Das
+      - >-
+          Vakuumfluoreszenzdisplay
+      - >-
+          (
+      - >-
+          VFD
+      - >-
+          )
+      - >-
+          bietet
+      - >-
+          visuelle
+      - >-
+          Informationen
+      - >-
+          zu
+      - >-
+          allen
+      - >-
+          wichtigen
+      - >-
+          Modi
+      - >-
+          ,
+      - >-
+          Einstellungen
+      - >-
+          und
+      - >-
+          Funktionen
+      - >-
+          des
+      - >-
+          L54
+      - >-
+          .
+
+  - unit: >-
+      RÜCKWAND
+    tokens:
+      - >-
+          RÜCKWAND
+
+  - unit: >-
+      ACHTUNG!
+    tokens:
+      - >-
+          ACHTUNG
+      - >-
+          !
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      8  DIGITAL OUTPUT, OPTICAL : Verbinden Sie den optischen Digitalausgang OPTICAL DIGITAL OUTPUT mit dem entsprechenden S/PDIF-Digitaleingang eines aufzeichnenden Geräts, wie z.B. eines CD-Rekorders, DAT-Decks oder einer Computer-Soundkarte.
+    tokens:
+      - >-
+          8
+      - >-
+          DIGITAL
+      - >-
+          OUTPUT
+      - >-
+          ,
+      - >-
+          OPTICAL
+      - >-
+          :
+      - >-
+          Verbinden
+      - >-
+          Sie
+      - >-
+          den
+      - >-
+          optischen
+      - >-
+          Digitalausgang
+      - >-
+          OPTICAL
+      - >-
+          DIGITAL
+      - >-
+          OUTPUT
+      - >-
+          mit
+      - >-
+          dem
+      - >-
+          entsprechenden
+      - >-
+          S/PDIF-Digitaleingang
+      - >-
+          eines
+      - >-
+          aufzeichnenden
+      - >-
+          Geräts
+      - >-
+          ,
+      - >-
+          wie
+      - >-
+          z.B.
+      - >-
+          eines
+      - >-
+          CD-Rekorders
+      - >-
+          ,
+      - >-
+          DAT-Decks
+      - >-
+          oder
+      - >-
+          einer
+      - >-
+          Computer-Soundkarte
+      - >-
+          .
+
+  - unit: >-
+      HINWEISE
+    tokens:
+      - >-
+          HINWEISE
+
+  - unit: >-
+      HINWEISE
+    tokens:
+      - >-
+          HINWEISE
+
+  - unit: >-
+      SETUP
+    tokens:
+      - >-
+          SETUP
+
+  - unit: >-
+      EINRICHTEN DES L54
+    tokens:
+      - >-
+          EINRICHTEN
+      - >-
+          DES
+      - >-
+          L54
+
+  - unit: >-
+      ERSTE SCHRITTE
+    tokens:
+      - >-
+          ERSTE
+      - >-
+          SCHRITTE
+
+  - unit: >-
+      UMGANG MIT BRUMMEN UND RAUSCHEN
+    tokens:
+      - >-
+          UMGANG
+      - >-
+          MIT
+      - >-
+          BRUMMEN
+      - >-
+          UND
+      - >-
+          RAUSCHEN
+
+  - unit: >-
+      WERKSEINSTELLUNGEN
+    tokens:
+      - >-
+          WERKSEINSTELLUNGEN
+
+  - unit: >-
+      1 Versetzen Sie das Gerät in den MW-Modus.
+    tokens:
+      - >-
+          1
+      - >-
+          Versetzen
+      - >-
+          Sie
+      - >-
+          das
+      - >-
+          Gerät
+      - >-
+          in
+      - >-
+          den
+      - >-
+          MW-Modus
+      - >-
+          .
+
+  - unit: >-
+      Beachten Sie, daß beim Zurücksetzen des L54 auf die Werkseinstellungen alle MW- und UKW-Sendervoreinstellungen gelöscht werden.
+    tokens:
+      - >-
+          Beachten
+      - >-
+          Sie
+      - >-
+          ,
+      - >-
+          daß
+      - >-
+          beim
+      - >-
+          Zurücksetzen
+      - >-
+          des
+      - >-
+          L54
+      - >-
+          auf
+      - >-
+          die
+      - >-
+          Werkseinstellungen
+      - >-
+          alle
+      - >-
+          MW-
+      - >-
+          und
+      - >-
+          UKW-Sendervoreinstellungen
+      - >-
+          gelöscht
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      BILDSCHIRMANZEIGE
+    tokens:
+      - >-
+          BILDSCHIRMANZEIGE
+
+  - unit: >-
+      ANZEIGEN DER BILDSCHIRMANZEIGE DES L54 DVD
+    tokens:
+      - >-
+          ANZEIGEN
+      - >-
+          DER
+      - >-
+          BILDSCHIRMANZEIGE
+      - >-
+          DES
+      - >-
+          L54
+      - >-
+          DVD
+
+  - unit: >-
+      Die Bildschirmanzeige des Einstellungsmenüs erfolgt über die Ausgänge Component Video OUT  (NTSC/PAL), SCART/RGB (PAL), Monitor OUT (Video/S-Video) sowie über die VCR-Aufnahmeausgänge.
+    tokens:
+      - >-
+          Die
+      - >-
+          Bildschirmanzeige
+      - >-
+          des
+      - >-
+          Einstellungsmenüs
+      - >-
+          erfolgt
+      - >-
+          über
+      - >-
+          die
+      - >-
+          Ausgänge
+      - >-
+          Component
+      - >-
+          Video
+      - >-
+          OUT
+      - >-
+          (
+      - >-
+          NTSC
+      - >-
+          /
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          SCART
+      - >-
+          /
+      - >-
+          RGB
+      - >-
+          (
+      - >-
+          PAL
+      - >-
+          )
+      - >-
+          ,
+      - >-
+          Monitor
+      - >-
+          OUT
+      - >-
+          (
+      - >-
+          Video
+      - >-
+          /
+      - >-
+          S-Video
+      - >-
+          )
+      - >-
+          sowie
+      - >-
+          über
+      - >-
+          die
+      - >-
+          VCR-Aufnahmeausgänge
+      - >-
+          .
+
+  - unit: >-
+      AUDIOMODUS
+    tokens:
+      - >-
+          AUDIOMODUS
+
+  - unit: >-
+      SRS TRUSURROUND
+    tokens:
+      - >-
+          SRS
+      - >-
+          TRUSURROUND
+
+  - unit: >-
+      Bei TruSurround handelt es sich um eine von SRS Labs entwickelte patentierte Technologie, die beliebige Mehrkanalquellen (z.B. Dolby Digital, Dolby Surround oder DTS einschließlich MPEG 1  und 2) unterstützt, und diese lediglich mithilfe zweier Lautsprecher oder von Kopfhörern in einen Surroundsound verwandelt.
+    tokens:
+      - >-
+          Bei
+      - >-
+          TruSurround
+      - >-
+          handelt
+      - >-
+          es
+      - >-
+          sich
+      - >-
+          um
+      - >-
+          eine
+      - >-
+          von
+      - >-
+          SRS
+      - >-
+          Labs
+      - >-
+          entwickelte
+      - >-
+          patentierte
+      - >-
+          Technologie
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          beliebige
+      - >-
+          Mehrkanalquellen
+      - >-
+          (
+      - >-
+          z.B.
+      - >-
+          Dolby
+      - >-
+          Digital
+      - >-
+          ,
+      - >-
+          Dolby
+      - >-
+          Surround
+      - >-
+          oder
+      - >-
+          DTS
+      - >-
+          einschließlich
+      - >-
+          MPEG
+      - >-
+          1
+      - >-
+          und
+      - >-
+          2
+      - >-
+          )
+      - >-
+          unterstützt
+      - >-
+          ,
+      - >-
+          und
+      - >-
+          diese
+      - >-
+          lediglich
+      - >-
+          mithilfe
+      - >-
+          zweier
+      - >-
+          Lautsprecher
+      - >-
+          oder
+      - >-
+          von
+      - >-
+          Kopfhörern
+      - >-
+          in
+      - >-
+          einen
+      - >-
+          Surroundsound
+      - >-
+          verwandelt
+      - >-
+          .
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      Die TruSurround-Technologie wird unter Lizenz von SRS Labs, Inc verwendet.
+    tokens:
+      - >-
+          Die
+      - >-
+          TruSurround-Technologie
+      - >-
+          wird
+      - >-
+          unter
+      - >-
+          Lizenz
+      - >-
+          von
+      - >-
+          SRS
+      - >-
+          Labs
+      - >-
+          ,
+      - >-
+          Inc
+      - >-
+          verwendet
+      - >-
+          .
+
+  - unit: >-
+      EINSTELLEN DER KLANGREGLER
+    tokens:
+      - >-
+          EINSTELLEN
+      - >-
+          DER
+      - >-
+          KLANGREGLER
+
+  - unit: >-
+      STEUERUNG DES DYNAMIKBEREICHS (DYNAMIC RANGE CONTROL, DRC)
+    tokens:
+      - >-
+          STEUERUNG
+      - >-
+          DES
+      - >-
+          DYNAMIKBEREICHS
+      - >-
+          (
+      - >-
+          DYNAMIC
+      - >-
+          RANGE
+      - >-
+          CONTROL
+      - >-
+          ,
+      - >-
+          DRC
+      - >-
+          )
+
+  - unit: >-
+      Der zugewiesene Audioeingang wird stets erneut aufgerufen, wenn dieser Eingang über die Taste  INPUT SELECT oder über die Fernbedienung ausgewählt wird.
+    tokens:
+      - >-
+          Der
+      - >-
+          zugewiesene
+      - >-
+          Audioeingang
+      - >-
+          wird
+      - >-
+          stets
+      - >-
+          erneut
+      - >-
+          aufgerufen
+      - >-
+          ,
+      - >-
+          wenn
+      - >-
+          dieser
+      - >-
+          Eingang
+      - >-
+          über
+      - >-
+          die
+      - >-
+          Taste
+      - >-
+          INPUT
+      - >-
+          SELECT
+      - >-
+          oder
+      - >-
+          über
+      - >-
+          die
+      - >-
+          Fernbedienung
+      - >-
+          ausgewählt
+      - >-
+          wird
+      - >-
+          .
+
+  - unit: >-
+      EINSTELLEN DER LAUTSTÄRKE
+    tokens:
+      - >-
+          EINSTELLEN
+      - >-
+          DER
+      - >-
+          LAUTSTÄRKE
+
+  - unit: >-
+      STUMMSCHALTUNG (MUTE)
+    tokens:
+      - >-
+          STUMMSCHALTUNG
+      - >-
+          (
+      - >-
+          MUTE
+      - >-
+          )
+
+  - unit: >-
+      EINSTELLEN DER SUBWOOFER-KANALBALANCE (LEVEL TRIM) IN ECHTZEIT
+    tokens:
+      - >-
+          EINSTELLEN
+      - >-
+          DER
+      - >-
+          SUBWOOFER-KANALBALANCE
+      - >-
+          (
+      - >-
+          LEVEL
+      - >-
+          TRIM
+      - >-
+          )
+      - >-
+          IN
+      - >-
+          ECHTZEIT
+
+  - unit: >-
+      Verwenden Sie die SUB-Tasten der Fernbedienung, um direkt auf die Pegelanpassung dieser Kanäle im  Bereich von ±12 dB zuzugreifen.
+    tokens:
+      - >-
+          Verwenden
+      - >-
+          Sie
+      - >-
+          die
+      - >-
+          SUB-Tasten
+      - >-
+          der
+      - >-
+          Fernbedienung
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          direkt
+      - >-
+          auf
+      - >-
+          die
+      - >-
+          Pegelanpassung
+      - >-
+          dieser
+      - >-
+          Kanäle
+      - >-
+          im
+      - >-
+          Bereich
+      - >-
+          von
+      - >-
+          ±12
+      - >-
+          dB
+      - >-
+          zuzugreifen
+      - >-
+          .
+
+  - unit: >-
+      BETRIEB
+    tokens:
+      - >-
+          BETRIEB
+
+  - unit: >-
+      VERWENDEN DES L54
+    tokens:
+      - >-
+          VERWENDEN
+      - >-
+          DES
+      - >-
+          L54
+
+  - unit: >-
+      REGIONALZONEN UND LÄNDERCODES
+    tokens:
+      - >-
+          REGIONALZONEN
+      - >-
+          UND
+      - >-
+          LÄNDERCODES
+
+  - unit: >-
+      INFOS ZU DVD/SVCD/VCD/CD
+    tokens:
+      - >-
+          INFOS
+      - >-
+          ZU
+      - >-
+          DVD
+      - >-
+          /
+      - >-
+          SVCD
+      - >-
+          /
+      - >-
+          VCD
+      - >-
+          /
+      - >-
+          CD
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      EINLEGEN UND WIEDERGEBEN VON DISKS
+    tokens:
+      - >-
+          EINLEGEN
+      - >-
+          UND
+      - >-
+          WIEDERGEBEN
+      - >-
+          VON
+      - >-
+          DISKS
+
+  - unit: >-
+      Beachten Sie folgende nützliche Tips zum Einlegen von Disks:
+    tokens:
+      - >-
+          Beachten
+      - >-
+          Sie
+      - >-
+          folgende
+      - >-
+          nützliche
+      - >-
+          Tips
+      - >-
+          zum
+      - >-
+          Einlegen
+      - >-
+          von
+      - >-
+          Disks
+      - >-
+          :
+
+  - unit: >-
+      Drücken Sie auf der Fernbedienung während der Wiedergabe zweimal auf die Taste STOP, um im VFD die Anzahl der Titel sowie die Gesamtspieldauer von Audio-CDs anzuzeigen.
+    tokens:
+      - >-
+          Drücken
+      - >-
+          Sie
+      - >-
+          auf
+      - >-
+          der
+      - >-
+          Fernbedienung
+      - >-
+          während
+      - >-
+          der
+      - >-
+          Wiedergabe
+      - >-
+          zweimal
+      - >-
+          auf
+      - >-
+          die
+      - >-
+          Taste
+      - >-
+          STOP
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          im
+      - >-
+          VFD
+      - >-
+          die
+      - >-
+          Anzahl
+      - >-
+          der
+      - >-
+          Titel
+      - >-
+          sowie
+      - >-
+          die
+      - >-
+          Gesamtspieldauer
+      - >-
+          von
+      - >-
+          Audio-CDs
+      - >-
+          anzuzeigen
+      - >-
+          .
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      HINWEIS
+    tokens:
+      - >-
+          HINWEIS
+
+  - unit: >-
+      NAVIGATION IN DER BILDSCHIRMANZEIGE
+    tokens:
+      - >-
+          NAVIGATION
+      - >-
+          IN
+      - >-
+          DER
+      - >-
+          BILDSCHIRMANZEIGE
+
+  - unit: >-
+      ANZEIGEN DES EINSTELLUNGSMENÜS
+    tokens:
+      - >-
+          ANZEIGEN
+      - >-
+          DES
+      - >-
+          EINSTELLUNGSMENÜS
+
+  - unit: >-
+      NAVIGATION IM EINSTELLUNGSMENÜ DER BILDSCHIRMANZEIGE UND VORNEHMEN VON ÄNDERUNGEN
+    tokens:
+      - >-
+          NAVIGATION
+      - >-
+          IM
+      - >-
+          EINSTELLUNGSMENÜ
+      - >-
+          DER
+      - >-
+          BILDSCHIRMANZEIGE
+      - >-
+          UND
+      - >-
+          VORNEHMEN
+      - >-
+          VON
+      - >-
+          ÄNDERUNGEN
+
+  - unit: >-
+      Führen Sie folgende Schritte durch, um mithilfe der Fernbedienung durch die Optionen des Einstellungsmenüs der Bildschirmanzeige zu navigieren (stellen Sie sicher, daß die Geräteauswahltaste DVD aktiviert ist):
+    tokens:
+      - >-
+          Führen
+      - >-
+          Sie
+      - >-
+          folgende
+      - >-
+          Schritte
+      - >-
+          durch
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          mithilfe
+      - >-
+          der
+      - >-
+          Fernbedienung
+      - >-
+          durch
+      - >-
+          die
+      - >-
+          Optionen
+      - >-
+          des
+      - >-
+          Einstellungsmenüs
+      - >-
+          der
+      - >-
+          Bildschirmanzeige
+      - >-
+          zu
+      - >-
+          navigieren
+      - >-
+          (
+      - >-
+          stellen
+      - >-
+          Sie
+      - >-
+          sicher
+      - >-
+          ,
+      - >-
+          daß
+      - >-
+          die
+      - >-
+          Geräteauswahltaste
+      - >-
+          DVD
+      - >-
+          aktiviert
+      - >-
+          ist
+      - >-
+          )
+      - >-
+          :
+
+#  - unit: >-
+#      1 Drücken Sie die Tasten ^/v, um nach oben oder unten durch die Menüoptionen zu navigieren.
+#    tokens:
+#      - >-
+#          1
+#      - >-
+#          Drücken
+#      - >-
+#          Sie
+#      - >-
+#          die
+#      - >-
+#          Tasten
+#      - >-
+#          ^
+#      - >-
+#          /
+#      - >-
+#          v
+#      - >-
+#          ,
+#      - >-
+#          um
+#      - >-
+#          nach
+#      - >-
+#          oben
+#      - >-
+#          oder
+#      - >-
+#          unten
+#      - >-
+#          durch
+#      - >-
+#          die
+#      - >-
+#          Menüoptionen
+#      - >-
+#          zu
+#      - >-
+#          navigieren
+#      - >-
+#          .
+#
+#  - unit: >-
+#      2 Verwenden Sie die Tasten </>, um die Optionen eines bestimmten Menüs auszuwählen.
+#    tokens:
+#      - >-
+#          2
+#      - >-
+#          Verwenden
+#      - >-
+#          Sie
+#      - >-
+#          die
+#      - >-
+#          Tasten
+#      - >-
+#          <
+#      - >-
+#          /
+#      - >-
+#          >
+#      - >-
+#          ,
+#      - >-
+#          um
+#      - >-
+#          die
+#      - >-
+#          Optionen
+#      - >-
+#          eines
+#      - >-
+#          bestimmten
+#      - >-
+#          Menüs
+#      - >-
+#          auszuwählen
+#      - >-
+#          .
+
+  - unit: >-
+      3 Drücken Sie ENTER, um die Einstellungen zu speichern.
+    tokens:
+      - >-
+          3
+      - >-
+          Drücken
+      - >-
+          Sie
+      - >-
+          ENTER
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          die
+      - >-
+          Einstellungen
+      - >-
+          zu
+      - >-
+          speichern
+      - >-
+          .
+
+  - unit: >-
+      ANZEIGEN DER DISK-BILDSCHIRMANZEIGE
+    tokens:
+      - >-
+          ANZEIGEN
+      - >-
+          DER
+      - >-
+          DISK-BILDSCHIRMANZEIGE
+
+  - unit: >-
+      1 Drücken Sie während der Wiedergabe auf DISPLAY.
+    tokens:
+      - >-
+          1
+      - >-
+          Drücken
+      - >-
+          Sie
+      - >-
+          während
+      - >-
+          der
+      - >-
+          Wiedergabe
+      - >-
+          auf
+      - >-
+          DISPLAY
+      - >-
+          .
+
+  - unit: >-
+      HINWEISE
+    tokens:
+      - >-
+          HINWEISE
+
+  - unit: >-
+      HINWEISE
+    tokens:
+      - >-
+          HINWEISE
+
+  - unit: >-
+      Die Anzeigefunktion ist diskabhängig und möglicherweise nicht für alle Disks verfügbar.
+    tokens:
+      - >-
+          Die
+      - >-
+          Anzeigefunktion
+      - >-
+          ist
+      - >-
+          diskabhängig
+      - >-
+          und
+      - >-
+          möglicherweise
+      - >-
+          nicht
+      - >-
+          für
+      - >-
+          alle
+      - >-
+          Disks
+      - >-
+          verfügbar
+      - >-
+          .
+
+  - unit: >-
+      Mithilfe der Taste DISP (an der Frontplatte und auf der Fernbedienung) kann zwischen den Zeit-/Titel-/Kapitel- und Untertitel-/Winkel-/Audiokonfigurationen gewechselt werden (nur DVD).
+    tokens:
+      - >-
+          Mithilfe
+      - >-
+          der
+      - >-
+          Taste
+      - >-
+          DISP
+      - >-
+          (
+      - >-
+          an
+      - >-
+          der
+      - >-
+          Frontplatte
+      - >-
+          und
+      - >-
+          auf
+      - >-
+          der
+      - >-
+          Fernbedienung
+      - >-
+          )
+      - >-
+          kann
+      - >-
+          zwischen
+      - >-
+          den
+      - >-
+          Zeit-
+      - >-
+          /
+      - >-
+          Titel-
+      - >-
+          /
+      - >-
+          Kapitel-
+      - >-
+          und
+      - >-
+          Untertitel-
+      - >-
+          /
+      - >-
+          Winkel-
+      - >-
+          /
+      - >-
+          Audiokonfigurationen
+      - >-
+          gewechselt
+      - >-
+          werden
+      - >-
+          (
+      - >-
+          nur
+      - >-
+          DVD
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Wenn über einen Zeitraum von zehn Sekunden keine Taste gedrückt wird, erlischt die Bildschirmanzeige.
+    tokens:
+      - >-
+          Wenn
+      - >-
+          über
+      - >-
+          einen
+      - >-
+          Zeitraum
+      - >-
+          von
+      - >-
+          zehn
+      - >-
+          Sekunden
+      - >-
+          keine
+      - >-
+          Taste
+      - >-
+          gedrückt
+      - >-
+          wird
+      - >-
+          ,
+      - >-
+          erlischt
+      - >-
+          die
+      - >-
+          Bildschirmanzeige
+      - >-
+          .
+
+  - unit: >-
+      BILDFORMAT DES FERNSEHGERÄTS
+    tokens:
+      - >-
+          BILDFORMAT
+      - >-
+          DES
+      - >-
+          FERNSEHGERÄTS
+
+  - unit: >-
+      16:9. Wählen Sie diese Option aus, wenn ein 16:9-Fernsehgerät angeschlossen wurde.
+    tokens:
+      - >-
+          16:9
+      - >-
+          .
+      - >-
+          Wählen
+      - >-
+          Sie
+      - >-
+          diese
+      - >-
+          Option
+      - >-
+          aus
+      - >-
+          ,
+      - >-
+          wenn
+      - >-
+          ein
+      - >-
+          16:9-Fernsehgerät
+      - >-
+          angeschlossen
+      - >-
+          wurde
+      - >-
+          .
+
+  - unit: >-
+      TV-SYSTEM
+    tokens:
+      - >-
+          TV-SYSTEM
+
+  - unit: >-
+      SPRACHE
+    tokens:
+      - >-
+          SPRACHE
+
+  - unit: >-
+      UNTERTITEL
+    tokens:
+      - >-
+          UNTERTITEL
+
+# 189 out of 547 found

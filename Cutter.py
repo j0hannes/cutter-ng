@@ -17,7 +17,7 @@ __credits__ = """Johannes Graën, Martin Volk, Mara Bertamini, Chantal Amrhein,
     Phillip Ströbel, Anne Göhring, Natalia Korchagina, Simon Clematide,
     Daniel Wüest"""
 __license__ = 'GPL'
-__version__ = '2.0'
+__version__ = '2.2'
 __status__ = 'Development'
 
 
@@ -156,7 +156,7 @@ class Cutter:
                 name, repr(rx)))
         return (rx, tags)
 
-    def _cut_rec(self, text, start=0, level=0):
+    def _cut_rec(self, text, startrule=0, level=0):
         """Applies the first matching tokenization rule, returns the
         identified tokens and proceeds recursively with the others.
         """
@@ -165,7 +165,7 @@ class Cutter:
                 len(text), '' if len(text) == 1 else 's', repr(text)),
             extraindent=level)
         for i, rule in enumerate(self.rules):
-            if i < start:
+            if i < startrule:
                 continue
             self._log(
                 1, "Trying rule {} `{}': \033[34m{}\033[0m".format(
@@ -188,19 +188,19 @@ class Cutter:
                                 name, part),
                             extraindent=level)
                         if name in rule['tags']:
-                            yield (rule['tags'][name], part[0])
+                            yield (part[0], rule['tags'][name], level)
                         else:
                             if part[0]:
                                 yield from self._cut_rec(
                                     part[0],
-                                    start=i + 1 if name == 'a' else 0,
+                                    startrule=i + 1 if name == 'a' else 0,
                                     level=level + 1)
                         self._log(
                             3, "End handling `{}': \033[7m{}\033[0m".format(
                                 name, part),
                             extraindent=level)
                 return
-        yield ('+final', text)
+        yield (text, '+final', level)
 
     # Public
 
@@ -274,9 +274,12 @@ class Cutter:
             '(?<![\pL\pP])(?=(?:{})(?!\pL))'.format('|'.join(
                 [regex.escape(i) for i in self.init])),
             flags=regex.VERSION1)
+        abbr = list(self.abbr)
+        abbr.sort()
+        abbr.sort(key=lambda s: -len(s))
         self.abbrx = regex.compile(
             '(?<![\pL\d])({})(?!\pL)'.format('|'.join(
-                [regex.escape(a) for a in self.abbr])),
+                [regex.escape(a) for a in abbr])),
             flags=regex.VERSION1 + regex.REVERSE)
         self.compiled = True
 
@@ -300,14 +303,15 @@ class Cutter:
         self._log(
             0, 'Abbreviations marked: \033[7m{}\033[0m'.format(
                 repr(text)))
-        for tag, token in self._cut_rec(text):
+        pos = 0
+        for token, tag, level in self._cut_rec(text):
+            oldpos = pos
+            pos += len(token)
             if not flags & WHITESPACE_TOKENS and tag == WHITESPACE_TAG:
                 continue
-            if not flags & EMPTY_TOKENS and token == '':
+            if token == '' and (
+                    not flags & EMPTY_TOKENS or tag == WHITESPACE_TAG):
                 continue
-            if flags & TOKENIZATION_TAGS:
-                yield (tag, token)
-            else:
-                yield token
+            yield (token, tag, level, oldpos, pos)
 
 

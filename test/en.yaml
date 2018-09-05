@@ -1,0 +1,44 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Special cases in English
+
+abbr:
+  - abbr/common.list
+  - abbr/en.list
+
+init:
+  - init/en.list
+
+rule:
+  - rule/common.yaml
+  - rule/en.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      [St.] Louis is an independent city and major [U.S.] port in the state of Missouri
+
+  - unit: >-
+      as humans we tend not to do this[—]we communicate using natural language
+
+  - unit: >-
+      If the user deviates from the planned script by asking the time[—]a perfectly logical question if you[’re] trying to plan your evening ahead[—]most bots ca[n’t] cope[.]
+
+  - unit: >-
+      A customer may have ordered 3 deep crust margarita pizzas to be collected at [7.30]pm|, but that is all you know|.
+
+  - unit: >-
+      If you[’re] betting your business[’] future on AI then you require enterprise strength software built for enterprise use with features you[’d] expect as standard such as roll-back[,] multi-language support and scalability[.] 
+
+  - unit: >-
+      course work|. [S/he] may|, however|, undertake
+
+

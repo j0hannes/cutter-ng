@@ -6,7 +6,7 @@
 #
 
 ---
-name: special characters
+name: Special characters
 
 rule:
   - rule/common.yaml

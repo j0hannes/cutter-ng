@@ -1,0 +1,9986 @@
+# vim: expandtab shiftwidth=2 softtabstop=2
+#     ______________________________________ ______________________
+#     \                                     | (_)     (_)    (_)   \
+#      `.  http://pub.cl.uzh.ch/purl/cutter |  __________________   }
+#        `-.............................____|_(                  )_/
+#
+
+---
+name: Examples from SMULTRON treebank
+
+abbr:
+  - abbr/common.list
+  - abbr/de.list
+
+init:
+  - init/de.list
+
+rule:
+  - rule/common.yaml
+  - rule/de.yaml
+
+flag:
+  - no-empty-tokens
+
+test:
+  - unit: >-
+      Ausschlaggebend für die Verbesserungen war das anhaltende Wachstum in den meisten Märkten sowie eine weitere Steigerung der operativen Effizienz.
+    tokens:
+      - >-
+          Ausschlaggebend
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Verbesserungen
+      - >-
+          war
+      - >-
+          das
+      - >-
+          anhaltende
+      - >-
+          Wachstum
+      - >-
+          in
+      - >-
+          den
+      - >-
+          meisten
+      - >-
+          Märkten
+      - >-
+          sowie
+      - >-
+          eine
+      - >-
+          weitere
+      - >-
+          Steigerung
+      - >-
+          der
+      - >-
+          operativen
+      - >-
+          Effizienz
+      - >-
+          .
+
+  - unit: >-
+      Der EBIT stieg um 16 % auf USD 371 Mio., hauptsächlich aufgrund der guten Leistung der Division Automationstechnik, die sowohl bei Aufträgen als auch bei Umsatz und EBIT ein zweistelliges Wachstum erreichte.
+    tokens:
+      - >-
+          Der
+      - >-
+          EBIT
+      - >-
+          stieg
+      - >-
+          um
+      - >-
+          16
+      - >-
+          %
+      - >-
+          auf
+      - >-
+          USD
+      - >-
+          371
+      - >-
+          Mio.
+      - >-
+          ,
+      - >-
+          hauptsächlich
+      - >-
+          aufgrund
+      - >-
+          der
+      - >-
+          guten
+      - >-
+          Leistung
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          sowohl
+      - >-
+          bei
+      - >-
+          Aufträgen
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          bei
+      - >-
+          Umsatz
+      - >-
+          und
+      - >-
+          EBIT
+      - >-
+          ein
+      - >-
+          zweistelliges
+      - >-
+          Wachstum
+      - >-
+          erreichte
+      - >-
+          .
+
+  - unit: >-
+      Auch die Division Energietechnik erzielte Auftrags- und Umsatzsteigerungen, doch Aufwendungen in Höhe von USD 66 Mio. aus der im Juni angekündigten Konsolidierung des Transformatorengeschäfts führten im Vergleich zum zweiten Quartal 2004 zu einem EBIT-Rückgang.
+    tokens:
+      - >-
+          Auch
+      - >-
+          die
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          erzielte
+      - >-
+          Auftrags-
+      - >-
+          und
+      - >-
+          Umsatzsteigerungen
+      - >-
+          ,
+      - >-
+          doch
+      - >-
+          Aufwendungen
+      - >-
+          in
+      - >-
+          Höhe
+      - >-
+          von
+      - >-
+          USD
+      - >-
+          66
+      - >-
+          Mio.
+      - >-
+          aus
+      - >-
+          der
+      - >-
+          im
+      - >-
+          Juni
+      - >-
+          angekündigten
+      - >-
+          Konsolidierung
+      - >-
+          des
+      - >-
+          Transformatorengeschäfts
+      - >-
+          führten
+      - >-
+          im
+      - >-
+          Vergleich
+      - >-
+          zum
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          zu
+      - >-
+          einem
+      - >-
+          EBIT-Rückgang
+      - >-
+          .
+
+  - unit: >-
+      Zusätzliche Kosten in Höhe von rund USD 65 Mio. aus den bereits kommunizierten, nicht mit den Asbestverbindlichkeiten in Zusammenhang stehenden Rechtskosten, die hauptsächlich als Zinsaufwand verbucht wurden, wirkten sich ebenfalls negativ auf den Quartalsgewinn aus.
+    tokens:
+      - >-
+          Zusätzliche
+      - >-
+          Kosten
+      - >-
+          in
+      - >-
+          Höhe
+      - >-
+          von
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          65
+      - >-
+          Mio.
+      - >-
+          aus
+      - >-
+          den
+      - >-
+          bereits
+      - >-
+          kommunizierten
+      - >-
+          ,
+      - >-
+          nicht
+      - >-
+          mit
+      - >-
+          den
+      - >-
+          Asbestverbindlichkeiten
+      - >-
+          in
+      - >-
+          Zusammenhang
+      - >-
+          stehenden
+      - >-
+          Rechtskosten
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          hauptsächlich
+      - >-
+          als
+      - >-
+          Zinsaufwand
+      - >-
+          verbucht
+      - >-
+          wurden
+      - >-
+          ,
+      - >-
+          wirkten
+      - >-
+          sich
+      - >-
+          ebenfalls
+      - >-
+          negativ
+      - >-
+          auf
+      - >-
+          den
+      - >-
+          Quartalsgewinn
+      - >-
+          aus
+      - >-
+          .
+
+  - unit: >-
+      Der Cashflow aus Geschäftstätigkeit stieg hauptsächlich dank der Corporate- und nicht zum Kerngeschäft gehörenden Aktivitäten gegenüber dem vierten Quartal 2004 um USD 280 Mio.
+    tokens:
+      - >-
+          Der
+      - >-
+          Cashflow
+      - >-
+          aus
+      - >-
+          Geschäftstätigkeit
+      - >-
+          stieg
+      - >-
+          hauptsächlich
+      - >-
+          dank
+      - >-
+          der
+      - >-
+          Corporate-
+      - >-
+          und
+      - >-
+          nicht
+      - >-
+          zum
+      - >-
+          Kerngeschäft
+      - >-
+          gehörenden
+      - >-
+          Aktivitäten
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          vierten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          um
+      - >-
+          USD
+      - >-
+          280
+      - >-
+          Mio.
+
+  - unit: >-
+      «Wir konnten die positive Entwicklung des ersten Quartals fortsetzen und erreichten auch im zweiten Quartal eine starke operative Performance», sagte Fred Kindle, Vorsitzender der Konzernleitung von ABB.
+    tokens:
+      - >-
+          «
+      - >-
+          Wir
+      - >-
+          konnten
+      - >-
+          die
+      - >-
+          positive
+      - >-
+          Entwicklung
+      - >-
+          des
+      - >-
+          ersten
+      - >-
+          Quartals
+      - >-
+          fortsetzen
+      - >-
+          und
+      - >-
+          erreichten
+      - >-
+          auch
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          eine
+      - >-
+          starke
+      - >-
+          operative
+      - >-
+          Performance
+      - >-
+          »
+      - >-
+          ,
+      - >-
+          sagte
+      - >-
+          Fred
+      - >-
+          Kindle
+      - >-
+          ,
+      - >-
+          Vorsitzender
+      - >-
+          der
+      - >-
+          Konzernleitung
+      - >-
+          von
+      - >-
+          ABB
+      - >-
+          .
+
+  - unit: >-
+      «Trotz hoher Rückstellungen für Rechtskosten und für die Verbesserung der langfristigen Rentabilität unseres Transformatorengeschäfts konnten wir unsere Profitabilität weiter steigern.
+    tokens:
+      - >-
+          «
+      - >-
+          Trotz
+      - >-
+          hoher
+      - >-
+          Rückstellungen
+      - >-
+          für
+      - >-
+          Rechtskosten
+      - >-
+          und
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Verbesserung
+      - >-
+          der
+      - >-
+          langfristigen
+      - >-
+          Rentabilität
+      - >-
+          unseres
+      - >-
+          Transformatorengeschäfts
+      - >-
+          konnten
+      - >-
+          wir
+      - >-
+          unsere
+      - >-
+          Profitabilität
+      - >-
+          weiter
+      - >-
+          steigern
+      - >-
+          .
+
+  - unit: >-
+      Unser Fokus liegt weiterhin auf einer schnellen Verbesserung unserer Geschäftstätigkeit und auf der anhaltenden Steigerung unserer operativen Effizienz.»
+    tokens:
+      - >-
+          Unser
+      - >-
+          Fokus
+      - >-
+          liegt
+      - >-
+          weiterhin
+      - >-
+          auf
+      - >-
+          einer
+      - >-
+          schnellen
+      - >-
+          Verbesserung
+      - >-
+          unserer
+      - >-
+          Geschäftstätigkeit
+      - >-
+          und
+      - >-
+          auf
+      - >-
+          der
+      - >-
+          anhaltenden
+      - >-
+          Steigerung
+      - >-
+          unserer
+      - >-
+          operativen
+      - >-
+          Effizienz
+      - >-
+          .
+      - >-
+          »
+
+  - unit: >-
+      Das anhaltend starke Wachstum der Basisaufträge (Aufträge mit einem Volumen von weniger als USD 15 Mio.) in fast allen Geschäftsbereichen deutet darauf hin, dass das wirtschaftliche Umfeld weiterhin günstig war, und sorgte daher erneut für hohe Auftragsbestände bei ABB.
+    tokens:
+      - >-
+          Das
+      - >-
+          anhaltend
+      - >-
+          starke
+      - >-
+          Wachstum
+      - >-
+          der
+      - >-
+          Basisaufträge
+      - >-
+          (
+      - >-
+          Aufträge
+      - >-
+          mit
+      - >-
+          einem
+      - >-
+          Volumen
+      - >-
+          von
+      - >-
+          weniger
+      - >-
+          als
+      - >-
+          USD
+      - >-
+          15
+      - >-
+          Mio.
+      - >-
+          )
+      - >-
+          in
+      - >-
+          fast
+      - >-
+          allen
+      - >-
+          Geschäftsbereichen
+      - >-
+          deutet
+      - >-
+          darauf
+      - >-
+          hin
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          das
+      - >-
+          wirtschaftliche
+      - >-
+          Umfeld
+      - >-
+          weiterhin
+      - >-
+          günstig
+      - >-
+          war
+      - >-
+          ,
+      - >-
+          und
+      - >-
+          sorgte
+      - >-
+          daher
+      - >-
+          erneut
+      - >-
+          für
+      - >-
+          hohe
+      - >-
+          Auftragsbestände
+      - >-
+          bei
+      - >-
+          ABB
+      - >-
+          .
+
+  - unit: >-
+      Versorgungsunternehmen in Nordamerika und Europa investierten weiterhin in den Ersatz und die Modernisierung von Stromübertragungs- und -verteilungsanlagen, während in Asien, im Nahen Osten und in Südamerika neue Infrastrukturprojekte in Angriff genommen wurden.
+    tokens:
+      - >-
+          Versorgungsunternehmen
+      - >-
+          in
+      - >-
+          Nordamerika
+      - >-
+          und
+      - >-
+          Europa
+      - >-
+          investierten
+      - >-
+          weiterhin
+      - >-
+          in
+      - >-
+          den
+      - >-
+          Ersatz
+      - >-
+          und
+      - >-
+          die
+      - >-
+          Modernisierung
+      - >-
+          von
+      - >-
+          Stromübertragungs-
+      - >-
+          und
+      - >-
+          -verteilungsanlagen
+      - >-
+          ,
+      - >-
+          während
+      - >-
+          in
+      - >-
+          Asien
+      - >-
+          ,
+      - >-
+          im
+      - >-
+          Nahen
+      - >-
+          Osten
+      - >-
+          und
+      - >-
+          in
+      - >-
+          Südamerika
+      - >-
+          neue
+      - >-
+          Infrastrukturprojekte
+      - >-
+          in
+      - >-
+          Angriff
+      - >-
+          genommen
+      - >-
+          wurden
+      - >-
+          .
+
+  - unit: >-
+      Verglichen mit dem entsprechenden Vorjahresquartal gingen weniger grosse Stromübertragungsaufträge ein, was in Asien zu einem Auftragsrückgang führte.
+    tokens:
+      - >-
+          Verglichen
+      - >-
+          mit
+      - >-
+          dem
+      - >-
+          entsprechenden
+      - >-
+          Vorjahresquartal
+      - >-
+          gingen
+      - >-
+          weniger
+      - >-
+          grosse
+      - >-
+          Stromübertragungsaufträge
+      - >-
+          ein
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          in
+      - >-
+          Asien
+      - >-
+          zu
+      - >-
+          einem
+      - >-
+          Auftragsrückgang
+      - >-
+          führte
+      - >-
+          .
+
+  - unit: >-
+      Längerfristig sind jedoch in sämtlichen Regionen weiterhin Wachstumsmotoren für diese Projekte auszumachen.
+    tokens:
+      - >-
+          Längerfristig
+      - >-
+          sind
+      - >-
+          jedoch
+      - >-
+          in
+      - >-
+          sämtlichen
+      - >-
+          Regionen
+      - >-
+          weiterhin
+      - >-
+          Wachstumsmotoren
+      - >-
+          für
+      - >-
+          diese
+      - >-
+          Projekte
+      - >-
+          auszumachen
+      - >-
+          .
+
+  - unit: >-
+      In den meisten Industriekundensegmenten von ABB flossen die Investitionen dem Konjunkturzyklus entsprechend vor allem in die Effizienzsteigerung bestehender Anlagen und Ausrüstungen.
+    tokens:
+      - >-
+          In
+      - >-
+          den
+      - >-
+          meisten
+      - >-
+          Industriekundensegmenten
+      - >-
+          von
+      - >-
+          ABB
+      - >-
+          flossen
+      - >-
+          die
+      - >-
+          Investitionen
+      - >-
+          dem
+      - >-
+          Konjunkturzyklus
+      - >-
+          entsprechend
+      - >-
+          vor
+      - >-
+          allem
+      - >-
+          in
+      - >-
+          die
+      - >-
+          Effizienzsteigerung
+      - >-
+          bestehender
+      - >-
+          Anlagen
+      - >-
+          und
+      - >-
+          Ausrüstungen
+      - >-
+          .
+
+  - unit: >-
+      Die Nachfrage in den Bereichen Öl und Gas, Mineralien und Metalle, Marine, Chemie und Automobil stieg weiter an.
+    tokens:
+      - >-
+          Die
+      - >-
+          Nachfrage
+      - >-
+          in
+      - >-
+          den
+      - >-
+          Bereichen
+      - >-
+          Öl
+      - >-
+          und
+      - >-
+          Gas
+      - >-
+          ,
+      - >-
+          Mineralien
+      - >-
+          und
+      - >-
+          Metalle
+      - >-
+          ,
+      - >-
+          Marine
+      - >-
+          ,
+      - >-
+          Chemie
+      - >-
+          und
+      - >-
+          Automobil
+      - >-
+          stieg
+      - >-
+          weiter
+      - >-
+          an
+      - >-
+          .
+
+  - unit: >-
+      Die Zellstoff- und Papierindustrie sowie der Bausektor waren indessen weiterhin nachfrageschwach.
+    tokens:
+      - >-
+          Die
+      - >-
+          Zellstoff-
+      - >-
+          und
+      - >-
+          Papierindustrie
+      - >-
+          sowie
+      - >-
+          der
+      - >-
+          Bausektor
+      - >-
+          waren
+      - >-
+          indessen
+      - >-
+          weiterhin
+      - >-
+          nachfrageschwach
+      - >-
+          .
+
+  - unit: >-
+      Wie auch im Energiesektor investierten die Industriekunden vor allem in die Modernisierung von bestehenden Anlagen und weniger in den Bau von Neuanlagen.
+    tokens:
+      - >-
+          Wie
+      - >-
+          auch
+      - >-
+          im
+      - >-
+          Energiesektor
+      - >-
+          investierten
+      - >-
+          die
+      - >-
+          Industriekunden
+      - >-
+          vor
+      - >-
+          allem
+      - >-
+          in
+      - >-
+          die
+      - >-
+          Modernisierung
+      - >-
+          von
+      - >-
+          bestehenden
+      - >-
+          Anlagen
+      - >-
+          und
+      - >-
+          weniger
+      - >-
+          in
+      - >-
+          den
+      - >-
+          Bau
+      - >-
+          von
+      - >-
+          Neuanlagen
+      - >-
+          .
+
+  - unit: >-
+      Sämtliche Regionen verzeichneten einen Zuwachs an Aufträgen aus der Industrie.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Regionen
+      - >-
+          verzeichneten
+      - >-
+          einen
+      - >-
+          Zuwachs
+      - >-
+          an
+      - >-
+          Aufträgen
+      - >-
+          aus
+      - >-
+          der
+      - >-
+          Industrie
+      - >-
+          .
+
+  - unit: >-
+      Die Basisaufträge stiegen in fast allen Geschäftsbereichen und in allen Regionen, da in den meisten Kundensegmenten weiterhin eine Nachfrageerholung zu beobachten war.
+    tokens:
+      - >-
+          Die
+      - >-
+          Basisaufträge
+      - >-
+          stiegen
+      - >-
+          in
+      - >-
+          fast
+      - >-
+          allen
+      - >-
+          Geschäftsbereichen
+      - >-
+          und
+      - >-
+          in
+      - >-
+          allen
+      - >-
+          Regionen
+      - >-
+          ,
+      - >-
+          da
+      - >-
+          in
+      - >-
+          den
+      - >-
+          meisten
+      - >-
+          Kundensegmenten
+      - >-
+          weiterhin
+      - >-
+          eine
+      - >-
+          Nachfrageerholung
+      - >-
+          zu
+      - >-
+          beobachten
+      - >-
+          war
+      - >-
+          .
+
+  - unit: >-
+      Damit konnte der Rückgang bei den Grossaufträgen (Volumen von über USD 15 Mio.) um rund 50% mehr als wieder ausgeglichen werden.
+    tokens:
+      - >-
+          Damit
+      - >-
+          konnte
+      - >-
+          der
+      - >-
+          Rückgang
+      - >-
+          bei
+      - >-
+          den
+      - >-
+          Grossaufträgen
+      - >-
+          (
+      - >-
+          Volumen
+      - >-
+          von
+      - >-
+          über
+      - >-
+          USD
+      - >-
+          15
+      - >-
+          Mio.
+      - >-
+          )
+      - >-
+          um
+      - >-
+          rund
+      - >-
+          50
+      - >-
+          %
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          wieder
+      - >-
+          ausgeglichen
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Die Versorgungsunternehmen in Nordamerika investierten weiterhin in die Anlagenmodernisierung, und die meisten Industriesektoren entwickelten sich unverändert positiv.
+    tokens:
+      - >-
+          Die
+      - >-
+          Versorgungsunternehmen
+      - >-
+          in
+      - >-
+          Nordamerika
+      - >-
+          investierten
+      - >-
+          weiterhin
+      - >-
+          in
+      - >-
+          die
+      - >-
+          Anlagenmodernisierung
+      - >-
+          ,
+      - >-
+          und
+      - >-
+          die
+      - >-
+          meisten
+      - >-
+          Industriesektoren
+      - >-
+          entwickelten
+      - >-
+          sich
+      - >-
+          unverändert
+      - >-
+          positiv
+      - >-
+          .
+
+  - unit: >-
+      Die Aufträge aus Ost- und Westeuropa fielen auch in der Division Automationstechnik höher aus.
+    tokens:
+      - >-
+          Die
+      - >-
+          Aufträge
+      - >-
+          aus
+      - >-
+          Ost-
+      - >-
+          und
+      - >-
+          Westeuropa
+      - >-
+          fielen
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          höher
+      - >-
+          aus
+      - >-
+          .
+
+  - unit: >-
+      Bei den Basisaufträgen aus China verzeichnete die Division Energietechnik ein anhaltendes Wachstum.
+    tokens:
+      - >-
+          Bei
+      - >-
+          den
+      - >-
+          Basisaufträgen
+      - >-
+          aus
+      - >-
+          China
+      - >-
+          verzeichnete
+      - >-
+          die
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          ein
+      - >-
+          anhaltendes
+      - >-
+          Wachstum
+      - >-
+          .
+
+  - unit: >-
+      Insgesamt verzeichnete die Division Automationstechnik im Berichtsquartal höhere Auftragseingänge aus Asien, da das gestiegene Auftragsvolumen aus Indien und einer Reihe weiterer Länder den leichten Rückgang in China mehr als kompensierte.
+    tokens:
+      - >-
+          Insgesamt
+      - >-
+          verzeichnete
+      - >-
+          die
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          höhere
+      - >-
+          Auftragseingänge
+      - >-
+          aus
+      - >-
+          Asien
+      - >-
+          ,
+      - >-
+          da
+      - >-
+          das
+      - >-
+          gestiegene
+      - >-
+          Auftragsvolumen
+      - >-
+          aus
+      - >-
+          Indien
+      - >-
+          und
+      - >-
+          einer
+      - >-
+          Reihe
+      - >-
+          weiterer
+      - >-
+          Länder
+      - >-
+          den
+      - >-
+          leichten
+      - >-
+          Rückgang
+      - >-
+          in
+      - >-
+          China
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          kompensierte
+      - >-
+          .
+
+  - unit: >-
+      Dies entspricht einem Anstieg um 10% (Lokalwährungen: 6%) und ist auf den hohen Auftragsbestand zurückzuführen.
+    tokens:
+      - >-
+          Dies
+      - >-
+          entspricht
+      - >-
+          einem
+      - >-
+          Anstieg
+      - >-
+          um
+      - >-
+          10
+      - >-
+          %
+      - >-
+          (
+      - >-
+          Lokalwährungen
+      - >-
+          :
+      - >-
+          6
+      - >-
+          %
+      - >-
+          )
+      - >-
+          und
+      - >-
+          ist
+      - >-
+          auf
+      - >-
+          den
+      - >-
+          hohen
+      - >-
+          Auftragsbestand
+      - >-
+          zurückzuführen
+      - >-
+          .
+
+  - unit: >-
+      Die meisten Geschäftsbereiche und alle Regionen mit Ausnahme des Nahen Ostens und Afrika verzeichneten höhere Umsätze.
+    tokens:
+      - >-
+          Die
+      - >-
+          meisten
+      - >-
+          Geschäftsbereiche
+      - >-
+          und
+      - >-
+          alle
+      - >-
+          Regionen
+      - >-
+          mit
+      - >-
+          Ausnahme
+      - >-
+          des
+      - >-
+          Nahen
+      - >-
+          Ostens
+      - >-
+          und
+      - >-
+          Afrika
+      - >-
+          verzeichneten
+      - >-
+          höhere
+      - >-
+          Umsätze
+      - >-
+          .
+
+  - unit: >-
+      Der EBIT war mit USD 371 Mio. im zweiten Quartal gegenüber dem Vorjahresquartal um 16% gestiegen.
+    tokens:
+      - >-
+          Der
+      - >-
+          EBIT
+      - >-
+          war
+      - >-
+          mit
+      - >-
+          USD
+      - >-
+          371
+      - >-
+          Mio.
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          Vorjahresquartal
+      - >-
+          um
+      - >-
+          16
+      - >-
+          %
+      - >-
+          gestiegen
+      - >-
+          .
+
+  - unit: >-
+      Den grössten Beitrag zu dieser EBIT-Steigerung leistete die Division Automationstechnik, die eine bessere Kapazitätsauslastung, Produktivitätssteigerungen sowie eine Senkung der Beschaffungskosten erreichte.
+    tokens:
+      - >-
+          Den
+      - >-
+          grössten
+      - >-
+          Beitrag
+      - >-
+          zu
+      - >-
+          dieser
+      - >-
+          EBIT-Steigerung
+      - >-
+          leistete
+      - >-
+          die
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          eine
+      - >-
+          bessere
+      - >-
+          Kapazitätsauslastung
+      - >-
+          ,
+      - >-
+          Produktivitätssteigerungen
+      - >-
+          sowie
+      - >-
+          eine
+      - >-
+          Senkung
+      - >-
+          der
+      - >-
+          Beschaffungskosten
+      - >-
+          erreichte
+      - >-
+          .
+
+  - unit: >-
+      Die Division Energietechnik wies einen geringeren EBIT aus, da die Produktivitätssteigerung, die höhere Kapazitätsauslastung in einigen Geschäftsbereichen und ein Nettoerlös von rund USD 10 Mio. aus dem Verkauf von Immobilien durch Kosten in Höhe von USD 66 Mio. für das im Juni 2005 angekündigte Konsolidierungsprogramm im Transformatorengeschäft und für Rückstellungen für potenzielle Rechtskosten des Geschäftsbereichs Power Technology Systems mehr als wieder aufgehoben wurden.
+    tokens:
+      - >-
+          Die
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          wies
+      - >-
+          einen
+      - >-
+          geringeren
+      - >-
+          EBIT
+      - >-
+          aus
+      - >-
+          ,
+      - >-
+          da
+      - >-
+          die
+      - >-
+          Produktivitätssteigerung
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          höhere
+      - >-
+          Kapazitätsauslastung
+      - >-
+          in
+      - >-
+          einigen
+      - >-
+          Geschäftsbereichen
+      - >-
+          und
+      - >-
+          ein
+      - >-
+          Nettoerlös
+      - >-
+          von
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          10
+      - >-
+          Mio.
+      - >-
+          aus
+      - >-
+          dem
+      - >-
+          Verkauf
+      - >-
+          von
+      - >-
+          Immobilien
+      - >-
+          durch
+      - >-
+          Kosten
+      - >-
+          in
+      - >-
+          Höhe
+      - >-
+          von
+      - >-
+          USD
+      - >-
+          66
+      - >-
+          Mio.
+      - >-
+          für
+      - >-
+          das
+      - >-
+          im
+      - >-
+          Juni
+      - >-
+          2005
+      - >-
+          angekündigte
+      - >-
+          Konsolidierungsprogramm
+      - >-
+          im
+      - >-
+          Transformatorengeschäft
+      - >-
+          und
+      - >-
+          für
+      - >-
+          Rückstellungen
+      - >-
+          für
+      - >-
+          potenzielle
+      - >-
+          Rechtskosten
+      - >-
+          des
+      - >-
+          Geschäftsbereichs
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          wieder
+      - >-
+          aufgehoben
+      - >-
+          wurden
+      - >-
+          .
+
+  - unit: >-
+      Die Corporate-Kosten sanken um USD 35 Mio., da in mehreren Länderzentralen sowie in der Konzernzentrale Zürich gegenüber dem entsprechenden Vorjahresquartal die Kosten gesenkt werden konnten.
+    tokens:
+      - >-
+          Die
+      - >-
+          Corporate-Kosten
+      - >-
+          sanken
+      - >-
+          um
+      - >-
+          USD
+      - >-
+          35
+      - >-
+          Mio.
+      - >-
+          ,
+      - >-
+          da
+      - >-
+          in
+      - >-
+          mehreren
+      - >-
+          Länderzentralen
+      - >-
+          sowie
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Konzernzentrale
+      - >-
+          Zürich
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          entsprechenden
+      - >-
+          Vorjahresquartal
+      - >-
+          die
+      - >-
+          Kosten
+      - >-
+          gesenkt
+      - >-
+          werden
+      - >-
+          konnten
+      - >-
+          .
+
+  - unit: >-
+      Im zweiten Quartal 2004 hatte sich der Verlust noch auf USD 50 Mio. belaufen.
+    tokens:
+      - >-
+          Im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          hatte
+      - >-
+          sich
+      - >-
+          der
+      - >-
+          Verlust
+      - >-
+          noch
+      - >-
+          auf
+      - >-
+          USD
+      - >-
+          50
+      - >-
+          Mio.
+      - >-
+          belaufen
+      - >-
+          .
+
+  - unit: >-
+      Im zweiten Quartal 2005 wurde das Finanzergebnis netto von einem Aufwand von rund USD 40 Mio. belastet, der hauptsächlich im Zusammenhang mit einer Gerichtsstrafe anfiel, die ABB 1998 wegen eines Verstosses gegen das EU-Kartellrecht durch das (1999 veräusserte) ABB-Fernheizgeschäft erhalten hatte.
+    tokens:
+      - >-
+          Im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2005
+      - >-
+          wurde
+      - >-
+          das
+      - >-
+          Finanzergebnis
+      - >-
+          netto
+      - >-
+          von
+      - >-
+          einem
+      - >-
+          Aufwand
+      - >-
+          von
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          40
+      - >-
+          Mio.
+      - >-
+          belastet
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          hauptsächlich
+      - >-
+          im
+      - >-
+          Zusammenhang
+      - >-
+          mit
+      - >-
+          einer
+      - >-
+          Gerichtsstrafe
+      - >-
+          anfiel
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          ABB
+      - >-
+          1998
+      - >-
+          wegen
+      - >-
+          eines
+      - >-
+          Verstosses
+      - >-
+          gegen
+      - >-
+          das
+      - >-
+          EU-Kartellrecht
+      - >-
+          durch
+      - >-
+          das
+      - >-
+          (
+      - >-
+          1999
+      - >-
+          veräusserte
+      - >-
+          )
+      - >-
+          ABB-Fernheizgeschäft
+      - >-
+          erhalten
+      - >-
+          hatte
+      - >-
+          .
+
+  - unit: >-
+      Der höhere effektive Steuersatz ist in erster Linie auf die Auswirkungen von Sonderbelastungen im Berichtsquartal zurückzuführen.
+    tokens:
+      - >-
+          Der
+      - >-
+          höhere
+      - >-
+          effektive
+      - >-
+          Steuersatz
+      - >-
+          ist
+      - >-
+          in
+      - >-
+          erster
+      - >-
+          Linie
+      - >-
+          auf
+      - >-
+          die
+      - >-
+          Auswirkungen
+      - >-
+          von
+      - >-
+          Sonderbelastungen
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          zurückzuführen
+      - >-
+          .
+
+  - unit: >-
+      Die flüssigen Mittel und marktgängigen Wertpapiere gingen im Zeitraum von Ende März 2005 bis Ende Juni 2005 von USD 3,7 Mrd. auf USD 3,6 Mrd. zurück.
+    tokens:
+      - >-
+          Die
+      - >-
+          flüssigen
+      - >-
+          Mittel
+      - >-
+          und
+      - >-
+          marktgängigen
+      - >-
+          Wertpapiere
+      - >-
+          gingen
+      - >-
+          im
+      - >-
+          Zeitraum
+      - >-
+          von
+      - >-
+          Ende
+      - >-
+          März
+      - >-
+          2005
+      - >-
+          bis
+      - >-
+          Ende
+      - >-
+          Juni
+      - >-
+          2005
+      - >-
+          von
+      - >-
+          USD
+      - >-
+          3,7
+      - >-
+          Mrd.
+      - >-
+          auf
+      - >-
+          USD
+      - >-
+          3,6
+      - >-
+          Mrd.
+      - >-
+          zurück
+      - >-
+          .
+
+  - unit: >-
+      In diesem Betrag enthalten sind auch rund USD 200 Mio. für Anleihen, die im dritten Quartal 2005 zur Rückzahlung fällig werden.
+    tokens:
+      - >-
+          In
+      - >-
+          diesem
+      - >-
+          Betrag
+      - >-
+          enthalten
+      - >-
+          sind
+      - >-
+          auch
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          200
+      - >-
+          Mio.
+      - >-
+          für
+      - >-
+          Anleihen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          im
+      - >-
+          dritten
+      - >-
+          Quartal
+      - >-
+          2005
+      - >-
+          zur
+      - >-
+          Rückzahlung
+      - >-
+          fällig
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Die Nettoverschuldung (Gesamtverschuldung abzüglich flüssige Mittel und marktgängige Wertpapiere) belief sich Ende des zweiten Quartals auf USD 1,3 Mrd., was gegenüber dem Ende des ersten Quartals 2005 (USD 1,5 Mrd.) einem Rückgang entspricht.
+    tokens:
+      - >-
+          Die
+      - >-
+          Nettoverschuldung
+      - >-
+          (
+      - >-
+          Gesamtverschuldung
+      - >-
+          abzüglich
+      - >-
+          flüssige
+      - >-
+          Mittel
+      - >-
+          und
+      - >-
+          marktgängige
+      - >-
+          Wertpapiere
+      - >-
+          )
+      - >-
+          belief
+      - >-
+          sich
+      - >-
+          Ende
+      - >-
+          des
+      - >-
+          zweiten
+      - >-
+          Quartals
+      - >-
+          auf
+      - >-
+          USD
+      - >-
+          1,3
+      - >-
+          Mrd.
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          Ende
+      - >-
+          des
+      - >-
+          ersten
+      - >-
+          Quartals
+      - >-
+          2005
+      - >-
+          (
+      - >-
+          USD
+      - >-
+          1,5
+      - >-
+          Mrd.
+      - >-
+          )
+      - >-
+          einem
+      - >-
+          Rückgang
+      - >-
+          entspricht
+      - >-
+          .
+
+  - unit: >-
+      Der Verschuldungsgrad (Gesamtverschuldung geteilt durch Gesamtverschuldung plus Eigenkapital einschliesslich Minderheitsanteile) betrug Ende Juni 2005 noch 60% (Ende Vorquartal: 61%).
+    tokens:
+      - >-
+          Der
+      - >-
+          Verschuldungsgrad
+      - >-
+          (
+      - >-
+          Gesamtverschuldung
+      - >-
+          geteilt
+      - >-
+          durch
+      - >-
+          Gesamtverschuldung
+      - >-
+          plus
+      - >-
+          Eigenkapital
+      - >-
+          einschliesslich
+      - >-
+          Minderheitsanteile
+      - >-
+          )
+      - >-
+          betrug
+      - >-
+          Ende
+      - >-
+          Juni
+      - >-
+          2005
+      - >-
+          noch
+      - >-
+          60
+      - >-
+          %
+      - >-
+          (
+      - >-
+          Ende
+      - >-
+          Vorquartal
+      - >-
+          :
+      - >-
+          61
+      - >-
+          %
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Der Cashflow, netto, aus Geschäftstätigkeit des Konzerns war im Berichtsquartal gegenüber dem zweiten Quartal 2004 um USD 280 Mio. gestiegen.
+    tokens:
+      - >-
+          Der
+      - >-
+          Cashflow
+      - >-
+          ,
+      - >-
+          netto
+      - >-
+          ,
+      - >-
+          aus
+      - >-
+          Geschäftstätigkeit
+      - >-
+          des
+      - >-
+          Konzerns
+      - >-
+          war
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          um
+      - >-
+          USD
+      - >-
+          280
+      - >-
+          Mio.
+      - >-
+          gestiegen
+      - >-
+          .
+
+  - unit: >-
+      Die grössten Verbesserungen wurden in den nicht zum Kerngeschäft gehörenden Aktivitäten und in den Konzernaktivitäten erzielt.
+    tokens:
+      - >-
+          Die
+      - >-
+          grössten
+      - >-
+          Verbesserungen
+      - >-
+          wurden
+      - >-
+          in
+      - >-
+          den
+      - >-
+          nicht
+      - >-
+          zum
+      - >-
+          Kerngeschäft
+      - >-
+          gehörenden
+      - >-
+          Aktivitäten
+      - >-
+          und
+      - >-
+          in
+      - >-
+          den
+      - >-
+          Konzernaktivitäten
+      - >-
+          erzielt
+      - >-
+          .
+
+  - unit: >-
+      Bei den nicht zum Kerngeschäft gehörenden Aktivitäten war diese Verbesserung darauf zurückzuführen, dass im zweiten Quartal 2004 ein hoher Cash-Abfluss anfiel, weil im Juli 2004 im Vorfeld der Veräusserung des Upstream-Geschäfts die Securitization-Aktivitäten um rund USD 100 Mio. reduziert wurden.
+    tokens:
+      - >-
+          Bei
+      - >-
+          den
+      - >-
+          nicht
+      - >-
+          zum
+      - >-
+          Kerngeschäft
+      - >-
+          gehörenden
+      - >-
+          Aktivitäten
+      - >-
+          war
+      - >-
+          diese
+      - >-
+          Verbesserung
+      - >-
+          darauf
+      - >-
+          zurückzuführen
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          ein
+      - >-
+          hoher
+      - >-
+          Cash-Abfluss
+      - >-
+          anfiel
+      - >-
+          ,
+      - >-
+          weil
+      - >-
+          im
+      - >-
+          Juli
+      - >-
+          2004
+      - >-
+          im
+      - >-
+          Vorfeld
+      - >-
+          der
+      - >-
+          Veräusserung
+      - >-
+          des
+      - >-
+          Upstream-Geschäfts
+      - >-
+          die
+      - >-
+          Securitization-Aktivitäten
+      - >-
+          um
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          100
+      - >-
+          Mio.
+      - >-
+          reduziert
+      - >-
+          wurden
+      - >-
+          .
+
+  - unit: >-
+      Die Verbesserung des Cashflows der Konzernaktivitäten ist auf gesunkene Kosten, auf eine zeitliche Verschiebung bei den Fälligkeiten der Securitization-Programme gegenüber dem Vorjahresquartal und auf einen geringeren Cash-Abfluss im Zusammenhang mit den Asbestverbindlichkeiten (USD 12 Mio. im zweiten Quartal 2005 verglichen mit USD 28 Mio. im Vorjahresquartal) zurückzuführen.
+    tokens:
+      - >-
+          Die
+      - >-
+          Verbesserung
+      - >-
+          des
+      - >-
+          Cashflows
+      - >-
+          der
+      - >-
+          Konzernaktivitäten
+      - >-
+          ist
+      - >-
+          auf
+      - >-
+          gesunkene
+      - >-
+          Kosten
+      - >-
+          ,
+      - >-
+          auf
+      - >-
+          eine
+      - >-
+          zeitliche
+      - >-
+          Verschiebung
+      - >-
+          bei
+      - >-
+          den
+      - >-
+          Fälligkeiten
+      - >-
+          der
+      - >-
+          Securitization-Programme
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          Vorjahresquartal
+      - >-
+          und
+      - >-
+          auf
+      - >-
+          einen
+      - >-
+          geringeren
+      - >-
+          Cash-Abfluss
+      - >-
+          im
+      - >-
+          Zusammenhang
+      - >-
+          mit
+      - >-
+          den
+      - >-
+          Asbestverbindlichkeiten
+      - >-
+          (
+      - >-
+          USD
+      - >-
+          12
+      - >-
+          Mio.
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2005
+      - >-
+          verglichen
+      - >-
+          mit
+      - >-
+          USD
+      - >-
+          28
+      - >-
+          Mio.
+      - >-
+          im
+      - >-
+          Vorjahresquartal
+      - >-
+          )
+      - >-
+          zurückzuführen
+      - >-
+          .
+
+  - unit: >-
+      Die beiden Divisionen generierten im Berichtsquartal einen Cashflow von USD 291 Mio., was gegenüber dem zweiten Quartal 2004 einem Anstieg um USD 31 Mio. entspricht.
+    tokens:
+      - >-
+          Die
+      - >-
+          beiden
+      - >-
+          Divisionen
+      - >-
+          generierten
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          einen
+      - >-
+          Cashflow
+      - >-
+          von
+      - >-
+          USD
+      - >-
+          291
+      - >-
+          Mio.
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          gegenüber
+      - >-
+          dem
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          einem
+      - >-
+          Anstieg
+      - >-
+          um
+      - >-
+          USD
+      - >-
+          31
+      - >-
+          Mio.
+      - >-
+          entspricht
+      - >-
+          .
+
+  - unit: >-
+      Die Division Energietechnik konnte ihren Cashflow steigern und gleichzeitig das Nettoumlaufvermögen als Prozentsatz des Umsatzes ausgedrückt weiter senken, während die Division Automationstechnik weniger Cashflow generierte und über ein höheres Betriebskapital verfügte, um das starke Umsatzwachstum zu stützen.
+    tokens:
+      - >-
+          Die
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          konnte
+      - >-
+          ihren
+      - >-
+          Cashflow
+      - >-
+          steigern
+      - >-
+          und
+      - >-
+          gleichzeitig
+      - >-
+          das
+      - >-
+          Nettoumlaufvermögen
+      - >-
+          als
+      - >-
+          Prozentsatz
+      - >-
+          des
+      - >-
+          Umsatzes
+      - >-
+          ausgedrückt
+      - >-
+          weiter
+      - >-
+          senken
+      - >-
+          ,
+      - >-
+          während
+      - >-
+          die
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          weniger
+      - >-
+          Cashflow
+      - >-
+          generierte
+      - >-
+          und
+      - >-
+          über
+      - >-
+          ein
+      - >-
+          höheres
+      - >-
+          Betriebskapital
+      - >-
+          verfügte
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          das
+      - >-
+          starke
+      - >-
+          Umsatzwachstum
+      - >-
+          zu
+      - >-
+          stützen
+      - >-
+          .
+
+  - unit: >-
+      Die Reduktion der Securitization-Aktivitäten des Konzerns bewirkte im ersten Halbjahr 2005 einen Rückgang des Cashflows um rund USD 150 Mio.
+    tokens:
+      - >-
+          Die
+      - >-
+          Reduktion
+      - >-
+          der
+      - >-
+          Securitization-Aktivitäten
+      - >-
+          des
+      - >-
+          Konzerns
+      - >-
+          bewirkte
+      - >-
+          im
+      - >-
+          ersten
+      - >-
+          Halbjahr
+      - >-
+          2005
+      - >-
+          einen
+      - >-
+          Rückgang
+      - >-
+          des
+      - >-
+          Cashflows
+      - >-
+          um
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          150
+      - >-
+          Mio.
+
+  - unit: >-
+      Am 21. März 2005 gab ABB bekannt, dass eine Einigung über bestimmte Bedingungen erzielt worden sei, nach denen der Reorganisationsplan für die US-Tochtergesellschaften Combustion Engineering (CE) und ABB Lummus Global Inc. revidiert werden soll.
+    tokens:
+      - >-
+          Am
+      - >-
+          21.
+      - >-
+          März
+      - >-
+          2005
+      - >-
+          gab
+      - >-
+          ABB
+      - >-
+          bekannt
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          eine
+      - >-
+          Einigung
+      - >-
+          über
+      - >-
+          bestimmte
+      - >-
+          Bedingungen
+      - >-
+          erzielt
+      - >-
+          worden
+      - >-
+          sei
+      - >-
+          ,
+      - >-
+          nach
+      - >-
+          denen
+      - >-
+          der
+      - >-
+          Reorganisationsplan
+      - >-
+          für
+      - >-
+          die
+      - >-
+          US-Tochtergesellschaften
+      - >-
+          Combustion
+      - >-
+          Engineering
+      - >-
+          (
+      - >-
+          CE
+      - >-
+          )
+      - >-
+          und
+      - >-
+          ABB
+      - >-
+          Lummus
+      - >-
+          Global
+      - >-
+          Inc.
+      - >-
+          revidiert
+      - >-
+          werden
+      - >-
+          soll
+      - >-
+          .
+
+  - unit: >-
+      Damit sollen die Asbestklagen gegen beide Unternehmen gemäss der Entscheidung des U.S. 3rd Circuit Court of Appeals vom 2. Dezember 2004 endgültig beigelegt werden.
+    tokens:
+      - >-
+          Damit
+      - >-
+          sollen
+      - >-
+          die
+      - >-
+          Asbestklagen
+      - >-
+          gegen
+      - >-
+          beide
+      - >-
+          Unternehmen
+      - >-
+          gemäss
+      - >-
+          der
+      - >-
+          Entscheidung
+      - >-
+          des
+      - >-
+          U.S.
+      - >-
+          3rd
+      - >-
+          Circuit
+      - >-
+          Court
+      - >-
+          of
+      - >-
+          Appeals
+      - >-
+          vom
+      - >-
+          2.
+      - >-
+          Dezember
+      - >-
+          2004
+      - >-
+          endgültig
+      - >-
+          beigelegt
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Am 24. Juni 2005 wurde beim US-Konkursgericht in Pittsburgh, Pennsylvania, ein revidierter Reorganisationsplan für CE eingereicht.
+    tokens:
+      - >-
+          Am
+      - >-
+          24.
+      - >-
+          Juni
+      - >-
+          2005
+      - >-
+          wurde
+      - >-
+          beim
+      - >-
+          US-Konkursgericht
+      - >-
+          in
+      - >-
+          Pittsburgh
+      - >-
+          ,
+      - >-
+          Pennsylvania
+      - >-
+          ,
+      - >-
+          ein
+      - >-
+          revidierter
+      - >-
+          Reorganisationsplan
+      - >-
+          für
+      - >-
+          CE
+      - >-
+          eingereicht
+      - >-
+          .
+
+  - unit: >-
+      ABB setzt sich weiterhin dafür ein, mit den beteiligten Parteien Lösungen in einem angemessenen Zeitrahmen zu finden.
+    tokens:
+      - >-
+          ABB
+      - >-
+          setzt
+      - >-
+          sich
+      - >-
+          weiterhin
+      - >-
+          dafür
+      - >-
+          ein
+      - >-
+          ,
+      - >-
+          mit
+      - >-
+          den
+      - >-
+          beteiligten
+      - >-
+          Parteien
+      - >-
+          Lösungen
+      - >-
+          in
+      - >-
+          einem
+      - >-
+          angemessenen
+      - >-
+          Zeitrahmen
+      - >-
+          zu
+      - >-
+          finden
+      - >-
+          .
+
+  - unit: >-
+      Am 30. Juni 2005 gab ABB ein vierjähriges Konsolidierungsprogramm für das globale Transformatorengeschäft bekannt.
+    tokens:
+      - >-
+          Am
+      - >-
+          30.
+      - >-
+          Juni
+      - >-
+          2005
+      - >-
+          gab
+      - >-
+          ABB
+      - >-
+          ein
+      - >-
+          vierjähriges
+      - >-
+          Konsolidierungsprogramm
+      - >-
+          für
+      - >-
+          das
+      - >-
+          globale
+      - >-
+          Transformatorengeschäft
+      - >-
+          bekannt
+      - >-
+          .
+
+  - unit: >-
+      Dadurch dürften im Zeitraum von 2005 bis 2008 Kosten in Höhe von insgesamt USD 240 Mio. anfallen.
+    tokens:
+      - >-
+          Dadurch
+      - >-
+          dürften
+      - >-
+          im
+      - >-
+          Zeitraum
+      - >-
+          von
+      - >-
+          2005
+      - >-
+          bis
+      - >-
+          2008
+      - >-
+          Kosten
+      - >-
+          in
+      - >-
+          Höhe
+      - >-
+          von
+      - >-
+          insgesamt
+      - >-
+          USD
+      - >-
+          240
+      - >-
+          Mio.
+      - >-
+          anfallen
+      - >-
+          .
+
+  - unit: >-
+      Rund USD 120 Mio. werden vermutlich bereits im Jahr 2005 fällig sein.
+    tokens:
+      - >-
+          Rund
+      - >-
+          USD
+      - >-
+          120
+      - >-
+          Mio.
+      - >-
+          werden
+      - >-
+          vermutlich
+      - >-
+          bereits
+      - >-
+          im
+      - >-
+          Jahr
+      - >-
+          2005
+      - >-
+          fällig
+      - >-
+          sein
+      - >-
+          .
+
+  - unit: >-
+      Angesichts dieses zusätzlichen Aufwands und der gestiegenen Rohstoffkosten revidierte ABB das EBIT-Margenziel für 2005 der Division Energietechnik und somit auch des Konzerns.
+    tokens:
+      - >-
+          Angesichts
+      - >-
+          dieses
+      - >-
+          zusätzlichen
+      - >-
+          Aufwands
+      - >-
+          und
+      - >-
+          der
+      - >-
+          gestiegenen
+      - >-
+          Rohstoffkosten
+      - >-
+          revidierte
+      - >-
+          ABB
+      - >-
+          das
+      - >-
+          EBIT-Margenziel
+      - >-
+          für
+      - >-
+          2005
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          und
+      - >-
+          somit
+      - >-
+          auch
+      - >-
+          des
+      - >-
+          Konzerns
+      - >-
+          .
+
+  - unit: >-
+      Das neue EBIT-Margenziel der Division Energietechnik für 2005 liegt nun zwischen 6,8% und 7,3%.
+    tokens:
+      - >-
+          Das
+      - >-
+          neue
+      - >-
+          EBIT-Margenziel
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          für
+      - >-
+          2005
+      - >-
+          liegt
+      - >-
+          nun
+      - >-
+          zwischen
+      - >-
+          6,8
+      - >-
+          %
+      - >-
+          und
+      - >-
+          7,3
+      - >-
+          %
+      - >-
+          .
+
+  - unit: >-
+      Das EBIT-Margenziel des Konzerns für 2005 wurde von 7,7% auf eine Bandbreite von 6,6% bis 7,1% gesenkt.
+    tokens:
+      - >-
+          Das
+      - >-
+          EBIT-Margenziel
+      - >-
+          des
+      - >-
+          Konzerns
+      - >-
+          für
+      - >-
+          2005
+      - >-
+          wurde
+      - >-
+          von
+      - >-
+          7,7
+      - >-
+          %
+      - >-
+          auf
+      - >-
+          eine
+      - >-
+          Bandbreite
+      - >-
+          von
+      - >-
+          6,6
+      - >-
+          %
+      - >-
+          bis
+      - >-
+          7,1
+      - >-
+          %
+      - >-
+          gesenkt
+      - >-
+          .
+
+  - unit: >-
+      Das Konsolidierungsprogramm hat keinerlei Auswirkungen auf das EBIT-Margenziel 2005 der Division Automationstechnik, das unverändert bei 10,7% liegt.
+    tokens:
+      - >-
+          Das
+      - >-
+          Konsolidierungsprogramm
+      - >-
+          hat
+      - >-
+          keinerlei
+      - >-
+          Auswirkungen
+      - >-
+          auf
+      - >-
+          das
+      - >-
+          EBIT-Margenziel
+      - >-
+          2005
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          ,
+      - >-
+          das
+      - >-
+          unverändert
+      - >-
+          bei
+      - >-
+          10,7
+      - >-
+          %
+      - >-
+          liegt
+      - >-
+          .
+
+  - unit: >-
+      Angesichts der planmässig verlaufenden Fortschritte dürften die zu einem früheren Zeitpunkt gemachten Prognosen bezüglich der Corporate-Kosten (maximal USD 450 Mio. für das gesamte Jahr 2005) und der operativen Leistung der nicht zum Kerngeschäft gehörenden Aktivitäten (ausgeglichenes Ergebnis für das gesamte Jahr 2005) eintreffen.
+    tokens:
+      - >-
+          Angesichts
+      - >-
+          der
+      - >-
+          planmässig
+      - >-
+          verlaufenden
+      - >-
+          Fortschritte
+      - >-
+          dürften
+      - >-
+          die
+      - >-
+          zu
+      - >-
+          einem
+      - >-
+          früheren
+      - >-
+          Zeitpunkt
+      - >-
+          gemachten
+      - >-
+          Prognosen
+      - >-
+          bezüglich
+      - >-
+          der
+      - >-
+          Corporate-Kosten
+      - >-
+          (
+      - >-
+          maximal
+      - >-
+          USD
+      - >-
+          450
+      - >-
+          Mio.
+      - >-
+          für
+      - >-
+          das
+      - >-
+          gesamte
+      - >-
+          Jahr
+      - >-
+          2005
+      - >-
+          )
+      - >-
+          und
+      - >-
+          der
+      - >-
+          operativen
+      - >-
+          Leistung
+      - >-
+          der
+      - >-
+          nicht
+      - >-
+          zum
+      - >-
+          Kerngeschäft
+      - >-
+          gehörenden
+      - >-
+          Aktivitäten
+      - >-
+          (
+      - >-
+          ausgeglichenes
+      - >-
+          Ergebnis
+      - >-
+          für
+      - >-
+          das
+      - >-
+          gesamte
+      - >-
+          Jahr
+      - >-
+          2005
+      - >-
+          )
+      - >-
+          eintreffen
+      - >-
+          .
+
+  - unit: >-
+      Die Umsatzziele von ABB bleiben ebenfalls unverändert.
+    tokens:
+      - >-
+          Die
+      - >-
+          Umsatzziele
+      - >-
+          von
+      - >-
+          ABB
+      - >-
+          bleiben
+      - >-
+          ebenfalls
+      - >-
+          unverändert
+      - >-
+          .
+
+  - unit: >-
+      ABB strebt von 2002 bis Ende 2005 ein durchschnittliches jährliches Umsatzwachstum von 4 Prozent in Lokalwährungen an.
+    tokens:
+      - >-
+          ABB
+      - >-
+          strebt
+      - >-
+          von
+      - >-
+          2002
+      - >-
+          bis
+      - >-
+          Ende
+      - >-
+          2005
+      - >-
+          ein
+      - >-
+          durchschnittliches
+      - >-
+          jährliches
+      - >-
+          Umsatzwachstum
+      - >-
+          von
+      - >-
+          4
+      - >-
+          Prozent
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          an
+      - >-
+          .
+
+  - unit: >-
+      Bei der Division Energietechnik wird ein durchschnittliches jährliches Umsatzwachstum von 5,3% Prozent (in Lokalwährungen) und bei der Division Automationstechnik von 3,3% (in Lokalwährungen) erwartet.
+    tokens:
+      - >-
+          Bei
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          wird
+      - >-
+          ein
+      - >-
+          durchschnittliches
+      - >-
+          jährliches
+      - >-
+          Umsatzwachstum
+      - >-
+          von
+      - >-
+          5,3
+      - >-
+          %
+      - >-
+          Prozent
+      - >-
+          (
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          )
+      - >-
+          und
+      - >-
+          bei
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Automationstechnik
+      - >-
+          von
+      - >-
+          3,3
+      - >-
+          %
+      - >-
+          (
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          )
+      - >-
+          erwartet
+      - >-
+          .
+
+  - unit: >-
+      Das Unternehmen verringert seine Finanzverpflichtungen weiterhin.
+    tokens:
+      - >-
+          Das
+      - >-
+          Unternehmen
+      - >-
+          verringert
+      - >-
+          seine
+      - >-
+          Finanzverpflichtungen
+      - >-
+          weiterhin
+      - >-
+          .
+
+  - unit: >-
+      Die Zielsetzung ist, eine Wertmaximierung für das Unternehmen zu erreichen, indem die gesamten Finanzierungskosten gesenkt und Risikoprofil des Schuldenportfolios angepasst wird.
+    tokens:
+      - >-
+          Die
+      - >-
+          Zielsetzung
+      - >-
+          ist
+      - >-
+          ,
+      - >-
+          eine
+      - >-
+          Wertmaximierung
+      - >-
+          für
+      - >-
+          das
+      - >-
+          Unternehmen
+      - >-
+          zu
+      - >-
+          erreichen
+      - >-
+          ,
+      - >-
+          indem
+      - >-
+          die
+      - >-
+          gesamten
+      - >-
+          Finanzierungskosten
+      - >-
+          gesenkt
+      - >-
+          und
+      - >-
+          Risikoprofil
+      - >-
+          des
+      - >-
+          Schuldenportfolios
+      - >-
+          angepasst
+      - >-
+          wird
+      - >-
+          .
+
+  - unit: >-
+      Von den Umsatz- und EBIT-Margenzielen ausgeschlossen sind indessen umfangreiche Übernahmen, Veräusserungen und Betriebsschliessungen.
+    tokens:
+      - >-
+          Von
+      - >-
+          den
+      - >-
+          Umsatz-
+      - >-
+          und
+      - >-
+          EBIT-Margenzielen
+      - >-
+          ausgeschlossen
+      - >-
+          sind
+      - >-
+          indessen
+      - >-
+          umfangreiche
+      - >-
+          Übernahmen
+      - >-
+          ,
+      - >-
+          Veräusserungen
+      - >-
+          und
+      - >-
+          Betriebsschliessungen
+      - >-
+          .
+
+  - unit: >-
+      ABB beabsichtigt, am 6. September 2005 die neuen Finanzziele für den Zeitraum 2006 bis 2009 vorzulegen.
+    tokens:
+      - >-
+          ABB
+      - >-
+          beabsichtigt
+      - >-
+          ,
+      - >-
+          am
+      - >-
+          6.
+      - >-
+          September
+      - >-
+          2005
+      - >-
+          die
+      - >-
+          neuen
+      - >-
+          Finanzziele
+      - >-
+          für
+      - >-
+          den
+      - >-
+          Zeitraum
+      - >-
+          2006
+      - >-
+          bis
+      - >-
+          2009
+      - >-
+          vorzulegen
+      - >-
+          .
+
+  - unit: >-
+      Damals war aus China ein Grossauftrag für eine Stromübertragungsanlage eingegangen.
+    tokens:
+      - >-
+          Damals
+      - >-
+          war
+      - >-
+          aus
+      - >-
+          China
+      - >-
+          ein
+      - >-
+          Grossauftrag
+      - >-
+          für
+      - >-
+          eine
+      - >-
+          Stromübertragungsanlage
+      - >-
+          eingegangen
+      - >-
+          .
+
+  - unit: >-
+      Im Geschäftsbereich Power Technology Products war in sämtlichen Geschäftseinheiten sowohl in USD als auch in Lokalwährungen ein Anstieg der Auftragseingänge zu verzeichnen.
+    tokens:
+      - >-
+          Im
+      - >-
+          Geschäftsbereich
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Products
+      - >-
+          war
+      - >-
+          in
+      - >-
+          sämtlichen
+      - >-
+          Geschäftseinheiten
+      - >-
+          sowohl
+      - >-
+          in
+      - >-
+          USD
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          ein
+      - >-
+          Anstieg
+      - >-
+          der
+      - >-
+          Auftragseingänge
+      - >-
+          zu
+      - >-
+          verzeichnen
+      - >-
+          .
+
+  - unit: >-
+      Der grösste Zuwachs wurde indessen bei den Transformatoren und Mittelspannungsprodukten verbucht.
+    tokens:
+      - >-
+          Der
+      - >-
+          grösste
+      - >-
+          Zuwachs
+      - >-
+          wurde
+      - >-
+          indessen
+      - >-
+          bei
+      - >-
+          den
+      - >-
+          Transformatoren
+      - >-
+          und
+      - >-
+          Mittelspannungsprodukten
+      - >-
+          verbucht
+      - >-
+          .
+
+  - unit: >-
+      Regional betrachtet stammte das grösste Auftragswachstum aus Nord- und Südamerika, weil bei den Versorgungsunternehmen der Trend zum Ersatz und zur Modernisierung bestehender Anlagen anhielt.
+    tokens:
+      - >-
+          Regional
+      - >-
+          betrachtet
+      - >-
+          stammte
+      - >-
+          das
+      - >-
+          grösste
+      - >-
+          Auftragswachstum
+      - >-
+          aus
+      - >-
+          Nord-
+      - >-
+          und
+      - >-
+          Südamerika
+      - >-
+          ,
+      - >-
+          weil
+      - >-
+          bei
+      - >-
+          den
+      - >-
+          Versorgungsunternehmen
+      - >-
+          der
+      - >-
+          Trend
+      - >-
+          zum
+      - >-
+          Ersatz
+      - >-
+          und
+      - >-
+          zur
+      - >-
+          Modernisierung
+      - >-
+          bestehender
+      - >-
+          Anlagen
+      - >-
+          anhielt
+      - >-
+          .
+
+  - unit: >-
+      Sämtliche Geschäftseinheiten in Südamerika verbuchten im Berichtsquartal Auftragszuwächse, was darauf hindeutet, dass die unlängst in dieser Region beobachtete Konjunkturerholung weiter anhält.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Geschäftseinheiten
+      - >-
+          in
+      - >-
+          Südamerika
+      - >-
+          verbuchten
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          Auftragszuwächse
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          darauf
+      - >-
+          hindeutet
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          die
+      - >-
+          unlängst
+      - >-
+          in
+      - >-
+          dieser
+      - >-
+          Region
+      - >-
+          beobachtete
+      - >-
+          Konjunkturerholung
+      - >-
+          weiter
+      - >-
+          anhält
+      - >-
+          .
+
+  - unit: >-
+      Auch in Europa führten Investitionen in den Ersatz von bestehenden Anlagen zu einem Anstieg der Auftragseingänge.
+    tokens:
+      - >-
+          Auch
+      - >-
+          in
+      - >-
+          Europa
+      - >-
+          führten
+      - >-
+          Investitionen
+      - >-
+          in
+      - >-
+          den
+      - >-
+          Ersatz
+      - >-
+          von
+      - >-
+          bestehenden
+      - >-
+          Anlagen
+      - >-
+          zu
+      - >-
+          einem
+      - >-
+          Anstieg
+      - >-
+          der
+      - >-
+          Auftragseingänge
+      - >-
+          .
+
+  - unit: >-
+      Bei den Mittelspannungsprodukten und Transformatoren konnten sowohl in USD als auch in Lokalwährungen sogar zweistellige Zuwachsraten erzielt werden.
+    tokens:
+      - >-
+          Bei
+      - >-
+          den
+      - >-
+          Mittelspannungsprodukten
+      - >-
+          und
+      - >-
+          Transformatoren
+      - >-
+          konnten
+      - >-
+          sowohl
+      - >-
+          in
+      - >-
+          USD
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          sogar
+      - >-
+          zweistellige
+      - >-
+          Zuwachsraten
+      - >-
+          erzielt
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      In Osteuropa wurde in sämtlichen Geschäftseinheiten ein Anstieg der Auftragseingänge verbucht.
+    tokens:
+      - >-
+          In
+      - >-
+          Osteuropa
+      - >-
+          wurde
+      - >-
+          in
+      - >-
+          sämtlichen
+      - >-
+          Geschäftseinheiten
+      - >-
+          ein
+      - >-
+          Anstieg
+      - >-
+          der
+      - >-
+          Auftragseingänge
+      - >-
+          verbucht
+      - >-
+          .
+
+  - unit: >-
+      In Asien erzielten sämtliche Geschäftseinheiten einen Zuwachs beim Auftragseingang, was auf eine ungebrochene Nachfrage sowohl von Versorgungsunternehmen als auch von Industriekunden zurückzuführen ist.
+    tokens:
+      - >-
+          In
+      - >-
+          Asien
+      - >-
+          erzielten
+      - >-
+          sämtliche
+      - >-
+          Geschäftseinheiten
+      - >-
+          einen
+      - >-
+          Zuwachs
+      - >-
+          beim
+      - >-
+          Auftragseingang
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          auf
+      - >-
+          eine
+      - >-
+          ungebrochene
+      - >-
+          Nachfrage
+      - >-
+          sowohl
+      - >-
+          von
+      - >-
+          Versorgungsunternehmen
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          von
+      - >-
+          Industriekunden
+      - >-
+          zurückzuführen
+      - >-
+          ist
+      - >-
+          .
+
+  - unit: >-
+      China wies erneut ein gestiegenes Auftragsvolumen aus, wenn auch die äusserst hohen Zuwachsraten von 2004 nicht mehr erreicht werden konnten.
+    tokens:
+      - >-
+          China
+      - >-
+          wies
+      - >-
+          erneut
+      - >-
+          ein
+      - >-
+          gestiegenes
+      - >-
+          Auftragsvolumen
+      - >-
+          aus
+      - >-
+          ,
+      - >-
+          wenn
+      - >-
+          auch
+      - >-
+          die
+      - >-
+          äusserst
+      - >-
+          hohen
+      - >-
+          Zuwachsraten
+      - >-
+          von
+      - >-
+          2004
+      - >-
+          nicht
+      - >-
+          mehr
+      - >-
+          erreicht
+      - >-
+          werden
+      - >-
+          konnten
+      - >-
+          .
+
+  - unit: >-
+      Im Nahen Osten und in Afrika bewirkte die gestiegene Nachfrage nach Mittelspannungsausrüstungen einen Anstieg der Auftragseingänge.
+    tokens:
+      - >-
+          Im
+      - >-
+          Nahen
+      - >-
+          Osten
+      - >-
+          und
+      - >-
+          in
+      - >-
+          Afrika
+      - >-
+          bewirkte
+      - >-
+          die
+      - >-
+          gestiegene
+      - >-
+          Nachfrage
+      - >-
+          nach
+      - >-
+          Mittelspannungsausrüstungen
+      - >-
+          einen
+      - >-
+          Anstieg
+      - >-
+          der
+      - >-
+          Auftragseingänge
+      - >-
+          .
+
+  - unit: >-
+      Beim Geschäftsbereich Power Technology Systems sanken die Auftragseingänge im zweiten Quartal sowohl in USD als auch in Lokalwährungen um mehr als 10%.
+    tokens:
+      - >-
+          Beim
+      - >-
+          Geschäftsbereich
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          sanken
+      - >-
+          die
+      - >-
+          Auftragseingänge
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          sowohl
+      - >-
+          in
+      - >-
+          USD
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          um
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          10
+      - >-
+          %
+      - >-
+          .
+
+  - unit: >-
+      In Asien gingen im Vergleich zum zweiten Quartal 2004 weniger Aufträge ein.
+    tokens:
+      - >-
+          In
+      - >-
+          Asien
+      - >-
+          gingen
+      - >-
+          im
+      - >-
+          Vergleich
+      - >-
+          zum
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          weniger
+      - >-
+          Aufträge
+      - >-
+          ein
+      - >-
+          .
+
+  - unit: >-
+      Damals konnte aus China ein Grossauftrag für eine Stromübertragungsleitung verbucht werden.
+    tokens:
+      - >-
+          Damals
+      - >-
+          konnte
+      - >-
+          aus
+      - >-
+          China
+      - >-
+          ein
+      - >-
+          Grossauftrag
+      - >-
+          für
+      - >-
+          eine
+      - >-
+          Stromübertragungsleitung
+      - >-
+          verbucht
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Auch im Nahen Osten und Afrika gingen weniger Grossaufträge ein.
+    tokens:
+      - >-
+          Auch
+      - >-
+          im
+      - >-
+          Nahen
+      - >-
+          Osten
+      - >-
+          und
+      - >-
+          Afrika
+      - >-
+          gingen
+      - >-
+          weniger
+      - >-
+          Grossaufträge
+      - >-
+          ein
+      - >-
+          .
+
+  - unit: >-
+      Die Auftragslage in Europa verbesserte sich aufgrund eines im Berichtsquartal eingegangenen Auftrages im Wert von über USD 100 Mio. für ein HVDC-Übertragungssystem zwischen Finnland und Estland.
+    tokens:
+      - >-
+          Die
+      - >-
+          Auftragslage
+      - >-
+          in
+      - >-
+          Europa
+      - >-
+          verbesserte
+      - >-
+          sich
+      - >-
+          aufgrund
+      - >-
+          eines
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          eingegangenen
+      - >-
+          Auftrages
+      - >-
+          im
+      - >-
+          Wert
+      - >-
+          von
+      - >-
+          über
+      - >-
+          USD
+      - >-
+          100
+      - >-
+          Mio.
+      - >-
+          für
+      - >-
+          ein
+      - >-
+          HVDC-Übertragungssystem
+      - >-
+          zwischen
+      - >-
+          Finnland
+      - >-
+          und
+      - >-
+          Estland
+      - >-
+          .
+
+  - unit: >-
+      In der Region Nord- und Südamerika konnten die anziehenden Investitionen in Energie-Infrastrukturprojekte in Südamerika und insbesondere in Brasilien den anhaltenden Rückgang der Grossprojekte in Nordamerika kompensieren.
+    tokens:
+      - >-
+          In
+      - >-
+          der
+      - >-
+          Region
+      - >-
+          Nord-
+      - >-
+          und
+      - >-
+          Südamerika
+      - >-
+          konnten
+      - >-
+          die
+      - >-
+          anziehenden
+      - >-
+          Investitionen
+      - >-
+          in
+      - >-
+          Energie-Infrastrukturprojekte
+      - >-
+          in
+      - >-
+          Südamerika
+      - >-
+          und
+      - >-
+          insbesondere
+      - >-
+          in
+      - >-
+          Brasilien
+      - >-
+          den
+      - >-
+          anhaltenden
+      - >-
+          Rückgang
+      - >-
+          der
+      - >-
+          Grossprojekte
+      - >-
+          in
+      - >-
+          Nordamerika
+      - >-
+          kompensieren
+      - >-
+          .
+
+  - unit: >-
+      Dies ist in erster Linie auf das höhere Umsatzvolumen bei den Basisaufträgen zurückzuführen.
+    tokens:
+      - >-
+          Dies
+      - >-
+          ist
+      - >-
+          in
+      - >-
+          erster
+      - >-
+          Linie
+      - >-
+          auf
+      - >-
+          das
+      - >-
+          höhere
+      - >-
+          Umsatzvolumen
+      - >-
+          bei
+      - >-
+          den
+      - >-
+          Basisaufträgen
+      - >-
+          zurückzuführen
+      - >-
+          .
+
+  - unit: >-
+      Der Geschäftsbereich Power Technology Systems wies in USD höhere und in Lokalwährungen stagnierende Umsätze aus.
+    tokens:
+      - >-
+          Der
+      - >-
+          Geschäftsbereich
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          wies
+      - >-
+          in
+      - >-
+          USD
+      - >-
+          höhere
+      - >-
+          und
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          stagnierende
+      - >-
+          Umsätze
+      - >-
+          aus
+      - >-
+          .
+
+  - unit: >-
+      Das Umsatzwachstum in Westeuropa und im Nahen Osten wurde von den geringeren Umsätzen in Asien wieder aufgehoben.
+    tokens:
+      - >-
+          Das
+      - >-
+          Umsatzwachstum
+      - >-
+          in
+      - >-
+          Westeuropa
+      - >-
+          und
+      - >-
+          im
+      - >-
+          Nahen
+      - >-
+          Osten
+      - >-
+          wurde
+      - >-
+          von
+      - >-
+          den
+      - >-
+          geringeren
+      - >-
+          Umsätzen
+      - >-
+          in
+      - >-
+          Asien
+      - >-
+          wieder
+      - >-
+          aufgehoben
+      - >-
+          .
+
+  - unit: >-
+      Dieses vierjährige Konsolidierungsprogramm dürfte Gesamtkosten von rund USD 240 Mio. auslösen, davon rund USD 120 Mio. bereits im Jahr 2005.
+    tokens:
+      - >-
+          Dieses
+      - >-
+          vierjährige
+      - >-
+          Konsolidierungsprogramm
+      - >-
+          dürfte
+      - >-
+          Gesamtkosten
+      - >-
+          von
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          240
+      - >-
+          Mio.
+      - >-
+          auslösen
+      - >-
+          ,
+      - >-
+          davon
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          120
+      - >-
+          Mio.
+      - >-
+          bereits
+      - >-
+          im
+      - >-
+          Jahr
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Im Geschäftsbereich Power Technology Systems war der EBIT-Rückgang in erster Linie durch eine Rückstellung für potenzielle Rechtskosten bedingt.
+    tokens:
+      - >-
+          Im
+      - >-
+          Geschäftsbereich
+      - >-
+          Power
+      - >-
+          Technology
+      - >-
+          Systems
+      - >-
+          war
+      - >-
+          der
+      - >-
+          EBIT-Rückgang
+      - >-
+          in
+      - >-
+          erster
+      - >-
+          Linie
+      - >-
+          durch
+      - >-
+          eine
+      - >-
+          Rückstellung
+      - >-
+          für
+      - >-
+          potenzielle
+      - >-
+          Rechtskosten
+      - >-
+          bedingt
+      - >-
+          .
+
+  - unit: >-
+      Die EBIT-Marge der Division Energietechnik sank im Berichtsquartal auf 5,8% (zweites Quartal 2004: 8,2%).
+    tokens:
+      - >-
+          Die
+      - >-
+          EBIT-Marge
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          Energietechnik
+      - >-
+          sank
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          auf
+      - >-
+          5,8
+      - >-
+          %
+      - >-
+          (
+      - >-
+          zweites
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          :
+      - >-
+          8,2
+      - >-
+          %
+      - >-
+          )
+      - >-
+          .
+
+  - unit: >-
+      Der Cashflow aus Geschäftstätigkeit belief sich im Berichtsquartal dank weiteren Verbesserungen des Nettoumlaufvermögens auf USD 101 Mio. (Vorjahresquartal: USD 35 Mio.)
+    tokens:
+      - >-
+          Der
+      - >-
+          Cashflow
+      - >-
+          aus
+      - >-
+          Geschäftstätigkeit
+      - >-
+          belief
+      - >-
+          sich
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          dank
+      - >-
+          weiteren
+      - >-
+          Verbesserungen
+      - >-
+          des
+      - >-
+          Nettoumlaufvermögens
+      - >-
+          auf
+      - >-
+          USD
+      - >-
+          101
+      - >-
+          Mio.
+      - >-
+          (
+      - >-
+          Vorjahresquartal
+      - >-
+          :
+      - >-
+          USD
+      - >-
+          35
+      - >-
+          Mio.
+      - >-
+          )
+
+  - unit: >-
+      Sämtliche Geschäftsbereiche und Regionen wiesen sowohl in USD als auch in Lokalwährungen höhere Auftragseingänge aus, was auf eine anhaltende Erholung in den meisten industriellen Endabnehmermärkten von ABB weltweit hindeutet.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Geschäftsbereiche
+      - >-
+          und
+      - >-
+          Regionen
+      - >-
+          wiesen
+      - >-
+          sowohl
+      - >-
+          in
+      - >-
+          USD
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          höhere
+      - >-
+          Auftragseingänge
+      - >-
+          aus
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          auf
+      - >-
+          eine
+      - >-
+          anhaltende
+      - >-
+          Erholung
+      - >-
+          in
+      - >-
+          den
+      - >-
+          meisten
+      - >-
+          industriellen
+      - >-
+          Endabnehmermärkten
+      - >-
+          von
+      - >-
+          ABB
+      - >-
+          weltweit
+      - >-
+          hindeutet
+      - >-
+          .
+
+  - unit: >-
+      Der in sämtlichen Geschäftsbereichen verzeichnete Anstieg der Basisaufträge konnte den Rückgang bei den Grossaufträgen mehr als ausgleichen und ist ein Anzeichen für eine weiterhin freundliche Konjunkturlage.
+    tokens:
+      - >-
+          Der
+      - >-
+          in
+      - >-
+          sämtlichen
+      - >-
+          Geschäftsbereichen
+      - >-
+          verzeichnete
+      - >-
+          Anstieg
+      - >-
+          der
+      - >-
+          Basisaufträge
+      - >-
+          konnte
+      - >-
+          den
+      - >-
+          Rückgang
+      - >-
+          bei
+      - >-
+          den
+      - >-
+          Grossaufträgen
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          ausgleichen
+      - >-
+          und
+      - >-
+          ist
+      - >-
+          ein
+      - >-
+          Anzeichen
+      - >-
+          für
+      - >-
+          eine
+      - >-
+          weiterhin
+      - >-
+          freundliche
+      - >-
+          Konjunkturlage
+      - >-
+          .
+
+  - unit: >-
+      Sämtliche Regionen verzeichneten einen Auftragsanstieg.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Regionen
+      - >-
+          verzeichneten
+      - >-
+          einen
+      - >-
+          Auftragsanstieg
+      - >-
+          .
+
+  - unit: >-
+      Sämtliche Regionen verzeichneten einen Auftragsanstieg.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Regionen
+      - >-
+          verzeichneten
+      - >-
+          einen
+      - >-
+          Auftragsanstieg
+      - >-
+          .
+
+  - unit: >-
+      In Asien ging das Wachstum vor allem von China und Indien aus.
+    tokens:
+      - >-
+          In
+      - >-
+          Asien
+      - >-
+          ging
+      - >-
+          das
+      - >-
+          Wachstum
+      - >-
+          vor
+      - >-
+          allem
+      - >-
+          von
+      - >-
+          China
+      - >-
+          und
+      - >-
+          Indien
+      - >-
+          aus
+      - >-
+          .
+
+  - unit: >-
+      Die Region Nord- und Südamerika konnte sowohl in Südamerika als auch in den USA einen Auftragsanstieg verbuchen.
+    tokens:
+      - >-
+          Die
+      - >-
+          Region
+      - >-
+          Nord-
+      - >-
+          und
+      - >-
+          Südamerika
+      - >-
+          konnte
+      - >-
+          sowohl
+      - >-
+          in
+      - >-
+          Südamerika
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          den
+      - >-
+          USA
+      - >-
+          einen
+      - >-
+          Auftragsanstieg
+      - >-
+          verbuchen
+      - >-
+          .
+
+  - unit: >-
+      In Europa ging das Auftragswachstum in erster Linie von den nordischen Ländern und den meisten osteuropäischen Ländern aus, während Mitteleuropa ein gemischtes Wachstum auswies, was teilweise auf den relativ schwachen Bausektor in Deutschland zurückzuführen war.
+    tokens:
+      - >-
+          In
+      - >-
+          Europa
+      - >-
+          ging
+      - >-
+          das
+      - >-
+          Auftragswachstum
+      - >-
+          in
+      - >-
+          erster
+      - >-
+          Linie
+      - >-
+          von
+      - >-
+          den
+      - >-
+          nordischen
+      - >-
+          Ländern
+      - >-
+          und
+      - >-
+          den
+      - >-
+          meisten
+      - >-
+          osteuropäischen
+      - >-
+          Ländern
+      - >-
+          aus
+      - >-
+          ,
+      - >-
+          während
+      - >-
+          Mitteleuropa
+      - >-
+          ein
+      - >-
+          gemischtes
+      - >-
+          Wachstum
+      - >-
+          auswies
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          teilweise
+      - >-
+          auf
+      - >-
+          den
+      - >-
+          relativ
+      - >-
+          schwachen
+      - >-
+          Bausektor
+      - >-
+          in
+      - >-
+          Deutschland
+      - >-
+          zurückzuführen
+      - >-
+          war
+      - >-
+          .
+
+  - unit: >-
+      Der Geschäftsbereich Process Automation konnte den Auftragseingang gegenüber der entsprechenden Vorjahresperiode sowohl in USD als auch in Lokalwährungen um mehr als 10% steigern.
+    tokens:
+      - >-
+          Der
+      - >-
+          Geschäftsbereich
+      - >-
+          Process
+      - >-
+          Automation
+      - >-
+          konnte
+      - >-
+          den
+      - >-
+          Auftragseingang
+      - >-
+          gegenüber
+      - >-
+          der
+      - >-
+          entsprechenden
+      - >-
+          Vorjahresperiode
+      - >-
+          sowohl
+      - >-
+          in
+      - >-
+          USD
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          um
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          10
+      - >-
+          %
+      - >-
+          steigern
+      - >-
+          .
+
+  - unit: >-
+      Mit Ausnahme des weiterhin nachfrageschwachen Papier- und Zellstoffgeschäfts verbuchten sämtliche Geschäftseinheiten einen Zuwachs der Auftragseingänge.
+    tokens:
+      - >-
+          Mit
+      - >-
+          Ausnahme
+      - >-
+          des
+      - >-
+          weiterhin
+      - >-
+          nachfrageschwachen
+      - >-
+          Papier-
+      - >-
+          und
+      - >-
+          Zellstoffgeschäfts
+      - >-
+          verbuchten
+      - >-
+          sämtliche
+      - >-
+          Geschäftseinheiten
+      - >-
+          einen
+      - >-
+          Zuwachs
+      - >-
+          der
+      - >-
+          Auftragseingänge
+      - >-
+          .
+
+  - unit: >-
+      Sämtliche Regionen verzeichneten einen Auftragsanstieg.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Regionen
+      - >-
+          verzeichneten
+      - >-
+          einen
+      - >-
+          Auftragsanstieg
+      - >-
+          .
+
+  - unit: >-
+      Sämtliche Regionen verzeichneten einen Auftragsanstieg.
+    tokens:
+      - >-
+          Sämtliche
+      - >-
+          Regionen
+      - >-
+          verzeichneten
+      - >-
+          einen
+      - >-
+          Auftragsanstieg
+      - >-
+          .
+
+  - unit: >-
+      In Asien konnte das Auftragswachstum in Indien und einer Reihe weiterer Länder die rückläufigen Auftragseingänge in China mehr als ausgleichen.
+    tokens:
+      - >-
+          In
+      - >-
+          Asien
+      - >-
+          konnte
+      - >-
+          das
+      - >-
+          Auftragswachstum
+      - >-
+          in
+      - >-
+          Indien
+      - >-
+          und
+      - >-
+          einer
+      - >-
+          Reihe
+      - >-
+          weiterer
+      - >-
+          Länder
+      - >-
+          die
+      - >-
+          rückläufigen
+      - >-
+          Auftragseingänge
+      - >-
+          in
+      - >-
+          China
+      - >-
+          mehr
+      - >-
+          als
+      - >-
+          ausgleichen
+      - >-
+          .
+
+  - unit: >-
+      Das Auftragswachstum der Region Nord- und Südamerika ging von einem Wachstum in Lokalwährungen von über 10% in Nordamerika aus, wo dank der Tatsache, dass die gesamte Region neuerdings als ein Markt behandelt wird, zusätzliche Aufträge zu verzeichnen waren.
+    tokens:
+      - >-
+          Das
+      - >-
+          Auftragswachstum
+      - >-
+          der
+      - >-
+          Region
+      - >-
+          Nord-
+      - >-
+          und
+      - >-
+          Südamerika
+      - >-
+          ging
+      - >-
+          von
+      - >-
+          einem
+      - >-
+          Wachstum
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          von
+      - >-
+          über
+      - >-
+          10
+      - >-
+          %
+      - >-
+          in
+      - >-
+          Nordamerika
+      - >-
+          aus
+      - >-
+          ,
+      - >-
+          wo
+      - >-
+          dank
+      - >-
+          der
+      - >-
+          Tatsache
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          die
+      - >-
+          gesamte
+      - >-
+          Region
+      - >-
+          neuerdings
+      - >-
+          als
+      - >-
+          ein
+      - >-
+          Markt
+      - >-
+          behandelt
+      - >-
+          wird
+      - >-
+          ,
+      - >-
+          zusätzliche
+      - >-
+          Aufträge
+      - >-
+          zu
+      - >-
+          verzeichnen
+      - >-
+          waren
+      - >-
+          .
+
+  - unit: >-
+      In Europa ging das Auftragswachstum von der industriellen Nachfrage in Westeuropa aus.
+    tokens:
+      - >-
+          In
+      - >-
+          Europa
+      - >-
+          ging
+      - >-
+          das
+      - >-
+          Auftragswachstum
+      - >-
+          von
+      - >-
+          der
+      - >-
+          industriellen
+      - >-
+          Nachfrage
+      - >-
+          in
+      - >-
+          Westeuropa
+      - >-
+          aus
+      - >-
+          .
+
+  - unit: >-
+      In Osteuropa stagnierte das Auftragsvolumen.
+    tokens:
+      - >-
+          In
+      - >-
+          Osteuropa
+      - >-
+          stagnierte
+      - >-
+          das
+      - >-
+          Auftragsvolumen
+      - >-
+          .
+
+  - unit: >-
+      Auch der Geschäftsbereich Manufacturing Automation wartete mit höheren Aufträgen auf, weil die starke Zunahme der Basisaufträge die geringer ausgefallenen Grossaufträge im Berichtsquartal überkompensierte.
+    tokens:
+      - >-
+          Auch
+      - >-
+          der
+      - >-
+          Geschäftsbereich
+      - >-
+          Manufacturing
+      - >-
+          Automation
+      - >-
+          wartete
+      - >-
+          mit
+      - >-
+          höheren
+      - >-
+          Aufträgen
+      - >-
+          auf
+      - >-
+          ,
+      - >-
+          weil
+      - >-
+          die
+      - >-
+          starke
+      - >-
+          Zunahme
+      - >-
+          der
+      - >-
+          Basisaufträge
+      - >-
+          die
+      - >-
+          geringer
+      - >-
+          ausgefallenen
+      - >-
+          Grossaufträge
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          überkompensierte
+      - >-
+          .
+
+  - unit: >-
+      Asien, angeführt von China, wies den höchsten Auftragszuwachs auf.
+    tokens:
+      - >-
+          Asien
+      - >-
+          ,
+      - >-
+          angeführt
+      - >-
+          von
+      - >-
+          China
+      - >-
+          ,
+      - >-
+          wies
+      - >-
+          den
+      - >-
+          höchsten
+      - >-
+          Auftragszuwachs
+      - >-
+          auf
+      - >-
+          .
+
+  - unit: >-
+      Auch in Europa verbesserte sich die Auftragslage, da ein Anstieg in Osteuropa die schwächeren Auftragseingänge in Westeuropa ausglich.
+    tokens:
+      - >-
+          Auch
+      - >-
+          in
+      - >-
+          Europa
+      - >-
+          verbesserte
+      - >-
+          sich
+      - >-
+          die
+      - >-
+          Auftragslage
+      - >-
+          ,
+      - >-
+          da
+      - >-
+          ein
+      - >-
+          Anstieg
+      - >-
+          in
+      - >-
+          Osteuropa
+      - >-
+          die
+      - >-
+          schwächeren
+      - >-
+          Auftragseingänge
+      - >-
+          in
+      - >-
+          Westeuropa
+      - >-
+          ausglich
+      - >-
+          .
+
+  - unit: >-
+      In allen übrigen Regionen stagnierte der Auftragseingang.
+    tokens:
+      - >-
+          In
+      - >-
+          allen
+      - >-
+          übrigen
+      - >-
+          Regionen
+      - >-
+          stagnierte
+      - >-
+          der
+      - >-
+          Auftragseingang
+      - >-
+          .
+
+  - unit: >-
+      Regional betrachtet stammte das stärkste Umsatzwachstum aus Nord- und Südamerika, Asien sowie aus Europa.
+    tokens:
+      - >-
+          Regional
+      - >-
+          betrachtet
+      - >-
+          stammte
+      - >-
+          das
+      - >-
+          stärkste
+      - >-
+          Umsatzwachstum
+      - >-
+          aus
+      - >-
+          Nord-
+      - >-
+          und
+      - >-
+          Südamerika
+      - >-
+          ,
+      - >-
+          Asien
+      - >-
+          sowie
+      - >-
+          aus
+      - >-
+          Europa
+      - >-
+          .
+
+  - unit: >-
+      Sowohl China als auch Indien wiesen im Berichtsquartal höhere Umsätze aus; in den USA stieg der Umsatz aufgrund des hohen Auftragsbestands um über 30%.
+    tokens:
+      - >-
+          Sowohl
+      - >-
+          China
+      - >-
+          als
+      - >-
+          auch
+      - >-
+          Indien
+      - >-
+          wiesen
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          höhere
+      - >-
+          Umsätze
+      - >-
+          aus
+      - >-
+          ;
+      - >-
+          in
+      - >-
+          den
+      - >-
+          USA
+      - >-
+          stieg
+      - >-
+          der
+      - >-
+          Umsatz
+      - >-
+          aufgrund
+      - >-
+          des
+      - >-
+          hohen
+      - >-
+          Auftragsbestands
+      - >-
+          um
+      - >-
+          über
+      - >-
+          30
+      - >-
+          %
+      - >-
+          .
+
+  - unit: >-
+      Osteuropa legte ein Umsatzwachstum von über 50% vor, in Westeuropa verbesserte sich der Umsatz in Lokalwährungen um fast 10%.
+    tokens:
+      - >-
+          Osteuropa
+      - >-
+          legte
+      - >-
+          ein
+      - >-
+          Umsatzwachstum
+      - >-
+          von
+      - >-
+          über
+      - >-
+          50
+      - >-
+          %
+      - >-
+          vor
+      - >-
+          ,
+      - >-
+          in
+      - >-
+          Westeuropa
+      - >-
+          verbesserte
+      - >-
+          sich
+      - >-
+          der
+      - >-
+          Umsatz
+      - >-
+          in
+      - >-
+          Lokalwährungen
+      - >-
+          um
+      - >-
+          fast
+      - >-
+          10
+      - >-
+          %
+      - >-
+          .
+
+  - unit: >-
+      Das grösste EBIT-Wachstum verzeichnete der Geschäftsbereich Process Automation, dank Produktivitätssteigerungen, erfolgreicher Kostenverlagerung und höherem Umsatz.
+    tokens:
+      - >-
+          Das
+      - >-
+          grösste
+      - >-
+          EBIT-Wachstum
+      - >-
+          verzeichnete
+      - >-
+          der
+      - >-
+          Geschäftsbereich
+      - >-
+          Process
+      - >-
+          Automation
+      - >-
+          ,
+      - >-
+          dank
+      - >-
+          Produktivitätssteigerungen
+      - >-
+          ,
+      - >-
+          erfolgreicher
+      - >-
+          Kostenverlagerung
+      - >-
+          und
+      - >-
+          höherem
+      - >-
+          Umsatz
+      - >-
+          .
+
+  - unit: >-
+      Auch der Geschäftsbereich Automation Products erzielte dank Umsatzsteigerungen, höheren Kapazitätsauslastungen, Kostenverlagerung und Produktivitätssteigerungen eine EBIT-Verbesserung.
+    tokens:
+      - >-
+          Auch
+      - >-
+          der
+      - >-
+          Geschäftsbereich
+      - >-
+          Automation
+      - >-
+          Products
+      - >-
+          erzielte
+      - >-
+          dank
+      - >-
+          Umsatzsteigerungen
+      - >-
+          ,
+      - >-
+          höheren
+      - >-
+          Kapazitätsauslastungen
+      - >-
+          ,
+      - >-
+          Kostenverlagerung
+      - >-
+          und
+      - >-
+          Produktivitätssteigerungen
+      - >-
+          eine
+      - >-
+          EBIT-Verbesserung
+      - >-
+          .
+
+  - unit: >-
+      Nach einem einmaligen Erlös aus dem Verkauf einer kleinen Geschäftseinheit im 2. Quartal 2004 in Schweden blieb der EBIT des Geschäftsbereichs Manufacturing Automation im Berichtsquartal unverändert.
+    tokens:
+      - >-
+          Nach
+      - >-
+          einem
+      - >-
+          einmaligen
+      - >-
+          Erlös
+      - >-
+          aus
+      - >-
+          dem
+      - >-
+          Verkauf
+      - >-
+          einer
+      - >-
+          kleinen
+      - >-
+          Geschäftseinheit
+      - >-
+          im
+      - >-
+          2.
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          in
+      - >-
+          Schweden
+      - >-
+          blieb
+      - >-
+          der
+      - >-
+          EBIT
+      - >-
+          des
+      - >-
+          Geschäftsbereichs
+      - >-
+          Manufacturing
+      - >-
+          Automation
+      - >-
+          im
+      - >-
+          Berichtsquartal
+      - >-
+          unverändert
+      - >-
+          .
+
+  - unit: >-
+      Die EBIT-Marge der Division stieg von 9,8 % im zweiten Quartal 2004 auf 10,7 % im zweiten Quartal 2005.
+    tokens:
+      - >-
+          Die
+      - >-
+          EBIT-Marge
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          stieg
+      - >-
+          von
+      - >-
+          9,8
+      - >-
+          %
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2004
+      - >-
+          auf
+      - >-
+          10,7
+      - >-
+          %
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2005
+      - >-
+          .
+
+  - unit: >-
+      Der Cashflow aus Geschäftstätigkeit der Division betrug USD 190 Mio., im Vergleich zu USD 225 Mio. im Vergleichsquartal des Vorjahres.
+    tokens:
+      - >-
+          Der
+      - >-
+          Cashflow
+      - >-
+          aus
+      - >-
+          Geschäftstätigkeit
+      - >-
+          der
+      - >-
+          Division
+      - >-
+          betrug
+      - >-
+          USD
+      - >-
+          190
+      - >-
+          Mio.
+      - >-
+          ,
+      - >-
+          im
+      - >-
+          Vergleich
+      - >-
+          zu
+      - >-
+          USD
+      - >-
+          225
+      - >-
+          Mio.
+      - >-
+          im
+      - >-
+          Vergleichsquartal
+      - >-
+          des
+      - >-
+          Vorjahres
+      - >-
+          .
+
+  - unit: >-
+      Dieser Rückgang war hauptsächlich auf einen höheren Betriebskapitalbedarf als Folge des starken Umsatzwachstums zurückzuführen.
+    tokens:
+      - >-
+          Dieser
+      - >-
+          Rückgang
+      - >-
+          war
+      - >-
+          hauptsächlich
+      - >-
+          auf
+      - >-
+          einen
+      - >-
+          höheren
+      - >-
+          Betriebskapitalbedarf
+      - >-
+          als
+      - >-
+          Folge
+      - >-
+          des
+      - >-
+          starken
+      - >-
+          Umsatzwachstums
+      - >-
+          zurückzuführen
+      - >-
+          .
+
+  - unit: >-
+      In Deutschland erreichte der Geschäftsbereich im zweiten Quartal beim operativen Ergebnis die Gewinnschwelle.
+    tokens:
+      - >-
+          In
+      - >-
+          Deutschland
+      - >-
+          erreichte
+      - >-
+          der
+      - >-
+          Geschäftsbereich
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          beim
+      - >-
+          operativen
+      - >-
+          Ergebnis
+      - >-
+          die
+      - >-
+          Gewinnschwelle
+      - >-
+          .
+
+  - unit: >-
+      Der Geschäftsbereich Equity Ventures erreichte nach Wertabschreibungen auf einer Wertpapieranlage in Höhe von USD 10 Mio. sowie einem geringeren EBIT aus anderen Wertpapieranlagen des Gesamt-EBIT ebenfalls ein Breakeven-Ergebnis.
+    tokens:
+      - >-
+          Der
+      - >-
+          Geschäftsbereich
+      - >-
+          Equity
+      - >-
+          Ventures
+      - >-
+          erreichte
+      - >-
+          nach
+      - >-
+          Wertabschreibungen
+      - >-
+          auf
+      - >-
+          einer
+      - >-
+          Wertpapieranlage
+      - >-
+          in
+      - >-
+          Höhe
+      - >-
+          von
+      - >-
+          USD
+      - >-
+          10
+      - >-
+          Mio.
+      - >-
+          sowie
+      - >-
+          einem
+      - >-
+          geringeren
+      - >-
+          EBIT
+      - >-
+          aus
+      - >-
+          anderen
+      - >-
+          Wertpapieranlagen
+      - >-
+          des
+      - >-
+          Gesamt-EBIT
+      - >-
+          ebenfalls
+      - >-
+          ein
+      - >-
+          Breakeven-Ergebnis
+      - >-
+          .
+
+  - unit: >-
+      Ausserdem wurde der EBIT des zweiten Quartals 2005 von einem Aufwand für Rechtskosten im Zusammenhang mit einem potenziellen Verfahren belastet, der unter Übrige nicht zum Kerngeschäft gehörende Aktivitäten verbucht wurde.
+    tokens:
+      - >-
+          Ausserdem
+      - >-
+          wurde
+      - >-
+          der
+      - >-
+          EBIT
+      - >-
+          des
+      - >-
+          zweiten
+      - >-
+          Quartals
+      - >-
+          2005
+      - >-
+          von
+      - >-
+          einem
+      - >-
+          Aufwand
+      - >-
+          für
+      - >-
+          Rechtskosten
+      - >-
+          im
+      - >-
+          Zusammenhang
+      - >-
+          mit
+      - >-
+          einem
+      - >-
+          potenziellen
+      - >-
+          Verfahren
+      - >-
+          belastet
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          unter
+      - >-
+          Übrige
+      - >-
+          nicht
+      - >-
+          zum
+      - >-
+          Kerngeschäft
+      - >-
+          gehörende
+      - >-
+          Aktivitäten
+      - >-
+          verbucht
+      - >-
+          wurde
+      - >-
+          .
+
+  - unit: >-
+      Die geringeren Konzernkosten im zweiten Quartal 2005 sind in erster Linie das Ergebnis weiterer Kostensenkungsmassnahmen in den Länderhauptsitzen sowie in der Konzernzentrale in Zürich zu verdanken.
+    tokens:
+      - >-
+          Die
+      - >-
+          geringeren
+      - >-
+          Konzernkosten
+      - >-
+          im
+      - >-
+          zweiten
+      - >-
+          Quartal
+      - >-
+          2005
+      - >-
+          sind
+      - >-
+          in
+      - >-
+          erster
+      - >-
+          Linie
+      - >-
+          das
+      - >-
+          Ergebnis
+      - >-
+          weiterer
+      - >-
+          Kostensenkungsmassnahmen
+      - >-
+          in
+      - >-
+          den
+      - >-
+          Länderhauptsitzen
+      - >-
+          sowie
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Konzernzentrale
+      - >-
+          in
+      - >-
+          Zürich
+      - >-
+          zu
+      - >-
+          verdanken
+      - >-
+          .
+
+  - unit: >-
+      Im entsprechenden Vorjahresquartal enthielten die Konzernkosten einen Veräusserungsgewinn von rund USD 15 Mio. aus dem Verkauf von Immobilien, der unter der Position Übriges ausgewiesen wurde.
+    tokens:
+      - >-
+          Im
+      - >-
+          entsprechenden
+      - >-
+          Vorjahresquartal
+      - >-
+          enthielten
+      - >-
+          die
+      - >-
+          Konzernkosten
+      - >-
+          einen
+      - >-
+          Veräusserungsgewinn
+      - >-
+          von
+      - >-
+          rund
+      - >-
+          USD
+      - >-
+          15
+      - >-
+          Mio.
+      - >-
+          aus
+      - >-
+          dem
+      - >-
+          Verkauf
+      - >-
+          von
+      - >-
+          Immobilien
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          unter
+      - >-
+          der
+      - >-
+          Position
+      - >-
+          Übriges
+      - >-
+          ausgewiesen
+      - >-
+          wurde
+      - >-
+          .
+
+  - unit: >-
+      Die Ergebnisse des zweiten Quartals 2005 sowie die Präsentationen stehen ab dem 28. Juli 2005 im «ABB News Center» auf www.abb.com/news sowie auf der Homepage von ABB Investor Relations www.abb.com/investorrelations zur Verfügung.
+    tokens:
+      - >-
+          Die
+      - >-
+          Ergebnisse
+      - >-
+          des
+      - >-
+          zweiten
+      - >-
+          Quartals
+      - >-
+          2005
+      - >-
+          sowie
+      - >-
+          die
+      - >-
+          Präsentationen
+      - >-
+          stehen
+      - >-
+          ab
+      - >-
+          dem
+      - >-
+          28.
+      - >-
+          Juli
+      - >-
+          2005
+      - >-
+          im
+      - >-
+          «
+      - >-
+          ABB
+      - >-
+          News
+      - >-
+          Center
+      - >-
+          »
+      - >-
+          auf
+      - >-
+          www.abb.com/news
+      - >-
+          sowie
+      - >-
+          auf
+      - >-
+          der
+      - >-
+          Homepage
+      - >-
+          von
+      - >-
+          ABB
+      - >-
+          Investor
+      - >-
+          Relations
+      - >-
+          www.abb.com/investorrelations
+      - >-
+          zur
+      - >-
+          Verfügung
+      - >-
+          .
+
+  - unit: >-
+      Heute findet ab 10 Uhr mitteleuropäischer Zeit eine Telefonkonferenz für Journalisten statt.
+    tokens:
+      - >-
+          Heute
+      - >-
+          findet
+      - >-
+          ab
+      - >-
+          10
+      - >-
+          Uhr
+      - >-
+          mitteleuropäischer
+      - >-
+          Zeit
+      - >-
+          eine
+      - >-
+          Telefonkonferenz
+      - >-
+          für
+      - >-
+          Journalisten
+      - >-
+          statt
+      - >-
+          .
+
+  - unit: >-
+      Die Audioaufzeichnung wird eine Stunde nach Ende der Telefonkonferenz 72 Stunden lang zur Verfügung stehen.
+    tokens:
+      - >-
+          Die
+      - >-
+          Audioaufzeichnung
+      - >-
+          wird
+      - >-
+          eine
+      - >-
+          Stunde
+      - >-
+          nach
+      - >-
+          Ende
+      - >-
+          der
+      - >-
+          Telefonkonferenz
+      - >-
+          72
+      - >-
+          Stunden
+      - >-
+          lang
+      - >-
+          zur
+      - >-
+          Verfügung
+      - >-
+          stehen
+      - >-
+          .
+
+  - unit: >-
+      Ein Konferenzgespräch für Analysten und Anleger ist für heute ab 15 Uhr mitteleuropäischer Zeit (9 Uhr EST) angesetzt.
+    tokens:
+      - >-
+          Ein
+      - >-
+          Konferenzgespräch
+      - >-
+          für
+      - >-
+          Analysten
+      - >-
+          und
+      - >-
+          Anleger
+      - >-
+          ist
+      - >-
+          für
+      - >-
+          heute
+      - >-
+          ab
+      - >-
+          15
+      - >-
+          Uhr
+      - >-
+          mitteleuropäischer
+      - >-
+          Zeit
+      - >-
+          (
+      - >-
+          9
+      - >-
+          Uhr
+      - >-
+          EST
+      - >-
+          )
+      - >-
+          angesetzt
+      - >-
+          .
+
+  - unit: >-
+      Die Teilnehmer sollten sich 10 Minuten vor Konferenzbeginn einwählen.
+    tokens:
+      - >-
+          Die
+      - >-
+          Teilnehmer
+      - >-
+          sollten
+      - >-
+          sich
+      - >-
+          10
+      - >-
+          Minuten
+      - >-
+          vor
+      - >-
+          Konferenzbeginn
+      - >-
+          einwählen
+      - >-
+          .
+
+  - unit: >-
+      Die Audioaufzeichnung wird eine Stunde nach Ende der Telefonkonferenz 96 Stunden lang zur Verfügung stehen.
+    tokens:
+      - >-
+          Die
+      - >-
+          Audioaufzeichnung
+      - >-
+          wird
+      - >-
+          eine
+      - >-
+          Stunde
+      - >-
+          nach
+      - >-
+          Ende
+      - >-
+          der
+      - >-
+          Telefonkonferenz
+      - >-
+          96
+      - >-
+          Stunden
+      - >-
+          lang
+      - >-
+          zur
+      - >-
+          Verfügung
+      - >-
+          stehen
+      - >-
+          .
+
+  - unit: >-
+      Der letzte Quartalsbericht für das Jahr 2005 ist für den 28. Oktober (und nicht den 27. Oktober, wie ursprünglich angekündigt) geplant.
+    tokens:
+      - >-
+          Der
+      - >-
+          letzte
+      - >-
+          Quartalsbericht
+      - >-
+          für
+      - >-
+          das
+      - >-
+          Jahr
+      - >-
+          2005
+      - >-
+          ist
+      - >-
+          für
+      - >-
+          den
+      - >-
+          28.
+      - >-
+          Oktober
+      - >-
+          (
+      - >-
+          und
+      - >-
+          nicht
+      - >-
+          den
+      - >-
+          27.
+      - >-
+          Oktober
+      - >-
+          ,
+      - >-
+          wie
+      - >-
+          ursprünglich
+      - >-
+          angekündigt
+      - >-
+          )
+      - >-
+          geplant
+      - >-
+          .
+
+  - unit: >-
+      ABB beabsichtigt zudem, am 6. September 2005 die neuen Finanzziele für den Zeitraum 2006 bis 2009 vorzulegen.
+    tokens:
+      - >-
+          ABB
+      - >-
+          beabsichtigt
+      - >-
+          zudem
+      - >-
+          ,
+      - >-
+          am
+      - >-
+          6.
+      - >-
+          September
+      - >-
+          2005
+      - >-
+          die
+      - >-
+          neuen
+      - >-
+          Finanzziele
+      - >-
+          für
+      - >-
+          den
+      - >-
+          Zeitraum
+      - >-
+          2006
+      - >-
+          bis
+      - >-
+          2009
+      - >-
+          vorzulegen
+      - >-
+          .
+
+  - unit: >-
+      ABB (www.abb.com) ist führend in der Energie- und Automationstechnik.
+    tokens:
+      - >-
+          ABB
+      - >-
+          (
+      - >-
+          www.abb.com
+      - >-
+          )
+      - >-
+          ist
+      - >-
+          führend
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Energie-
+      - >-
+          und
+      - >-
+          Automationstechnik
+      - >-
+          .
+
+  - unit: >-
+      Das Unternehmen ermöglicht seinen Kunden in der Energieversorgung und der Industrie, ihre Leistung zu verbessern und gleichzeitig die Umweltbelastung zu reduzieren.
+    tokens:
+      - >-
+          Das
+      - >-
+          Unternehmen
+      - >-
+          ermöglicht
+      - >-
+          seinen
+      - >-
+          Kunden
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Energieversorgung
+      - >-
+          und
+      - >-
+          der
+      - >-
+          Industrie
+      - >-
+          ,
+      - >-
+          ihre
+      - >-
+          Leistung
+      - >-
+          zu
+      - >-
+          verbessern
+      - >-
+          und
+      - >-
+          gleichzeitig
+      - >-
+          die
+      - >-
+          Umweltbelastung
+      - >-
+          zu
+      - >-
+          reduzieren
+      - >-
+          .
+
+  - unit: >-
+      Die gemachten Aussagen beruhen auf gegenwärtigen Erwartungen, Einschätzungen und Voraussagen über Faktoren, die unsere künftige Performance beeinträchtigen können, darunter auch über die globale Konjunkturlage sowie über die wirtschaftlichen Bedingungen in Regionen und Branchen, die für ABB Ltd und das Geschäft von ABB die Hauptabsatzmärkte darstellen.
+    tokens:
+      - >-
+          Die
+      - >-
+          gemachten
+      - >-
+          Aussagen
+      - >-
+          beruhen
+      - >-
+          auf
+      - >-
+          gegenwärtigen
+      - >-
+          Erwartungen
+      - >-
+          ,
+      - >-
+          Einschätzungen
+      - >-
+          und
+      - >-
+          Voraussagen
+      - >-
+          über
+      - >-
+          Faktoren
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          unsere
+      - >-
+          künftige
+      - >-
+          Performance
+      - >-
+          beeinträchtigen
+      - >-
+          können
+      - >-
+          ,
+      - >-
+          darunter
+      - >-
+          auch
+      - >-
+          über
+      - >-
+          die
+      - >-
+          globale
+      - >-
+          Konjunkturlage
+      - >-
+          sowie
+      - >-
+          über
+      - >-
+          die
+      - >-
+          wirtschaftlichen
+      - >-
+          Bedingungen
+      - >-
+          in
+      - >-
+          Regionen
+      - >-
+          und
+      - >-
+          Branchen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          für
+      - >-
+          ABB
+      - >-
+          Ltd
+      - >-
+          und
+      - >-
+          das
+      - >-
+          Geschäft
+      - >-
+          von
+      - >-
+          ABB
+      - >-
+          die
+      - >-
+          Hauptabsatzmärkte
+      - >-
+          darstellen
+      - >-
+          .
+
+  - unit: >-
+      Diese Erwartungen, Einschätzungen und Voraussagen werden im Allgemeinen mit Begriffen wie «erwartet», «glaubt», «schätzt» «strebt an», «plant» oder Ähnlichem als solche bezeichnet.
+    tokens:
+      - >-
+          Diese
+      - >-
+          Erwartungen
+      - >-
+          ,
+      - >-
+          Einschätzungen
+      - >-
+          und
+      - >-
+          Voraussagen
+      - >-
+          werden
+      - >-
+          im
+      - >-
+          Allgemeinen
+      - >-
+          mit
+      - >-
+          Begriffen
+      - >-
+          wie
+      - >-
+          «
+      - >-
+          erwartet
+      - >-
+          »
+      - >-
+          ,
+      - >-
+          «
+      - >-
+          glaubt
+      - >-
+          »
+      - >-
+          ,
+      - >-
+          «
+      - >-
+          schätzt
+      - >-
+          »
+      - >-
+          «
+      - >-
+          strebt
+      - >-
+          an
+      - >-
+          »
+      - >-
+          ,
+      - >-
+          «
+      - >-
+          plant
+      - >-
+          »
+      - >-
+          oder
+      - >-
+          Ähnlichem
+      - >-
+          als
+      - >-
+          solche
+      - >-
+          bezeichnet
+      - >-
+          .
+
+  - unit: >-
+      Es gibt jedoch viele Risiken und Unwägbarkeiten, wovon manche ausserhalb unseres Einflussbereichs liegen, die dazu führen können, dass die tatsächlichen Ergebnisse wesentlich von den Zukunftsaussagen dieser Pressemitteilung abweichen.
+    tokens:
+      - >-
+          Es
+      - >-
+          gibt
+      - >-
+          jedoch
+      - >-
+          viele
+      - >-
+          Risiken
+      - >-
+          und
+      - >-
+          Unwägbarkeiten
+      - >-
+          ,
+      - >-
+          wovon
+      - >-
+          manche
+      - >-
+          ausserhalb
+      - >-
+          unseres
+      - >-
+          Einflussbereichs
+      - >-
+          liegen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          dazu
+      - >-
+          führen
+      - >-
+          können
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          die
+      - >-
+          tatsächlichen
+      - >-
+          Ergebnisse
+      - >-
+          wesentlich
+      - >-
+          von
+      - >-
+          den
+      - >-
+          Zukunftsaussagen
+      - >-
+          dieser
+      - >-
+          Pressemitteilung
+      - >-
+          abweichen
+      - >-
+          .
+
+  - unit: >-
+      Obwohl ABB Ltd glaubt, dass diese Erwartungen in solchen Zukunftsaussagen auf angemessenen Annahmen beruhen, kann das Unternehmen keine Garantien abgeben, dass diese Erwartungen auch tatsächlich eintreffen werden.
+    tokens:
+      - >-
+          Obwohl
+      - >-
+          ABB
+      - >-
+          Ltd
+      - >-
+          glaubt
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          diese
+      - >-
+          Erwartungen
+      - >-
+          in
+      - >-
+          solchen
+      - >-
+          Zukunftsaussagen
+      - >-
+          auf
+      - >-
+          angemessenen
+      - >-
+          Annahmen
+      - >-
+          beruhen
+      - >-
+          ,
+      - >-
+          kann
+      - >-
+          das
+      - >-
+          Unternehmen
+      - >-
+          keine
+      - >-
+          Garantien
+      - >-
+          abgeben
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          diese
+      - >-
+          Erwartungen
+      - >-
+          auch
+      - >-
+          tatsächlich
+      - >-
+          eintreffen
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      <h2>Das Bananen-Zertifizierungsprogramm der Rainforest Alliance</h2>
+    tokens:
+      - >-
+          <h2>
+      - >-
+          Das
+      - >-
+          Bananen-Zertifizierungsprogramm
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          </h2>
+
+  - unit: >-
+      <h3>Verbesserung von Umwelt, Arbeitsbedingungen und Lokaler Gemeinden</h3>
+    tokens:
+      - >-
+          <h3>
+      - >-
+          Verbesserung
+      - >-
+          von
+      - >-
+          Umwelt
+      - >-
+          ,
+      - >-
+          Arbeitsbedingungen
+      - >-
+          und
+      - >-
+          Lokaler
+      - >-
+          Gemeinden
+      - >-
+          </h3>
+
+  - unit: >-
+      <p>Das Interesse der Rainforest Alliance an Bananen wurde zuerst im Jahr 1990 geweckt, als die Produktion dieser Frucht in den tropischen Gebieten Amerikas anstieg und deshalb Regenwälder abgeholzt wurden, um die Anbaugebiete auszudehnen.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Das
+      - >-
+          Interesse
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          an
+      - >-
+          Bananen
+      - >-
+          wurde
+      - >-
+          zuerst
+      - >-
+          im
+      - >-
+          Jahr
+      - >-
+          1990
+      - >-
+          geweckt
+      - >-
+          ,
+      - >-
+          als
+      - >-
+          die
+      - >-
+          Produktion
+      - >-
+          dieser
+      - >-
+          Frucht
+      - >-
+          in
+      - >-
+          den
+      - >-
+          tropischen
+      - >-
+          Gebieten
+      - >-
+          Amerikas
+      - >-
+          anstieg
+      - >-
+          und
+      - >-
+          deshalb
+      - >-
+          Regenwälder
+      - >-
+          abgeholzt
+      - >-
+          wurden
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          die
+      - >-
+          Anbaugebiete
+      - >-
+          auszudehnen
+      - >-
+          .
+
+  - unit: >-
+      Bananenplantagen waren für ihre Umweltverschmutzung und die Ausbeutung der Arbeiter berüchtigt.
+    tokens:
+      - >-
+          Bananenplantagen
+      - >-
+          waren
+      - >-
+          für
+      - >-
+          ihre
+      - >-
+          Umweltverschmutzung
+      - >-
+          und
+      - >-
+          die
+      - >-
+          Ausbeutung
+      - >-
+          der
+      - >-
+          Arbeiter
+      - >-
+          berüchtigt
+      - >-
+          .
+
+  - unit: >-
+      Darunter fielen z.B. der Einsatz gefährlicher Schädlingsbekämpfungsmittel, miserable Arbeitsbedingungen, Verschmutzung des Wassers und Entwaldung.
+    tokens:
+      - >-
+          Darunter
+      - >-
+          fielen
+      - >-
+          z.B.
+      - >-
+          der
+      - >-
+          Einsatz
+      - >-
+          gefährlicher
+      - >-
+          Schädlingsbekämpfungsmittel
+      - >-
+          ,
+      - >-
+          miserable
+      - >-
+          Arbeitsbedingungen
+      - >-
+          ,
+      - >-
+          Verschmutzung
+      - >-
+          des
+      - >-
+          Wassers
+      - >-
+          und
+      - >-
+          Entwaldung
+      - >-
+          .
+
+  - unit: >-
+      Mit Pestiziden imprägnierte Plastiktüten, die die Bananen während ihres Wachstums schützen, wurden weggeworfen und verschmutzten oft die Ufer von Flüssen und Stränden in der Nähe von Bananenfarmen.
+    tokens:
+      - >-
+          Mit
+      - >-
+          Pestiziden
+      - >-
+          imprägnierte
+      - >-
+          Plastiktüten
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          die
+      - >-
+          Bananen
+      - >-
+          während
+      - >-
+          ihres
+      - >-
+          Wachstums
+      - >-
+          schützen
+      - >-
+          ,
+      - >-
+          wurden
+      - >-
+          weggeworfen
+      - >-
+          und
+      - >-
+          verschmutzten
+      - >-
+          oft
+      - >-
+          die
+      - >-
+          Ufer
+      - >-
+          von
+      - >-
+          Flüssen
+      - >-
+          und
+      - >-
+          Stränden
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Nähe
+      - >-
+          von
+      - >-
+          Bananenfarmen
+      - >-
+          .
+
+  - unit: >-
+      Durch den Abfluss von Pestiziden, Kunstdüngern und Sedimenten wurden Fische getötet, Flussläufe veraendert und Korallenriffe vernichtet.
+    tokens:
+      - >-
+          Durch
+      - >-
+          den
+      - >-
+          Abfluss
+      - >-
+          von
+      - >-
+          Pestiziden
+      - >-
+          ,
+      - >-
+          Kunstdüngern
+      - >-
+          und
+      - >-
+          Sedimenten
+      - >-
+          wurden
+      - >-
+          Fische
+      - >-
+          getötet
+      - >-
+          ,
+      - >-
+          Flussläufe
+      - >-
+          veraendert
+      - >-
+          und
+      - >-
+          Korallenriffe
+      - >-
+          vernichtet
+      - >-
+          .
+
+  - unit: >-
+      Auf Grund der unmittelbaren Nähe von Wohnsiedlungen zu Bananenfeldern sowie laxen Vorschriften über die Handhabung von Pestiziden, litten Arbeiter und Menschen, die in der Nähe der Farmen lebten, häufig unter gesundheitlichen Problemen.
+    tokens:
+      - >-
+          Auf
+      - >-
+          Grund
+      - >-
+          der
+      - >-
+          unmittelbaren
+      - >-
+          Nähe
+      - >-
+          von
+      - >-
+          Wohnsiedlungen
+      - >-
+          zu
+      - >-
+          Bananenfeldern
+      - >-
+          sowie
+      - >-
+          laxen
+      - >-
+          Vorschriften
+      - >-
+          über
+      - >-
+          die
+      - >-
+          Handhabung
+      - >-
+          von
+      - >-
+          Pestiziden
+      - >-
+          ,
+      - >-
+          litten
+      - >-
+          Arbeiter
+      - >-
+          und
+      - >-
+          Menschen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Nähe
+      - >-
+          der
+      - >-
+          Farmen
+      - >-
+          lebten
+      - >-
+          ,
+      - >-
+          häufig
+      - >-
+          unter
+      - >-
+          gesundheitlichen
+      - >-
+          Problemen
+      - >-
+          .
+
+  - unit: >-
+      <p>"In den Tiefebenen der Atlantikküste von Costa Rica verursachte die Bananenproduktion die meiste Verschmutzung," erinnert sich Alejandro Alvarez, der zur Ausarbeitung der Zertifizierungsstandards der Rainforest Alliance in den frühen 90er Jahren beitrug.
+    tokens:
+      - >-
+          <p>
+      - >-
+          "
+      - >-
+          In
+      - >-
+          den
+      - >-
+          Tiefebenen
+      - >-
+          der
+      - >-
+          Atlantikküste
+      - >-
+          von
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          verursachte
+      - >-
+          die
+      - >-
+          Bananenproduktion
+      - >-
+          die
+      - >-
+          meiste
+      - >-
+          Verschmutzung
+      - >-
+          ,
+      - >-
+          "
+      - >-
+          erinnert
+      - >-
+          sich
+      - >-
+          Alejandro
+      - >-
+          Alvarez
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          zur
+      - >-
+          Ausarbeitung
+      - >-
+          der
+      - >-
+          Zertifizierungsstandards
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          in
+      - >-
+          den
+      - >-
+          frühen
+      - >-
+          90er
+      - >-
+          Jahren
+      - >-
+          beitrug
+      - >-
+          .
+
+  - unit: >-
+      <h4>Praktische Lösungen</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Praktische
+      - >-
+          Lösungen
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Im Jahr 1990 hat die Rainforest Alliance daher Arbeitsgruppen organisiert, um die Probleme auf Bananenfarmen zu untersuchen und um Empfehlungen für realisierbare Verbesserungen auszusprechen.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Im
+      - >-
+          Jahr
+      - >-
+          1990
+      - >-
+          hat
+      - >-
+          die
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          daher
+      - >-
+          Arbeitsgruppen
+      - >-
+          organisiert
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          die
+      - >-
+          Probleme
+      - >-
+          auf
+      - >-
+          Bananenfarmen
+      - >-
+          zu
+      - >-
+          untersuchen
+      - >-
+          und
+      - >-
+          um
+      - >-
+          Empfehlungen
+      - >-
+          für
+      - >-
+          realisierbare
+      - >-
+          Verbesserungen
+      - >-
+          auszusprechen
+      - >-
+          .
+
+  - unit: >-
+      Diese Gruppen bestanden aus Wissenschaftlern, Bananenproduzenten, führenden Mitgliedern der Gemeinden und Repräsentanten anderer Nichtregierungsorganisationen.
+    tokens:
+      - >-
+          Diese
+      - >-
+          Gruppen
+      - >-
+          bestanden
+      - >-
+          aus
+      - >-
+          Wissenschaftlern
+      - >-
+          ,
+      - >-
+          Bananenproduzenten
+      - >-
+          ,
+      - >-
+          führenden
+      - >-
+          Mitgliedern
+      - >-
+          der
+      - >-
+          Gemeinden
+      - >-
+          und
+      - >-
+          Repräsentanten
+      - >-
+          anderer
+      - >-
+          Nichtregierungsorganisationen
+      - >-
+          .
+
+  - unit: >-
+      Nach zweijährigen Beratungen legten sie im Jahr 1992 die ersten Grundsätze für das nachhaltige Management von Landwirtschaftsbetrieben vor, die auf Dutzenden von messbaren, konkreten Kriterien beruhten.
+    tokens:
+      - >-
+          Nach
+      - >-
+          zweijährigen
+      - >-
+          Beratungen
+      - >-
+          legten
+      - >-
+          sie
+      - >-
+          im
+      - >-
+          Jahr
+      - >-
+          1992
+      - >-
+          die
+      - >-
+          ersten
+      - >-
+          Grundsätze
+      - >-
+          für
+      - >-
+          das
+      - >-
+          nachhaltige
+      - >-
+          Management
+      - >-
+          von
+      - >-
+          Landwirtschaftsbetrieben
+      - >-
+          vor
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          auf
+      - >-
+          Dutzenden
+      - >-
+          von
+      - >-
+          messbaren
+      - >-
+          ,
+      - >-
+          konkreten
+      - >-
+          Kriterien
+      - >-
+          beruhten
+      - >-
+          .
+
+  - unit: >-
+      <p>Die Rainforest Alliance drängte daraufhin die Bananenunternehmen, diese Kriterien in ihren Betrieben zu testen und bot den Produzenten als Anreiz ein Anerkennungssiegel an, wenn sie die Standards erfüllen konnten.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Die
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          drängte
+      - >-
+          daraufhin
+      - >-
+          die
+      - >-
+          Bananenunternehmen
+      - >-
+          ,
+      - >-
+          diese
+      - >-
+          Kriterien
+      - >-
+          in
+      - >-
+          ihren
+      - >-
+          Betrieben
+      - >-
+          zu
+      - >-
+          testen
+      - >-
+          und
+      - >-
+          bot
+      - >-
+          den
+      - >-
+          Produzenten
+      - >-
+          als
+      - >-
+          Anreiz
+      - >-
+          ein
+      - >-
+          Anerkennungssiegel
+      - >-
+          an
+      - >-
+          ,
+      - >-
+          wenn
+      - >-
+          sie
+      - >-
+          die
+      - >-
+          Standards
+      - >-
+          erfüllen
+      - >-
+          konnten
+      - >-
+          .
+
+  - unit: >-
+      Eine Reihe unabhängiger Farmen begann die von den Standards geforderten Verbesserungen durchzuführen und zwei Farmen, eine in Costa Rica, die andere in Hawaii, verdienten sich das Rainforest Alliance-Zertifikat im Jahre 1993.
+    tokens:
+      - >-
+          Eine
+      - >-
+          Reihe
+      - >-
+          unabhängiger
+      - >-
+          Farmen
+      - >-
+          begann
+      - >-
+          die
+      - >-
+          von
+      - >-
+          den
+      - >-
+          Standards
+      - >-
+          geforderten
+      - >-
+          Verbesserungen
+      - >-
+          durchzuführen
+      - >-
+          und
+      - >-
+          zwei
+      - >-
+          Farmen
+      - >-
+          ,
+      - >-
+          eine
+      - >-
+          in
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          andere
+      - >-
+          in
+      - >-
+          Hawaii
+      - >-
+          ,
+      - >-
+          verdienten
+      - >-
+          sich
+      - >-
+          das
+      - >-
+          Rainforest
+      - >-
+          Alliance-Zertifikat
+      - >-
+          im
+      - >-
+          Jahre
+      - >-
+          1993
+      - >-
+          .
+
+  - unit: >-
+      Der Geschäftsbereich von Chiquita Brands International in Costa Rica begann 1992 mit der Implementierung der Standards und erhielt das Rainforest Alliance-Zertifikat für seine ersten beiden Farmen im Jahr 1994.
+    tokens:
+      - >-
+          Der
+      - >-
+          Geschäftsbereich
+      - >-
+          von
+      - >-
+          Chiquita
+      - >-
+          Brands
+      - >-
+          International
+      - >-
+          in
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          begann
+      - >-
+          1992
+      - >-
+          mit
+      - >-
+          der
+      - >-
+          Implementierung
+      - >-
+          der
+      - >-
+          Standards
+      - >-
+          und
+      - >-
+          erhielt
+      - >-
+          das
+      - >-
+          Rainforest
+      - >-
+          Alliance-Zertifikat
+      - >-
+          für
+      - >-
+          seine
+      - >-
+          ersten
+      - >-
+          beiden
+      - >-
+          Farmen
+      - >-
+          im
+      - >-
+          Jahr
+      - >-
+          1994
+      - >-
+          .
+
+  - unit: >-
+      Im gleichen Jahr begann Ecuadors zweitgrößter Bananenexporteur, die Favorita Fruit Company oder Reybancorp ebenfalls mit der Implementierung der Rainforest Alliance-Standards.
+    tokens:
+      - >-
+          Im
+      - >-
+          gleichen
+      - >-
+          Jahr
+      - >-
+          begann
+      - >-
+          Ecuadors
+      - >-
+          zweitgrößter
+      - >-
+          Bananenexporteur
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          Favorita
+      - >-
+          Fruit
+      - >-
+          Company
+      - >-
+          oder
+      - >-
+          Reybancorp
+      - >-
+          ebenfalls
+      - >-
+          mit
+      - >-
+          der
+      - >-
+          Implementierung
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance-Standards
+      - >-
+          .
+
+  - unit: >-
+      <h4>Die Verwandlung einer Branche</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Die
+      - >-
+          Verwandlung
+      - >-
+          einer
+      - >-
+          Branche
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>In den 90er Jahren investierten Chiquita und Favorita Millionen von Dollar, damit ihre Betriebe die strikten Vorgaben der Rainforest Alliance erfüllen konnten.
+    tokens:
+      - >-
+          <p>
+      - >-
+          In
+      - >-
+          den
+      - >-
+          90er
+      - >-
+          Jahren
+      - >-
+          investierten
+      - >-
+          Chiquita
+      - >-
+          und
+      - >-
+          Favorita
+      - >-
+          Millionen
+      - >-
+          von
+      - >-
+          Dollar
+      - >-
+          ,
+      - >-
+          damit
+      - >-
+          ihre
+      - >-
+          Betriebe
+      - >-
+          die
+      - >-
+          strikten
+      - >-
+          Vorgaben
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          erfüllen
+      - >-
+          konnten
+      - >-
+          .
+
+  - unit: >-
+      Darin enthalten sind beispielsweise striktes Entwaldungsverbot, Standards für die Abfallbeseitigung und das Recycling, angemessene Löhne, Arbeitsstunden und Arbeitsbedingungen für die Arbeiter, Reduzierung des Einsatzes von Pestiziden sowie strenge Sicherheitsvorschriften, die die Handhabung von landwirtschaftlichen Chemikalien regeln.
+    tokens:
+      - >-
+          Darin
+      - >-
+          enthalten
+      - >-
+          sind
+      - >-
+          beispielsweise
+      - >-
+          striktes
+      - >-
+          Entwaldungsverbot
+      - >-
+          ,
+      - >-
+          Standards
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Abfallbeseitigung
+      - >-
+          und
+      - >-
+          das
+      - >-
+          Recycling
+      - >-
+          ,
+      - >-
+          angemessene
+      - >-
+          Löhne
+      - >-
+          ,
+      - >-
+          Arbeitsstunden
+      - >-
+          und
+      - >-
+          Arbeitsbedingungen
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Arbeiter
+      - >-
+          ,
+      - >-
+          Reduzierung
+      - >-
+          des
+      - >-
+          Einsatzes
+      - >-
+          von
+      - >-
+          Pestiziden
+      - >-
+          sowie
+      - >-
+          strenge
+      - >-
+          Sicherheitsvorschriften
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          die
+      - >-
+          Handhabung
+      - >-
+          von
+      - >-
+          landwirtschaftlichen
+      - >-
+          Chemikalien
+      - >-
+          regeln
+      - >-
+          .
+
+  - unit: >-
+      Im Jahr 2000 erzielten diese beiden Unternehmen die 100%ige Zertifizierung der unternehmenseigenen Betriebe, was bedeutete, dass der Schaden an der Umwelt in weiten Gebieten tropischer Tiefebenen gesunken war und Hunderte von Gemeinden in der Nähe der Bananenplantagen von den besseren Zuständen profitierten.
+    tokens:
+      - >-
+          Im
+      - >-
+          Jahr
+      - >-
+          2000
+      - >-
+          erzielten
+      - >-
+          diese
+      - >-
+          beiden
+      - >-
+          Unternehmen
+      - >-
+          die
+      - >-
+          100
+      - >-
+          %ige
+      - >-
+          Zertifizierung
+      - >-
+          der
+      - >-
+          unternehmenseigenen
+      - >-
+          Betriebe
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          bedeutete
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          der
+      - >-
+          Schaden
+      - >-
+          an
+      - >-
+          der
+      - >-
+          Umwelt
+      - >-
+          in
+      - >-
+          weiten
+      - >-
+          Gebieten
+      - >-
+          tropischer
+      - >-
+          Tiefebenen
+      - >-
+          gesunken
+      - >-
+          war
+      - >-
+          und
+      - >-
+          Hunderte
+      - >-
+          von
+      - >-
+          Gemeinden
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Nähe
+      - >-
+          der
+      - >-
+          Bananenplantagen
+      - >-
+          von
+      - >-
+          den
+      - >-
+          besseren
+      - >-
+          Zuständen
+      - >-
+          profitierten
+      - >-
+          .
+
+  - unit: >-
+      <p>Heute stammen über 15% aller Bananen im internationalen Handel aus Plantagen mit Rainforest Alliance-Zertifikat.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Heute
+      - >-
+          stammen
+      - >-
+          über
+      - >-
+          15
+      - >-
+          %
+      - >-
+          aller
+      - >-
+          Bananen
+      - >-
+          im
+      - >-
+          internationalen
+      - >-
+          Handel
+      - >-
+          aus
+      - >-
+          Plantagen
+      - >-
+          mit
+      - >-
+          Rainforest
+      - >-
+          Alliance-Zertifikat
+      - >-
+          .
+
+  - unit: >-
+      Alle Bananenplantagen von Favorita in Ecuador und alle Plantagen von Chiquita in Guatemala, Honduras, Costa Rica und Panama tragen das Rainforest Alliance-Zertifikat.
+    tokens:
+      - >-
+          Alle
+      - >-
+          Bananenplantagen
+      - >-
+          von
+      - >-
+          Favorita
+      - >-
+          in
+      - >-
+          Ecuador
+      - >-
+          und
+      - >-
+          alle
+      - >-
+          Plantagen
+      - >-
+          von
+      - >-
+          Chiquita
+      - >-
+          in
+      - >-
+          Guatemala
+      - >-
+          ,
+      - >-
+          Honduras
+      - >-
+          ,
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          und
+      - >-
+          Panama
+      - >-
+          tragen
+      - >-
+          das
+      - >-
+          Rainforest
+      - >-
+          Alliance-Zertifikat
+      - >-
+          .
+
+  - unit: >-
+      Die Zertifizierung wird vom Sustainable Agriculture Network (SAN) implementiert, einer Koalition von acht Umweltschutzgruppen in Lateinamerika, die von der Rainforest Alliance koordiniert werden.
+    tokens:
+      - >-
+          Die
+      - >-
+          Zertifizierung
+      - >-
+          wird
+      - >-
+          vom
+      - >-
+          Sustainable
+      - >-
+          Agriculture
+      - >-
+          Network
+      - >-
+          (
+      - >-
+          SAN
+      - >-
+          )
+      - >-
+          implementiert
+      - >-
+          ,
+      - >-
+          einer
+      - >-
+          Koalition
+      - >-
+          von
+      - >-
+          acht
+      - >-
+          Umweltschutzgruppen
+      - >-
+          in
+      - >-
+          Lateinamerika
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          von
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          koordiniert
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      SAN-Inspektoren besuchen jede dieser Plantagen mindestens einmal im Jahr, um dafür zu sorgen, dass die strengen Standards der Rainforest Alliance eingehalten werden.
+    tokens:
+      - >-
+          SAN-Inspektoren
+      - >-
+          besuchen
+      - >-
+          jede
+      - >-
+          dieser
+      - >-
+          Plantagen
+      - >-
+          mindestens
+      - >-
+          einmal
+      - >-
+          im
+      - >-
+          Jahr
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          dafür
+      - >-
+          zu
+      - >-
+          sorgen
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          die
+      - >-
+          strengen
+      - >-
+          Standards
+      - >-
+          der
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          eingehalten
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Im Lauf der Jahre wurde einigen Plantagen das Zertifikat wegen bestimmter Verletzungen der Sicherheitsvorschriften für die Arbeiter und Verstößen bei der Abfallbeseitigung entzogen oder vorübergehend außer Kraft gesetzt.
+    tokens:
+      - >-
+          Im
+      - >-
+          Lauf
+      - >-
+          der
+      - >-
+          Jahre
+      - >-
+          wurde
+      - >-
+          einigen
+      - >-
+          Plantagen
+      - >-
+          das
+      - >-
+          Zertifikat
+      - >-
+          wegen
+      - >-
+          bestimmter
+      - >-
+          Verletzungen
+      - >-
+          der
+      - >-
+          Sicherheitsvorschriften
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Arbeiter
+      - >-
+          und
+      - >-
+          Verstößen
+      - >-
+          bei
+      - >-
+          der
+      - >-
+          Abfallbeseitigung
+      - >-
+          entzogen
+      - >-
+          oder
+      - >-
+          vorübergehend
+      - >-
+          außer
+      - >-
+          Kraft
+      - >-
+          gesetzt
+      - >-
+          .
+
+  - unit: >-
+      Die Unternehmen behoben diese Probleme jedoch schnell, und die Plantagen wurden darauf hin erneut zertifiziert.
+    tokens:
+      - >-
+          Die
+      - >-
+          Unternehmen
+      - >-
+          behoben
+      - >-
+          diese
+      - >-
+          Probleme
+      - >-
+          jedoch
+      - >-
+          schnell
+      - >-
+          ,
+      - >-
+          und
+      - >-
+          die
+      - >-
+          Plantagen
+      - >-
+          wurden
+      - >-
+          darauf
+      - >-
+          hin
+      - >-
+          erneut
+      - >-
+          zertifiziert
+      - >-
+          .
+
+  - unit: >-
+      Chiquita erlangte außerdem das SA 8000-Zertifikat von Social Accountability International, der derzeit strengste, nachweisbare Standard für soziale Bedingungen.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          erlangte
+      - >-
+          außerdem
+      - >-
+          das
+      - >-
+          SA
+      - >-
+          8000-Zertifikat
+      - >-
+          von
+      - >-
+          Social
+      - >-
+          Accountability
+      - >-
+          International
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          derzeit
+      - >-
+          strengste
+      - >-
+          ,
+      - >-
+          nachweisbare
+      - >-
+          Standard
+      - >-
+          für
+      - >-
+          soziale
+      - >-
+          Bedingungen
+      - >-
+          .
+
+  - unit: >-
+      "Wir haben den Einsatz landwirtschaftlicher Chemikalien erheblich reduziert.
+    tokens:
+      - >-
+          "
+      - >-
+          Wir
+      - >-
+          haben
+      - >-
+          den
+      - >-
+          Einsatz
+      - >-
+          landwirtschaftlicher
+      - >-
+          Chemikalien
+      - >-
+          erheblich
+      - >-
+          reduziert
+      - >-
+          .
+
+  - unit: >-
+      Wir haben Hunderte von Bäumen entlang von Straßen und Wasserläufen gepflanzt.
+    tokens:
+      - >-
+          Wir
+      - >-
+          haben
+      - >-
+          Hunderte
+      - >-
+          von
+      - >-
+          Bäumen
+      - >-
+          entlang
+      - >-
+          von
+      - >-
+          Straßen
+      - >-
+          und
+      - >-
+          Wasserläufen
+      - >-
+          gepflanzt
+      - >-
+          .
+
+  - unit: >-
+      Wir fördern die Ausbildung im Umweltschutz.
+    tokens:
+      - >-
+          Wir
+      - >-
+          fördern
+      - >-
+          die
+      - >-
+          Ausbildung
+      - >-
+          im
+      - >-
+          Umweltschutz
+      - >-
+          .
+
+  - unit: >-
+      <h4>Spürbare Verbesserungen</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Spürbare
+      - >-
+          Verbesserungen
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Das Zertifizierungsverfahren hat zu einer Reihe spezifischer Verbesserungen in Gebieten geführt, in denen der Bananenanbau die Landschaft und die lokale Wirtschaft dominiert.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Das
+      - >-
+          Zertifizierungsverfahren
+      - >-
+          hat
+      - >-
+          zu
+      - >-
+          einer
+      - >-
+          Reihe
+      - >-
+          spezifischer
+      - >-
+          Verbesserungen
+      - >-
+          in
+      - >-
+          Gebieten
+      - >-
+          geführt
+      - >-
+          ,
+      - >-
+          in
+      - >-
+          denen
+      - >-
+          der
+      - >-
+          Bananenanbau
+      - >-
+          die
+      - >-
+          Landschaft
+      - >-
+          und
+      - >-
+          die
+      - >-
+          lokale
+      - >-
+          Wirtschaft
+      - >-
+          dominiert
+      - >-
+          .
+
+  - unit: >-
+      Zum Beispiel hat Chiquita fast 1 Million Bäume und Büsche auf seinen Plantagen gepflanzt, um so eine natürliche Pufferzone entlang öffentlicher Straßen und Wasserläufen zu schaffen und um Wohnsiedlungen und Büros abzuschirmen.
+    tokens:
+      - >-
+          Zum
+      - >-
+          Beispiel
+      - >-
+          hat
+      - >-
+          Chiquita
+      - >-
+          fast
+      - >-
+          1
+      - >-
+          Million
+      - >-
+          Bäume
+      - >-
+          und
+      - >-
+          Büsche
+      - >-
+          auf
+      - >-
+          seinen
+      - >-
+          Plantagen
+      - >-
+          gepflanzt
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          so
+      - >-
+          eine
+      - >-
+          natürliche
+      - >-
+          Pufferzone
+      - >-
+          entlang
+      - >-
+          öffentlicher
+      - >-
+          Straßen
+      - >-
+          und
+      - >-
+          Wasserläufen
+      - >-
+          zu
+      - >-
+          schaffen
+      - >-
+          und
+      - >-
+          um
+      - >-
+          Wohnsiedlungen
+      - >-
+          und
+      - >-
+          Büros
+      - >-
+          abzuschirmen
+      - >-
+          .
+
+  - unit: >-
+      Das Unternehmen hat den Einsatz der gefährlichsten Chemikalien abgeschafft und strengste Regelungen für die Anwendung der weiterhin verwendeten Pestizide durchgesetzt.
+    tokens:
+      - >-
+          Das
+      - >-
+          Unternehmen
+      - >-
+          hat
+      - >-
+          den
+      - >-
+          Einsatz
+      - >-
+          der
+      - >-
+          gefährlichsten
+      - >-
+          Chemikalien
+      - >-
+          abgeschafft
+      - >-
+          und
+      - >-
+          strengste
+      - >-
+          Regelungen
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Anwendung
+      - >-
+          der
+      - >-
+          weiterhin
+      - >-
+          verwendeten
+      - >-
+          Pestizide
+      - >-
+          durchgesetzt
+      - >-
+          .
+
+  - unit: >-
+      Zum Beispiel, muss eine Schutzausrüstung getragen werden, die Arbeiter müssen am Ende des Arbeitstages duschen und beim Einsatz von Pestiziden wird der betroffene Bereich anschließend 24 bis 48 Stunden lang gesperrt.
+    tokens:
+      - >-
+          Zum
+      - >-
+          Beispiel
+      - >-
+          ,
+      - >-
+          muss
+      - >-
+          eine
+      - >-
+          Schutzausrüstung
+      - >-
+          getragen
+      - >-
+          werden
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          Arbeiter
+      - >-
+          müssen
+      - >-
+          am
+      - >-
+          Ende
+      - >-
+          des
+      - >-
+          Arbeitstages
+      - >-
+          duschen
+      - >-
+          und
+      - >-
+          beim
+      - >-
+          Einsatz
+      - >-
+          von
+      - >-
+          Pestiziden
+      - >-
+          wird
+      - >-
+          der
+      - >-
+          betroffene
+      - >-
+          Bereich
+      - >-
+          anschließend
+      - >-
+          24
+      - >-
+          bis
+      - >-
+          48
+      - >-
+          Stunden
+      - >-
+          lang
+      - >-
+          gesperrt
+      - >-
+          .
+
+  - unit: >-
+      <p>Chiquita recycelt ca. 3100 Tonnen Plastiktüten und Zwirn pro Jahr und wiederverwendet die Holzpaletten, auf denen die Kisten mit Bananen gestapelt werden, wodurch jedes Jahr Zehntausende von Bäumen gerettet werden.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Chiquita
+      - >-
+          recycelt
+      - >-
+          ca.
+      - >-
+          3100
+      - >-
+          Tonnen
+      - >-
+          Plastiktüten
+      - >-
+          und
+      - >-
+          Zwirn
+      - >-
+          pro
+      - >-
+          Jahr
+      - >-
+          und
+      - >-
+          wiederverwendet
+      - >-
+          die
+      - >-
+          Holzpaletten
+      - >-
+          ,
+      - >-
+          auf
+      - >-
+          denen
+      - >-
+          die
+      - >-
+          Kisten
+      - >-
+          mit
+      - >-
+          Bananen
+      - >-
+          gestapelt
+      - >-
+          werden
+      - >-
+          ,
+      - >-
+          wodurch
+      - >-
+          jedes
+      - >-
+          Jahr
+      - >-
+          Zehntausende
+      - >-
+          von
+      - >-
+          Bäumen
+      - >-
+          gerettet
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      Favorita schuf eine Stiftung, die derzeit 33 Schulen in der Nähe seiner Plantagen unterstützt, was wiederum über 3000 Kindern zu Gute kommt.
+    tokens:
+      - >-
+          Favorita
+      - >-
+          schuf
+      - >-
+          eine
+      - >-
+          Stiftung
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          derzeit
+      - >-
+          33
+      - >-
+          Schulen
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Nähe
+      - >-
+          seiner
+      - >-
+          Plantagen
+      - >-
+          unterstützt
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          wiederum
+      - >-
+          über
+      - >-
+          3000
+      - >-
+          Kindern
+      - >-
+          zu
+      - >-
+          Gute
+      - >-
+          kommt
+      - >-
+          .
+
+  - unit: >-
+      Chiquita hat den Gemeinden Dutzende von Sportanlagen, Schulen und Kliniken gespendet und mehrere Hundert Häuser für seine Arbeiter entweder gespendet oder zu äußerst niedrigen Preisen verkauft.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          hat
+      - >-
+          den
+      - >-
+          Gemeinden
+      - >-
+          Dutzende
+      - >-
+          von
+      - >-
+          Sportanlagen
+      - >-
+          ,
+      - >-
+          Schulen
+      - >-
+          und
+      - >-
+          Kliniken
+      - >-
+          gespendet
+      - >-
+          und
+      - >-
+          mehrere
+      - >-
+          Hundert
+      - >-
+          Häuser
+      - >-
+          für
+      - >-
+          seine
+      - >-
+          Arbeiter
+      - >-
+          entweder
+      - >-
+          gespendet
+      - >-
+          oder
+      - >-
+          zu
+      - >-
+          äußerst
+      - >-
+          niedrigen
+      - >-
+          Preisen
+      - >-
+          verkauft
+      - >-
+          .
+
+  - unit: >-
+      Beide Unternehmen schützen erhebliche Areale des tropischen Regenwaldes: Favorita mit seinem Río Palenque Science Center und Chiquita mit dem 100 Hektar großen Nogal Naturreservat in Costa Rica, das in Zusammenarbeit mit der schweizerischen Supermarktkette Migros verwaltet wird und finanzielle Unterstützung von der GTZ erhält.
+    tokens:
+      - >-
+          Beide
+      - >-
+          Unternehmen
+      - >-
+          schützen
+      - >-
+          erhebliche
+      - >-
+          Areale
+      - >-
+          des
+      - >-
+          tropischen
+      - >-
+          Regenwaldes
+      - >-
+          :
+      - >-
+          Favorita
+      - >-
+          mit
+      - >-
+          seinem
+      - >-
+          Río
+      - >-
+          Palenque
+      - >-
+          Science
+      - >-
+          Center
+      - >-
+          und
+      - >-
+          Chiquita
+      - >-
+          mit
+      - >-
+          dem
+      - >-
+          100
+      - >-
+          Hektar
+      - >-
+          großen
+      - >-
+          Nogal
+      - >-
+          Naturreservat
+      - >-
+          in
+      - >-
+          Costa
+      - >-
+          Rica
+      - >-
+          ,
+      - >-
+          das
+      - >-
+          in
+      - >-
+          Zusammenarbeit
+      - >-
+          mit
+      - >-
+          der
+      - >-
+          schweizerischen
+      - >-
+          Supermarktkette
+      - >-
+          Migros
+      - >-
+          verwaltet
+      - >-
+          wird
+      - >-
+          und
+      - >-
+          finanzielle
+      - >-
+          Unterstützung
+      - >-
+          von
+      - >-
+          der
+      - >-
+          GTZ
+      - >-
+          erhält
+      - >-
+          .
+
+  - unit: >-
+      Diese beiden Naturschutzprojekte umfassen außerdem Lernangebote zum Umweltschutz für Plantagenarbeiter und ihre Familien, was ebenfalls ein Ziel der Zertifizierung ist.
+    tokens:
+      - >-
+          Diese
+      - >-
+          beiden
+      - >-
+          Naturschutzprojekte
+      - >-
+          umfassen
+      - >-
+          außerdem
+      - >-
+          Lernangebote
+      - >-
+          zum
+      - >-
+          Umweltschutz
+      - >-
+          für
+      - >-
+          Plantagenarbeiter
+      - >-
+          und
+      - >-
+          ihre
+      - >-
+          Familien
+      - >-
+          ,
+      - >-
+          was
+      - >-
+          ebenfalls
+      - >-
+          ein
+      - >-
+          Ziel
+      - >-
+          der
+      - >-
+          Zertifizierung
+      - >-
+          ist
+      - >-
+          .
+
+  - unit: >-
+      <h4>Eine Grüne Evolution</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Eine
+      - >-
+          Grüne
+      - >-
+          Evolution
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Einer der wichtigsten Aspekte des Rainforest Alliance-Programms zur nachhaltigen Landwirtschaft ist die Einbindung der Betriebe in einen kontinuierlichen Verbesserungsprozess.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Einer
+      - >-
+          der
+      - >-
+          wichtigsten
+      - >-
+          Aspekte
+      - >-
+          des
+      - >-
+          Rainforest
+      - >-
+          Alliance-Programms
+      - >-
+          zur
+      - >-
+          nachhaltigen
+      - >-
+          Landwirtschaft
+      - >-
+          ist
+      - >-
+          die
+      - >-
+          Einbindung
+      - >-
+          der
+      - >-
+          Betriebe
+      - >-
+          in
+      - >-
+          einen
+      - >-
+          kontinuierlichen
+      - >-
+          Verbesserungsprozess
+      - >-
+          .
+
+  - unit: >-
+      Die Zertifizierungsstandards sind zwar praktisch genug, dass sie die Konkurrenzfähigkeit der Unternehmen im internationalen Markt nicht beeinträchtigen, sie verlangen jedoch gleichzeitig eine konstante Verbesserung der sozialen Bedingungen und der Umwelt.
+    tokens:
+      - >-
+          Die
+      - >-
+          Zertifizierungsstandards
+      - >-
+          sind
+      - >-
+          zwar
+      - >-
+          praktisch
+      - >-
+          genug
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          sie
+      - >-
+          die
+      - >-
+          Konkurrenzfähigkeit
+      - >-
+          der
+      - >-
+          Unternehmen
+      - >-
+          im
+      - >-
+          internationalen
+      - >-
+          Markt
+      - >-
+          nicht
+      - >-
+          beeinträchtigen
+      - >-
+          ,
+      - >-
+          sie
+      - >-
+          verlangen
+      - >-
+          jedoch
+      - >-
+          gleichzeitig
+      - >-
+          eine
+      - >-
+          konstante
+      - >-
+          Verbesserung
+      - >-
+          der
+      - >-
+          sozialen
+      - >-
+          Bedingungen
+      - >-
+          und
+      - >-
+          der
+      - >-
+          Umwelt
+      - >-
+          .
+
+  - unit: >-
+      Chiquita ist beispielsweise gerade dabei, Filtersysteme in seinen Verpackungsanlagen zu installieren, die den Wasserverbrauch um 80% senken werden, und die Wissenschaftler des Unternehmens erforschen biologische Kontrollen, die zur Senkung des Pestizidverbrauchs beitragen können.
+    tokens:
+      - >-
+          Chiquita
+      - >-
+          ist
+      - >-
+          beispielsweise
+      - >-
+          gerade
+      - >-
+          dabei
+      - >-
+          ,
+      - >-
+          Filtersysteme
+      - >-
+          in
+      - >-
+          seinen
+      - >-
+          Verpackungsanlagen
+      - >-
+          zu
+      - >-
+          installieren
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          den
+      - >-
+          Wasserverbrauch
+      - >-
+          um
+      - >-
+          80
+      - >-
+          %
+      - >-
+          senken
+      - >-
+          werden
+      - >-
+          ,
+      - >-
+          und
+      - >-
+          die
+      - >-
+          Wissenschaftler
+      - >-
+          des
+      - >-
+          Unternehmens
+      - >-
+          erforschen
+      - >-
+          biologische
+      - >-
+          Kontrollen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          zur
+      - >-
+          Senkung
+      - >-
+          des
+      - >-
+          Pestizidverbrauchs
+      - >-
+          beitragen
+      - >-
+          können
+      - >-
+          .
+
+  - unit: >-
+      <p>Der Direktor für nachhaltige Landwirtschaft von Rainforest Alliance, Chris Wille, ist der Überzeugung, dass technologische Fortschritte und günstigere Marktbedingungen eine dauerhafte Evolution in Richtung noch besserer Konditionen auf zertifizierten Betrieben mit sich bringen werden.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Der
+      - >-
+          Direktor
+      - >-
+          für
+      - >-
+          nachhaltige
+      - >-
+          Landwirtschaft
+      - >-
+          von
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          ,
+      - >-
+          Chris
+      - >-
+          Wille
+      - >-
+          ,
+      - >-
+          ist
+      - >-
+          der
+      - >-
+          Überzeugung
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          technologische
+      - >-
+          Fortschritte
+      - >-
+          und
+      - >-
+          günstigere
+      - >-
+          Marktbedingungen
+      - >-
+          eine
+      - >-
+          dauerhafte
+      - >-
+          Evolution
+      - >-
+          in
+      - >-
+          Richtung
+      - >-
+          noch
+      - >-
+          besserer
+      - >-
+          Konditionen
+      - >-
+          auf
+      - >-
+          zertifizierten
+      - >-
+          Betrieben
+      - >-
+          mit
+      - >-
+          sich
+      - >-
+          bringen
+      - >-
+          werden
+      - >-
+          .
+
+  - unit: >-
+      <p>"Die Bananenunternehmen, deren Plantagen wir zertifizieren, haben einen Prozess positiver Veränderungen begonnen, der nie aufhören darf.
+    tokens:
+      - >-
+          <p>
+      - >-
+          "
+      - >-
+          Die
+      - >-
+          Bananenunternehmen
+      - >-
+          ,
+      - >-
+          deren
+      - >-
+          Plantagen
+      - >-
+          wir
+      - >-
+          zertifizieren
+      - >-
+          ,
+      - >-
+          haben
+      - >-
+          einen
+      - >-
+          Prozess
+      - >-
+          positiver
+      - >-
+          Veränderungen
+      - >-
+          begonnen
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          nie
+      - >-
+          aufhören
+      - >-
+          darf
+      - >-
+          .
+
+  - unit: >-
+      Im nächsten Jahrzehnt möchte die Rainforest Alliance eine anhaltende Senkung der in der Landwirtschaft eingesetzten Chemikalien auf zertifizierten Farmen erzielen sowie fortlaufende Verbesserungen im Umweltschutz und der Lebensqualität von Kommunen, die im Bananenanbau beschäftigt sind." sagte Wille.
+    tokens:
+      - >-
+          Im
+      - >-
+          nächsten
+      - >-
+          Jahrzehnt
+      - >-
+          möchte
+      - >-
+          die
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          eine
+      - >-
+          anhaltende
+      - >-
+          Senkung
+      - >-
+          der
+      - >-
+          in
+      - >-
+          der
+      - >-
+          Landwirtschaft
+      - >-
+          eingesetzten
+      - >-
+          Chemikalien
+      - >-
+          auf
+      - >-
+          zertifizierten
+      - >-
+          Farmen
+      - >-
+          erzielen
+      - >-
+          sowie
+      - >-
+          fortlaufende
+      - >-
+          Verbesserungen
+      - >-
+          im
+      - >-
+          Umweltschutz
+      - >-
+          und
+      - >-
+          der
+      - >-
+          Lebensqualität
+      - >-
+          von
+      - >-
+          Kommunen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          im
+      - >-
+          Bananenanbau
+      - >-
+          beschäftigt
+      - >-
+          sind
+      - >-
+          .
+      - >-
+          "
+      - >-
+          sagte
+      - >-
+          Wille
+      - >-
+          .
+
+  - unit: >-
+      <h4>Zukunftsarbeit</h4>
+    tokens:
+      - >-
+          <h4>
+      - >-
+          Zukunftsarbeit
+      - >-
+          </h4>
+
+  - unit: >-
+      <p>Das Rainforest Alliance-Zertifikat steht jedem Bananenerzeuger offen, der die SAN-Standards erfüllen kann.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Das
+      - >-
+          Rainforest
+      - >-
+          Alliance-Zertifikat
+      - >-
+          steht
+      - >-
+          jedem
+      - >-
+          Bananenerzeuger
+      - >-
+          offen
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          die
+      - >-
+          SAN-Standards
+      - >-
+          erfüllen
+      - >-
+          kann
+      - >-
+          .
+
+  - unit: >-
+      Dank des Einflusses von Chiquita und Favorita hat die Zahl der zertifizierten Betriebe stetig zugenommen.
+    tokens:
+      - >-
+          Dank
+      - >-
+          des
+      - >-
+          Einflusses
+      - >-
+          von
+      - >-
+          Chiquita
+      - >-
+          und
+      - >-
+          Favorita
+      - >-
+          hat
+      - >-
+          die
+      - >-
+          Zahl
+      - >-
+          der
+      - >-
+          zertifizierten
+      - >-
+          Betriebe
+      - >-
+          stetig
+      - >-
+          zugenommen
+      - >-
+          .
+
+  - unit: >-
+      Beide Unternehmen kaufen viele ihrer Früchte von kleinen, unabhängigen Plantagen, die dazu gedrängt werden, sich das Zertifikat zu verdienen.
+    tokens:
+      - >-
+          Beide
+      - >-
+          Unternehmen
+      - >-
+          kaufen
+      - >-
+          viele
+      - >-
+          ihrer
+      - >-
+          Früchte
+      - >-
+          von
+      - >-
+          kleinen
+      - >-
+          ,
+      - >-
+          unabhängigen
+      - >-
+          Plantagen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          dazu
+      - >-
+          gedrängt
+      - >-
+          werden
+      - >-
+          ,
+      - >-
+          sich
+      - >-
+          das
+      - >-
+          Zertifikat
+      - >-
+          zu
+      - >-
+          verdienen
+      - >-
+          .
+
+  - unit: >-
+      Da diese kleineren Plantagen oft nicht über die nötigen Kenntnisse und Ressourcen verfügen, um die Anforderungen der Zertifizierung erfüllen zu können, ist internationale Hilfe äußerst wichtig für sie, damit sie dieses Ziel erreichen können.
+    tokens:
+      - >-
+          Da
+      - >-
+          diese
+      - >-
+          kleineren
+      - >-
+          Plantagen
+      - >-
+          oft
+      - >-
+          nicht
+      - >-
+          über
+      - >-
+          die
+      - >-
+          nötigen
+      - >-
+          Kenntnisse
+      - >-
+          und
+      - >-
+          Ressourcen
+      - >-
+          verfügen
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          die
+      - >-
+          Anforderungen
+      - >-
+          der
+      - >-
+          Zertifizierung
+      - >-
+          erfüllen
+      - >-
+          zu
+      - >-
+          können
+      - >-
+          ,
+      - >-
+          ist
+      - >-
+          internationale
+      - >-
+          Hilfe
+      - >-
+          äußerst
+      - >-
+          wichtig
+      - >-
+          für
+      - >-
+          sie
+      - >-
+          ,
+      - >-
+          damit
+      - >-
+          sie
+      - >-
+          dieses
+      - >-
+          Ziel
+      - >-
+          erreichen
+      - >-
+          können
+      - >-
+          .
+
+  - unit: >-
+      <p>2003 hat die International Finance Corporation -- der private Sektor der Weltbank -- eine Subvention in Höhe von 50.000 US-Dollar für die Ausbildung von fast 400 unabhängigen Lieferanten zur Verfügung gestellt, die Bananen für Favorita anbauen.
+    tokens:
+      - >-
+          <p>
+      - >-
+          2003
+      - >-
+          hat
+      - >-
+          die
+      - >-
+          International
+      - >-
+          Finance
+      - >-
+          Corporation
+      - >-
+          --
+      - >-
+          der
+      - >-
+          private
+      - >-
+          Sektor
+      - >-
+          der
+      - >-
+          Weltbank
+      - >-
+          --
+      - >-
+          eine
+      - >-
+          Subvention
+      - >-
+          in
+      - >-
+          Höhe
+      - >-
+          von
+      - >-
+          50.000
+      - >-
+          US-Dollar
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Ausbildung
+      - >-
+          von
+      - >-
+          fast
+      - >-
+          400
+      - >-
+          unabhängigen
+      - >-
+          Lieferanten
+      - >-
+          zur
+      - >-
+          Verfügung
+      - >-
+          gestellt
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          Bananen
+      - >-
+          für
+      - >-
+          Favorita
+      - >-
+          anbauen
+      - >-
+          .
+
+  - unit: >-
+      Eine Subvention von der United States Agency for International Development hilft unabhängigen Landwirten in Mittelamerika, die Chiquita beliefern, dabei, das Zertifikat zu erwerben.
+    tokens:
+      - >-
+          Eine
+      - >-
+          Subvention
+      - >-
+          von
+      - >-
+          der
+      - >-
+          United
+      - >-
+          States
+      - >-
+          Agency
+      - >-
+          for
+      - >-
+          International
+      - >-
+          Development
+      - >-
+          hilft
+      - >-
+          unabhängigen
+      - >-
+          Landwirten
+      - >-
+          in
+      - >-
+          Mittelamerika
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          Chiquita
+      - >-
+          beliefern
+      - >-
+          ,
+      - >-
+          dabei
+      - >-
+          ,
+      - >-
+          das
+      - >-
+          Zertifikat
+      - >-
+          zu
+      - >-
+          erwerben
+      - >-
+          .
+
+  - unit: >-
+      <p>Obwohl die anfänglichen Änderungen, die auf einer Plantage zum Erwerb des Zertifikats durchgeführt werden müssen, einen hohen Arbeits und Kapitalaufwand erfordern, haben die großen Bananenunternehmen die Erfahrung gemacht, dass sich viele dieser Änderungen letztendlich selbst bezahlt machen.
+    tokens:
+      - >-
+          <p>
+      - >-
+          Obwohl
+      - >-
+          die
+      - >-
+          anfänglichen
+      - >-
+          Änderungen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          auf
+      - >-
+          einer
+      - >-
+          Plantage
+      - >-
+          zum
+      - >-
+          Erwerb
+      - >-
+          des
+      - >-
+          Zertifikats
+      - >-
+          durchgeführt
+      - >-
+          werden
+      - >-
+          müssen
+      - >-
+          ,
+      - >-
+          einen
+      - >-
+          hohen
+      - >-
+          Arbeits
+      - >-
+          und
+      - >-
+          Kapitalaufwand
+      - >-
+          erfordern
+      - >-
+          ,
+      - >-
+          haben
+      - >-
+          die
+      - >-
+          großen
+      - >-
+          Bananenunternehmen
+      - >-
+          die
+      - >-
+          Erfahrung
+      - >-
+          gemacht
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          sich
+      - >-
+          viele
+      - >-
+          dieser
+      - >-
+          Änderungen
+      - >-
+          letztendlich
+      - >-
+          selbst
+      - >-
+          bezahlt
+      - >-
+          machen
+      - >-
+          .
+
+  - unit: >-
+      Favorita schätzt, dass allein der reduzierte Einsatz landwirtschaftlicher Chemikalien dem Unternehmen pro Jahr rund 350.000 US-Dollar einspart.
+    tokens:
+      - >-
+          Favorita
+      - >-
+          schätzt
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          allein
+      - >-
+          der
+      - >-
+          reduzierte
+      - >-
+          Einsatz
+      - >-
+          landwirtschaftlicher
+      - >-
+          Chemikalien
+      - >-
+          dem
+      - >-
+          Unternehmen
+      - >-
+          pro
+      - >-
+          Jahr
+      - >-
+          rund
+      - >-
+          350.000
+      - >-
+          US-Dollar
+      - >-
+          einspart
+      - >-
+          .
+
+  - unit: >-
+      Als SAN die Praxis von Chiquita beanstandete, beschädigte Bananen in Gräben zu kippen, entschloss sich das Unternehmen, eine Anlage für Bananenpüree zu bauen, die jetzt ein beachtliches Einkommen erzeugt.
+    tokens:
+      - >-
+          Als
+      - >-
+          SAN
+      - >-
+          die
+      - >-
+          Praxis
+      - >-
+          von
+      - >-
+          Chiquita
+      - >-
+          beanstandete
+      - >-
+          ,
+      - >-
+          beschädigte
+      - >-
+          Bananen
+      - >-
+          in
+      - >-
+          Gräben
+      - >-
+          zu
+      - >-
+          kippen
+      - >-
+          ,
+      - >-
+          entschloss
+      - >-
+          sich
+      - >-
+          das
+      - >-
+          Unternehmen
+      - >-
+          ,
+      - >-
+          eine
+      - >-
+          Anlage
+      - >-
+          für
+      - >-
+          Bananenpüree
+      - >-
+          zu
+      - >-
+          bauen
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          jetzt
+      - >-
+          ein
+      - >-
+          beachtliches
+      - >-
+          Einkommen
+      - >-
+          erzeugt
+      - >-
+          .
+
+  - unit: >-
+      Wichtiger ist jedoch, dass die Unternehmen durch Anhebung der Löhne, Reduzierung der Arbeitszeiten und verbesserte Arbeitsbedingungen sowie durch andere Vorteile die Arbeiterfluktuation gesenkt und zufriedenere und effizientere Arbeitskräfte gewonnen haben.
+    tokens:
+      - >-
+          Wichtiger
+      - >-
+          ist
+      - >-
+          jedoch
+      - >-
+          ,
+      - >-
+          dass
+      - >-
+          die
+      - >-
+          Unternehmen
+      - >-
+          durch
+      - >-
+          Anhebung
+      - >-
+          der
+      - >-
+          Löhne
+      - >-
+          ,
+      - >-
+          Reduzierung
+      - >-
+          der
+      - >-
+          Arbeitszeiten
+      - >-
+          und
+      - >-
+          verbesserte
+      - >-
+          Arbeitsbedingungen
+      - >-
+          sowie
+      - >-
+          durch
+      - >-
+          andere
+      - >-
+          Vorteile
+      - >-
+          die
+      - >-
+          Arbeiterfluktuation
+      - >-
+          gesenkt
+      - >-
+          und
+      - >-
+          zufriedenere
+      - >-
+          und
+      - >-
+          effizientere
+      - >-
+          Arbeitskräfte
+      - >-
+          gewonnen
+      - >-
+          haben
+      - >-
+          .
+
+  - unit: >-
+      <p>Dazu bemerkt Rafael S. Wong, der Präsident von Favorita: "Zertifizierte Betriebe sind sauberer und sicherer und die Produktion ist höher."
+    tokens:
+      - >-
+          <p>
+      - >-
+          Dazu
+      - >-
+          bemerkt
+      - >-
+          Rafael
+      - >-
+          S.
+      - >-
+          Wong
+      - >-
+          ,
+      - >-
+          der
+      - >-
+          Präsident
+      - >-
+          von
+      - >-
+          Favorita
+      - >-
+          :
+      - >-
+          "
+      - >-
+          Zertifizierte
+      - >-
+          Betriebe
+      - >-
+          sind
+      - >-
+          sauberer
+      - >-
+          und
+      - >-
+          sicherer
+      - >-
+          und
+      - >-
+          die
+      - >-
+          Produktion
+      - >-
+          ist
+      - >-
+          höher
+      - >-
+          .
+      - >-
+          "
+
+  - unit: >-
+      <h1>Sustainable Agriculture</h1>
+    tokens:
+      - >-
+          <h1>
+      - >-
+          Sustainable
+      - >-
+          Agriculture
+      - >-
+          </h1>
+
+  - unit: >-
+      <h2>Soziale und Umweltschutzkriterien für die Landwirtschaftliche Zertifizierung Durch die Rainforest Alliance</h2>
+    tokens:
+      - >-
+          <h2>
+      - >-
+          Soziale
+      - >-
+          und
+      - >-
+          Umweltschutzkriterien
+      - >-
+          für
+      - >-
+          die
+      - >-
+          Landwirtschaftliche
+      - >-
+          Zertifizierung
+      - >-
+          Durch
+      - >-
+          die
+      - >-
+          Rainforest
+      - >-
+          Alliance
+      - >-
+          </h2>
+
+  - unit: >-
+      Planung und Überwachung sind wesentlich für das wirksame Management des Betriebs, die lukrative Produktion, die Qualität der angebauten Pflanzen und die fortlaufende Verbesserung.
+    tokens:
+      - >-
+          Planung
+      - >-
+          und
+      - >-
+          Überwachung
+      - >-
+          sind
+      - >-
+          wesentlich
+      - >-
+          für
+      - >-
+          das
+      - >-
+          wirksame
+      - >-
+          Management
+      - >-
+          des
+      - >-
+          Betriebs
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          lukrative
+      - >-
+          Produktion
+      - >-
+          ,
+      - >-
+          die
+      - >-
+          Qualität
+      - >-
+          der
+      - >-
+          angebauten
+      - >-
+          Pflanzen
+      - >-
+          und
+      - >-
+          die
+      - >-
+          fortlaufende
+      - >-
+          Verbesserung
+      - >-
+          .
+
+  - unit: >-
+      Arbeiter sind ausreichend ausgebildet und benutzen entsprechende Schutzkleidung, um Pestizide aufzubringen.
+    tokens:
+      - >-
+          Arbeiter
+      - >-
+          sind
+      - >-
+          ausreichend
+      - >-
+          ausgebildet
+      - >-
+          und
+      - >-
+          benutzen
+      - >-
+          entsprechende
+      - >-
+          Schutzkleidung
+      - >-
+          ,
+      - >-
+          um
+      - >-
+          Pestizide
+      - >-
+          aufzubringen
+      - >-
+          .
+
+  - unit: >-
+      Regelmässige ärztliche Untersuchungen stehen auf der Tagesordnung.
+    tokens:
+      - >-
+          Regelmässige
+      - >-
+          ärztliche
+      - >-
+          Untersuchungen
+      - >-
+          stehen
+      - >-
+          auf
+      - >-
+          der
+      - >-
+          Tagesordnung
+      - >-
+          .
+
+  - unit: >-
+      <p>Weitere Informationen zu den durch unsere Organisation zertifizierten Anbaupflanzen finden Sie unter spezifische Standards (nur in Englisch verfügbar).
+    tokens:
+      - >-
+          <p>
+      - >-
+          Weitere
+      - >-
+          Informationen
+      - >-
+          zu
+      - >-
+          den
+      - >-
+          durch
+      - >-
+          unsere
+      - >-
+          Organisation
+      - >-
+          zertifizierten
+      - >-
+          Anbaupflanzen
+      - >-
+          finden
+      - >-
+          Sie
+      - >-
+          unter
+      - >-
+          spezifische
+      - >-
+          Standards
+      - >-
+          (
+      - >-
+          nur
+      - >-
+          in
+      - >-
+          Englisch
+      - >-
+          verfügbar
+      - >-
+          )
+      - >-
+          .
+
+# 199 out of 518 found
