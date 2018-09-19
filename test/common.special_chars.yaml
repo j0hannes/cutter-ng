@@ -18,7 +18,7 @@ test:
 
   - name: cover 2
     unit: >-
-      ␂Tris(2,4-di-tert-butylphenyl)phosphite␃ is an organophosphorus compound with the formula [(C4H9)2C6H3O]3P.
+      ␂Tris(2,4-di-tert-butylphenyl)phosphite␃ is an organophosphorus compound with the formula ␂[(C4H9)2C6H3O]3P␃.
     tokens:
       - +cover: 'Tris(2,4-di-tert-butylphenyl)phosphite'
       - is
@@ -28,7 +28,7 @@ test:
       - with
       - the
       - formula
-      - '[(C4H9)2C6H3O]3P'
+      - +cover: '[(C4H9)2C6H3O]3P'
       - .
       - ''
 

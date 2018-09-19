@@ -40,9 +40,9 @@ test:
   - unit: "[2-3|+numrg] hours"
   - unit: "[12'000-25'000|+numrg]"
 
-  - unit: "[18:34h|+time]"
-  - unit: "[17:00|+time]"
-  - unit: "at [12.30h|+time]"
+  - unit: "[18:34h|+time1]"
+  - unit: "[17:00|+time1]"
+  - unit: "at [12.30h|+time1]"
 
   - unit: "[1:1.85|+numrt]"
   - unit: "the chance is [1:25,000|+numrt]"
