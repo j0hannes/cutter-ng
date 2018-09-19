@@ -7,7 +7,6 @@
 
 ---
 common0:
-
   - name: text-final newline characters
     parts:
       - -newlines: (?s)

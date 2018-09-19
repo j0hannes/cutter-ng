@@ -6,17 +6,19 @@
 #
 
 ---
-nl4:
-
+nl2:
   - name: enclosing quotation marks (first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - nlXeqA1: „
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - nlXeqA2: ”
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -24,34 +26,41 @@ nl4:
   - name: enclosing quotation marks (first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - nlXeqA1: „
       - \center: .+?
       - nlXeqA2: ”
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (second level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - nlXeqB1: ‚
       - \center: .+?
       - nlXeqB2: ’
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (alternative first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - nlXeqA1: ‘
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - nlXeqA2: ’
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -59,25 +68,31 @@ nl4:
   - name: enclosing quotation marks (alternative first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - nlXeqA1: ‘
       - \center: .+?
       - nlXeqA2: ’
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (alternative second level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - nlXeqB1: “
       - \center: .+?
       - nlXeqB2: ”
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
+
+nl4:
   - name: plural s
     parts:
       - \left

@@ -6,122 +6,143 @@
 #
 
 ---
+fr2:
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtA1: «
+      - _?
+      - \center: >-
+          [^«]+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - frXqtA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtA1: «
+      - _?
+      - \center: >-
+          [^«]+?
+      - _?
+      - frXqtA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtB1: “
+      - _?
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - frXqtB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtB1: “
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtB1: ‘
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtB2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtB1: ‘
+      - _?
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - frXqtB2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level, Swiss)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtB1: ‹
+      - _?
+      - \center: .+?
+      - _?
+      - frXqtB2: ›
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level, Swiss)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - frXqtB1: ‹
+      - _?
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - frXqtB2: ›
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+
 fr4:
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtA1: «
-      - _?
-      - \center: >-
-          [^«]+?
-      - +dot: "[.?!]+"
-      - _?
-      - frXqtA2: »
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtA1: «
-      - _?
-      - \center: >-
-          [^«]+?
-      - _?
-      - frXqtA2: »
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtB1: “
-      - _?
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - _?
-      - frXqtB2: ”
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtB1: “
-      - _?
-      - \center: .+?
-      - _?
-      - frXqtB2: ”
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtB1: ‘
-      - _?
-      - \center: .+?
-      - _?
-      - frXqtB2: ’
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtB1: ‘
-      - _?
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - _?
-      - frXqtB2: ’
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level, Swiss)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtB1: ‹
-      - _?
-      - \center: .+?
-      - _?
-      - frXqtB2: ›
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level, Swiss)
-    parts:
-      - \left
-      - ?<!: \pL
-      - frXqtB1: ‹
-      - _?
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - _?
-      - frXqtB2: ›
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
   - name: lexicalized word with apostrophe
     parts:
       - \left

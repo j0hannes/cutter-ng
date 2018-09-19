@@ -6,92 +6,108 @@
 #
 
 ---
+ca2:
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - caXqtA1: «
+      - _?
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - caXqtA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - caXqtA1: «
+      - _?
+      - \center: .+?
+      - _?
+      - caXqtA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - caXqtB1: “
+      - _?
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - caXqtB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - caXqtB1: “
+      - _?
+      - \center: .+?
+      - _?
+      - caXqtB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - caXqtB1: ‘
+      - _?
+      - \center: .+?
+      - _?
+      - caXqtB2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - caXqtB1: ‘
+      - _?
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - _?
+      - caXqtB2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+
 ca4:
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - caXqtA1: «
-      - _?
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - _?
-      - caXqtA2: »
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - caXqtA1: «
-      - _?
-      - \center: .+?
-      - _?
-      - caXqtA2: »
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - caXqtB1: “
-      - _?
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - _?
-      - caXqtB2: ”
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - caXqtB1: “
-      - _?
-      - \center: .+?
-      - _?
-      - caXqtB2: ”
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - caXqtB1: ‘
-      - _?
-      - \center: .+?
-      - _?
-      - caXqtB2: ’
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - caXqtB1: ‘
-      - _?
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - _?
-      - caXqtB2: ’
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
   - name: pronoms febles (1)
     parts:
       - \left
@@ -102,7 +118,8 @@ ca4:
       - caXpfA2:
         - h[io]
         - en
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 

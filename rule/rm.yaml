@@ -10,12 +10,15 @@ rm2:
   - name: enclosing quotation marks («+»)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - rmXqtC1: «
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - rmXqtC2: »
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - +EOS: 
       - _?
       - \right
@@ -23,18 +26,19 @@ rm2:
   - name: enclosing quotation marks («+»)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - rmXqtC1: «
       - \center: .+?
       - rmXqtC2: »
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
 
 
 rm4:
-  
   - name: lexicalized word with apostrophe
     parts:
       - \left

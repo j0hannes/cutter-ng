@@ -7,7 +7,6 @@
 
 ---
 common0:
-
   - name: text-final newline characters
     parts:
       - -newlines: (?s)
@@ -21,6 +20,11 @@ common0:
       - -marker: >-
           [\n\r]+
       - _?
+      - \right
+
+  - name: text-initial whitespaces
+    parts:
+      - _
       - \right
 
   - name: newline characters mark end of sentence
@@ -71,6 +75,36 @@ common1:
 
 
 common3:
+  - name: enclosing quotation marks ("+")
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - quot1: '"'
+      - \center: >-
+          [^"]+?
+      - +dot: >
+          [.?!]+
+      - quot2: '"'
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks ("+")
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - quot1: '"'
+      - \center: .+?
+      - quot2: '"'
+      - ?!: >-
+          [\pL‐-]
+      - _?
+      - \right
+
   - name: enclosing parentheses
     parts:
       - \left
@@ -172,6 +206,8 @@ common3:
           [(]?\d+[)]
         - >-
           [(]?(?:\d\d?|\pL|(?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?))[)]
+        - >-
+          [(]?(?:\d\d?|\pL|(?=[ivxlcdm]{1,})m{0,4}(?:cm|cd|d?C{0,3}d?)??(?:xc|xl|l?x{0,3}L?)??(?:ix|iv|v?i{0,3}v?))[)]
       - ?!: \pL
       - _?
       - \right
@@ -278,8 +314,9 @@ common3:
     parts:
       - \left
       - ?<!: '[\pL\d]'
-      - +time: (?:[01]?\d|2[0-4])\d?[.:][0-5]\dh?(?:[:][0-5]\d)?
-      - +time: ([ap]m|[ap][.]m[.])?
+      - +time1: (?:[01]?\d|2[0-4])[.:][0-5]\dh?(?:[:][0-5]\d)?
+      - (:
+        - +time2: '[ap]m|[ap][.]m[.]'
       - ?!: '[\pL\d]'
       - ?!: '[,.]\d'
       - _?
@@ -396,11 +433,12 @@ common6:
   - name: enclosing typewriter quotation marks
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: \P{Zs}
       - +edq1: '"'
-      - \center: '[^"]+'
+      - \center: >-
+          [^"]+
       - +edq2: '"'
-      - ?!: \pL
+      - ?!: \P{Zs}
       - _?
       - \right
 
@@ -460,21 +498,21 @@ common8:
       - _
       - \right
 
-  - name: quotation left; remaining quotation marks (including wrong ones)
+  - name: quotation left etc.; remaining quotation marks (including wrong ones)
     parts:
       - \left
       - ?<!: >-
           [\pL\d]
       - +quotA: >-
-          [\p{Pi}'’"„−–—]
+          [\p{Pi}'’"„−–—({\[]
       - _?
       - \right
 
-  - name: quotation right; remaining quotation marks (including wrong ones)
+  - name: quotation right etc.; remaining quotation marks (including wrong ones)
     parts:
       - \left
       - +quotB: >-
-          [\p{Pf}'"“„−–—]
+          [\p{Pf}'"“„−–—)}\]]
       - ?!: >-
           [\pL\d]
       - _?

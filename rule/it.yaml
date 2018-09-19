@@ -6,8 +6,96 @@
 #
 
 ---
-it4:
+it2:
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - itXeqA1: «
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - itXeqA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
 
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - itXeqA1: «
+      - \center: .+?
+      - itXeqA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - itXeqB1: “
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - itXeqB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - itXeqB1: “
+      - \center: .+?
+      - itXeqB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - itXeqC1: ‘
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - itXeqC2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - itXeqC1: ‘
+      - \center: .+?
+      - itXeqC2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+
+it4:
   - name: elision
     parts:
       - \left
@@ -24,78 +112,6 @@ it4:
       - itQon: \d+[ºª]
       - ?!: '\s+\p{Lu}'
       - ?!: '[\pL\d]'
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - itXeqA1: «
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - itXeqA2: »
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - itXeqA1: «
-      - \center: .+?
-      - itXeqA2: »
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - itXeqB1: “
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - itXeqB2: ”
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - itXeqB1: “
-      - \center: .+?
-      - itXeqB2: ”
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - itXeqC1: ‘
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - itXeqC2: ’
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - itXeqC1: ‘
-      - \center: .+?
-      - itXeqC2: ’
-      - ?!: \pL
       - _?
       - \right
 

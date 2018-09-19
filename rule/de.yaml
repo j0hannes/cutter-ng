@@ -7,17 +7,18 @@
 
 ---
 de2:
-
   - name: enclosing quotation marks („+“)
     parts:
       - \left
-      - ?<!: '[\pL-]'
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtA1: „
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - deXqtA2: “
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -25,25 +26,28 @@ de2:
   - name: enclosing quotation marks („+“)
     parts:
       - \left
-      - ?<!: '[\pL-]'
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtA1: „
       - \center: .+?
       - deXqtA2: “
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (‚+‘)
     parts:
       - \left
-      - ?<!: \pl
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtB1: ‚
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - deXqtB2: ‘
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -51,37 +55,41 @@ de2:
   - name: enclosing quotation marks (‚+‘)
     parts:
       - \left
-      - ?<!: \pl
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtB1: ‚
       - \center: .+?
       - deXqtB2: ‘
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks («+»)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtC1: «
       - \center: .+?
       - deXqtC2: »
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks («+»)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtC1: «
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - deXqtC2: »
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -89,13 +97,15 @@ de2:
   - name: enclosing quotation marks (‹+›)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtD1: ‹
       - \center: .+?
-      - +dot: "[.?!]+"
+      - +dot: >-
+          [.?!]+
       - deXqtD2: ›
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -103,18 +113,18 @@ de2:
   - name: enclosing quotation marks (‹+›)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - deXqtD1: ‹
       - \center: .+?
       - deXqtD2: ›
       - ?!: >-
-          [\pL‐-]
+          [\pL\d‐-]
       - _?
       - \right
 
 
 de4:
-
   - name: date expression
     parts:
       - \left

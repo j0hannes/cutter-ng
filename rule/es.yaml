@@ -6,80 +6,96 @@
 #
 
 ---
+es2:
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - esXqtA1: «
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - esXqtA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - esXqtA1: «
+      - \center: .+?
+      - esXqtA2: »
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - esXqtB1: “
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - esXqtB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (second level, alternative first level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - esXqtB1: “
+      - \center: .+?
+      - esXqtB2: ”
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - esXqtB1: ‘
+      - \center: .+?
+      - +dot: >-
+          [.?!]+
+      - esXqtB2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - +EOS:
+      - _?
+      - \right
+
+  - name: enclosing quotation marks (third level)
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d‐-]
+      - esXqtB1: ‘
+      - \center: .+?
+      - esXqtB2: ’
+      - ?!: >-
+          [\pL\d‐-]
+      - _?
+      - \right
+
+
 es4:
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - esXqtA1: «
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - esXqtA2: »
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - esXqtA1: «
-      - \center: .+?
-      - esXqtA2: »
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - esXqtB1: “
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - esXqtB2: ”
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (second level, alternative first level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - esXqtB1: “
-      - \center: .+?
-      - esXqtB2: ”
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - esXqtB1: ‘
-      - \center: .+?
-      - +dot: "[.?!]+"
-      - esXqtB2: ’
-      - ?!: \pL
-      - +EOS:
-      - _?
-      - \right
-
-  - name: enclosing quotation marks (third level)
-    parts:
-      - \left
-      - ?<!: \pL
-      - esXqtB1: ‘
-      - \center: .+?
-      - esXqtB2: ’
-      - ?!: \pL
-      - _?
-      - \right
-
   - name: enclosing en dashes
     parts:
       - \left

@@ -7,16 +7,17 @@
 
 ---
 sv2:
-
   - name: enclosing quotation marks (first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - svXqtA1: ”
       - \center: .+?
       - +dot: "[.?!]+"
       - svXqtA2: ”
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -24,35 +25,42 @@ sv2:
   - name: enclosing quotation marks (first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - svXqtA1: ”
       - \center: .+?
       - svXqtA2: ”
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (second level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - svXqtB1: ’
       - \center:
       - svXqtB2: ’
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (alternative first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - svXqtC1: »
-      - ?=: \pL
+      - ?=: >-
+          [\pL\d]
       - \center: .+?
       - +dot: "[.?!]+"
       - svXqtC2: '[«»]'
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - +EOS:
       - _?
       - \right
@@ -60,29 +68,37 @@ sv2:
   - name: enclosing quotation marks (alternative first level)
     parts:
       - \left
-      - ?<!: \pL
+      - ?<!: >-
+          [\pL\d‐-]
       - svXqtC1: »
-      - ?=: \pL
+      - ?=: >-
+          [\pL\d]
       - \center: .+?
       - ?<=: \pL
       - svXqtC2: '[«»]'
-      - ?!: \pL
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
   - name: enclosing quotation marks (alternative second level)
     parts:
       - \left
-      - ?<!: \pL
-      - svXqtE1: ’
-      - ?=: \pL
+      - ?<!: >-
+          [\pL\d‐-]
+      - svXqtD1: ’
+      - ?=: >-
+          [\pL\d]
       - \center: .+?
       - ?<=: \pL
-      - svXqtE2: ’
-      - ?!: \pL
+      - svXqtD2: ’
+      - ?!: >-
+          [\pL\d‐-]
       - _?
       - \right
 
+
+sv4:
   - name: compound nouns with quoted part (”...”-...)
     parts:
       - \left
@@ -122,10 +138,6 @@ sv2:
       - ?!: \pL
       - _?
       - \right
-
-
-
-sv4:
 
   - name: # e.g. SVT:s, 86:e
     parts:
