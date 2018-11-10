@@ -6,6 +6,7 @@
 #        `-.............................____|_(                  )_/
 #
 
+import os
 import regex
 import yaml
 import collections
@@ -15,9 +16,9 @@ __author__ = 'Johannes Graën'
 __email__ = 'graen@cl.uzh.ch'
 __credits__ = """Johannes Graën, Martin Volk, Mara Bertamini, Chantal Amrhein,
     Phillip Ströbel, Anne Göhring, Natalia Korchagina, Simon Clematide,
-    Daniel Wüest"""
+    Daniel Wüest, Alex Flückiger"""
 __license__ = 'GPL'
-__version__ = '2.2'
+__version__ = '2.3'
 __status__ = 'Development'
 
 
@@ -52,6 +53,20 @@ part_expression = [
     ('_[?]?', WHITESPACE),      # _ or _?
     ('(.*)', REGULAR_TOKEN),
 ]
+
+
+profiles = {
+    'ca': 'Catalan',
+    'de': 'German',
+    'en': 'English',
+    'es': 'Spanish',
+    'fr': 'French',
+    'it': 'Italian',
+    'nl': 'Dutch',
+    'pt': 'Portuguese',
+    'rm': 'Romansh',
+    'sv': 'Swedish',
+}
 
 
 class CompilationError(Exception):
@@ -215,6 +230,24 @@ class Cutter:
         self.compiled = False
         self._log(0, 'New Cutter: {}'.format(
             desc if desc else '<no description>'))
+
+    def load_profile(self, profile):
+        """Loads the default profile for a language"""
+        if profile in profiles:
+            self.add_abbrs(open('{0}/abbr/{1}.list'.format(
+                os.path.dirname(os.path.realpath(__file__)),
+                profile), 'r'))
+            self.add_inits(open('{0}/init/{1}.list'.format(
+                os.path.dirname(os.path.realpath(__file__)),
+                profile), 'r'))
+            self.add_rules(open('{0}/rule/common.yaml'.format(
+                os.path.dirname(os.path.realpath(__file__))), 'r'))
+            self.add_rules(open('{0}/rule/{1}.yaml'.format(
+                os.path.dirname(os.path.realpath(__file__)),
+                profile), 'r'))
+            return True
+        else:
+            return False
 
     def add_abbrs(self, file):
         """Adds abbreviations from file; commented lines are ignored."""

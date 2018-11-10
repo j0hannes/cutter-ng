@@ -13,7 +13,8 @@ pt2:
       - ?<!: >-
           [\pL\d‐-]
       - ptXqtA1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - +dot: >-
           [.?!]+
       - ptqtA2: »
@@ -29,7 +30,8 @@ pt2:
       - ?<!: >-
           [\pL\d‐-]
       - ptXqtA1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - ptqtA2: »
       - ?!: >-
           [\pL\d‐-]
@@ -42,7 +44,8 @@ pt2:
       - ?<!: >-
           [\pL\d‐-]
       - ptXqtB1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - +dot: >-
           [.?!]+
       - ptXqtB2: ”
@@ -58,7 +61,8 @@ pt2:
       - ?<!: >-
           [\pL\d‐-]
       - ptXqtB1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - ptXqtB2: ”
       - ?!: >-
           [\pL\d‐-]
@@ -71,7 +75,8 @@ pt2:
       - ?<!: >-
           [\pL\d‐-]
       - ptXqtB1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - +dot: >-
           [.?!]+
       - ptXqtB2: ’
@@ -87,7 +92,8 @@ pt2:
       - ?<!: >-
           [\pL\d‐-]
       - ptXqtB1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - ptXqtB2: ’
       - ?!: >-
           [\pL\d‐-]

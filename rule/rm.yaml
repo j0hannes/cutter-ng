@@ -13,7 +13,8 @@ rm2:
       - ?<!: >-
           [\pL\d‐-]
       - rmXqtC1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - +dot: >-
           [.?!]+
       - rmXqtC2: »
@@ -29,7 +30,8 @@ rm2:
       - ?<!: >-
           [\pL\d‐-]
       - rmXqtC1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - rmXqtC2: »
       - ?!: >-
           [\pL\d‐-]

@@ -13,7 +13,8 @@ nl2:
       - ?<!: >-
           [\pL\d‐-]
       - nlXeqA1: „
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - +dot: >-
           [.?!]+
       - nlXeqA2: ”
@@ -29,7 +30,8 @@ nl2:
       - ?<!: >-
           [\pL\d‐-]
       - nlXeqA1: „
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - nlXeqA2: ”
       - ?!: >-
           [\pL\d‐-]
@@ -42,7 +44,8 @@ nl2:
       - ?<!: >-
           [\pL\d‐-]
       - nlXeqB1: ‚
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - nlXeqB2: ’
       - ?!: >-
           [\pL\d‐-]
@@ -55,7 +58,8 @@ nl2:
       - ?<!: >-
           [\pL\d‐-]
       - nlXeqA1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - +dot: >-
           [.?!]+
       - nlXeqA2: ’
@@ -71,7 +75,8 @@ nl2:
       - ?<!: >-
           [\pL\d‐-]
       - nlXeqA1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - nlXeqA2: ’
       - ?!: >-
           [\pL\d‐-]
@@ -84,7 +89,8 @@ nl2:
       - ?<!: >-
           [\pL\d‐-]
       - nlXeqB1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - nlXeqB2: ”
       - ?!: >-
           [\pL\d‐-]

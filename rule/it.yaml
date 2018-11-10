@@ -13,7 +13,8 @@ it2:
       - ?<!: >-
           [\pL\d‐-]
       - itXeqA1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - +dot: >-
           [.?!]+
       - itXeqA2: »
@@ -29,7 +30,8 @@ it2:
       - ?<!: >-
           [\pL\d‐-]
       - itXeqA1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - itXeqA2: »
       - ?!: >-
           [\pL\d‐-]
@@ -42,7 +44,8 @@ it2:
       - ?<!: >-
           [\pL\d‐-]
       - itXeqB1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - +dot: >-
           [.?!]+
       - itXeqB2: ”
@@ -58,7 +61,8 @@ it2:
       - ?<!: >-
           [\pL\d‐-]
       - itXeqB1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - itXeqB2: ”
       - ?!: >-
           [\pL\d‐-]
@@ -71,7 +75,8 @@ it2:
       - ?<!: >-
           [\pL\d‐-]
       - itXeqC1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - +dot: >-
           [.?!]+
       - itXeqC2: ’
@@ -87,7 +92,8 @@ it2:
       - ?<!: >-
           [\pL\d‐-]
       - itXeqC1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - itXeqC2: ’
       - ?!: >-
           [\pL\d‐-]

@@ -13,7 +13,8 @@ en2:
       - ?<!: >-
           [\pL\d‐-]
       - enXqtA1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - +punct: >-
           [.?!]+
       - enXqtA2: ”
@@ -29,7 +30,8 @@ en2:
       - ?<!: >-
           [\pL\d‐-]
       - enXqtA1: “
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - enXqtA2: ”
       - ?!: >-
           [\pL\d‐-]
@@ -42,7 +44,8 @@ en2:
       - ?<!: >-
           [\pL\d‐-]
       - enXqtB1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - +punct: >-
           [.?!]+
       - enXqtB2: ’
@@ -58,7 +61,8 @@ en2:
       - ?<!: >-
           [\pL\d‐-]
       - enXqtB1: ‘
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - enXqtB2: ’
       - ?!: >-
           [\pL\d‐-]

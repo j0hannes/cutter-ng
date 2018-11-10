@@ -13,7 +13,8 @@ ro2:
       - ?<!: >-
           [\pL\d‐-]
       - roXqtA1: „
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - +dot: >-
           [.?!]+
       - roXqtA2: ”
@@ -29,7 +30,8 @@ ro2:
       - ?<!: >-
           [\pL\d‐-]
       - roXqtA1: „
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - roXqtA2: ”
       - ?!: >-
           [\pL\d‐-]
@@ -42,7 +44,8 @@ ro2:
       - ?<!: >-
           [\pL\d‐-]
       - roXqtB1: «
-      - \center: .+?
+      - \center: >-
+          [^»]+?
       - roXqtB2: »
       - ?!: >-
           [\pL\d‐-]

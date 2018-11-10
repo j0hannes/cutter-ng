@@ -13,7 +13,8 @@ sv2:
       - ?<!: >-
           [\pL\d‐-]
       - svXqtA1: ”
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - +dot: "[.?!]+"
       - svXqtA2: ”
       - ?!: >-
@@ -28,7 +29,8 @@ sv2:
       - ?<!: >-
           [\pL\d‐-]
       - svXqtA1: ”
-      - \center: .+?
+      - \center: >-
+          [^”]+?
       - svXqtA2: ”
       - ?!: >-
           [\pL\d‐-]
@@ -41,7 +43,8 @@ sv2:
       - ?<!: >-
           [\pL\d‐-]
       - svXqtB1: ’
-      - \center:
+      - \center: >-
+          [^’]+?
       - svXqtB2: ’
       - ?!: >-
           [\pL\d‐-]
@@ -56,7 +59,8 @@ sv2:
       - svXqtC1: »
       - ?=: >-
           [\pL\d]
-      - \center: .+?
+      - \center: >-
+          [^«»]+?
       - +dot: "[.?!]+"
       - svXqtC2: '[«»]'
       - ?!: >-
@@ -73,7 +77,8 @@ sv2:
       - svXqtC1: »
       - ?=: >-
           [\pL\d]
-      - \center: .+?
+      - \center: >-
+          [^«»]+?
       - ?<=: \pL
       - svXqtC2: '[«»]'
       - ?!: >-
@@ -89,7 +94,8 @@ sv2:
       - svXqtD1: ’
       - ?=: >-
           [\pL\d]
-      - \center: .+?
+      - \center: >-
+          [^’]+?
       - ?<=: \pL
       - svXqtD2: ’
       - ?!: >-
