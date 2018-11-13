@@ -236,15 +236,16 @@ class Cutter:
         if profile in profiles:
             self.add_abbrs(open('{0}/abbr/{1}.list'.format(
                 os.path.dirname(os.path.realpath(__file__)),
-                profile), 'r'))
+                profile), 'r', encoding='utf-8'))
             self.add_inits(open('{0}/init/{1}.list'.format(
                 os.path.dirname(os.path.realpath(__file__)),
-                profile), 'r'))
+                profile), 'r', encoding='utf-8'))
             self.add_rules(open('{0}/rule/common.yaml'.format(
-                os.path.dirname(os.path.realpath(__file__))), 'r'))
+                os.path.dirname(os.path.realpath(__file__))),
+                'r', encoding='utf-8'))
             self.add_rules(open('{0}/rule/{1}.yaml'.format(
                 os.path.dirname(os.path.realpath(__file__)),
-                profile), 'r'))
+                profile), 'r', encoding='utf-8'))
             return True
         else:
             return False
