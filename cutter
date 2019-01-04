@@ -97,7 +97,9 @@ def main(argv):
     cutter = Cutter.Cutter(verbosity=args.verbose)
 
     if args.profile:
-        if not cutter.load_profile(args.profile):
+        try:
+            cutter.load_profile(args.profile)
+        except Cutter.LanguageProfileUndefined:
             print('Profile {} not defined.'.format(args.profile))
             exit(2)
     else:
