@@ -137,5 +137,5 @@ rm9:
   - name: regular Romansh token (final)
     parts:
       - rmRtokB:
-        - '(?:[a-zA-Zàòùâé]+-)*[a-zA-Zàòùâé]+'
+        - '(?:[a-zA-Zàòùâéüö]+-)*[a-zA-Zàòùâéüö]+'
 

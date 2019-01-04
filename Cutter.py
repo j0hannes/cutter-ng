@@ -16,9 +16,9 @@ __author__ = 'Johannes Graën'
 __email__ = 'graen@cl.uzh.ch'
 __credits__ = """Johannes Graën, Martin Volk, Mara Bertamini, Chantal Amrhein,
     Phillip Ströbel, Anne Göhring, Natalia Korchagina, Simon Clematide,
-    Daniel Wüest, Alex Flückiger"""
-__license__ = 'GPL'
-__version__ = '2.3'
+    Daniel Wüest, Alex Flückiger, Magdalena Plamada, Anastassia Shaitarova"""
+__license__ = 'LGPL'
+__version__ = '2.4'
 __status__ = 'Development'
 
 
@@ -80,6 +80,16 @@ class FormatError(Exception):
 
 
 class RuleSyntaxError(Exception):
+    def __init__(self, msg):
+        Exception.__init__(self, msg)
+
+
+class LanguageProfileUndefined(Exception):
+    def __init__(self, msg):
+        Exception.__init__(self, msg)
+
+
+class MissingFiles(Exception):
     def __init__(self, msg):
         Exception.__init__(self, msg)
 
@@ -219,7 +229,7 @@ class Cutter:
 
     # Public
 
-    def __init__(self, verbosity=0, desc=''):
+    def __init__(self, verbosity=0, desc='', profile=None):
         self.verbosity = verbosity
         self.desc = desc
         self.abbr = set()
@@ -230,10 +240,15 @@ class Cutter:
         self.compiled = False
         self._log(0, 'New Cutter: {}'.format(
             desc if desc else '<no description>'))
+        if profile is not None:
+            self.load_profile(profile)
 
     def load_profile(self, profile):
         """Loads the default profile for a language"""
-        if profile in profiles:
+        if not profile in profiles:
+            raise LanguageProfileUndefined(
+                "Profile for language `{}' undefined".format(profile))
+        try:
             self.add_abbrs(open('{0}/abbr/{1}.list'.format(
                 os.path.dirname(os.path.realpath(__file__)),
                 profile), 'r', encoding='utf-8'))
@@ -246,9 +261,8 @@ class Cutter:
             self.add_rules(open('{0}/rule/{1}.yaml'.format(
                 os.path.dirname(os.path.realpath(__file__)),
                 profile), 'r', encoding='utf-8'))
-            return True
-        else:
-            return False
+        except IOError as exc:
+            raise MissingFiles('Files missing: {}'.format(exc)) from None
 
     def add_abbrs(self, file):
         """Adds abbreviations from file; commented lines are ignored."""
@@ -339,6 +353,8 @@ class Cutter:
                 repr(text)))
         pos = 0
         for token, tag, level in self._cut_rec(text):
+            token = regex.sub(
+                '[' + FIRST_WORD + COVER_BEGIN + COVER_END + ']', '', token)
             oldpos = pos
             pos += len(token)
             if not flags & WHITESPACE_TOKENS and tag == WHITESPACE_TAG:

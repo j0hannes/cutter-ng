@@ -42,19 +42,6 @@ common0:
       - -marker: "\u241F"
       - \right
 
-  - name: end-of-sentence marker
-    parts:
-      - \left
-      - +dot: '[.!?]'
-      - _?
-      - ?<!: >-
-          [\pL\pP]
-      - +EOS2
-      - \quotation: >-
-          [«‘‛“‟‹"']?
-      - -marker: "\u241F"
-      - \right
-
 
 common1:
 
@@ -71,6 +58,19 @@ common1:
         - >-
             [&](?:[#](?:\d+|x[\da-fA-F]+)|\w+);
       - _?
+      - \right
+
+  - name: end-of-sentence marker
+    parts:
+      - \left
+      - +dot: '[.!?]'
+      - _?
+      - ?<!: >-
+          [\pL\pP]
+      - +EOS2
+      - \quotation: >-
+          [«‘‛“‟‹"']?
+      - -marker: "\u241F"
       - \right
 
 
@@ -359,15 +359,37 @@ common3:
       - _?
       - \right
 
+  - name: number and unit
+    parts:
+      - \left
+      - ?<!: >-
+          [\pL\d]
+      - +numut1: >-
+          \d+(?:[.,]\d+)?(?:[’\'.,\s]\d{3,})*(?:[.,]\d+?)?\p{No}?
+      - _?
+      - +numut2:
+        - >-
+            \pL+\/\pL+
+        - >-
+            %
+        - >-
+            µ?°[CFK]?
+        - >-
+            "
+      - ?!: >-
+          [\pL\d]
+      - _?
+      - \right
+
   - name: percentage
     parts:
       - \left
       - ?<!: >-
           [\pL\d’'.,-]
-      - +numpcA: >-
+      - +numpc1: >-
           [+]?\d+(?:[.,]\d+)?(?:[’'.,\s]\d{3,})*(?:[.,]\d+)?\p{No}?(?:[‐-](?=[\s%]))?
       - _?
-      - +numpcB: "%"
+      - +numpc2: "%"
       - ?!: >-
           [\pL\d’'.-]
       - _?

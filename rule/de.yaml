@@ -310,6 +310,15 @@ de4:
 
 
 de7:
+  - name: possessive apostrophe
+    parts:
+      - \left
+      - ?<!: '[\pL\d]'
+      - deQga: \pL+[xzs][’\']
+      - ?!: '[\pL\d]'
+      - _?
+      - \right
+
   - name: regular German token
     parts:
       - deRtkA:
