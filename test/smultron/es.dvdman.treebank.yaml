@@ -195,7 +195,9 @@ test:
       a) Cuando el cordón de suministro eléctrico o el enchufe se dañan.
     tokens:
       - >-
-          a)
+          a
+      - >-
+          )
       - >-
           Cuando
       - >-
@@ -225,7 +227,9 @@ test:
       c) Si el producto ha quedado expuesto a la lluvia o al agua.
     tokens:
       - >-
-          c)
+          c
+      - >-
+          )
       - >-
           Si
       - >-
@@ -257,7 +261,9 @@ test:
       e) Si el producto se ha caído o dañado de cualquier manera.
     tokens:
       - >-
-          e)
+          e
+      - >-
+          )
       - >-
           Si
       - >-
@@ -1956,7 +1962,7 @@ test:
           NOTAS
 
   - unit: >-
-      El reloj se pone a"00:00"cuando el cable de la corriente está desenchufado y se vuelve a enchufar a la corriente.
+      El reloj se pone a "00:00" cuando el cable de la corriente está desenchufado y se vuelve a enchufar a la corriente.
     tokens:
       - >-
           El
@@ -2910,7 +2916,7 @@ test:
           :
 
   - unit: >-
-      Pulse la tecla "PARAR"(STOP) del mando HTR4 dos veces durante la reproducción para visualizar el número total de pistas del CD de audio y el tiempo total de reproducción en la pantalla VFD.
+      Pulse la tecla "PARAR" (STOP) del mando HTR4 dos veces durante la reproducción para visualizar el número total de pistas del CD de audio y el tiempo total de reproducción en la pantalla VFD.
     tokens:
       - >-
           Pulse

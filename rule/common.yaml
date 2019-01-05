@@ -105,6 +105,54 @@ common3:
       - _?
       - \right
 
+  - name: numeric item (1)
+    parts:
+      - \left
+      - (:
+        - +itemA1: >-
+            [(]
+      - ?<!: '[\pL\d.,;:]'
+      - +itemA2:
+        - >-
+            \d+
+        - >-
+            \d\d?
+        - >-
+            \pL
+        - >-
+            (?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?)
+        - >-
+            (?=[ivxlcdm]{1,})m{0,4}(?:cm|cd|d?C{0,3}d?)??(?:xc|xl|l?x{0,3}L?)??(?:ix|iv|v?i{0,3}v?)
+      - +itemA3: >-
+          [)]
+      - ?!: \pL
+      - _?
+      - \right
+
+  - name: numeric item (2)
+    parts:
+      - \left
+      - (:
+        - +itemB1: >-
+            [\[]
+      - ?<!: '[\pL\d\.,;:]'
+      - +itemB2:
+        - >-
+            \d+
+        - >-
+            \d\d?
+        - >-
+            \pL
+        - >-
+            (?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?)
+        - >-
+            (?=[ivxlcdm]{1,})m{0,4}(?:cm|cd|d?C{0,3}d?)??(?:xc|xl|l?x{0,3}L?)??(?:ix|iv|v?i{0,3}v?)
+      - +itemB3: >-
+          [\]]
+      - ?!: \pL
+      - _?
+      - \right
+
   - name: enclosing parentheses
     parts:
       - \left
@@ -197,35 +245,6 @@ common3:
       - _?
       - \right
 
-  - name: numeric item (1)
-    parts:
-      - \left
-      - ?<!: '[\pL\d(]'
-      - +item:
-        - >-
-          [(]?\d+[)]
-        - >-
-          [(]?(?:\d\d?|\pL|(?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?))[)]
-        - >-
-          [(]?(?:\d\d?|\pL|(?=[ivxlcdm]{1,})m{0,4}(?:cm|cd|d?C{0,3}d?)??(?:xc|xl|l?x{0,3}L?)??(?:ix|iv|v?i{0,3}v?))[)]
-      - ?!: \pL
-      - _?
-      - \right
-
-  - name: numeric item (2)
-    parts:
-      - \left
-      - +item:
-        - >-
-          [\[]\d+[\]]
-        - >-
-          [(]\d+[)]
-        - >-
-          [(](?:\d\d?|\pL|(?=[IVXLCDM]{1,})M{0,4}(?:CM|CD|D?C{0,3}D?)??(?:XC|XL|L?X{0,3}L?)??(?:IX|IV|V?I{0,3}V?))[)]
-      - ?!: \pL
-      - _?
-      - \right
-
   - name: Roman numeral
     parts:
       - \left
@@ -263,8 +282,13 @@ common3:
     parts:
       - \left
       - ?<!: '[\pL\d/]'
-      - +numspc: >-
-          [+]?\d+(?:[\p{Zs}/]\d+)+
+      - +numspc:
+        - >-
+            [+]?\d+/\d+(?:\p{Zs}\d+)+
+        - >-
+            [+]?\d+(?:\p{Zs}\d+)+
+        - >-
+            [+]?\d+(?:/\d+)+
       - ?!: '[/\d\pL]'
       - _?
       - \right
@@ -369,7 +393,7 @@ common3:
       - _?
       - +numut2:
         - >-
-            \pL+\/\pL+
+            \pL{1,3}\/\pL{1,3}
         - >-
             %
         - >-

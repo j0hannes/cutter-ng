@@ -115,3 +115,9 @@ test:
 
   - unit: Der Name des ["Tagesschau"-Moderators] sagt jedoch niemandem etwas|.
 
+  - unit: Akrobatik|, Tierdressur|, Clown|, Feuerschlucker gehören zum Programm des [Zirkus'].
+
+  - unit: Als Marie Bayers Leiche geöffnet wird|, um zu ihren Organen vorzudringen|, ist Marie selbst nicht da|. Mitte Juni|, [8.15] Uhr|, die Hitze des Tages kündigt sich an|. Die Leiche liegt mittlerweile auf dem Rücken|, die Haut ist komplett entfernt|. Der Körper ist im Umfang geschrumpft|. Als hätte er 15 Kilo abgenommen|.
+
+  - unit: "[Merz'] Konkurrent"
+

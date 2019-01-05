@@ -335,7 +335,9 @@ test:
       a) När nätsladden eller kontakten skadats.
     tokens:
       - >-
-          a)
+          a
+      - >-
+          )
       - >-
           När
       - >-
@@ -353,7 +355,9 @@ test:
       b) Om vätska kommit in i apparaten.
     tokens:
       - >-
-          b)
+          b
+      - >-
+          )
       - >-
           Om
       - >-
@@ -373,7 +377,9 @@ test:
       c) Om produkten varit utsatt för vatten eller annan vätska.
     tokens:
       - >-
-          c)
+          c
+      - >-
+          )
       - >-
           Om
       - >-
@@ -399,7 +405,9 @@ test:
       d) Om produkten inte fungerar normalt enligt bruksanvisningen.
     tokens:
       - >-
-          d)
+          d
+      - >-
+          )
       - >-
           Om
       - >-
@@ -487,7 +495,9 @@ test:
       e) Om apparaten tappats eller skadats på något sätt.
     tokens:
       - >-
-          e)
+          e
+      - >-
+          )
       - >-
           Om
       - >-
@@ -511,7 +521,9 @@ test:
       f) Om apparaten visar klara skillnader i prestanda är detta ett tecken på att den behöver lämnas in för reparation.
     tokens:
       - >-
-          f)
+          f
+      - >-
+          )
       - >-
           Om
       - >-

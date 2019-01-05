@@ -243,7 +243,9 @@ test:
       b) Flüssigkeit in das Gerät geschüttet worden ist oder Fremdkörper hineingefallen sind.
     tokens:
       - >-
-          b)
+          b
+      - >-
+          )
       - >-
           Flüssigkeit
       - >-
@@ -273,7 +275,9 @@ test:
       c) das Gerät Regen oder Wasser ausgesetzt worden ist.
     tokens:
       - >-
-          c)
+          c
+      - >-
+          )
       - >-
           das
       - >-
@@ -297,7 +301,9 @@ test:
       e) das Gerät heruntergefallen oder in irgendeiner Weise beschädigt worden ist.
     tokens:
       - >-
-          e)
+          e
+      - >-
+          )
       - >-
           das
       - >-

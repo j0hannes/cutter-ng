@@ -58,6 +58,12 @@ test:
   - unit: "[2,50.-|+numdf]"
   - unit: "[37,700.-|+numdf]"
 
+  - unit: "20 [km/h]"
+  - unit: "25 [km²]" # ⁰¹²³⁴⁵⁶⁷⁸⁹
+
+  - unit: "12 [3/7]"
+
+
   - unit: call [076 543 271|+numspc]
   - unit: call [076/543 271|+numspc]
   - unit: >-
@@ -66,5 +72,5 @@ test:
   - markers:
       - '‹'
       - '›'
-    unit: see Volk‹[1]›
+    unit: see Volk‹[›1‹]›
 
