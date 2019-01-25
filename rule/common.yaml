@@ -457,10 +457,13 @@ common5:
     parts:
       - \left
       - +dot: '[.!?]'
+      - (:
+        - +quotB: >-
+            [”“’]
       - +EOS3
       - ?!: '[\p{Lu}\d]'
       - _?
-      - ?=: '[\p{Lu}\d„“«»"]'
+      - ?=: '[\p{Lu}\d„“«»"]|$'
       - \right
 
   - name: hashtag
