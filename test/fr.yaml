@@ -39,3 +39,10 @@ test:
 
   - unit: >-
       [1.2.16] [l']harmonisation avec [l’]expulsion facultative 5408
+
+  - unit: Cette année[-là] je vivais à Paris|.
+
+  - unit: Ce type[-là] est asocial|.
+
+  - unit: Tu veux [celui-ci]?
+

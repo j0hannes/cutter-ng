@@ -198,7 +198,7 @@ fr4:
       - ?<=: \pL
       - frXpr1:
         - -(?:t-)?(?:elles?|ils?|on)
-        - -(?:ce|ci|je|la|les?|leur|lui|[mtl][’']|[mt]oi|[nv]ous|tu|en|y)
+        - -(?:ce|ci|je|là|les?|leur|lui|[mtl][’']|[mt]oi|[nv]ous|tu|en|y)
       - (:
         - ?<=: "[’']"
         - frXpr2: en
