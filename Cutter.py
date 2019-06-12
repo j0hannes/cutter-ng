@@ -14,11 +14,12 @@ import pickle
 
 __author__ = 'Johannes Graën'
 __email__ = 'graen@cl.uzh.ch'
-__credits__ = """Johannes Graën, Martin Volk, Mara Bertamini, Chantal Amrhein,
-    Phillip Ströbel, Anne Göhring, Natalia Korchagina, Simon Clematide,
-    Daniel Wüest, Alex Flückiger, Magdalena Plamada, Anastassia Shaitarova"""
+__credits__ = """Johannes Graën, Martin Volk, Mara Bertamini,
+    Chantal Amrhein, Phillip Ströbel, Anne Göhring, Michael Amsler,
+    Natalia Korchagina, Simon Clematide, Daniel Wüest, Alex Flückiger,
+    Magdalena Plamada, Anastassia Shaitarova, Peter Makarov"""
 __license__ = 'LGPL'
-__version__ = '2.4'
+__version__ = '2.5'
 __status__ = 'Development'
 
 
@@ -265,7 +266,8 @@ class Cutter:
             raise MissingFiles('Files missing: {}'.format(exc)) from None
 
     def add_abbrs(self, file):
-        """Adds abbreviations from file; commented lines are ignored."""
+        """Add abbreviations from file; ignore lines starting with #.
+        """
         c = 0
         for line in file:
             m = regex.match('^(?!#)([^\t\n]+)', line)
@@ -279,8 +281,7 @@ class Cutter:
             c, '' if c == 1 else 's'))
 
     def add_inits(self, file):
-        """Adds sentence-initial words from file,
-        lines commented with # are ignored.
+        """Add sentence-initial words from file; ignore lines starting with #.
         """
         c = 0
         for line in file:
@@ -292,7 +293,8 @@ class Cutter:
             c, '' if c == 1 else 's'))
 
     def add_rules(self, file):
-        """Adds rules from YAML file."""
+        """Parse rule file (written in YAML).
+        """
         try:
             rstruct = yaml.load(file, Loader=yaml.FullLoader)
         except yaml.YAMLError as exc:
@@ -332,8 +334,7 @@ class Cutter:
         self.compiled = True
 
     def cut(self, text, flags=DEFAULT_FLAGS):
-        """Performs tokenization and filters results
-        according to given flags.
+        """Perform tokenization and filter results according to given flags.
         """
         if not self.compiled:
             self.compile()
@@ -363,5 +364,21 @@ class Cutter:
                     not flags & EMPTY_TOKENS or tag == WHITESPACE_TAG):
                 continue
             yield (token, tag, level, oldpos, pos)
+
+    def cut_and_pack(self, text, flags=DEFAULT_FLAGS):
+        """Perform tokenization and split the result on sentence boundaries.
+        """
+        sentence = []
+        for token, tag, level, oldpos, pos in self.cut(text, flags):
+            if tag[:4] == '+EOS':
+                if sentence:
+                    yield (sentence)
+                sentence = []
+            else:
+                sentence.append((token, tag, level, oldpos, pos))
+        if sentence:
+            yield (sentence)
+
+
 
 
