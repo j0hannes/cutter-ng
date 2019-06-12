@@ -105,7 +105,7 @@ class Cutter:
             print('{}* {}'.format('  ' * (level+extraindent), msg))
 
     def _assemble_re(self, parts, letters):
-        """Converts every rule part into a (matching) expression."""
+        """Convert every rule part into a (matching) expression."""
         consume = False
         for i, part in enumerate(parts):
             if type(part) is dict:
@@ -159,7 +159,7 @@ class Cutter:
             return consume
 
     def _compile_rule(self, name, parts):
-        """Transforms a rule into a regular expression."""
+        """Transform a rule into a regular expression."""
         letters = iter([char for char in 'abcdefghijklmnopqrstuvwxyz'])
         reparts = []
         tags = {}
@@ -183,8 +183,8 @@ class Cutter:
         return (rx, tags)
 
     def _cut_rec(self, text, startrule=0, level=0):
-        """Applies the first matching tokenization rule, returns the
-        identified tokens and proceeds recursively with the others.
+        """Apply the first matching tokenization rule, return the
+        identified tokens and proceed recursively with the others.
         """
         self._log(
             1, 'Process {} character{}: \033[35;7m{}\033[0m'.format(
@@ -245,7 +245,8 @@ class Cutter:
             self.load_profile(profile)
 
     def load_profile(self, profile):
-        """Loads the default profile for a language"""
+        """Load the default profile for a language.
+        """
         if not profile in profiles:
             raise LanguageProfileUndefined(
                 "Profile for language `{}' undefined".format(profile))
@@ -310,7 +311,7 @@ class Cutter:
             self._log(1, 'no rulesets added')
 
     def compile(self):
-        """Compiles regular expressions for abbreviations, sentence-initial
+        """Compile regular expressions for abbreviations, sentence-initial
         words and tokenization rules.
         """
         for stage, sub in sorted(self.ruletree.items()):
