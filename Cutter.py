@@ -294,7 +294,7 @@ class Cutter:
     def add_rules(self, file):
         """Adds rules from YAML file."""
         try:
-            rstruct = yaml.load(file)
+            rstruct = yaml.load(file, Loader=yaml.FullLoader)
         except yaml.YAMLError as exc:
             raise FormatError('YAML format error: {}'.format(exc))
         c = 0

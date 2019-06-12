@@ -163,7 +163,7 @@ def main(argv):
     errors = 0
     for testfile in args.test:
         try:
-           testset = yaml.load(testfile)
+           testset = yaml.load(testfile, Loader=yaml.FullLoader)
         except yaml.YAMLError as exc:
             print("ERROR: loading rule file failed: {}".format(exc))
             sys.exit(2)
