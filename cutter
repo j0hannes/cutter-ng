@@ -63,7 +63,7 @@ def main(argv):
         '-p', '--positions',
         action='store_true',
         dest='positions',
-        help='indicate positions of token in input string')
+        help='indicate positions of token characters in input string')
     parser.add_argument(
         '-s', '--structure',
         action='store_true',
