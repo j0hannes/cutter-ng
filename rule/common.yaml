@@ -191,6 +191,8 @@ common3:
   - name: protected text (enclosed by Unicode code points U+2402 and U+2403)
     parts:
       - \left
+      - ?<!: >-
+          [\pL\d-]
       - -start: "\u2402"
       - +cover: .*?
       - -end: "\u2403"
@@ -445,7 +447,7 @@ common5:
     parts:
       - \left
       - ?<!: >-
-          [\pL\d-]
+          [\pL\d\u2402-]
       - +abbr: >-
           (?:\p{Lu}[.]\pZ*)+
       - ?!: >-
@@ -524,6 +526,8 @@ common8:
     parts:
       - \left
       - +dot: '[.]'
+      - (:
+        - _: \u2403
       - +EOS5
       - _?
 

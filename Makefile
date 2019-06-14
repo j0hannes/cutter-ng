@@ -5,10 +5,13 @@ VERSION = "2.5"
 .PHONY: version
 
 
-default: run_tests
+default: test
 
-run_tests:
+tests:
 	./test.py test/*.yaml -s
+
+treebank_tests:
+	./test.py test/smultron/*.yaml -s
 
 version:
 	echo "$(VERSION) (rev: $$(git rev-parse --short HEAD))" > $@
