@@ -128,11 +128,13 @@ def main(argv):
         formatstr += '{1}\t'
     formatstr += '{0}'
     for line in args.text:
+        pos = 0
         tokens = cutter.cut(line, flags)
         for token in tokens:
             print(formatstr.format(*token))
+            pos = token[4]
         if args.tt and args.et:
-            print(formatstr.format('', '+NL', 0, token[4], token[4]))
+            print(formatstr.format('', '+NL', 0, pos, pos))
         else:
             print()
 
