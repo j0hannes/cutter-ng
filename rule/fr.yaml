@@ -162,7 +162,7 @@ fr4:
         - "[Pp]rud[’']hom(?:al(?:es?)?|m?aux|mal(?:es?)?|mes?)"
         - "[Qq]uelqu[’']une?"
         - "[Ee]ntr[’'](?:aide[rs]?|ouv[eè]rte?s?|ouvrir)"
-        - "[Tt]rompe-l[’']oeil"
+        - "[Tt]rompe-l[’'](?:oe|œ)il"
         - "(?:[Ee]lle|[Ii]l||[Ll]ui|[MTSmts]oi)-même"
         - "(?:[Ee]lles|[Ee]ux|[Nn]ous|[Vv]ous)-mêmes"
         - "[Dd][’'](?:abord|accord|ailleurs|après|autant|(?:oe|œ)uvre)"
