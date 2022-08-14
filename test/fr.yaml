@@ -45,4 +45,6 @@ test:
   - unit: Ce type[-là] est asocial|.
 
   - unit: Tu veux [celui-ci]?
+  
+  - unit: [Ancien.ne.s] [doctorant.e.s]
 
